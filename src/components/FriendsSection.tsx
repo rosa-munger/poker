@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Friends/Players data with actual images
 const friends = [
@@ -58,6 +59,7 @@ const friends = [
 ];
 
 export default function FriendsSection() {
+  const { t } = useLanguage();
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleCount = 4;
 
@@ -86,10 +88,10 @@ export default function FriendsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-            FRIENDS WITH AA
+            {t("friends.title")}
           </h2>
           <p className="text-aa-gray text-sm tracking-wider">
-            YOU'RE THE NEXT STAR
+            {t("friends.subtitle")}
           </p>
         </motion.div>
 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Modal content data for each section
 const modalContent = {
@@ -200,6 +201,7 @@ function AnimatedImage({ src, alt, delay = 0 }: { src: string; alt: string; dela
 }
 
 export default function AAPokerSection() {
+  const { t } = useLanguage();
   const [activeModal, setActiveModal] = useState<keyof typeof modalContent | null>(null);
 
   const openModal = (key: keyof typeof modalContent) => {
@@ -231,10 +233,10 @@ export default function AAPokerSection() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-                AA POKER
+                {t("aaPoker.title")}
               </h2>
               <p className="text-aa-gray text-sm tracking-wider">
-                YOUR FIRST CHOICE OF HOME GAME
+                {t("aaPoker.subtitle")}
               </p>
             </motion.div>
 
@@ -260,7 +262,7 @@ export default function AAPokerSection() {
                   whileTap={{ scale: 0.95 }}
                   className="inline-block px-8 py-3 border-2 border-[#39cb61] text-[#39cb61] font-bold tracking-wider text-sm hover:bg-[#39cb61] hover:text-white transition-colors"
                 >
-                  LEARN MORE
+                  {t("aaPoker.learnMore")}
                 </motion.button>
               </motion.div>
 
@@ -319,7 +321,7 @@ export default function AAPokerSection() {
                   whileTap={{ scale: 0.95 }}
                   className="inline-block px-8 py-3 border-2 border-[#39cb61] text-[#39cb61] font-bold tracking-wider text-sm hover:bg-[#39cb61] hover:text-white transition-colors"
                 >
-                  LEARN MORE
+                  {t("aaPoker.learnMore")}
                 </motion.button>
               </motion.div>
             </div>
@@ -362,7 +364,7 @@ export default function AAPokerSection() {
                   whileTap={{ scale: 0.95 }}
                   className="inline-block px-8 py-3 border-2 border-[#39cb61] text-[#39cb61] font-bold tracking-wider text-sm hover:bg-[#39cb61] hover:text-white transition-colors"
                 >
-                  LEARN MORE
+                  {t("aaPoker.learnMore")}
                 </motion.button>
               </motion.div>
 
@@ -439,7 +441,7 @@ export default function AAPokerSection() {
                   whileTap={{ scale: 0.95 }}
                   className="inline-block px-8 py-3 border-2 border-[#39cb61] text-[#39cb61] font-bold tracking-wider text-sm hover:bg-[#39cb61] hover:text-white transition-colors"
                 >
-                  LEARN MORE
+                  {t("aaPoker.learnMore")}
                 </motion.button>
               </motion.div>
             </div>

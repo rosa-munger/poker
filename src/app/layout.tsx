@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactButtons from "@/components/ContactButtons";
+import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -33,10 +34,12 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased`}
       >
-        <Header />
-        <main>{children}</main>
-        <Footer />
-        <ContactButtons />
+        <LanguageProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+          <ContactButtons />
+        </LanguageProvider>
       </body>
     </html>
   );

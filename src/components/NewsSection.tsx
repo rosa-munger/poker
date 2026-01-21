@@ -4,13 +4,23 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { getLatestNews } from "@/data/news";
-
-// Get latest 6 news articles
-const allNews = getLatestNews(6);
-const featuredNews = allNews[0];
-const sideNews = allNews.slice(1);
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function NewsSection() {
+  const { t, language } = useLanguage();
+  
+  // Get latest 6 news articles
+  const allNews = getLatestNews(6);
+  const featuredNews = allNews[0];
+  const sideNews = allNews.slice(1);
+
+  // Get translated title based on language
+  const getTitle = (news: typeof featuredNews) => {
+    if (language === "cn") return news.title_cn || news.title;
+    if (language === "tw") return news.title_tw || news.title;
+    return news.title;
+  };
+
   return (
     <section 
       className="py-16 bg-[#0a1f14]"
@@ -19,10 +29,10 @@ export default function NewsSection() {
         {/* Header Section */}
         <div className="text-center mb-10">
           <h2 className="text-[#f2e29e] text-3xl md:text-4xl font-bold tracking-widest uppercase mb-4">
-            News
+            {t("news.title")}
           </h2>
           <p className="text-white text-sm tracking-[0.3em] font-medium uppercase">
-            The latest brand information, all here
+            {t("news.subtitle")}
           </p>
         </div>
 

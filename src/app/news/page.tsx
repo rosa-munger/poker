@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { newsArticles } from "@/data/news";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Lấy dữ liệu từ file news data
 const featuredNews = newsArticles[0];
@@ -11,6 +12,8 @@ const sideNews = newsArticles.slice(1, 6);
 const moreNews = newsArticles.slice(6);
 
 export default function NewsPage() {
+  const { t } = useLanguage();
+
   return (
     <div 
       className="min-h-screen pt-24"
@@ -24,10 +27,10 @@ export default function NewsPage() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold text-[#f2e29e] mb-4 tracking-widest uppercase">
-            NEWS
+            {t("news.title")}
           </h1>
           <p className="text-white text-sm tracking-[0.3em] font-medium uppercase">
-            THE LATEST BRAND INFORMATION, ALL HERE
+            {t("news.subtitle")}
           </p>
         </motion.div>
 
@@ -104,7 +107,7 @@ export default function NewsPage() {
           transition={{ duration: 0.5 }}
           className="border-t border-[#14532d] pt-12"
         >
-          <h2 className="text-2xl font-bold text-[#f2e29e] mb-8 tracking-wider">MORE INFORMATION</h2>
+          <h2 className="text-2xl font-bold text-[#f2e29e] mb-8 tracking-wider">{t("news.moreInfo")}</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {moreNews.map((news, index) => (

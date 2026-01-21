@@ -2,9 +2,13 @@ export interface NewsArticle {
   id: number;
   slug: string;
   title: string;
+  title_cn?: string;
+  title_tw?: string;
   date: string;
   image: string;
   excerpt: string;
+  excerpt_cn?: string;
+  excerpt_tw?: string;
   content?: string;
 }
 

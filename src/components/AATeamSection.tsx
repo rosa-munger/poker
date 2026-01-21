@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 // AA Team data with actual images
 const aaTeam = [
@@ -20,6 +21,8 @@ const aaTeam = [
 ];
 
 export default function AATeamSection() {
+  const { t } = useLanguage();
+
   return (
     <section className="py-20 pb-32 relative z-10 bg-[#0a1f14]">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,10 +34,10 @@ export default function AATeamSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-            AA TEAM
+            {t("aaTeam.title")}
           </h2>
           <p className="text-aa-gray text-sm tracking-wider">
-            WELCOME TO THE AA TEAM
+            {t("aaTeam.subtitle")}
           </p>
         </motion.div>
 

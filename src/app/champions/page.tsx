@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { mainChampions, secondRowChampions, thirdRowChampions, Champion } from "@/data/champions";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Animation variants
 const containerVariants = {
@@ -59,6 +60,8 @@ function ChampionCard({ champion }: { champion: Champion }) {
 }
 
 export default function ChampionsPage() {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
       {/* Hero Banner - No overlay, sharp image with borders */}
@@ -84,12 +87,10 @@ export default function ChampionsPage() {
             className="text-center mb-12"
           >
             <h1 className="text-2xl md:text-3xl font-bold text-aa-gold mb-4">
-              THE PEAK SHOWDOWN VENUE • THE BIRTHPLACE OF LEGENDS
+              {t("champions.heroTitle")}
             </h1>
             <p className="text-aa-gray text-sm max-w-3xl mx-auto leading-relaxed">
-              AA Friends Circle brings the world&apos;s top poker masters and new forces together.
-              They inject competitive charm into each game, making it more passionate and energetic.
-              Go to AA POKER and log on now. Between wins and losses, legends are being born.
+              {t("champions.heroDesc")}
             </p>
           </motion.div>
 

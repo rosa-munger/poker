@@ -2,8 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="bg-aa-darker-green border-t border-aa-card-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,13 +23,13 @@ export default function Footer() {
               href="/download"
               className="block text-white hover:text-aa-gold transition-colors font-semibold tracking-wider text-sm"
             >
-              DOWNLOAD
+              {t("footer.download")}
             </Link>
             <Link
               href="/about"
               className="block text-white hover:text-aa-gold transition-colors font-semibold tracking-wider text-sm"
             >
-              ABOUT US
+              {t("footer.aboutUs")}
             </Link>
           </div>
 

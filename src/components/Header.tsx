@@ -5,28 +5,32 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage, Language } from "@/context/LanguageContext";
 
 // Language options with flags
 const languages = [
-  { code: "zh-CN", name: "简体中文", flag: "🇨🇳" },
-  { code: "zh-TW", name: "繁體中文", flag: "🇹🇼" },
-  { code: "en", name: "ENGLISH", flag: "🇺🇸" },
-];
-
-// Navigation links
-const navLinks = [
-  { href: "/", label: "HOME" },
-  { href: "/champions", label: "CHAMPIONS" },
-  { href: "/news", label: "NEWS" },
-  { href: "/download", label: "DOWNLOAD" },
+  { code: "cn" as Language, name: "简体中文", flag: "CN" },
+  { code: "tw" as Language, name: "繁體中文", flag: "TW" },
+  { code: "en" as Language, name: "ENGLISH", flag: "US" },
 ];
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLangOpen, setIsLangOpen] = useState(false);
-  const [currentLang, setCurrentLang] = useState(languages[2]); // Default English
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const { language, setLanguage, t } = useLanguage();
+
+  // Get current language object
+  const currentLang = languages.find((l) => l.code === language) || languages[2];
+
+  // Navigation links with translations
+  const navLinks = [
+    { href: "/", labelKey: "nav.home" },
+    { href: "/champions", labelKey: "nav.champions" },
+    { href: "/news", labelKey: "nav.news" },
+    { href: "/download", labelKey: "nav.download" },
+  ];
 
   // Handle scroll effect for sticky header
   useEffect(() => {
@@ -78,7 +82,7 @@ export default function Header() {
                   pathname === link.href ? "active text-aa-gold" : ""
                 }`}
               >
-                {link.label}
+                {t(link.labelKey)}
               </Link>
             ))}
 
@@ -123,11 +127,11 @@ export default function Header() {
                       <button
                         key={lang.code}
                         onClick={() => {
-                          setCurrentLang(lang);
+                          setLanguage(lang.code);
                           setIsLangOpen(false);
                         }}
                         className={`w-full px-4 py-3 text-left flex items-center gap-3 hover:bg-aa-emerald/20 transition-colors ${
-                          currentLang.code === lang.code
+                          language === lang.code
                             ? "bg-aa-emerald/10 text-aa-gold"
                             : "text-white"
                         }`}
@@ -194,24 +198,24 @@ export default function Header() {
                       : "text-white hover:bg-aa-emerald/10"
                   }`}
                 >
-                  {link.label}
+                  {t(link.labelKey)}
                 </Link>
               ))}
 
               {/* Mobile Language Selector */}
               <div className="pt-4 border-t border-aa-card-border">
                 <p className="text-aa-gray text-xs uppercase tracking-wider mb-2 px-4">
-                  Select Language
+                  {t("nav.language")}
                 </p>
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
                     onClick={() => {
-                      setCurrentLang(lang);
+                      setLanguage(lang.code);
                       setIsMobileMenuOpen(false);
                     }}
                     className={`w-full py-3 px-4 text-left flex items-center gap-3 rounded-lg ${
-                      currentLang.code === lang.code
+                      language === lang.code
                         ? "bg-aa-emerald/20 text-aa-gold"
                         : "text-white hover:bg-aa-emerald/10"
                     }`}

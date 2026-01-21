@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 interface ContactInfo {
   id: string;
@@ -48,6 +49,7 @@ const contactList: ContactInfo[] = [
 ];
 
 export default function ContactButtons() {
+  const { t } = useLanguage();
   const [activePopup, setActivePopup] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
 
@@ -204,7 +206,7 @@ export default function ContactButtons() {
                 onClick={() => handleCopy(activeContact.username)}
                 className="w-full bg-gradient-to-r from-[#c9a962] to-[#d4b87a] text-white py-3 px-6 rounded-full font-medium hover:opacity-90 transition-opacity"
               >
-                {copied ? "已复制!" : `复制 ${activeContact.copyText}`}
+                {copied ? t("common.copied") : `${t("common.copy")} ${activeContact.copyText}`}
               </button>
             </div>
 

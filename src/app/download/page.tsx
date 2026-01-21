@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 // QR Code data
 const qrCodes = [
@@ -10,25 +11,25 @@ const qrCodes = [
     id: "app-store",
     label: "APP STORE",
     icon: "apple",
-    image: "/image/download/6ab62f86-c16d-4763-932b-4ed34e7ec59b.jfif",
+    image: "/image/download/Qr-download.jpg",
   },
   {
     id: "ios-backup",
     label: "IOS BACKUP",
     icon: "apple",
-    image: "/image/download/6ab62f86-c16d-4763-932b-4ed34e7ec59b.jfif",
+    image: "/image/download/Qr-download.jpg",
   },
   {
     id: "android",
     label: "ANDROID",
     icon: "android",
-    image: "/image/download/6ab62f86-c16d-4763-932b-4ed34e7ec59b.jfif",
+    image: "/image/download/Qr-download.jpg",
   },
   {
     id: "android-backup",
     label: "ANANDROID BACKUP",
     icon: "android",
-    image: "/image/download/6ab62f86-c16d-4763-932b-4ed34e7ec59b.jfif",
+    image: "/image/download/Qr-download.jpg",
   },
 ];
 
@@ -167,6 +168,7 @@ const androidTutorialSteps = [
 ];
 
 export default function DownloadPage() {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState<"ios" | "android">("ios");
 
   return (
@@ -179,7 +181,7 @@ export default function DownloadPage() {
           className="text-center mb-12"
         >
           <h1 className="text-3xl md:text-5xl font-bold text-aa-gold mb-16 tracking-wider">
-            SCAN TO DOWNLOAD AA POKER
+            {t("download.title")}
           </h1>
 
           {/* QR Codes Grid */}
@@ -270,7 +272,7 @@ export default function DownloadPage() {
                     : "bg-transparent text-white/60 hover:text-white"
                 }`}
               >
-                IOS INSTALLATION TRUST TUTORIAL
+                {t("download.iosTutorial")}
               </button>
               <button
                 onClick={() => setActiveTab("android")}
@@ -280,7 +282,7 @@ export default function DownloadPage() {
                     : "bg-transparent text-white/60 hover:text-white"
                 }`}
               >
-                ANDROID INSTALLATION TRUST TUTORIAL
+                {t("download.androidTutorial")}
               </button>
             </div>
           </div>
