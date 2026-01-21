@@ -111,7 +111,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[70vh] overflow-hidden pt-16">
+    <section className="relative w-full h-[98vh] overflow-hidden pt-16">
       {/* Top Golden Border */}
       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-aa-gold to-transparent z-20" />
       
