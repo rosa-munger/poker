@@ -17,9 +17,13 @@ export const newsArticles: NewsArticle[] = [
     id: 1,
     slug: "wsop-cyprus-king-championship-super-mystery-bounty",
     title: "WSOP Cyprus \"King\" fully wins the championship of the Super Mystery Bounty Tournament and ranks fifth in the Super Fast Bounty Tournament",
+    title_cn: "WSOP塞浦路斯\"King\"全面夺得超级神秘赏金赛冠军并在超级快速赏金赛中获得第五名",
+    title_tw: "WSOP塞浦路斯\"King\"全面奪得超級神秘賞金賽冠軍並在超級快速賞金賽中獲得第五名",
     date: "October 21, 2025",
     image: "/image/news/page/2-Bn2M0-DS.png",
-    excerpt: "WSOP Cyprus King fully wins the championship of the Super Mystery Bounty Tournament"
+    excerpt: "WSOP Cyprus King fully wins the championship of the Super Mystery Bounty Tournament",
+    excerpt_cn: "WSOP塞浦路斯King全面夺得超级神秘赏金赛冠军",
+    excerpt_tw: "WSOP塞浦路斯King全面奪得超級神秘賞金賽冠軍"
   },
   {
     id: 2,

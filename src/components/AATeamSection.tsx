@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // AA Team data with actual images
@@ -55,13 +54,10 @@ export default function AATeamSection() {
               {/* Card Container - Larger to show full image including bottom */}
               <div className="relative aspect-[3/4] rounded-2xl overflow-visible">
                 {/* Player Image - Full display without overlay text */}
-                <Image
+                <img
                   src={member.image}
                   alt={member.name}
-                  fill
-                  className="object-contain object-center transition-transform duration-500 group-hover:scale-105"
-                  quality={100}
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="absolute inset-0 w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </motion.div>

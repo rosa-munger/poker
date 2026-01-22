@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function ExperiencePage() {
   return (
@@ -24,11 +23,10 @@ export default function ExperiencePage() {
           className="mb-10"
         >
           <div className="relative w-full aspect-[16/9]">
-            <Image
+            <img
               src="/image/home/section-experience/5-CXEJETLl.png"
               alt="Poker Experience"
-              fill
-              className="object-contain"
+              className="absolute inset-0 w-full h-full object-contain"
             />
           </div>
         </motion.div>

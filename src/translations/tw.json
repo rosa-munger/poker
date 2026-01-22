@@ -24,6 +24,8 @@
   "news.title": "新聞",
   "news.subtitle": "最新品牌資訊，盡在此處",
   "news.moreInfo": "更多資訊",
+  "news.backToNews": "返回新聞",
+  "news.relatedNews": "相關新聞",
 
   "aaTeam.title": "AA 戰隊",
   "aaTeam.subtitle": "歡迎來到 AA 戰隊",
@@ -59,6 +61,14 @@
   "champions.subtitle": "我們的世界級選手",
   "champions.heroTitle": "巔峰對決的舞台 • 傳奇誕生的地方",
   "champions.heroDesc": "AA朋友圈匯聚了世界頂尖撲克大師和新生力量。他們為每場比賽注入競技魅力，使其更加激情澎湃、活力四射。現在就登錄AA POKER吧。在輸贏之間，傳奇正在誕生。",
+  
+  "champion.introduction": "人物介紹",
+  "champion.totalLiveEarnings": "現場總收入",
+  "champion.bestLiveCash": "最佳現場成績",
+  "champion.allTimeMoneyList": "歷史獎金榜排名",
+  "champion.gpiRanking": "全球撲克指數排名",
+  "champion.playersHighlights": "選手精彩集錦",
+  "champion.backToChampions": "返回冠軍列表",
 
   "footer.followUs": "關注我們",
   "footer.download": "下載",

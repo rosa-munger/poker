@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 interface ContactInfo {
@@ -101,12 +100,10 @@ export default function ContactButtons() {
           onClick={() => handleButtonClick("sigua")}
           className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-white flex items-center justify-center"
         >
-          <Image
+          <img
             src="/image/logo-cskh/sigua-logo.png"
             alt="Sigua"
-            width={48}
-            height={48}
-            className="object-cover"
+            className="w-12 h-12 object-cover"
           />
         </button>
 
@@ -115,12 +112,10 @@ export default function ContactButtons() {
           onClick={() => handleButtonClick("telegram")}
           className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#0088cc] flex items-center justify-center"
         >
-          <Image
+          <img
             src="/image/logo-cskh/tglogo.png"
             alt="Telegram"
-            width={48}
-            height={48}
-            className="object-cover"
+            className="w-12 h-12 object-cover"
           />
         </button>
 
@@ -129,12 +124,10 @@ export default function ContactButtons() {
           onClick={() => handleButtonClick("mchat")}
           className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#4CAF50] flex items-center justify-center"
         >
-          <Image
+          <img
             src="/image/logo-cskh/mclogo.png"
             alt="MChat"
-            width={48}
-            height={48}
-            className="object-cover"
+            className="w-12 h-12 object-cover"
           />
         </button>
 
@@ -143,12 +136,10 @@ export default function ContactButtons() {
           onClick={() => handleButtonClick("whatsapp")}
           className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#25D366] flex items-center justify-center"
         >
-          <Image
+          <img
             src="/image/logo-cskh/logo-whatsapp.png"
             alt="WhatsApp"
-            width={48}
-            height={48}
-            className="object-cover"
+            className="w-12 h-12 object-cover"
           />
         </button>
 
@@ -157,12 +148,10 @@ export default function ContactButtons() {
           onClick={() => handleButtonClick("kf")}
           className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#4CAF50] flex items-center justify-center"
         >
-          <Image
+          <img
             src="/image/logo-cskh/kf.png"
             alt="Customer Service"
-            width={48}
-            height={48}
-            className="object-cover"
+            className="w-12 h-12 object-cover"
           />
         </button>
       </div>
@@ -188,11 +177,10 @@ export default function ContactButtons() {
             {/* QR Code */}
             <div className="p-6 flex flex-col items-center bg-white">
               <div className="w-48 h-48 relative mb-4">
-                <Image
+                <img
                   src={activeContact.qrCode}
                   alt={`${activeContact.name} QR Code`}
-                  fill
-                  className="object-contain"
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
 

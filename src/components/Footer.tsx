@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function Footer() {
@@ -40,11 +39,9 @@ export default function Footer() {
           <div className="flex flex-col items-start md:items-end gap-4">
             {/* Logo */}
             <Link href="/" className="flex items-center group">
-              <Image
+              <img
                 src="/image/home/logo/logotext-XjxNBhSC.png"
                 alt="AA Poker"
-                width={90}
-                height={24}
                 className="h-6 w-auto object-contain"
               />
             </Link>

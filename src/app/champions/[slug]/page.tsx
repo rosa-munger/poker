@@ -1,15 +1,24 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import { getChampionBySlug, Champion } from "@/data/champions";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function ChampionDetailPage() {
+  const { t, language } = useLanguage();
   const params = useParams();
   const slug = params.slug as string;
   const champion = getChampionBySlug(slug);
+
+  // Get translated introduction based on language
+  const getIntroduction = () => {
+    if (!champion) return [];
+    if (language === "cn" && champion.introduction_cn) return champion.introduction_cn;
+    if (language === "tw" && champion.introduction_tw) return champion.introduction_tw;
+    return champion.introduction;
+  };
 
   if (!champion) {
     return (
@@ -26,22 +35,13 @@ export default function ChampionDetailPage() {
 
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
-      {/* Hero Banner with Player Image - No overlay, sharp and larger */}
-      <section className="relative h-[400px] md:h-[500px] overflow-hidden">
-        <Image
+      {/* Hero Banner with Player Image - No overlay, full width */}
+      <section className="relative w-full overflow-hidden">
+        <img
           src={champion.bannerImage}
           alt={champion.name}
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-          sizes="100vw"
+          className="w-full h-auto object-contain"
         />
-        {/* Minimal gradient only at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0a1f14] to-transparent" />
-        
-        {/* Thin gold bar at bottom - 1.5px */}
-        <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-aa-gold" />
       </section>
 
       {/* Introduction Section */}
@@ -56,7 +56,7 @@ export default function ChampionDetailPage() {
             <div className="flex items-center justify-center gap-4">
               <div className="h-px w-16 bg-gradient-to-r from-transparent to-aa-gold" />
               <h1 className="text-3xl md:text-4xl font-bold text-aa-gold tracking-wider">
-                INTRODUCTION
+                {t("champion.introduction")}
               </h1>
               <div className="h-px w-16 bg-gradient-to-l from-transparent to-aa-gold" />
             </div>
@@ -74,13 +74,10 @@ export default function ChampionDetailPage() {
               <div className="relative bg-gradient-to-b from-[#1a4d2e] to-[#0d2818] rounded-2xl overflow-hidden border border-[#2d5a3d]/30 p-4">
                 {/* Player Image - Full display, larger, no overlays */}
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl mb-6">
-                  <Image
+                  <img
                     src={champion.image}
                     alt={champion.name}
-                    fill
-                    className="object-cover object-top"
-                    quality={100}
-                    sizes="(max-width: 768px) 100vw, 33vw"
+                    className="absolute inset-0 w-full h-full object-cover object-top"
                   />
                 </div>
 
@@ -89,7 +86,7 @@ export default function ChampionDetailPage() {
                   <div className="flex items-start gap-2">
                     <span className="text-aa-gold text-lg">○</span>
                     <div>
-                      <p className="text-aa-gold text-sm font-semibold">TOTAL LIVE EARNINGS</p>
+                      <p className="text-aa-gold text-sm font-semibold">{t("champion.totalLiveEarnings")}</p>
                       <p className="text-white text-lg font-bold">{champion.totalLiveEarnings}</p>
                     </div>
                   </div>
@@ -97,7 +94,7 @@ export default function ChampionDetailPage() {
                   <div className="flex items-start gap-2">
                     <span className="text-aa-gold text-lg">○</span>
                     <div>
-                      <p className="text-aa-gold text-sm font-semibold">BEST LIVE CASH</p>
+                      <p className="text-aa-gold text-sm font-semibold">{t("champion.bestLiveCash")}</p>
                       <p className="text-white text-lg font-bold">{champion.bestLiveCash}</p>
                     </div>
                   </div>
@@ -105,7 +102,7 @@ export default function ChampionDetailPage() {
                   <div className="flex items-start gap-2">
                     <span className="text-aa-gold text-lg">○</span>
                     <div>
-                      <p className="text-aa-gold text-sm font-semibold">ALL TIME MONEY LIST</p>
+                      <p className="text-aa-gold text-sm font-semibold">{t("champion.allTimeMoneyList")}</p>
                       <p className="text-white text-lg font-bold">{champion.allTimeMoneyList}</p>
                     </div>
                   </div>
@@ -113,7 +110,7 @@ export default function ChampionDetailPage() {
                   <div className="flex items-start gap-2">
                     <span className="text-aa-gold text-lg">○</span>
                     <div>
-                      <p className="text-aa-gold text-sm font-semibold">GLOBAL POKER INDEX RANKING</p>
+                      <p className="text-aa-gold text-sm font-semibold">{t("champion.gpiRanking")}</p>
                       <p className="text-white text-lg font-bold">{champion.globalPokerIndexRanking}</p>
                     </div>
                   </div>
@@ -130,7 +127,7 @@ export default function ChampionDetailPage() {
             >
               {/* Introduction Paragraphs */}
               <div className="space-y-6 mb-8">
-                {champion.introduction.map((paragraph, index) => (
+                {getIntroduction().map((paragraph, index) => (
                   <p key={index} className="text-aa-gray leading-relaxed">
                     {paragraph}
                   </p>
@@ -262,7 +259,7 @@ export default function ChampionDetailPage() {
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
             </svg>
-            Back to Champions
+            {t("champion.backToChampions")}
           </Link>
         </div>
       </section>

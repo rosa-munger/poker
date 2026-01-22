@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function ProtectionPage() {
   return (
@@ -24,11 +23,10 @@ export default function ProtectionPage() {
           className="mb-10"
         >
           <div className="relative w-full aspect-[16/9]">
-            <Image
+            <img
               src="/image/home/section-multi-demensional/4-Qsc4xHEz.png"
               alt="Multi-Dimensional Protection"
-              fill
-              className="object-contain"
+              className="absolute inset-0 w-full h-full object-contain"
             />
           </div>
         </motion.div>

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -28,13 +27,10 @@ export default function DetailPage1() {
       >
         {/* Top Half of Image */}
         <div className="relative w-full">
-          <Image
+          <img
             src="/image/home/sliders/click-banner/detail1en-B6Rh6eCE.jpg"
             alt="Detail Page 1"
-            width={1200}
-            height={675}
             className="w-full h-auto object-contain"
-            priority
           />
         </div>
 

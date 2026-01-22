@@ -1,10 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
 import { newsArticles, getNewsArticleBySlug } from "@/data/news";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Full article content data
 const articleContent: { [key: string]: ArticleContent } = {
@@ -2677,6 +2677,7 @@ interface ArticleContent {
 }
 
 export default function NewsDetailPage() {
+  const { t, language } = useLanguage();
   const params = useParams();
   const slug = params.slug as string;
   const article = getNewsArticleBySlug(slug);
@@ -2686,6 +2687,13 @@ export default function NewsDetailPage() {
   }
 
   const content = articleContent[slug];
+  
+  // Get translated title based on language
+  const getTitle = () => {
+    if (language === "cn" && article.title_cn) return article.title_cn;
+    if (language === "tw" && article.title_tw) return article.title_tw;
+    return article.title;
+  };
 
   return (
     <div 
@@ -2700,7 +2708,7 @@ export default function NewsDetailPage() {
           className="text-center mb-10"
         >
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f2e29e] mb-6 leading-tight uppercase tracking-wide">
-            {article.title}
+            {getTitle()}
           </h1>
           <p className="text-[#4ade80]/60 text-sm italic">
             {article.date}
@@ -2712,14 +2720,12 @@ export default function NewsDetailPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="relative aspect-video w-full overflow-hidden mb-10"
+          className="relative w-full overflow-hidden mb-10"
         >
-          <Image
+          <img
             src={content?.heroImage || article.image}
             alt={article.title}
-            fill
-            className="object-cover"
-            priority
+            className="w-full h-auto object-contain"
           />
         </motion.div>
 
@@ -2747,12 +2753,11 @@ export default function NewsDetailPage() {
                   );
                 case "image":
                   return (
-                    <div key={index} className="relative aspect-video w-full overflow-hidden my-8">
-                      <Image
+                    <div key={index} className="relative w-full overflow-hidden my-8">
+                      <img
                         src={section.src!}
                         alt={section.alt!}
-                        fill
-                        className="object-cover"
+                        className="w-full h-auto object-contain"
                       />
                     </div>
                   );
@@ -2832,7 +2837,7 @@ export default function NewsDetailPage() {
             href="/news" 
             className="inline-block px-8 py-3 border border-[#f2e29e] text-[#f2e29e] font-bold tracking-widest text-xs hover:bg-[#f2e29e] hover:text-black transition-all uppercase"
           >
-            ← Back to News
+            ← {t("news.backToNews")}
           </Link>
         </motion.div>
 
@@ -2843,7 +2848,7 @@ export default function NewsDetailPage() {
           viewport={{ once: true }}
           className="mt-20 border-t border-[#14532d] pt-12"
         >
-          <h3 className="text-xl font-bold text-[#f2e29e] mb-8 tracking-wider">RELATED NEWS</h3>
+          <h3 className="text-xl font-bold text-[#f2e29e] mb-8 tracking-wider">{t("news.relatedNews")}</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {newsArticles.slice(1, 4).map((news) => (
               <Link 
@@ -2851,12 +2856,11 @@ export default function NewsDetailPage() {
                 href={`/news/${news.slug}`}
                 className="group block bg-[#052e16] overflow-hidden hover:border-[#f2e29e]/50 border border-transparent transition-all"
               >
-                <div className="relative aspect-video overflow-hidden">
-                  <Image
+                <div className="relative overflow-hidden">
+                  <img
                     src={news.image}
                     alt={news.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                    className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
                 <div className="p-4">

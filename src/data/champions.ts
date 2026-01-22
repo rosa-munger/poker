@@ -10,9 +10,9 @@ export interface ChampionEvent {
 export interface Champion {
   id: number;
   slug: string;
-  name: string;
+  // name: string;
   country: string;
-  countryFlag: string;
+  // countryFlag: string;
   image: string;
   bannerImage: string;
   totalLiveEarnings: string;
@@ -20,6 +20,8 @@ export interface Champion {
   allTimeMoneyList: string;
   globalPokerIndexRanking: string;
   introduction: string[];
+  introduction_cn?: string[];
+  introduction_tw?: string[];
   playersHighlights?: string[];
   socialLinks?: {
     youtube?: string;
@@ -35,9 +37,9 @@ export const mainChampions: Champion[] = [
   {
     id: 1,
     slug: "bryn-kenney",
-    name: "BRYN KENNEY",
+    // name: "BRYN KENNEY",
     country: "USA",
-    countryFlag: "🇺🇸",
+    // countryFlag: "🇺🇸",
     image: "/image/champions/body/BrynKenney-DJlFW8MS.png",
     bannerImage: "/image/champions/introduction/BrynKenney-banner-CFoVCSzd.png",
     totalLiveEarnings: "$74,056,233",
@@ -49,6 +51,18 @@ export const mainChampions: Champion[] = [
       "It's possible that AApoker's sponsorship gave Kenney a boost, as he had 5A play in the tournament, always getting the cards he needed at just the right time, with unrivalled skill and luck.",
       "The final singles match was between Kenney and British businessman and Triton Vietnam main event winner Talal Shakerchi, and the final hand saw the two go all in, with Kenney's 9♠8♠ against Shakerchi's A♠K♠, and Kenney was lucky enough to hit the 8 on the flopped circle and hold the advantage until the end.",
       "For winning this event, Kenney collected $6.86 million in prize money, bringing his career total to $65.03 million, and once again surpassing Justin Bonomo for the top spot on the all-time money list."
+    ],
+    introduction_cn: [
+      "在参加完2023年夏季WSOP后，Kenney出现在Triton伦敦赛事上。这次他以AApoker赞助选手的身份参赛，在前几场比赛中表现出色后，最终以绝对优势赢得了第9场赛事，获得了他职业生涯第3座Triton奖杯。",
+      "AApoker的赞助可能给了Kenney一些助力，因为他在比赛中打出了5A级别的表现，总是在关键时刻拿到需要的牌，展现了无与伦比的技术和运气。",
+      "决赛单挑是在Kenney和英国商人、Triton越南主赛冠军Talal Shakerchi之间进行的。最后一手牌两人全押，Kenney的9♠8♠对阵Shakerchi的A♠K♠，Kenney幸运地在翻牌圈击中8并保持优势直到最后。",
+      "凭借这场胜利，Kenney获得了686万美元奖金，使他的职业生涯总奖金达到6503万美元，再次超越Justin Bonomo登上历史奖金榜首位。"
+    ],
+    introduction_tw: [
+      "在參加完2023年夏季WSOP後，Kenney出現在Triton倫敦賽事上。這次他以AApoker贊助選手的身份參賽，在前幾場比賽中表現出色後，最終以絕對優勢贏得了第9場賽事，獲得了他職業生涯第3座Triton獎盃。",
+      "AApoker的贊助可能給了Kenney一些助力，因為他在比賽中打出了5A級別的表現，總是在關鍵時刻拿到需要的牌，展現了無與倫比的技術和運氣。",
+      "決賽單挑是在Kenney和英國商人、Triton越南主賽冠軍Talal Shakerchi之間進行的。最後一手牌兩人全押，Kenney的9♠8♠對陣Shakerchi的A♠K♠，Kenney幸運地在翻牌圈擊中8並保持優勢直到最後。",
+      "憑藉這場勝利，Kenney獲得了686萬美元獎金，使他的職業生涯總獎金達到6503萬美元，再次超越Justin Bonomo登上歷史獎金榜首位。"
     ],
     playersHighlights: [
       "https://www.youtube.com/shorts/i5JFhTjSBhs",
@@ -70,9 +84,9 @@ export const mainChampions: Champion[] = [
   {
     id: 2,
     slug: "jungleman",
-    name: "JUNGLEMAN",
+    // name: "JUNGLEMAN",
     country: "USA",
-    countryFlag: "🇺🇸",
+    // countryFlag: "🇺🇸",
     image: "/image/champions/body/JUAGLEMAN-C_6QD3Je.png",
     bannerImage: "/image/champions/introduction/JUNGLEMAN-banner-BuKoX22Z.png",
     totalLiveEarnings: "$14,184,047",
@@ -105,9 +119,9 @@ export const mainChampions: Champion[] = [
   {
     id: 3,
     slug: "joe-hachem",
-    name: "JOE HACHEM",
+    // name: "JOE HACHEM",
     country: "Australia",
-    countryFlag: "🇦🇺",
+    // countryFlag: "🇦🇺",
     image: "/image/champions/body/JoeHachem-BzLczcPf.png",
     bannerImage: "/image/champions/introduction/Joe Hachem-banner-DQLgLjwR.png",
     totalLiveEarnings: "$12,986,073",
@@ -125,9 +139,9 @@ export const mainChampions: Champion[] = [
   {
     id: 4,
     slug: "zhou-quan",
-    name: "ZHOU QUAN",
+    // name: "ZHOU QUAN",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/ZHOU QUAN-CGaTl2V0.png",
     bannerImage: "/image/champions/introduction/zhou quan-banner-BG1c3hYO.png",
     totalLiveEarnings: "$10,835,403",
@@ -188,9 +202,9 @@ export const secondRowChampions: Champion[] = [
   {
     id: 5,
     slug: "chen-dong",
-    name: "CHEN DONG",
+    // name: "CHEN DONG",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/CHEN DONG-Ca3o-SkM.png",
     bannerImage: "/image/champions/introduction/chen dong-banner-BSyf2rIt.png",
     totalLiveEarnings: "$2,633,139",
@@ -220,9 +234,9 @@ export const secondRowChampions: Champion[] = [
   {
     id: 6,
     slug: "didier-guerin",
-    name: "DIDIER GUERIN",
+    // name: "DIDIER GUERIN",
     country: "Australia",
-    countryFlag: "🇦🇺",
+    // countryFlag: "🇦🇺",
     image: "/image/champions/body/Didier Guerin-DF3FLRdB.png",
     bannerImage: "/image/champions/introduction/Didier Guerin-banner-Bx7y7yNO.png",
     totalLiveEarnings: "$1,127,480",
@@ -251,9 +265,9 @@ export const secondRowChampions: Champion[] = [
   {
     id: 7,
     slug: "mao-renji",
-    name: "MAO RENJI",
+    // name: "MAO RENJI",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/MAO RENJI-DBIiM2jW.png",
     bannerImage: "/image/champions/introduction/MAO RENJI-banner-EdVegxkH.png",
     totalLiveEarnings: "$1,031,338",
@@ -273,9 +287,9 @@ export const secondRowChampions: Champion[] = [
   {
     id: 8,
     slug: "chen-yisha",
-    name: "CHEN YISHA",
+    // name: "CHEN YISHA",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/CHEN YISHA-BtDqOGRz.png",
     bannerImage: "/image/champions/introduction/CHEN YISHA-banner-BiyYqYzf.png",
     totalLiveEarnings: "$856,525",
@@ -298,9 +312,9 @@ export const thirdRowChampions: Champion[] = [
   {
     id: 9,
     slug: "zhu-zheming",
-    name: "ZHU ZHEMING",
+    // name: "ZHU ZHEMING",
     country: "Australia",
-    countryFlag: "🇦🇺",
+    // countryFlag: "🇦🇺",
     image: "/image/champions/body/Zhu Zheming-vHdJ30Nm.png",
     bannerImage: "/image/champions/introduction/Zhu Zheming-banner-DQxF3Lzq.png",
     totalLiveEarnings: "$328,751",
@@ -327,9 +341,9 @@ export const thirdRowChampions: Champion[] = [
   {
     id: 10,
     slug: "xiao-yao",
-    name: "XIAO YAO",
+    // name: "XIAO YAO",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/XIAO YAO-BgRzfE6P.png",
     bannerImage: "/image/champions/introduction/XIAO YAO-banner-Cdnq8ydA.png",
     totalLiveEarnings: "$131,000",
@@ -355,9 +369,9 @@ export const thirdRowChampions: Champion[] = [
   {
     id: 11,
     slug: "jin-boxin",
-    name: "JIN BOXIN",
+    // name: "JIN BOXIN",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/Jin Boxin-CFhRkow-.png",
     bannerImage: "/image/champions/introduction/jin boxin-banner-CNclxK76.png",
     totalLiveEarnings: "$91,500",
@@ -390,9 +404,9 @@ export const thirdRowChampions: Champion[] = [
   {
     id: 12,
     slug: "yara",
-    name: "YARA",
+    // name: "YARA",
     country: "China",
-    countryFlag: "🇨🇳",
+    // countryFlag: "🇨🇳",
     image: "/image/champions/body/Yara-tfeKlH3L.png",
     bannerImage: "/image/champions/introduction/YARA-banner-B1kR0aJn.png",
     totalLiveEarnings: "None",

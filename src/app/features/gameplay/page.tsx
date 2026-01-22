@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 export default function GameplayPage() {
   return (
@@ -24,11 +23,10 @@ export default function GameplayPage() {
           className="mb-10"
         >
           <div className="relative w-full aspect-[16/9]">
-            <Image
+            <img
               src="/image/home/section-aa-poker/1en-DsyJUMia.png"
               alt="AA Poker Gameplay"
-              fill
-              className="object-contain"
+              className="absolute inset-0 w-full h-full object-contain"
             />
           </div>
         </motion.div>

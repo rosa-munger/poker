@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { getLatestNews } from "@/data/news";
 import { useLanguage } from "@/context/LanguageContext";
 
@@ -42,12 +41,11 @@ export default function NewsSection() {
           {/* Cột Trái: Tin nổi bật chính */}
           <div className="lg:col-span-7 flex">
             <Link href={`/news/${featuredNews.slug}`} className="group flex flex-col w-full overflow-hidden bg-[#052e16]">
-              <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
+              <div className="relative overflow-hidden bg-[#052e16]">
+                <img
                   src={featuredNews.image}
                   alt="Featured News"
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               {/* Nội dung tin chính */}
@@ -71,12 +69,11 @@ export default function NewsSection() {
                 className="group flex flex-1 bg-[#052e16] hover:bg-[#064e3b] transition-all duration-300 border border-[#14532d]/30 overflow-hidden"
               >
                 {/* Ảnh thumbnail tin phụ */}
-                <div className="relative w-32 md:w-40 flex-shrink-0 overflow-hidden">
-                  <Image
+                <div className="relative w-32 md:w-40 flex-shrink-0 overflow-hidden bg-[#052e16]">
+                  <img
                     src={news.image}
                     alt={news.title}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-110"
+                    className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
                 {/* Nội dung tin phụ */}

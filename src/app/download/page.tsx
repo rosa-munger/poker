@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // QR Code data
@@ -195,13 +194,10 @@ export default function DownloadPage() {
                 className="bg-gradient-to-b from-[#1a3d2e] to-[#0d2818] rounded-xl p-6 md:p-8"
               >
                 <div className="bg-white rounded-lg p-3 mb-6">
-                  <Image
+                  <img
                     src={qr.image}
                     alt={qr.label}
-                    width={280}
-                    height={280}
                     className="w-full h-auto"
-                    quality={100}
                   />
                 </div>
                 <div className="flex items-center justify-center gap-3 text-white">
@@ -234,13 +230,10 @@ export default function DownloadPage() {
               className="bg-gradient-to-r from-[#1a3d2e] to-[#0d2818] rounded-xl p-8 flex gap-6"
             >
               <div className="flex-shrink-0">
-                <Image
+                <img
                   src={index === 0 ? "/image/download/xioaa1-BRaHlQxH.png" : "/image/download/xioaa2-RXw0Ds4_.png"}
                   alt="FAQ Icon"
-                  width={80}
-                  height={80}
                   className="w-20 h-20 md:w-24 md:h-24"
-                  quality={100}
                 />
               </div>
               <div>
@@ -298,13 +291,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">
@@ -326,13 +316,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">
@@ -351,13 +338,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">
@@ -378,13 +362,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">
@@ -408,13 +389,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">
@@ -433,13 +411,10 @@ export default function DownloadPage() {
                       {step.step}
                     </div>
                     <div className="relative mx-auto max-w-[280px] mb-6">
-                      <Image
+                      <img
                         src={step.image}
                         alt={`Step ${step.step}`}
-                        width={280}
-                        height={560}
                         className="w-full h-auto rounded-2xl"
-                        quality={100}
                       />
                     </div>
                     <p className="text-base md:text-lg">

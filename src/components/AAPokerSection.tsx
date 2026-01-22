@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Modal content data for each section
@@ -123,12 +122,10 @@ function LearnMoreModal({
                 transition={{ delay: 0.2 }}
                 className="relative w-full aspect-video mb-8 rounded-xl overflow-hidden"
               >
-                <Image
+                <img
                   src={content.image}
                   alt={content.title}
-                  fill
-                  className="object-contain"
-                  quality={100}
+                  className="absolute inset-0 w-full h-full object-contain"
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a2e1a] via-transparent to-transparent" />
@@ -188,12 +185,10 @@ function AnimatedImage({ src, alt, delay = 0 }: { src: string; alt: string; dela
         }}
         className="relative w-full h-full"
       >
-     <Image
+     <img
   src={src}
   alt={alt}
-  fill
-  className="object-contain scale-140 drop-shadow-[0_0_40px_rgba(57,203,97,0.4)]"
-  quality={100}
+  className="absolute inset-0 w-full h-full object-contain scale-140 drop-shadow-[0_0_40px_rgba(57,203,97,0.4)]"
 />
       </motion.div>
     </motion.div>

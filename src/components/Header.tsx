@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage, Language } from "@/context/LanguageContext";
@@ -62,13 +61,10 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
-            <Image
+            <img
               src="/image/home/logo/logotext-XjxNBhSC.png"
               alt="AA Poker"
-              width={100}
-              height={28}
               className="h-6 w-auto object-contain"
-              priority
             />
           </Link>
 

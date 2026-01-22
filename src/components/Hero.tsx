@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 
 // Hero slides data - 4 images + 1 video (each slide displays independently)
@@ -134,13 +133,10 @@ export default function Hero() {
             style={{ cursor: currentSlideData.clickAction ? 'pointer' : 'default' }}
           >
             {currentSlideData.type === "image" ? (
-              <Image
+              <img
                 src={currentSlideData.src}
                 alt={`Slide ${currentSlide + 1}`}
-                fill
-                className="object-cover object-center"
-                priority
-                quality={100}
+                className="absolute inset-0 w-full h-full object-cover object-center"
               />
             ) : (
               <video

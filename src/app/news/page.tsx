@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { newsArticles } from "@/data/news";
 import { useLanguage } from "@/context/LanguageContext";
@@ -46,13 +45,11 @@ export default function NewsPage() {
             className="lg:col-span-7 flex"
           >
             <Link href={`/news/${featuredNews.slug}`} className="group flex flex-col w-full overflow-hidden">
-              <div className="relative flex-1 overflow-hidden min-h-[300px]">
-                <Image
+              <div className="relative overflow-hidden bg-[#052e16]">
+                <img
                   src={featuredNews.image}
                   alt={featuredNews.title}
-                  fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  priority
+                  className="w-full h-auto object-contain transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
               {/* Phần text của tin chính */}
@@ -77,12 +74,11 @@ export default function NewsPage() {
               >
                 <Link href={`/news/${news.slug}`} className="group flex flex-1 bg-[#052e16] hover:bg-[#064e3b] transition-all duration-300 border border-[#14532d]/30">
                   {/* Thumbnail Side */}
-                  <div className="relative w-32 md:w-40 aspect-video flex-shrink-0 overflow-hidden">
-                    <Image
+                  <div className="relative w-32 md:w-40 flex-shrink-0 overflow-hidden bg-[#052e16]">
+                    <img
                       src={news.image}
                       alt={news.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-110"
                     />
                   </div>
                   
@@ -119,12 +115,11 @@ export default function NewsPage() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Link href={`/news/${news.slug}`} className="group block bg-[#052e16] p-0 overflow-hidden hover:border-[#f2e29e]/50 border border-transparent transition-all">
-                  <div className="relative aspect-[16/10] w-full overflow-hidden">
-                    <Image
+                  <div className="relative w-full overflow-hidden bg-[#052e16]">
+                    <img
                       src={news.image}
                       alt={news.title}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <div className="p-4">

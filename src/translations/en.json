@@ -24,6 +24,8 @@
   "news.title": "NEWS",
   "news.subtitle": "THE LATEST BRAND INFORMATION, ALL HERE",
   "news.moreInfo": "MORE INFORMATION",
+  "news.backToNews": "Back to News",
+  "news.relatedNews": "RELATED NEWS",
 
   "aaTeam.title": "AA TEAM",
   "aaTeam.subtitle": "WELCOME TO THE AA TEAM",
@@ -59,6 +61,14 @@
   "champions.subtitle": "OUR WORLD-CLASS PLAYERS",
   "champions.heroTitle": "THE PEAK SHOWDOWN VENUE • THE BIRTHPLACE OF LEGENDS",
   "champions.heroDesc": "AA Friends Circle brings the world's top poker masters and new forces together. They inject competitive charm into each game, making it more passionate and energetic. Go to AA POKER and log on now. Between wins and losses, legends are being born.",
+  
+  "champion.introduction": "INTRODUCTION",
+  "champion.totalLiveEarnings": "TOTAL LIVE EARNINGS",
+  "champion.bestLiveCash": "BEST LIVE CASH",
+  "champion.allTimeMoneyList": "ALL TIME MONEY LIST",
+  "champion.gpiRanking": "GLOBAL POKER INDEX RANKING",
+  "champion.playersHighlights": "PLAYERS' HIGHLIGHTS",
+  "champion.backToChampions": "Back to Champions",
 
   "footer.followUs": "FOLLOW US",
   "footer.download": "DOWNLOAD",

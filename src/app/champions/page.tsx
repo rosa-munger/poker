@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { mainChampions, secondRowChampions, thirdRowChampions, Champion } from "@/data/champions";
 import { useLanguage } from "@/context/LanguageContext";
@@ -31,17 +30,13 @@ function ChampionCard({ champion }: { champion: Champion }) {
         transition={{ duration: 0.2 }}
       >
         <div className="relative rounded-2xl overflow-hidden border border-[#2d5a3d]/30 hover:border-aa-gold/50 transition-all duration-300">
-          {/* Player Image - Larger aspect ratio */}
+          {/* Player Image - Larger aspect ratio, no overlay */}
           <div className="aspect-[3/4] relative overflow-hidden">
-            <Image
+            <img
               src={champion.image}
               alt={champion.name}
-              fill
-              className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-              sizes="(max-width: 768px) 50vw, 25vw"
-              quality={100}
+              className="absolute inset-0 w-full h-full object-cover object-top scale-110 transition-transform duration-500 group-hover:scale-115"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0a1f14]/90 via-transparent to-transparent z-10" />
           </div>
 
           {/* Player Name & Flag */}
@@ -66,14 +61,10 @@ export default function ChampionsPage() {
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
       {/* Hero Banner - No overlay, sharp image with borders */}
       <section className="relative h-[350px] md:h-[450px] overflow-hidden border-t-2 border-b-2 border-aa-gold/50">
-        <Image
+        <img
           src="/image/champions/sliders/aateambanner-DpojSoww.png"
           alt="AA Team Banner"
-          fill
-          className="object-cover object-center"
-          priority
-          quality={100}
-          sizes="100vw"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </section>
 

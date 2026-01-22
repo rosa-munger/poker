@@ -24,6 +24,8 @@
   "news.title": "新闻",
   "news.subtitle": "最新品牌资讯，尽在此处",
   "news.moreInfo": "更多资讯",
+  "news.backToNews": "返回新闻",
+  "news.relatedNews": "相关新闻",
 
   "aaTeam.title": "AA 战队",
   "aaTeam.subtitle": "欢迎来到 AA 战队",
@@ -59,6 +61,14 @@
   "champions.subtitle": "我们的世界级选手",
   "champions.heroTitle": "巅峰对决的舞台 • 传奇诞生的地方",
   "champions.heroDesc": "AA朋友圈汇聚了世界顶尖扑克大师和新生力量。他们为每场比赛注入竞技魅力，使其更加激情澎湃、活力四射。现在就登录AA POKER吧。在输赢之间，传奇正在诞生。",
+  
+  "champion.introduction": "人物介绍",
+  "champion.totalLiveEarnings": "现场总收入",
+  "champion.bestLiveCash": "最佳现场成绩",
+  "champion.allTimeMoneyList": "历史奖金榜排名",
+  "champion.gpiRanking": "全球扑克指数排名",
+  "champion.playersHighlights": "选手精彩集锦",
+  "champion.backToChampions": "返回冠军列表",
 
   "footer.followUs": "关注我们",
   "footer.download": "下载",
