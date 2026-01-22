@@ -34,18 +34,17 @@ export default function ChampionDetailPage() {
   }
 
   return (
-    <div className="min-h-screen pt-24 bg-[#0a1f14]">
+    <div className="min-h-screen pt-16 sm:pt-20 md:pt-24 bg-[#0a1f14]">
       {/* Hero Banner with Player Image - No overlay, full width */}
       <section className="relative w-full overflow-hidden">
         <img
           src={champion.bannerImage}
-          alt={champion.name}
-          className="w-full h-auto object-contain"
+          className="w-full h-auto object-contain max-h-[40vh] sm:max-h-[50vh] md:max-h-[60vh] lg:max-h-none"
         />
       </section>
 
       {/* Introduction Section */}
-      <section className="py-12">
+      <section className="py-6 sm:py-8 md:py-12">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
           <motion.div
@@ -76,7 +75,6 @@ export default function ChampionDetailPage() {
                 <div className="relative aspect-[3/4] overflow-hidden rounded-xl mb-6">
                   <img
                     src={champion.image}
-                    alt={champion.name}
                     className="absolute inset-0 w-full h-full object-cover object-top"
                   />
                 </div>

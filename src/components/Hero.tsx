@@ -110,7 +110,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[98vh] overflow-hidden pt-16">
+    <section className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden pt-16">
       {/* Top Golden Border */}
       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-aa-gold to-transparent z-20" />
       
@@ -136,13 +136,13 @@ export default function Hero() {
               <img
                 src={currentSlideData.src}
                 alt={`Slide ${currentSlide + 1}`}
-                className="absolute inset-0 w-full h-full object-cover object-center"
+                className="absolute inset-0 w-full h-full object-cover object-center md:object-contain"
               />
             ) : (
               <video
                 ref={videoRef}
                 src={currentSlideData.src}
-                className="w-full h-full object-cover object-center"
+                className="w-full h-full object-cover object-center md:object-contain"
                 muted
                 playsInline
                 autoPlay
@@ -155,7 +155,7 @@ export default function Hero() {
         </AnimatePresence>
 
         {/* Slide Indicators */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-10">
+        <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3 z-10">
           {heroSlides.map((_, index) => (
             <button
               key={index}

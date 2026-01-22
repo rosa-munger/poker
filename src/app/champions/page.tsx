@@ -34,7 +34,6 @@ function ChampionCard({ champion }: { champion: Champion }) {
           <div className="aspect-[3/4] relative overflow-hidden">
             <img
               src={champion.image}
-              alt={champion.name}
               className="absolute inset-0 w-full h-full object-cover object-top scale-110 transition-transform duration-500 group-hover:scale-115"
             />
           </div>
@@ -42,9 +41,7 @@ function ChampionCard({ champion }: { champion: Champion }) {
           {/* Player Name & Flag */}
           <div className="absolute bottom-0 left-0 right-0 p-4 z-20">
             <div className="flex items-center gap-2">
-              <span className="text-lg">{champion.countryFlag}</span>
               <h3 className="text-white font-bold text-sm tracking-wider uppercase">
-                {champion.name}
               </h3>
             </div>
           </div>
@@ -60,7 +57,7 @@ export default function ChampionsPage() {
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
       {/* Hero Banner - No overlay, sharp image with borders */}
-      <section className="relative h-[350px] md:h-[450px] overflow-hidden border-t-2 border-b-2 border-aa-gold/50">
+      <section className="relative h-[200px] sm:h-[280px] md:h-[350px] lg:h-[450px] overflow-hidden border-t-2 border-b-2 border-aa-gold/50">
         <img
           src="/image/champions/sliders/aateambanner-DpojSoww.png"
           alt="AA Team Banner"

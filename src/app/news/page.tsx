@@ -11,24 +11,31 @@ const sideNews = newsArticles.slice(1, 6);
 const moreNews = newsArticles.slice(6);
 
 export default function NewsPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+
+  // Get translated title based on language
+  const getTitle = (news: typeof featuredNews) => {
+    if (language === "cn") return news.title_cn || news.title;
+    if (language === "tw") return news.title_tw || news.title;
+    return news.title;
+  };
 
   return (
     <div 
       className="min-h-screen pt-24"
       style={{ background: "linear-gradient(180deg, #001d10, #011008)" }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Page Header */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-12"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-[#f2e29e] mb-4 tracking-widest uppercase">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#f2e29e] mb-3 sm:mb-4 tracking-widest uppercase">
             {t("news.title")}
           </h1>
-          <p className="text-white text-sm tracking-[0.3em] font-medium uppercase">
+          <p className="text-white text-xs sm:text-sm tracking-[0.2em] sm:tracking-[0.3em] font-medium uppercase">
             {t("news.subtitle")}
           </p>
         </motion.div>
@@ -55,7 +62,7 @@ export default function NewsPage() {
               {/* Phần text của tin chính */}
               <div className="bg-[#052e16] p-6 border-t border-[#14532d]">
                 <h2 className="text-white font-medium text-xl md:text-2xl leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                  {featuredNews.title}
+                  {getTitle(featuredNews)}
                 </h2>
                 <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">{featuredNews.date}</p>
               </div>
@@ -85,7 +92,7 @@ export default function NewsPage() {
                   {/* Content Side */}
                   <div className="flex flex-col justify-center p-3 flex-1 min-w-0">
                     <h3 className="text-white font-medium text-sm md:text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                      {news.title}
+                      {getTitle(news)}
                     </h3>
                     <p className="text-[#4ade80]/60 text-[11px] mt-2 italic">{news.date}</p>
                   </div>
@@ -124,7 +131,7 @@ export default function NewsPage() {
                   </div>
                   <div className="p-4">
                     <h3 className="text-white font-medium text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                      {news.title}
+                      {getTitle(news)}
                     </h3>
                     <p className="text-[#4ade80]/60 text-xs mt-3 italic">{news.date}</p>
                   </div>

@@ -2695,19 +2695,26 @@ export default function NewsDetailPage() {
     return article.title;
   };
 
+  // Get translated title for any news item
+  const getNewsTitle = (news: typeof article) => {
+    if (language === "cn" && news.title_cn) return news.title_cn;
+    if (language === "tw" && news.title_tw) return news.title_tw;
+    return news.title;
+  };
+
   return (
     <div 
       className="min-h-screen pt-24"
       style={{ background: "linear-gradient(180deg, #001d10, #011008)" }}
     >
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-4xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-8 sm:py-12 md:py-16">
         {/* Article Header */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-10"
         >
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-[#f2e29e] mb-6 leading-tight uppercase tracking-wide">
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#f2e29e] mb-4 sm:mb-6 leading-tight uppercase tracking-wide">
             {getTitle()}
           </h1>
           <p className="text-[#4ade80]/60 text-sm italic">
@@ -2865,7 +2872,7 @@ export default function NewsDetailPage() {
                 </div>
                 <div className="p-4">
                   <h4 className="text-white font-medium text-sm leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                    {news.title}
+                    {getNewsTitle(news)}
                   </h4>
                   <p className="text-[#4ade80]/60 text-xs mt-2 italic">{news.date}</p>
                 </div>
