@@ -245,11 +245,10 @@ export default function AAPokerSection() {
                 className="order-2 lg:order-1"
               >
                 <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green mb-6 leading-tight">
-                  THE MOST COMPREHENSIVE GAMEPLAY, &quot;I HAVE THE MOST AND THE BEST.&quot;
+                  {t("aaPoker.gameplay.title")}
                 </h3>
                 <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
-                  Our online gaming platform has the richest customizable
-                  configuration and the best experience, meeting diverse player needs with Texas Hold&apos;em, Omaha, Squid Game Mode, and more.
+                  {t("aaPoker.gameplay.desc")}
                 </p>
                 <motion.button
                   onClick={() => openModal('gameplay')}
@@ -285,7 +284,7 @@ export default function AAPokerSection() {
               className="mb-4"
             >
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
-                A VARIETY OF DESKTOPS, VISUAL IMPACT.
+                {t("aaPoker.visualImpact.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />
             </motion.div>
@@ -308,7 +307,7 @@ export default function AAPokerSection() {
                 transition={{ duration: 0.6 }}
               >
                 <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
-                  At AA POKER, we focus on the player experience, so we have a wide variety of table styles to freely switch between. We offer classic AA POKER tabletops, minimalist dark grey tabletops, stage theater tabletops, treasure hunting tabletops, mysterious space tabletops, cinema scene tabletops, ice and snow tabletops, sunny beach tabletops, and underwater world tabletops.
+                  {t("aaPoker.visualImpact.desc")}
                 </p>
                 <motion.button
                   onClick={() => openModal('visualImpact')}
@@ -336,7 +335,7 @@ export default function AAPokerSection() {
               className="mb-4"
             >
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
-                A DIVERSE POKER EXPERIENCE.
+                {t("aaPoker.experience.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />
             </motion.div>
@@ -351,7 +350,7 @@ export default function AAPokerSection() {
                 className="order-2 lg:order-1"
               >
                 <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
-                  TLPT originated in Sydney, Australia and is a global elite event aimed at promoting the globalization of international competitive poker. TLPT has a large player base worldwide, with nearly 15 world champions including Joe Hacham, Dan Cates, Zhou Quan, Chen Dong. All competitions follow the principles of professionalism, fairness, and transparency.
+                  {t("aaPoker.experience.desc")}
                 </p>
                 <motion.button
                   onClick={() => openModal('experience')}
@@ -388,7 +387,7 @@ export default function AAPokerSection() {
               className="mb-4"
             >
               <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
-                MULTI-DIMENSIONAL PROTECTION，A WORLD WITHOUT THIEVES
+                {t("aaPoker.protection.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />
             </motion.div>
@@ -411,7 +410,7 @@ export default function AAPokerSection() {
                 transition={{ duration: 0.6 }}
               >
                 <p className="text-white text-base md:text-lg mb-6 leading-relaxed">
-                  By detecting GPS and IP information to restrict cheating, and through a professional anti cheating team, monitoring game dynamics around the clock, we continuously combat cheating behavior and safeguard a fair gaming environment!
+                  {t("aaPoker.protection.desc")}
                 </p>
                 
                 {/* Protection Features Summary */}

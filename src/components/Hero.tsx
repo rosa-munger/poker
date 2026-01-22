@@ -110,7 +110,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-[90vh] overflow-hidden pt-16">
+    <section className="relative w-full h-[40vh] sm:h-[50vh] md:h-[70vh] lg:h-[85vh] overflow-hidden pt-16">
       {/* Top Golden Border */}
       <div className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-aa-gold to-transparent z-20" />
       
@@ -136,13 +136,13 @@ export default function Hero() {
               <img
                 src={currentSlideData.src}
                 alt={`Slide ${currentSlide + 1}`}
-                className="absolute inset-0 w-full h-full object-cover object-center md:object-contain"
+                className="absolute inset-0 w-full h-full object-contain object-center"
               />
             ) : (
               <video
                 ref={videoRef}
                 src={currentSlideData.src}
-                className="w-full h-full object-cover object-center md:object-contain"
+                className="w-full h-full object-contain object-center"
                 muted
                 playsInline
                 autoPlay

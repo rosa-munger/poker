@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
+import { motion, AnimatePresence } from "framer-motion";
 
 interface ContactInfo {
   id: string;
@@ -29,14 +30,7 @@ const contactList: ContactInfo[] = [
     username: "@AAPoker",
     copyText: "Telegram ID"
   },
-  {
-    id: "mchat",
-    name: "MChat",
-    logo: "/image/logo-cskh/mclogo.png",
-    qrCode: "/image/logo-cskh/QR-mchat.png",
-    username: "AAPoker",
-    copyText: "MChat ID"
-  },
+
   {
     id: "whatsapp",
     name: "WhatsApp",
@@ -51,6 +45,7 @@ export default function ContactButtons() {
   const { t } = useLanguage();
   const [activePopup, setActivePopup] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
+  const [isContactMenuOpen, setIsContactMenuOpen] = useState(false);
 
   // Initialize Tawk.to
   useEffect(() => {
@@ -93,67 +88,132 @@ export default function ContactButtons() {
 
   return (
     <>
-      {/* Floating Contact Buttons */}
-      <div className="fixed right-4 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-3">
-        {/* Sigua Button */}
-        <button
-          onClick={() => handleButtonClick("sigua")}
-          className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-white flex items-center justify-center"
-        >
-          <img
-            src="/image/logo-cskh/sigua-logo.png"
-            alt="Sigua"
-            className="w-12 h-12 object-cover"
-          />
-        </button>
+      {/* Floating Contact Toggle Button */}
+      <div className="fixed right-4 bottom-32 z-50 flex flex-col items-end gap-3">
+        {/* Contact Options - shown when menu is open */}
+        <AnimatePresence>
+          {isContactMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: 20, scale: 0.8 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 20, scale: 0.8 }}
+              transition={{ duration: 0.2 }}
+              className="flex flex-col gap-3"
+            >
+              {/* Sigua Button */}
+              <motion.button
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.05 }}
+                onClick={() => handleButtonClick("sigua")}
+                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+              >
+                <img
+                  src="/image/logo-cskh/sigua-logo.png"
+                  alt="Sigua"
+                  className="w-full h-full object-contain"
+                />
+              </motion.button>
 
-        {/* Telegram Button */}
-        <button
-          onClick={() => handleButtonClick("telegram")}
-          className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#0088cc] flex items-center justify-center"
-        >
-          <img
-            src="/image/logo-cskh/tglogo.png"
-            alt="Telegram"
-            className="w-12 h-12 object-cover"
-          />
-        </button>
+              {/* Telegram Button */}
+              <motion.button
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.1 }}
+                onClick={() => handleButtonClick("telegram")}
+                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+              >
+                <img
+                  src="/image/logo-cskh/tglogo.png"
+                  alt="Telegram"
+                  className="w-full h-full object-contain"
+                />
+              </motion.button>
 
-        {/* MChat Button */}
-        <button
-          onClick={() => handleButtonClick("mchat")}
-          className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#4CAF50] flex items-center justify-center"
-        >
-          <img
-            src="/image/logo-cskh/mclogo.png"
-            alt="MChat"
-            className="w-12 h-12 object-cover"
-          />
-        </button>
+              {/* MChat Button */}
+              {/* <motion.button
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.15 }}
+                onClick={() => handleButtonClick("mchat")}
+                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+              >
+                <img
+                  src="/image/logo-cskh/mclogo.png"
+                  alt="MChat"
+                  className="w-full h-full object-contain"
+                />
+              </motion.button> */}
 
-        {/* WhatsApp Button */}
-        <button
-          onClick={() => handleButtonClick("whatsapp")}
-          className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#25D366] flex items-center justify-center"
-        >
-          <img
-            src="/image/logo-cskh/logo-whatsapp.png"
-            alt="WhatsApp"
-            className="w-12 h-12 object-cover"
-          />
-        </button>
+              {/* WhatsApp Button */}
+              <motion.button
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.2 }}
+                onClick={() => handleButtonClick("whatsapp")}
+                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+              >
+                <img
+                  src="/image/logo-cskh/logo-whatsapp.png"
+                  alt="WhatsApp"
+                  className="w-full h-full object-contain"
+                />
+              </motion.button>
 
-        {/* Customer Service (Tawk.to) Button */}
-        <button
-          onClick={() => handleButtonClick("kf")}
-          className="w-12 h-12 rounded-full overflow-hidden shadow-lg hover:scale-110 transition-transform duration-200 bg-[#4CAF50] flex items-center justify-center"
+              {/* Customer Service Button */}
+              <motion.button
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: 20 }}
+                transition={{ delay: 0.25 }}
+                onClick={() => handleButtonClick("kf")}
+                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-white flex items-center justify-center p-1"
+              >
+                <img
+                  src="/image/logo-cskh/kf.png"
+                  alt="Customer Service"
+                  className="w-full h-full object-contain"
+                />
+              </motion.button>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Main Toggle Button */}
+        <motion.button
+          onClick={() => setIsContactMenuOpen(!isContactMenuOpen)}
+          className="w-16 h-16 rounded-full shadow-xl bg-gradient-to-r from-[#c9a962] to-[#d4b87a] flex items-center justify-center hover:scale-110 transition-all duration-300"
+          animate={{ rotate: isContactMenuOpen ? 45 : 0 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
-          <img
-            src="/image/logo-cskh/kf.png"
-            alt="Customer Service"
-            className="w-12 h-12 object-cover"
-          />
-        </button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-7 w-7 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            {isContactMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
+              />
+            )}
+          </svg>
+        </motion.button>
       </div>
 
       {/* QR Code Popup */}
