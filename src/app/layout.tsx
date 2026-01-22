@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://aapoker.top",
     siteName: "AA POKER",
-    title: "AA POKER - Premium Online Poker Platform",
+    title: "AA POKER",
     description: "AA POKER - A World With No Cheating. Premium anti-cheat system with AA Green Shield Plus protection.",
     images: [
       {
@@ -59,8 +59,9 @@ export const metadata: Metadata = {
     images: ["/image/home/logo/logotext-XjxNBhSC.png"],
   },
   icons: {
-    icon: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/image/icon-logo-tab.png",
+    apple: "/image/icon-logo-tab.png",
+    shortcut: "/image/icon-logo-tab.png",
   },
   alternates: {
     languages: {
