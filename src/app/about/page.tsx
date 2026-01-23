@@ -53,14 +53,6 @@ export default function AboutPage() {
           
           <div className="space-y-6">
             {/* Customer Service */}
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-2">
-                {t("about.customerService")}
-              </h3>
-              <p className="text-white/80">
-                {t("about.pleaseContact")}: <a href="mailto:info@aapoker.app" className="text-aa-gold hover:text-aa-gold/80 transition-colors">info@aapoker.app</a>
-              </p>
-            </div>
 
             {/* Brand Cooperation */}
             <div>
@@ -68,17 +60,7 @@ export default function AboutPage() {
                 {t("about.brandCooperation")}
               </h3>
               <p className="text-white/80">
-                {t("about.pleaseContact")}: <a href="mailto:branding@aapoker.app" className="text-aa-gold hover:text-aa-gold/80 transition-colors">branding@aapoker.app</a>
-              </p>
-            </div>
-
-            {/* Public Relations Inquiry */}
-            <div>
-              <h3 className="text-white font-semibold text-lg mb-2">
-                {t("about.publicRelations")}
-              </h3>
-              <p className="text-white/80">
-                {t("about.pleaseContact")}: <a href="mailto:pr@aapoker.app" className="text-aa-gold hover:text-aa-gold/80 transition-colors">pr@aapoker.app</a>
+                {t("about.pleaseContact")}: <a href="mailto:mixue66@outlook.com" className="text-aa-gold hover:text-aa-gold/80 transition-colors">branding@aapoker.app</a>
               </p>
             </div>
           </div>

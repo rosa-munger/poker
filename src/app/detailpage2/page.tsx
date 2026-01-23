@@ -2,8 +2,20 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function DetailPage2() {
+  const { language } = useLanguage();
+
+  const getImagePath = () => {
+    if (language === "tw") {
+      return "/image/home/sliders/click-banner-tw/12en-detail-BRbnQXcV.jpg";
+    } else if (language === "cn") {
+      return "/image/home/sliders/click-banner-cn/12en-detail-BRbnQXcV.jpg";
+    }
+    return "/image/home/sliders/click-banner/12en-detail-BRbnQXcV.jpg";
+  };
+
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
       {/* Back Button */}
@@ -27,7 +39,7 @@ export default function DetailPage2() {
       >
         <div className="relative w-full">
           <img
-            src="/image/home/sliders/click-banner/12en-detail-BRbnQXcV.jpg"
+            src={getImagePath()}
             alt="Detail Page 2"
             className="w-full h-auto object-contain"
           />

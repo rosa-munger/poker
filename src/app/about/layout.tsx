@@ -25,9 +25,9 @@ export default function AboutLayout({
         <h1>About AA POKER - Premium Online Poker Platform</h1>
         <p>In AA POKER, we strive to provide a safe and fair game platform for all poker enthusiasts. Using AA POKER, you can play poker with friends anytime, anywhere, to create your own club or create a fast card, select your favorite poker game from our popular options.</p>
         <h2>Contact AA POKER</h2>
-        <p>Customer Service: info@aapoker.app</p>
-        <p>Brand Cooperation: branding@aapoker.app</p>
-        <p>Public Relations: pr@aapoker.app</p>
+
+        <p>Brand Cooperation: mixue66@outlook.com</p>
+
       </div>
       {children}
     </>

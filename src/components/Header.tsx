@@ -8,9 +8,9 @@ import { useLanguage, Language } from "@/context/LanguageContext";
 
 // Language options with flags
 const languages = [
-  { code: "cn" as Language, name: "简体中文", flag: "CN" },
-  { code: "tw" as Language, name: "繁體中文", flag: "TW" },
-  { code: "en" as Language, name: "ENGLISH", flag: "US" },
+  { code: "cn" as Language, name: "简体中文"},
+  { code: "tw" as Language, name: "繁體中文"},
+  { code: "en" as Language, name: "ENGLISH"},
 ];
 
 export default function Header() {
@@ -91,7 +91,7 @@ export default function Header() {
                 }}
                 className="flex items-center gap-2 text-white hover:text-aa-gold transition-colors text-base font-bold tracking-wider"
               >
-                <span>{currentLang.flag}</span>
+
                 <span>LANGUAGE</span>
                 <svg
                   className={`w-4 h-4 transition-transform ${
@@ -132,7 +132,6 @@ export default function Header() {
                             : "text-white"
                         }`}
                       >
-                        <span>{lang.flag}</span>
                         <span className="text-sm">{lang.name}</span>
                       </button>
                     ))}
@@ -216,7 +215,6 @@ export default function Header() {
                         : "text-white hover:bg-aa-emerald/10"
                     }`}
                   >
-                    <span>{lang.flag}</span>
                     <span className="text-sm">{lang.name}</span>
                   </button>
                 ))}

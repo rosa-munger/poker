@@ -2,8 +2,29 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function DetailPage1() {
+  const { language } = useLanguage();
+
+  const getImagePath = () => {
+    if (language === "tw") {
+      return "/image/home/sliders/click-banner-tw/detail1en-B6Rh6eCE.jpg";
+    } else if (language === "cn") {
+      return "/image/home/sliders/click-banner-cn/detail1en-B6Rh6eCE.jpg";
+    }
+    return "/image/home/sliders/click-banner/detail1en-B6Rh6eCE.jpg";
+  };
+
+  const getVideoPath = () => {
+    if (language === "tw") {
+      return "/image/home/sliders/click-banner-tw/9ft-CrRxf2ym.mp4";
+    } else if (language === "cn") {
+      return "/image/home/sliders/click-banner-cn/9-Tf4912mH.mp4";
+    }
+    return "/image/home/sliders/video-clickview/9en-JP1GSTuZ.mp4";
+  };
+
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
       {/* Back Button */}
@@ -28,7 +49,7 @@ export default function DetailPage1() {
         {/* Top Half of Image */}
         <div className="relative w-full">
           <img
-            src="/image/home/sliders/click-banner/detail1en-B6Rh6eCE.jpg"
+            src={getImagePath()}
             alt="Detail Page 1"
             className="w-full h-auto object-contain"
           />

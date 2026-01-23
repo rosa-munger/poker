@@ -3,40 +3,49 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
+import { useLanguage } from "@/context/LanguageContext";
 
-// Hero slides data - 4 images + 1 video (each slide displays independently)
-const heroSlides = [
-  {
-    id: 1,
-    type: "image",
-    src: "/image/home/sliders/8en-ubWAozgr.png",
-    clickAction: "detailpage1",
-  },
-  {
-    id: 2,
-    type: "image",
-    src: "/image/home/sliders/9en-BQNC1io5.jpg",
-    clickAction: "videoModal",
-  },
-  {
-    id: 3,
-    type: "video",
-    src: "/image/home/sliders/10en-D54NV-2V.mp4",
-    clickAction: null,
-  },
-  {
-    id: 4,
-    type: "image",
-    src: "/image/home/sliders/12en-QURR5ufU.jpg",
-    clickAction: "detailpage2",
-  },
-  {
-    id: 5,
-    type: "image",
-    src: "/image/home/sliders/5-D7UNhhia.png",
-    clickAction: null,
-  },
-];
+// Hero slides data - language-specific images
+const getHeroSlides = (language: string) => {
+  const langFolder = language === 'cn' ? 'sliders-CN' : language === 'tw' ? 'sliders-TW' : '';
+  const basePath = langFolder ? `/image/home/sliders/${langFolder}` : '/image/home/sliders';
+  const clickBannerFolder = language === 'cn' ? 'click-banner-cn' : language === 'tw' ? 'click-banner-tw' : 'click-banner';
+  
+  return [
+    {
+      id: 1,
+      type: "image",
+      src: `${basePath}/8en-ubWAozgr.png`,
+      clickAction: "detailpage1",
+      clickBannerSrc: `/image/home/sliders/${clickBannerFolder}/detail1-CStQojDVj.jpg`,
+      clickBannerType: "image",
+    },
+    {
+      id: 2,
+      type: "image",
+      src: `${basePath}/9en-BQNC1io5.jpg`,
+      clickAction: "detailpage3",
+    },
+    {
+      id: 3,
+      type: "video",
+      src: `${basePath}/10en-D54NV-2V.mp4`,
+      clickAction: "detailpage3",
+    },
+    {
+      id: 4,
+      type: "image",
+      src: `${basePath}/12en-QURR5ufU.jpg`,
+      clickAction: "detailpage2",
+    },
+    {
+      id: 5,
+      type: "image",
+      src: `${basePath}/5-D7UNhhia.png`,
+      clickAction: null,
+    },
+  ];
+};
 
 // Slide animation variants - smooth left to right transition
 const slideVariants = {
@@ -57,15 +66,24 @@ const slideVariants = {
 };
 
 export default function Hero() {
+  const { language } = useLanguage();
   const [[currentSlide, direction], setSlideState] = useState([0, 1]);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [showVideoModal, setShowVideoModal] = useState(false);
   const router = useRouter();
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
+  
+  // Get language-specific slides
+  const heroSlides = getHeroSlides(language);
+
+  // Reset to first slide when language changes
+  useEffect(() => {
+    setSlideState([0, 1]);
+  }, [language]);
 
   // Navigate to next slide
   const nextSlide = useCallback(() => {
     setSlideState(([prev]) => [(prev + 1) % heroSlides.length, 1]);
-  }, []);
+  }, [heroSlides.length]);
 
   // Navigate to specific slide
   const goToSlide = (index: number) => {
@@ -100,13 +118,23 @@ export default function Hero() {
   // Handle slide click
   const handleSlideClick = () => {
     const action = currentSlideData.clickAction;
-    if (action === "videoModal") {
-      setShowVideoModal(true);
-    } else if (action === "detailpage1") {
+    if (action === "detailpage1") {
       router.push("/detailpage1");
     } else if (action === "detailpage2") {
       router.push("/detailpage2");
+    } else if (action === "detailpage3") {
+      setIsVideoModalOpen(true);
     }
+  };
+
+  // Get video path based on language
+  const getModalVideoPath = () => {
+    if (language === "tw") {
+      return "/image/home/sliders/click-banner-tw/9ft-CrRxf2ym.mp4";
+    } else if (language === "cn") {
+      return "/image/home/sliders/click-banner-cn/9-Tf4912mH.mp4";
+    }
+    return "/image/home/sliders/video-clickview/9en-JP1GSTuZ.mp4";
   };
 
   return (
@@ -175,37 +203,42 @@ export default function Hero() {
 
       {/* Video Modal */}
       <AnimatePresence>
-        {showVideoModal && (
+        {isVideoModalOpen && (
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
-            onClick={() => setShowVideoModal(false)}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60"
+            onClick={() => setIsVideoModalOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.9 }}
-              className="relative w-full max-w-4xl"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              transition={{ type: "spring", duration: 0.5 }}
+              className="relative w-full max-w-3xl"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="border-8 border-white rounded-lg overflow-hidden">
-                <video
-                  src="/image/home/sliders/video-clickview/9en-JP1GSTuZ.mp4"
-                  className="w-full h-full object-contain"
-                  controls
-                  autoPlay
-                />
-              </div>
+              {/* Close Button */}
               <button
-                onClick={() => setShowVideoModal(false)}
-                className="absolute -top-12 right-0 text-white hover:text-aa-gold transition-colors"
+                onClick={() => setIsVideoModalOpen(false)}
+                className="absolute -top-12 right-0 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
               >
-                <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               </button>
+
+              {/* Video Container with Border */}
+              <div className="border-8 border-white rounded-lg overflow-hidden bg-black">
+                <video
+                  src={getModalVideoPath()}
+                  className="w-full h-auto"
+                  controls
+                  autoPlay
+                  poster="/image/home/sliders/9en-BQNC1io5.jpg"
+                />
+              </div>
             </motion.div>
           </motion.div>
         )}
