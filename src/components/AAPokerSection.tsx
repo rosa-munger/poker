@@ -4,61 +4,61 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 
-// Modal content data for each section
-const modalContent = {
+// Modal content data structure - content will be populated with translations
+const getModalContent = (t: (key: string) => string) => ({
   gameplay: {
-    title: 'THE MOST COMPREHENSIVE GAMEPLAY, "I HAVE THE MOST AND THE BEST."',
+    title: t("aaPoker.gameplay.title"),
     image: "/image/home/section-aa-poker/1en-DsyJUMia.png",
-    description: "So far, it has the richest and best customized configuration among all online game platforms, meeting the different needs of various groups: Texas Hold'em, Texas Short Cards, Texas 3-1, Omaha, Squid Game Mode, Video Table, Mushroom Mode, Critical Strike Bottom Pool Jackpot, Insurance mode.",
+    description: t("modal.gameplay.description"),
     features: [
-      { title: "CLASSIC TEXAS HOLD'EM", desc: "Use your two trump cards and five common cards to make the best five cards." },
-      { title: "TEXAS SHORT CARD", desc: "Remove 2-5 and use 6-A with a total of 36 cards in the Texas gameplay." },
-      { title: "TEXAS 3-1", desc: "Play three cards, choose one to discard, and use the remaining two cards." },
-      { title: "VIDEO POKER TABLE", desc: "Play cards face-to-face with your friends in real-time!" },
-      { title: "MUSHROOM MODE", desc: "Each hand's banker places a bet on the mushroom pool for big wins!" },
-      { title: "SQUID GAME", desc: "Survival competition mode based on the evolution of Texas Hold'em rules." },
-      { title: "OMAHA POKER", desc: "An intellectual battlefield where absolute card strength speaks for itself." },
+      { title: t("modal.gameplay.classicTexas"), desc: t("modal.gameplay.classicTexasDesc") },
+      { title: t("modal.gameplay.shortCard"), desc: t("modal.gameplay.shortCardDesc") },
+      { title: t("modal.gameplay.texas31"), desc: t("modal.gameplay.texas31Desc") },
+      { title: t("modal.gameplay.videoTable"), desc: t("modal.gameplay.videoTableDesc") },
+      { title: t("modal.gameplay.mushroom"), desc: t("modal.gameplay.mushroomDesc") },
+      { title: t("modal.gameplay.squidGame"), desc: t("modal.gameplay.squidGameDesc") },
+      { title: t("modal.gameplay.omaha"), desc: t("modal.gameplay.omahaDesc") },
     ],
   },
   visualImpact: {
-    title: "A VARIETY OF DESKTOPS, VISUAL IMPACT.",
+    title: t("aaPoker.visualImpact.title"),
     image: "/image/home/section-visual-impact/2-CB-uKVn3.png",
-    description: "At AA POKER, we focus on the player experience, so we have a wide variety of table styles to freely switch between.",
+    description: t("modal.visualImpact.description"),
     features: [
-      { title: "CLASSIC AA POKER TABLETOPS", desc: "The signature green felt table that defines the AA POKER experience." },
-      { title: "MINIMALIST DARK GREY", desc: "A sleek, modern design for a sophisticated aesthetic." },
-      { title: "STAGE THEATER TABLETOPS", desc: "Feel like a star under the spotlight with this dramatic design." },
-      { title: "TREASURE HUNTING", desc: "Adventure-themed table with maps and gold accents." },
-      { title: "MYSTERIOUS SPACE", desc: "Play among the stars with galaxies and nebulas." },
-      { title: "UNDERWATER WORLD", desc: "Dive deep into the ocean with marine life and coral reefs." },
+      { title: t("modal.visualImpact.classicTable"), desc: t("modal.visualImpact.classicTableDesc") },
+      { title: t("modal.visualImpact.darkGrey"), desc: t("modal.visualImpact.darkGreyDesc") },
+      { title: t("modal.visualImpact.theater"), desc: t("modal.visualImpact.theaterDesc") },
+      { title: t("modal.visualImpact.treasure"), desc: t("modal.visualImpact.treasureDesc") },
+      { title: t("modal.visualImpact.space"), desc: t("modal.visualImpact.spaceDesc") },
+      { title: t("modal.visualImpact.underwater"), desc: t("modal.visualImpact.underwaterDesc") },
     ],
   },
   experience: {
-    title: "A DIVERSE POKER EXPERIENCE.",
+    title: t("aaPoker.experience.title"),
     image: "/image/home/section-experience/5-CXEJETLl.png",
-    description: "TLPT originated in Sydney, Australia and is a global elite event aimed at promoting the globalization of international competitive poker.",
+    description: t("modal.experience.description"),
     features: [
-      { title: "GLOBAL ELITE EVENTS", desc: "World-class poker tournaments that attract the best players." },
-      { title: "WORLD CHAMPIONS", desc: "Play alongside nearly 15 world champions including Joe Hacham, Dan Cates." },
-      { title: "PROFESSIONALISM", desc: "All competitions follow strict professional standards." },
-      { title: "FAIRNESS", desc: "Every player has an equal opportunity to succeed." },
-      { title: "TRANSPARENCY", desc: "Complete transparency in all our operations." },
+      { title: t("modal.experience.globalEvents"), desc: t("modal.experience.globalEventsDesc") },
+      { title: t("modal.experience.worldChampions"), desc: t("modal.experience.worldChampionsDesc") },
+      { title: t("modal.experience.professionalism"), desc: t("modal.experience.professionalismDesc") },
+      { title: t("modal.experience.fairness"), desc: t("modal.experience.fairnessDesc") },
+      { title: t("modal.experience.transparency"), desc: t("modal.experience.transparencyDesc") },
     ],
   },
   protection: {
-    title: "MULTI-DIMENSIONAL PROTECTION，A WORLD WITHOUT THIEVES",
+    title: t("aaPoker.protection.title"),
     image: "/image/home/section-multi-demensional/4-Qsc4xHEz.png",
-    description: "By detecting GPS and IP information to restrict cheating, and through a professional anti cheating team, monitoring game dynamics around the clock.",
+    description: t("modal.protection.description"),
     features: [
-      { title: "GLI GLOBAL FAIR CERTIFICATION", desc: "Renewed through GLI certification testing with fair random card issuance." },
-      { title: "GPS/IP PROTECTION", desc: "Customized GPS and IP restrictions to minimize cheating." },
-      { title: "ANTI CHEATING TEAM", desc: "Dedicated team monitoring game cheating behavior 24/7." },
-      { title: "PROHIBITING DATA COLLECTION", desc: "Block third-party data collection tools." },
-      { title: "PROHIBITING SIMULATORS", desc: "Prevent the use of simulators and emulators." },
-      { title: "PROHIBITING AI", desc: "Strictly prohibit AI-powered tools or bots." },
+      { title: t("modal.protection.gliCert"), desc: t("modal.protection.gliCertDesc") },
+      { title: t("modal.protection.gpsIp"), desc: t("modal.protection.gpsIpDesc") },
+      { title: t("modal.protection.antiCheat"), desc: t("modal.protection.antiCheatDesc") },
+      { title: t("modal.protection.dataCollection"), desc: t("modal.protection.dataCollectionDesc") },
+      { title: t("modal.protection.simulators"), desc: t("modal.protection.simulatorsDesc") },
+      { title: t("modal.protection.ai"), desc: t("modal.protection.aiDesc") },
     ],
   },
-};
+});
 
 // Modal Component
 function LearnMoreModal({ 
@@ -68,7 +68,7 @@ function LearnMoreModal({
 }: { 
   isOpen: boolean; 
   onClose: () => void; 
-  content: typeof modalContent.gameplay | null;
+  content: { title: string; image: string; description: string; features: { title: string; desc: string }[] } | null;
 }) {
   if (!content) return null;
 
@@ -143,7 +143,7 @@ function LearnMoreModal({
 
               {/* Features Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {content.features.map((feature, index) => (
+                {content.features.map((feature: { title: string; desc: string }, index: number) => (
                   <motion.div
                     key={feature.title}
                     initial={{ opacity: 0, x: -20 }}
@@ -197,9 +197,10 @@ function AnimatedImage({ src, alt, delay = 0 }: { src: string; alt: string; dela
 
 export default function AAPokerSection() {
   const { t } = useLanguage();
-  const [activeModal, setActiveModal] = useState<keyof typeof modalContent | null>(null);
+  const [activeModal, setActiveModal] = useState<'gameplay' | 'visualImpact' | 'experience' | 'protection' | null>(null);
+  const modalContent = getModalContent(t);
 
-  const openModal = (key: keyof typeof modalContent) => {
+  const openModal = (key: 'gameplay' | 'visualImpact' | 'experience' | 'protection') => {
     setActiveModal(key);
     document.body.style.overflow = 'hidden';
   };
@@ -417,15 +418,15 @@ export default function AAPokerSection() {
                 <div className="space-y-3 mb-8">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 mt-2 bg-aa-light-green rounded-full" />
-                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">GLI GLOBAL FAIR CERTIFICATION</strong> - Completely fair testing with random card issuance.</p>
+                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">{t("modal.protection.gliCert")}</strong> - {t("modal.protection.gliCertDesc")}</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 mt-2 bg-aa-light-green rounded-full" />
-                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">GPS/IP PROTECTION</strong> - Customized restrictions to minimize cheating.</p>
+                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">{t("modal.protection.gpsIp")}</strong> - {t("modal.protection.gpsIpDesc")}</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 mt-2 bg-aa-light-green rounded-full" />
-                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">ANTI CHEATING TEAM</strong> - 24/7 monitoring of game cheating behavior.</p>
+                    <p className="text-white/90 text-sm"><strong className="text-aa-light-green">{t("modal.protection.antiCheat")}</strong> - {t("modal.protection.antiCheatDesc")}</p>
                   </div>
                 </div>
 

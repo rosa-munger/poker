@@ -72,6 +72,53 @@ export const metadata: Metadata = {
   },
 };
 
+// JSON-LD Structured Data for SEO
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AA POKER",
+  url: "https://www.aapoker.top",
+  logo: "https://www.aapoker.top/image/home/logo/logotext-XjxNBhSC.png",
+  description: "AA POKER - Premium Online Poker Platform with Anti-Cheat Protection. Play Texas Hold'em, Omaha, and more.",
+  sameAs: [
+    "https://www.youtube.com/@aapoker",
+    "https://www.facebook.com/aapoker",
+    "https://www.instagram.com/aapoker"
+  ],
+  contactPoint: {
+    "@type": "ContactPoint",
+    email: "info@aapoker.app",
+    contactType: "customer service"
+  }
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "AA POKER",
+  url: "https://www.aapoker.top",
+  description: "Premium Online Poker Platform with Anti-Cheat Protection",
+  potentialAction: {
+    "@type": "SearchAction",
+    target: "https://www.aapoker.top/news?search={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+};
+
+const softwareJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "AA POKER",
+  operatingSystem: "iOS, Android",
+  applicationCategory: "GameApplication",
+  description: "Premium online poker app with Texas Hold'em, Omaha, and anti-cheat protection.",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "USD"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -79,6 +126,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* JSON-LD Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
+        />
+      </head>
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased`}
       >

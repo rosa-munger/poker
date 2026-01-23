@@ -16,7 +16,7 @@ export default function Footer() {
               href="/terms"
               className="block text-white hover:text-aa-gold transition-colors font-semibold tracking-wider text-sm"
             >
-              TERMS OF USE
+              {t("footer.termsOfUse")}
             </Link>
             <Link
               href="/download"
@@ -48,7 +48,7 @@ export default function Footer() {
 
             {/* Copyright */}
             <p className="text-aa-gray text-sm">
-              COPYRIGHT©AA POKER. All RIGHTS RESERVED.
+              {t("footer.copyright")}
             </p>
           </div>
         </div>

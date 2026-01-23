@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Security features
 const securityFeatures = [
@@ -14,6 +15,8 @@ const securityFeatures = [
 ];
 
 export default function GreenShield() {
+  const { t } = useLanguage();
+  
   return (
     <section className="py-20 relative overflow-hidden bg-gradient-to-b from-aa-dark-green via-emerald-950/30 to-aa-darker-green">
       {/* Background Glow */}
@@ -143,19 +146,17 @@ export default function GreenShield() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-tight">
-              <span className="text-aa-light-green">MULTI-DIMENSIONAL PROTECTION</span>
-              <span className="text-white block mt-2">，A WORLD WITHOUT THIEVES</span>
+            <h3 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-white">
+              {t("aaPoker.protection.title")}
             </h3>
             <p className="text-aa-gray mb-8">
-              AA Green Shield risk control system ensures game safety
-              and protects competitive justice in all aspects. AA POKER i...
+              {t("aaPoker.protection.desc")}
             </p>
             <Link
               href="/download"
               className="text-aa-gold hover:text-aa-gold-light transition-colors font-semibold tracking-wider inline-flex items-center gap-2"
             >
-              LEARN MORE
+              {t("aaPoker.learnMore")}
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
               </svg>

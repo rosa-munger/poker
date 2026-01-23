@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 // Feature data for "Your First Choice" section
 const gameFeatures = [
@@ -58,6 +59,8 @@ const GameIcon = ({ type }: { type: string }) => {
 };
 
 export default function Features() {
+  const { t } = useLanguage();
+  
   return (
     <>
       {/* Your First Choice Section */}
@@ -71,10 +74,10 @@ export default function Features() {
             className="text-center mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-              AA POKER
+              {t("aaPoker.title")}
             </h2>
             <p className="text-aa-gray text-sm tracking-wider">
-              YOUR FIRST CHOICE OF HOME GAME
+              {t("aaPoker.subtitle")}
             </p>
           </motion.div>
 
@@ -87,17 +90,16 @@ export default function Features() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                THE MOST COMPREHENSIVE GAMEPLAY, "I HAVE THE MOST AND THE BEST."
+                {t("aaPoker.gameplay.title")}
               </h3>
               <p className="text-aa-gray mb-8">
-                Our online gaming platform has the richest customizable
-                configuration and the best experience, it meets the diverse...
+                {t("aaPoker.gameplay.desc")}
               </p>
               <Link
                 href="/download"
                 className="text-aa-gold hover:text-aa-gold-light transition-colors font-semibold tracking-wider inline-flex items-center gap-2"
               >
-                LEARN MORE
+                {t("aaPoker.learnMore")}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                 </svg>
@@ -257,17 +259,16 @@ export default function Features() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                A VARIETY OF DESKTOPS, VISUAL IMPACT.
+                {t("aaPoker.visualImpact.title")}
               </h3>
               <p className="text-aa-gray mb-8">
-                In AA POKER, we attach great importance to the player
-                experience, so we have a wide range of table styles to swit...
+                {t("aaPoker.visualImpact.desc")}
               </p>
               <Link
                 href="/download"
                 className="text-aa-gold hover:text-aa-gold-light transition-colors font-semibold tracking-wider inline-flex items-center gap-2"
               >
-                LEARN MORE
+                {t("aaPoker.learnMore")}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                 </svg>
@@ -289,17 +290,16 @@ export default function Features() {
               transition={{ duration: 0.6 }}
             >
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
-                A DIVERSE POKER EXPERIENCE.
+                {t("aaPoker.experience.title")}
               </h3>
               <p className="text-aa-gray mb-8">
-                We continue to evolve to create the best possible poker
-                experience for you, guided by the principles of...
+                {t("aaPoker.experience.desc")}
               </p>
               <Link
                 href="/download"
                 className="text-aa-gold hover:text-aa-gold-light transition-colors font-semibold tracking-wider inline-flex items-center gap-2"
               >
-                LEARN MORE
+                {t("aaPoker.learnMore")}
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/>
                 </svg>

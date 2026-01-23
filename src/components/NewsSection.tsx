@@ -51,7 +51,7 @@ export default function NewsSection() {
               {/* Nội dung tin chính */}
               <div className="p-6 flex-1 flex flex-col justify-center border-t border-[#14532d]">
                 <h3 className="text-white text-lg md:text-xl font-medium leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                  {featuredNews.title}
+                  {getTitle(featuredNews)}
                 </h3>
                 <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">
                   {featuredNews.date}
@@ -79,7 +79,7 @@ export default function NewsSection() {
                 {/* Nội dung tin phụ */}
                 <div className="flex flex-col justify-center p-3 flex-1 min-w-0">
                   <h4 className="text-white text-[13px] md:text-sm font-medium leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
-                    {news.title}
+                    {getTitle(news)}
                   </h4>
                   <p className="text-[#4ade80]/60 text-[11px] mt-1 italic">
                     {news.date}
