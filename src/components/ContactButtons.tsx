@@ -27,7 +27,7 @@ const contactList: ContactInfo[] = [
     name: "Telegram",
     logo: "/image/logo-cskh/tglogo.png",
     qrCode: "/image/logo-cskh/QR-telegram.jpg",
-    username: "@AAPoker",
+    username: "@aapklaochen",
     copyText: "Telegram ID"
   },
 
@@ -36,7 +36,7 @@ const contactList: ContactInfo[] = [
     name: "WhatsApp",
     logo: "/image/logo-cskh/logo-whatsapp.png",
     qrCode: "/image/logo-cskh/QR-WhatsApp.jpg",
-    username: "+1234567890",
+    username: "",
     copyText: "WhatsApp"
   }
 ];
