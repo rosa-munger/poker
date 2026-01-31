@@ -77,14 +77,14 @@ export default function FriendsSection() {
   const visibleFriends = friends.slice(currentIndex, currentIndex + visibleCount);
 
   return (
-    <section className="py-20 relative overflow-hidden bg-[#0a1f14]">
+    <section className="py-6 sm:py-20 relative overflow-hidden bg-[#0a1f14]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-4 sm:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
             {t("friends.title")}

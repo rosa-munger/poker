@@ -2799,7 +2799,451 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "poker-tour-co-founder-bags-25k-high-roller-title-jeju": {
-    heroImage: "/image/news/details-news/new42/1-DMxCeEBv.jpg",
+    heroImage: "/image/news/details-news/new42/1en-CVOojHFm.jpg",
+    heroImage_tw: "/image/news/details-news/new46/1-B38ISDrC.jpg",
+    sections_tw: [
+      {
+        type: "paragraph",
+        content: "在碧海藍天的濟州島，峻拿山雲霧繚繞，火山岩海岸蜿蜒如畫，這座被譽為「東方夏威夷」的度假勝地再次見證撲克傳奇。美國選手Stephen Song剛剛在賽事#9：豪客主賽奪冠後，再一次拿下賽事#11：$20K超豪賽的冠軍。同時，5月20日，賽事#12：$25K超豪賽也開啟了Day1，並在次日打出了冠軍。"
+      },
+      {
+        type: "paragraph",
+        content: "至此，2025 TLPT濟州島系列賽完美收官。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/1-B38ISDrC.jpg",
+        alt: "Final Table"
+      },
+      {
+        type: "heading",
+        content: "賽事#11：$20K TLPT超豪賽"
+      },
+      {
+        type: "paragraph",
+        content: "這是Stephen Song 7天內第三次闖入決賽桌，並且是以領先者的姿態登場。儘管中途曾被亞軍Calvin Lee短暫反超，但他始終穩居前列並最終Day1，並在次日打出了冠軍。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/2-B0exlrlP.jpg",
+        alt: "TLPT Event"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/3-BL4jGTHd.jpg",
+        alt: "Stephen Song Champion"
+      },
+      {
+        type: "paragraph",
+        content: "在開始單挑前，雙方達成ICM協議分配獎金，僅保留1萬美元和冠軍獎盃作為爭奪目標。"
+      },
+      {
+        type: "paragraph",
+        content: "作為WSOP金手鏈得主和EPT冠軍，Song現在名下有16個線下冠軍頭銜，錦標賽獎金收入超過1000萬美元。"
+      },
+      {
+        type: "heading",
+        content: "以下是決賽桌結果："
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/4-C_9wwmm4.jpg",
+        alt: "Final Results Event 11"
+      },
+      {
+        type: "heading",
+        content: "比賽過程"
+      },
+      {
+        type: "paragraph",
+        content: "由於只有5人可以拿到獎金，所以9位選手的首要目標是先進獎勵圈。9人桌第一位出局選手是來自匈牙利的選手Istvan Birizdo。他拿著KQ在一個三人全下底池對抗Calvin Lee的口袋10和James Mendoza的AQ同花，結果失利。"
+      },
+      {
+        type: "paragraph",
+        content: "接著Daniel Cates變成短碼，翻倍了幾次，然後Chen Yisha記分牌受到重創。"
+      },
+      {
+        type: "paragraph",
+        content: "Calvin Lee在按鈕位開池加註到70K，Chen Yisha在大盲位3bet到250K，Lee全下600K，Chen迅速跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "Calvin Lee的牌是AK，Chen則拿著QQ。兩人經典跑馬，但翻牌發出了一張A。Lee記分牌翻倍。"
+      },
+      {
+        type: "paragraph",
+        content: "之後，Lee的記分牌一路走高，不斷積蓄實力。"
+      },
+      {
+        type: "paragraph",
+        content: "在另一邊，Stephen Song也沒有閒著，在一手牌同時淘汰兩位選手。Daniel Cates在前位全下了最後190K，Song在HJ位跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "Gavin在按鈕位決定全下220K，Song再一次跟註，讓兩位對手都處於危險中。"
+      },
+      {
+        type: "paragraph",
+        content: "Daniel Cates：A♠2♠"
+      },
+      {
+        type: "paragraph",
+        content: "Gavin：K♠Q♥"
+      },
+      {
+        type: "paragraph",
+        content: "Stephen Song：5♠5♦"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌發出2♠5♥7♥，Song擊中暗三，幾乎成於不敗之地。轉牌3♠給Cates帶來一些希望，但河牌是7♦，Song進一步完成葫蘆，把兩人都淘汰出局。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/5-BKgTOJHD.jpg",
+        alt: "Game Action"
+      },
+      {
+        type: "paragraph",
+        content: "桌上還剩6位選手，進入獎勵圈泡沫期。"
+      },
+      {
+        type: "paragraph",
+        content: "此時，之前受到重創的Chen Yisha一直沒緩過來。這手牌她拿到Q9同花，面對Stephen Song在小盲位的全下，她思考一番，決定在大盲位跟註最後420K。"
+      },
+      {
+        type: "paragraph",
+        content: "Song的牌是27同花。Chen很有希望翻倍，可惜翻牌發出一張2。Chen距離獎金只差一步，遺憾出局。把兩人都淘汰出局。"
+      },
+      {
+        type: "paragraph",
+        content: "剩下5位選手每人至少可以得到6萬美元獎金。"
+      },
+      {
+        type: "paragraph",
+        content: "獎金到手後，中國選手Yu lei就在一手牌經受考驗。他在小盲位全下54同花，大盲位的Taylor Black用99跟註全下。"
+      },
+      {
+        type: "paragraph",
+        content: "公共面沒有發出Yu Lei的補牌，對手記分牌翻倍，Yu Lei則變成超短碼。"
+      },
+      {
+        type: "paragraph",
+        content: "很快，他在一手牌面對Stephen Song 60K的開池，果斷全下最後130K。Yu Lei的牌是Q♦10♥，Song則拿著9♦9♠。"
+      },
+      {
+        type: "paragraph",
+        content: "Yu的兩張高牌很有希望中牌，但幸運女神顯然站Song這邊。他在翻牌擊中暗三9。最終兩人都完成了順子，但Yu Lei的順子更小。他獲得第5名。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/6-DJYmgSKO.jpg",
+        alt: "Yu Lei"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/7-C3qw1MEM.jpg",
+        alt: "Game Action"
+      },
+      {
+        type: "paragraph",
+        content: "Stephen Song用大記分牌各種壓榨短碼。這手牌他在按鈕位用77全下， James Mendoza在大盲位拿著JT選擇棄牌後，記分牌只剩10BB了。"
+      },
+      {
+        type: "paragraph",
+        content: "於是接下來，面對Song開池加註到80K，Mendoza在大盲位直接全下了560K。大盲位的Calvin Lee要求數分記分牌後全下，Song選擇棄掉33。"
+      },
+      {
+        type: "paragraph",
+        content: "這次Mendoza的牌是KJ，但是Lee拿到AK，直接壓制。兩人在公共面都沒有中牌，Lee用高牌淘汰對手。James Mendoza獲得第4名。"
+      },
+      {
+        type: "paragraph",
+        content: "此時，Calvin Lee的記分牌已經和Song非常接近了。"
+      },
+      {
+        type: "paragraph",
+        content: "當三人桌形成時，Calvin Lee的記分牌是78BB，Song拿著91BB，Taylor Black則是44BB。"
+      },
+      {
+        type: "paragraph",
+        content: "很快Lee從Black手裡贏了一個大池，把他打成短碼。"
+      },
+      {
+        type: "paragraph",
+        content: "Black在小盲位用A♦7♠補全盲註，Lee在大盲位用10♠3♠過牌。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是K♠6♠7♦，Black過牌，Lee下註50K，Black跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "轉牌是A♠，Black過牌，Lee再次下註200K，Black跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "河牌是10♥，Black拿著兩對再次過牌，Lee用同花開火100萬。Black選擇跟註看牌，可惜看到了壞消息。Lee此時記分牌領先了。"
+      },
+      {
+        type: "paragraph",
+        content: "變成短碼的Black選手牌在大盲位，面對Song在小盲位的跟註，他選擇過牌。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是6♠A♠8♦，Song下註50K，Black跟註。轉牌是2♥，Song下註150K，Black直接全下。Song思考了一會兒，選擇跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "Song的牌是8♠7♦，Black則拿著5♦4♦。雖然Black落雲卡順，但Song目前有對子領先。河牌是K♦，Black在第3名出局。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/8-CE-A9Lqw.jpg",
+        alt: "Taylor Black"
+      },
+      {
+        type: "paragraph",
+        content: "單挑桌開始前，兩人商量分錢協議。按照ICM協議，Lee可分獎金全20萬美元，Song則至少分到19.4萬美元。剩餘1萬美元和冠軍獎盃等候冠軍所有。"
+      },
+      {
+        type: "paragraph",
+        content: "單挑桌打了13分鐘，Song先是穩固了領先地位，很快就迎來了最後一手。"
+      },
+      {
+        type: "paragraph",
+        content: "Lee用J♠7♠溜入底池，Song坐大盲位用10♥4♠過牌。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是J♠10♠4♥，Song擊中底對，沒牌一般叫下註。"
+      },
+      {
+        type: "paragraph",
+        content: "轉牌是5♠，Song再次過牌後，Lee自了一嘴自己的牌，下註170K，起碼Song看牌，加註到800K，左不多是Lee三分之一的記分牌。"
+      },
+      {
+        type: "paragraph",
+        content: "Lee不情願地跟註了。底池達到180萬。河牌發出5♠。Song全下，Lee拿了一會兒，選擇跟注。"
+      },
+      {
+        type: "paragraph",
+        content: "Calvin Lee獲得亞軍，以及20萬美元獎金。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/9-CaQ2d2uU.jpg",
+        alt: "Calvin Lee"
+      },
+      {
+        type: "paragraph",
+        content: "Song拍掉第二座，拿下他在本系列賽第二個冠軍，收獲獎金20.4萬美元，並舉起了冠軍獎盃。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/10-CXdGwJnl.jpg",
+        alt: "Stephen Song Champion"
+      },
+      {
+        type: "heading",
+        content: "TLPT濟州島的收官之戰，賽事#12：$25K超豪賽決出了冠軍。他是中國選手Ivan Zhang。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/11-KUN7gyFZ.jpg",
+        alt: "Ivan Zhang Champion"
+      },
+      {
+        type: "paragraph",
+        content: "他整場比賽表現都非常強勢，一直排在記分牌前列，從未有過下滑，非常穩定優秀。"
+      },
+      {
+        type: "paragraph",
+        content: "Day1"
+      },
+      {
+        type: "paragraph",
+        content: "這場比賽Day1一開始整體中規中矩，但在最後兩個級別激起波瀾。表現最優秀的是Ivan Zhang。他憑借初始記分牌打滿10個級別，最終以1,066,000記分牌的壓倒性優勢領跑剩餘六人。"
+      },
+      {
+        type: "paragraph",
+        content: "雖然Ivan Zhang每年只參加少量錦標賽，但在本次系列賽，他多次打進決賽桌，包括在$15K豪客主賽獲得第6名，在賽事#3：$1KAA POKER深籌賽進入決賽桌。這一次在決賽桌上，Ivan Zhang勢必要向個人最佳線下名次發起沖擊。"
+      },
+      {
+        type: "paragraph",
+        content: "記分牌排在第二位的是Zhou Quan，第三名是德國選手Dominik Nitsche，第四名是來自愛爾蘭的Gary Thompson。第五位是Yu Lei，記分牌最少的是加拿大選手Ami Barer。"
+      },
+      {
+        type: "paragraph",
+        content: "Day2"
+      },
+      {
+        type: "paragraph",
+        content: "當5月21日Day2開始時，Mao Renji報名參賽，帶著20萬記分牌上桌。7人坐好位置，開始了最後的對決。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/12-BJTFOwNr.jpg",
+        alt: "Final Table Setup"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft1-BT3JpRwS.jpg",
+        alt: "Player Card 1"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft2-DriIM658.jpg",
+        alt: "Player Card 2"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft3-DJ_LrKKD.jpg",
+        alt: "Player Card 3"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft4-BTa7x1sp.jpg",
+        alt: "Player Card 4"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft5-CyM8eEb0.jpg",
+        alt: "Player Card 5"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft6-q_j7_Put.jpg",
+        alt: "Player Card 6"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/ft7-CKn3w1hH.jpg",
+        alt: "Player Card 7"
+      },
+      {
+        type: "heading",
+        content: "比賽過程"
+      },
+      {
+        type: "paragraph",
+        content: "就在第一手牌，Yu Lei就在按鈕位全下了最後134K記分牌。Zhou Quan在小盲位跟註。Yu的牌是AJ，Zhou則拿著77。翻牌發出一張A，Yu早就記分牌翻倍。"
+      },
+      {
+        type: "paragraph",
+        content: "很快第一位受害者出現，他是Gary Thompson。Mao Renji先在小盲位用J♠10♥溜入底池，Thompson在大盲位用K♦2♠過牌。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是J♦6♦5♥，Mao領打10K，Thompson加註26K，Mao選擇全下。Thompson跟註後，有出局風險。"
+      },
+      {
+        type: "paragraph",
+        content: "結果轉牌是A♠，河牌是A♠，Thompson沒有等到補牌，第一個出局。"
+      },
+      {
+        type: "paragraph",
+        content: "Mao Renji沒有停下來，一路沖到記分牌前三。很快，Mao Renji把Ami Barer淘汰。"
+      },
+      {
+        type: "paragraph",
+        content: "Barer記分牌很少了，他先加註到125K，Mao在大盲位直接全下，Barer顫註。"
+      },
+      {
+        type: "paragraph",
+        content: "他的牌是K♦6♠，Mao則拿著Q♠J♠。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是A♦7♦7♠，Barer墊上同花，且到轉牌2♠依然領先。不過河牌是Q♥，Mao擊中對子，把Barer淘汰在第6名。"
+      },
+      {
+        type: "paragraph",
+        content: "很快，Mao Renji趁熱打鐵，又淘汰一位選手，這次是Dominik Nitsche。Nitsche在CO位開池加註到30K，Mao在按鈕位3bet到70K，行動回到Nitsche這邊，他全下260K，Mao秒跟。"
+      },
+      {
+        type: "paragraph",
+        content: "Nitsche的牌是K♥9♥，Mao則是A♠Q♠。公共牌發出6♠J♦A♥5♥，Mao獲勝，Nitsche在第5名出局，成為獎勵圈泡沫。"
+      },
+      {
+        type: "paragraph",
+        content: "桌上還剩4人，他們暫停比賽，商量了分錢協議。按照新的分配方法，第四名的獎金至少有3.5萬美元。冠亞軍獎金分別是16.2萬美元和10.8萬美元。第三名則是7萬美元。"
+      },
+      {
+        type: "paragraph",
+        content: "四人桌開打，並且持續了一段時間。一開始勢頭很猛的Mao Renji開始走下坡路，記分牌越來越少，變成墊底。"
+      },
+      {
+        type: "paragraph",
+        content: "終於在這手牌，Mao在槍口位加註到40K，大盲位的Ivan Zhang直接全下。Mao後手只剩40多籌，決定跟註。"
+      },
+      {
+        type: "paragraph",
+        content: "Mao的牌是A♠Q♥，Ivan Zhang則拿著A♦K♠。翻牌是10♦7♠5♠，Mao情況更危險了，因為Ivan連贏上同花了。轉牌是J♠，兩人都聽順子。河牌發出6♠,Mao在第四名出局。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/13-CJBO3Lpr.jpg",
+        alt: "Mao Renji"
+      },
+      {
+        type: "paragraph",
+        content: "三人桌混戰了很久，Zhou Quan記分越來越少，終於支撐不住。這手牌Ivan Zhang在按鈕位加註到50K，Zhou Quan在大盲位宣佈全下。Zhang秒跟後，秀出A♠J♠。Zhou Quan的牌是A♠10♠。"
+      },
+      {
+        type: "paragraph",
+        content: "翻牌是A♦7♥5♦，轉牌是7♠，Zhou Quan得到了分池的機會，不過河牌是5♠。Zhou Quan在第四名出局。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/14-BN35oK3z.jpg",
+        alt: "Zhou Quan"
+      },
+      {
+        type: "paragraph",
+        content: "單挑桌形成。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/15-CZn7XgJp.jpg",
+        alt: "Heads Up"
+      },
+      {
+        type: "paragraph",
+        content: "Ivan Zhang和Yu Lei的記分牌差距很大，很快迎來了最後一手牌。"
+      },
+      {
+        type: "paragraph",
+        content: "Ivan Zhang在按鈕位溜入底池，Yu Lei全下最後420K。Zhang秒跟，笑得很開心。他的牌是KK，Yu Lei則拿著66。"
+      },
+      {
+        type: "paragraph",
+        content: "公共面沒有反轉，Yu Lei獲得亞軍。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/16-BdbFlgjx.jpg",
+        alt: "Yu Lei Runner-up"
+      },
+      {
+        type: "paragraph",
+        content: "Ivan Zhang在本場系列賽獲得一座下冠軍，完美結束了他本次比賽。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/17-B99R_HW5.jpg",
+        alt: "Ivan Zhang Champion"
+      },
+      {
+        type: "heading",
+        content: "賽于風采"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new46/18-CH36shhq.jpg",
+        alt: "Event Gallery"
+      }
+    ],
     sections: [
       {
         type: "heading",
@@ -2827,7 +3271,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/details-news/new42/1-DMxCeEBv.jpg",
+        src: "/image/news/details-news/new42/2en-CW8MYftL.jpg",
         alt: "Ivan Zhang Champion"
       },
       {
@@ -2845,6 +3289,11 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "A relatively tame period saw Zhang extend his chip lead, including a hand where he got Dominik Nitsche off of a chop. Following the first break, Ami Barer and Nitsche were eliminated back-to-back after shoving preflop, getting called, and ending up second best."
+      },
+            {
+        type: "image",
+        src: "/image/news/details-news/new42/3en-DflYaNw0.jpg",
+        alt: "Final Table"
       },
       {
         type: "paragraph",
@@ -2864,7 +3313,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/details-news/new42/1-DMxCeEBv.jpg",
+        src: "/image/news/details-news/new42/4en-Bpaeb-2T.jpg",
         alt: "Final Table"
       },
       {
@@ -2874,32 +3323,17 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "tlpt-jeju-2025-top-money-earners": {
-    heroImage: "/image/news/details-news/new43/1en-CVOojHFm.jpg",
+    heroImage: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
     sections: [
-      {
-        type: "heading",
-        content: "TLPT JEJU 2025"
-      },
-      {
-        type: "image",
-        src: "/image/news/details-news/new43/1en-CVOojHFm.jpg",
-        alt: "TLPT Jeju 2025 Event Ranking"
-      },
-      {
-        type: "image",
-        src: "/image/news/details-news/new43/2en-CW8MYftL.jpg",
-        alt: "TLPT $25,000 8-Handed Results"
-      },
-      {
-        type: "image",
-        src: "/image/news/details-news/new43/3en-DflYaNw0.jpg",
-        alt: "Final Day Action"
-      },
-      {
-        type: "image",
-        src: "/image/news/details-news/new43/4en-Bpaeb-2T.jpg",
-        alt: "Final Table"
-      }
+      // {
+      //   type: "heading",
+      //   content: "TLPT JEJU 2025"
+      // },
+      // {
+      //   type: "image",
+      //   src: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
+      //   alt: "TLPT Jeju 2025 Event Ranking"
+      // },
     ]
   },
   "red-hot-stephen-song-leads-final-11-tlpt-20k": {
@@ -2907,15 +3341,21 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "RED HOT STEPHEN SONG LEADS FINAL 11 IN TLPT $20K"
+        content: "RED HOT STEPHEN SONG LEADS FINAL 11 IN TLPT $20K",
+        content_cn: "火热的STEPHEN SONG领跑TLPT $20K最后11人",
+        content_tw: "火熱的STEPHEN SONG領跑TLPT $20K最後11人"
       },
       {
         type: "paragraph",
-        content: "A lengthy Day 1 in Event #11 TLPT $20,000 8-Handed saw 32 entrants make their way to the Landing Casino inside the fabulous Shinhwa World Hotel Jeju. A change in structure extended Day 1 by an additional two levels and, by the time the last card was dealt, Stephen Song found himself once again chip leading a tournament after bagging up 1,315,000. Not too far behind, however, are James Mendoza (1,180,000) and Yisha Chen (1,100,000), who made an impressive surge late in the evening after a double knockout holding aces."
+        content: "A lengthy Day 1 in Event #11 TLPT $20,000 8-Handed saw 32 entrants make their way to the Landing Casino inside the fabulous Shinhwa World Hotel Jeju. A change in structure extended Day 1 by an additional two levels and, by the time the last card was dealt, Stephen Song found himself once again chip leading a tournament after bagging up 1,315,000. Not too far behind, however, are James Mendoza (1,180,000) and Yisha Chen (1,100,000), who made an impressive surge late in the evening after a double knockout holding aces.",
+        content_cn: "在济州神话世界度假村Landing Casino举行的TLPT $20,000 8人桌赛事#11的漫长Day 1中，共有32名选手参赛。赛制变化使Day 1延长了两个级别，当最后一张牌发出时，Stephen Song再次以1,315,000记分牌领跑。紧随其后的是James Mendoza（1,180,000）和Yisha Chen（1,100,000），后者在晚间凭借AA双杀后强势崛起。",
+        content_tw: "在濟州神話世界度假村Landing Casino舉行的TLPT $20,000 8人桌賽事#11的漫長Day 1中，共有32名選手參賽。賽制變化使Day 1延長了兩個級別，當最後一張牌發出時，Stephen Song再次以1,315,000記分牌領跑。緊隨其後的是James Mendoza（1,180,000）和Yisha Chen（1,100,000），後者在晚間憑藉AA雙殺後強勢崛起。"
       },
       {
         type: "paragraph",
-        content: "Song has had an exceptional showing at The Lord Poker Tournament series so far — first by making the final table of the $500 Circuit Main Event and then flat out winning the $15,000 Main Event. Another cash for Song will push him over $10 million in live-tournament earnings — cementing an already epic poker resume."
+        content: "Song has had an exceptional showing at The Lord Poker Tournament series so far — first by making the final table of the $500 Circuit Main Event and then flat out winning the $15,000 Main Event. Another cash for Song will push him over $10 million in live-tournament earnings — cementing an already epic poker resume.",
+        content_cn: "Song在本次TLPT系列赛中表现出色——首先闯入$500巡回赛主赛决赛桌，然后直接赢得$15,000主赛事冠军。再次获得奖金将使他的线下锦标赛收入突破1000万美元——进一步巩固他已经传奇的扑克履历。",
+        content_tw: "Song在本次TLPT系列賽中表現出色——首先闯入$500巡迴賽主賽決賽桌，然後直接贏得$15,000主賽事冠軍。再次獲得獎金將使他的線下錦標賽收入突破1000萬美元——進一步鞏固他已經傳奇的撲克履歷。"
       },
       {
         type: "image",
@@ -2924,7 +3364,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "DAY 2 SEAT DRAW AND CHIP COUNTS"
+        content: "DAY 2 SEAT DRAW AND CHIP COUNTS",
+        content_cn: "DAY 2 座位抽签和记分牌统计",
+        content_tw: "DAY 2 座位抽籤和記分牌統計"
       },
       {
         type: "image",
@@ -2933,11 +3375,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The 32 entrants generated a prize pool of US$640,000, of which five players will take a share. A min-cash will be worth US$60,000 and the eventual winner will take home US$242,000 for their efforts."
+        content: "The 32 entrants generated a prize pool of US$640,000, of which five players will take a share. A min-cash will be worth US$60,000 and the eventual winner will take home US$242,000 for their efforts.",
+        content_cn: "32名参赛者产生了64万美元的奖池，其中5名选手将分享奖金。最低奖金为6万美元，冠军将获得24.2万美元。",
+        content_tw: "32名參賽者產生了64萬美元的獎池，其中5名選手將分享獎金。最低獎金為6萬美元，冠軍將獲得24.2萬美元。"
       },
       {
         type: "heading",
-        content: "TLPT $20,000 8 HANDED PAYOUTS"
+        content: "TLPT $20,000 8 HANDED PAYOUTS",
+        content_cn: "TLPT $20,000 8人桌奖金分配",
+        content_tw: "TLPT $20,000 8人桌獎金分配"
       },
       {
         type: "image",
@@ -2946,23 +3392,33 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "DAY 1 ACTION"
+        content: "DAY 1 ACTION",
+        content_cn: "DAY 1 精彩回顾",
+        content_tw: "DAY 1 精彩回顧"
       },
       {
         type: "paragraph",
-        content: "Eleven players sat down at the start, and it took less than a level for action-junkie Ivan Zhang to get all in. Unfortunately for Zhag, it was against Song, who had Zhang crushed with aces. Song nearly doubled as a result of the clash and took an early chip lead."
+        content: "Eleven players sat down at the start, and it took less than a level for action-junkie Ivan Zhang to get all in. Unfortunately for Zhag, it was against Song, who had Zhang crushed with aces. Song nearly doubled as a result of the clash and took an early chip lead.",
+        content_cn: "开赛时有11名选手入座，不到一个级别，行动派Ivan Zhang就全下了。不幸的是，他遇到了Song，Song用AA碾压了Zhang。Song几乎翻倍，并取得了早期记分牌领先。",
+        content_tw: "開賽時有11名選手入座，不到一個級別，行動派Ivan Zhang就全下了。不幸的是，他遇到了Song，Song用AA碾壓了Zhang。Song幾乎翻倍，並取得了早期記分牌領先。"
       },
       {
         type: "paragraph",
-        content: "Song extended his chip lead after catching a flush to eliminate Dong Chen, but Mendoza began his own ascent after cracking Martin Nielsen's aces with a pair eights."
+        content: "Song extended his chip lead after catching a flush to eliminate Dong Chen, but Mendoza began his own ascent after cracking Martin Nielsen's aces with a pair eights.",
+        content_cn: "Song在击中同花淘汰Dong Chen后扩大了记分牌领先，但Mendoza在用88破掉Martin Nielsen的AA后开始了自己的上升之路。",
+        content_tw: "Song在擊中同花淘汰Dong Chen後擴大了記分牌領先，但Mendoza在用88破掉Martin Nielsen的AA後開始了自己的上升之路。"
       },
       {
         type: "paragraph",
-        content: "Meanwhile, more notables filed in as the day went on, including Renji Mao, Dominik Nitsche, Bin Leng, Patrik Dernus, and Dan Cates. Of those players, only Nitsche and Cates made it to Day 2."
+        content: "Meanwhile, more notables filed in as the day went on, including Renji Mao, Dominik Nitsche, Bin Leng, Patrik Dernus, and Dan Cates. Of those players, only Nitsche and Cates made it to Day 2.",
+        content_cn: "与此同时，随着比赛进行，更多知名选手加入，包括Mao Renji、Dominik Nitsche、Bin Leng、Patrik Dernus和Dan Cates。这些选手中，只有Nitsche和Cates晋级Day 2。",
+        content_tw: "與此同時，隨著比賽進行，更多知名選手加入，包括Mao Renji、Dominik Nitsche、Bin Leng、Patrik Dernus和Dan Cates。這些選手中，只有Nitsche和Cates晉級Day 2。"
       },
       {
         type: "paragraph",
-        content: "Cates was in usual form, making light-hearted jokes and unafraid to put chips into the middle. He also got off to a hot start by doubling through Nevan Chang after they both rivered trip aces. Cates held the best kicker with Big Slick to leave Chang short and Chang busted shortly after the hand."
+        content: "Cates was in usual form, making light-hearted jokes and unafraid to put chips into the middle. He also got off to a hot start by doubling through Nevan Chang after they both rivered trip aces. Cates held the best kicker with Big Slick to leave Chang short and Chang busted shortly after the hand.",
+        content_cn: "Cates一如既往地表现出色，开着轻松的玩笑，毫不犹豫地下注。他在与Nevan Chang的对决中河牌都发出三条A后翻倍起步，Cates凭借AK的踢脚占优，Chang变成短码并很快出局。",
+        content_tw: "Cates一如既往地表現出色，開著輕鬆的玩笑，毫不猶豫地下注。他在與Nevan Chang的對決中河牌都發出三條A後翻倍起步，Cates憑藉AK的踢腳佔優，Chang變成短碼並很快出局。"
       },
       {
         type: "image",
@@ -2971,23 +3427,33 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Not long after dinner break, Chen ended up best in a massive pot between her, Song, and Leng wherein they all ended up all-in preflop. Chen held ace-queen against Song's jacks and Leng's ace-nine and ended up flopping an ace to bust Leng and put a sizable dent in Song's stack. However, Song quickly rebounded by knocking out Quan Zhou after spiking a set against him with eights against Zhou's jacks."
+        content: "Not long after dinner break, Chen ended up best in a massive pot between her, Song, and Leng wherein they all ended up all-in preflop. Chen held ace-queen against Song's jacks and Leng's ace-nine and ended up flopping an ace to bust Leng and put a sizable dent in Song's stack. However, Song quickly rebounded by knocking out Quan Zhou after spiking a set against him with eights against Zhou's jacks.",
+        content_cn: "晚餐休息后不久，Chen在一个三人全下的大底池中获胜。Chen拿着AQ对抗Song的JJ和Leng的A9，翻牌发出A淘汰Leng并给Song的记分牌造成重创。然而，Song很快反弹，用88击中暗三淘汰了拿着JJ的Quan Zhou。",
+        content_tw: "晚餐休息後不久，Chen在一個三人全下的大底池中獲勝。Chen拿著AQ對抗Song的JJ和Leng的A9，翻牌發出A淘汰Leng並給Song的記分牌造成重創。然而，Song很快反彈，用88擊中暗三淘汰了拿著JJ的Quan Zhou。"
       },
       {
         type: "paragraph",
-        content: "More hands became preflop shoves as the blinds escalated, and Chen benefitted from this fact after slowplaying aces against Marius Gierse and Christopher Park to vault into a temporary chip lead."
+        content: "More hands became preflop shoves as the blinds escalated, and Chen benefitted from this fact after slowplaying aces against Marius Gierse and Christopher Park to vault into a temporary chip lead.",
+        content_cn: "随着盲注升高，更多的手牌变成了翻前全下，Chen在用慢打AA对抗Marius Gierse和Christopher Park后跃居临时记分牌领先。",
+        content_tw: "隨著盲注升高，更多的手牌變成了翻前全下，Chen在用慢打AA對抗Marius Gierse和Christopher Park後躍居臨時記分牌領先。"
       },
       {
         type: "paragraph",
-        content: "Toward the end of the night, Mendoza again cracked aces after making a flush against Ami Barer to surge up the ranks. However, Song wouldn't be denied and took down a few smaller pots to reclaim a slight chip lead before play ended for the night."
+        content: "Toward the end of the night, Mendoza again cracked aces after making a flush against Ami Barer to surge up the ranks. However, Song wouldn't be denied and took down a few smaller pots to reclaim a slight chip lead before play ended for the night.",
+        content_cn: "接近夜晚尾声时，Mendoza再次破掉AA，用同花击败Ami Barer后排名飙升。然而，Song不甘示弱，在当晚比赛结束前赢下几个小底池重新夺回微弱的记分牌领先。",
+        content_tw: "接近夜晚尾聲時，Mendoza再次破掉AA，用同花擊敗Ami Barer後排名飆升。然而，Song不甘示弱，在當晚比賽結束前贏下幾個小底池重新奪回微弱的記分牌領先。"
       },
       {
         type: "paragraph",
-        content: "Day 2 is scheduled to get underway at 1 p.m. on Tuesday and play down to a winner. Play will resume on Level 13, which features blinds of 10,000/15,000 with a 15,000 big blind ante. Levels will continue to last 45 minutes each."
+        content: "Day 2 is scheduled to get underway at 1 p.m. on Tuesday and play down to a winner. Play will resume on Level 13, which features blinds of 10,000/15,000 with a 15,000 big blind ante. Levels will continue to last 45 minutes each.",
+        content_cn: "Day 2定于周二下午1点开始，将打出冠军。比赛将从第13级恢复，盲注为10,000/15,000，大盲前注15,000。每个级别仍为45分钟。",
+        content_tw: "Day 2定於週二下午1點開始，將打出冠軍。比賽將從第13級恢復，盲注為10,000/15,000，大盲前注15,000。每個級別仍為45分鐘。"
       },
       {
         type: "paragraph",
-        content: "With an impending massive money bubble and nearly a quarter million on the line for first, the final 11 players are sure to bring their A-game headed into the finale. Be sure to stick with PokerNews as we bring you all the action leading up to the next TLPT champion!"
+        content: "With an impending massive money bubble and nearly a quarter million on the line for first, the final 11 players are sure to bring their A-game headed into the finale. Be sure to stick with PokerNews as we bring you all the action leading up to the next TLPT champion!",
+        content_cn: "随着巨大的奖励圈泡沫即将来临，冠军将获得近25万美元，最后11名选手肯定会在决赛中全力以赴。请继续关注PokerNews，我们将为您带来下一位TLPT冠军的所有精彩！",
+        content_tw: "隨著巨大的獎勵圈泡沫即將來臨，冠軍將獲得近25萬美元，最後11名選手肯定會在決賽中全力以赴。請繼續關注PokerNews，我們將為您帶來下一位TLPT冠軍的所有精彩！"
       }
     ]
   },
@@ -2996,23 +3462,33 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "IS THERE A BETTER POKER TOURNAMENT PLAYER THAN STEPHEN SONG RIGHT NOW?"
+        content: "IS THERE A BETTER POKER TOURNAMENT PLAYER THAN STEPHEN SONG RIGHT NOW?",
+        content_cn: "现在还有比STEPHEN SONG更好的锦标赛选手吗？",
+        content_tw: "現在還有比STEPHEN SONG更好的錦標賽選手嗎？"
       },
       {
         type: "paragraph",
-        content: "It was a runaway train that nobody was about to stand in front of on Day 3 of the $15,000 Main Event being hosted by The Lord Poker Tour (TLPT) at the Landing Casino in Jeju Shinhwa World Resort. From a field of 191 total entries, Stephen Song breezed to the $750,000 first-place prize to add another title to his poker resume, which already includes an EPT Main Event, WPT Prime Championship and WSOP bracelet triumph."
+        content: "It was a runaway train that nobody was about to stand in front of on Day 3 of the $15,000 Main Event being hosted by The Lord Poker Tour (TLPT) at the Landing Casino in Jeju Shinhwa World Resort. From a field of 191 total entries, Stephen Song breezed to the $750,000 first-place prize to add another title to his poker resume, which already includes an EPT Main Event, WPT Prime Championship and WSOP bracelet triumph.",
+        content_cn: "在济州神话世界度假村Landing Casino举办的TLPT $15,000主赛事Day 3，Stephen Song势不可挡。在191名参赛者中，Song轻松夺得75万美元冠军奖金，为他的扑克履历再添一个头衔，此前他已获得EPT主赛事冠军、WPT Prime锦标赛冠军和WSOP金手链。",
+        content_tw: "在濟州神話世界度假村Landing Casino舉辦的TLPT $15,000主賽事Day 3，Stephen Song勢不可擋。在191名參賽者中，Song輕鬆奪得75萬美元冠軍獎金，為他的撲克履歷再添一個頭銜，此前他已獲得EPT主賽事冠軍、WPT Prime錦標賽冠軍和WSOP金手鏈。"
       },
       {
         type: "paragraph",
-        content: "The payout was the second largest in Song's career and marked his 15th recorded tournament win. His live tournament earnings are now just a hair under $10 million, according to the The Hendon Mob."
+        content: "The payout was the second largest in Song's career and marked his 15th recorded tournament win. His live tournament earnings are now just a hair under $10 million, according to the The Hendon Mob.",
+        content_cn: "这笔奖金是Song职业生涯中第二高的，也是他第15个有记录的锦标赛冠军。根据Hendon Mob的数据，他的线下锦标赛收入现在接近1000万美元。",
+        content_tw: "這筆獎金是Song職業生涯中第二高的，也是他第15個有記錄的錦標賽冠軍。根據Hendon Mob的數據，他的線下錦標賽收入現在接近1000萬美元。"
       },
       {
         type: "paragraph",
-        content: "Making the trip to Jeju, South Korea, was always a priority for Song, and building some momentum going into the WSOP that begins in just over a week will be a welcome sight. A seventh-place finish in the Circuit Main Event for $16,000 was just the tip of the iceberg for Song."
+        content: "Making the trip to Jeju, South Korea, was always a priority for Song, and building some momentum going into the WSOP that begins in just over a week will be a welcome sight. A seventh-place finish in the Circuit Main Event for $16,000 was just the tip of the iceberg for Song.",
+        content_cn: "前往韩国济州一直是Song的优先事项，在一周后开始的WSOP之前积累势头将是一个可喜的进展。他在巡回赛主赛事中获得第七名和1.6万美元奖金只是冰山一角。",
+        content_tw: "前往韓國濟州一直是Song的優先事項，在一週後開始的WSOP之前積累勢頭將是一個可喜的進展。他在巡迴賽主賽事中獲得第七名和1.6萬美元獎金只是冰山一角。"
       },
       {
         type: "paragraph",
-        content: "Entering the final day of this Super High Roller Series Main Event that boasted a $3,000,000 guaranteed prize pool, Song was looking to better his final table appearance from earlier in the week. Those hopes unfolded in spades as Song bulldozed over his competition en route to a runaway victory, pocketing three-quarters of a million dollars in the process. Throughout the final table, Song made things look very easy while making every correct decision and getting slapped with the deck at the right time."
+        content: "Entering the final day of this Super High Roller Series Main Event that boasted a $3,000,000 guaranteed prize pool, Song was looking to better his final table appearance from earlier in the week. Those hopes unfolded in spades as Song bulldozed over his competition en route to a runaway victory, pocketing three-quarters of a million dollars in the process. Throughout the final table, Song made things look very easy while making every correct decision and getting slapped with the deck at the right time.",
+        content_cn: "进入这场保底300万美元奖池的超豪客主赛事决赛日时，Song希望比本周早些时候的决赛桌表现更好。这些希望得到了完美实现，Song碾压对手一路狂奔获胜，收入75万美元。在整个决赛桌上，Song让一切看起来都很轻松，每一个决定都是正确的，并且在正确的时机得到了好牌。",
+        content_tw: "進入這場保底300萬美元獎池的超豪客主賽事決賽日時，Song希望比本週早些時候的決賽桌表現更好。這些希望得到了完美實現，Song碾壓對手一路狂奔獲勝，收入75萬美元。在整個決賽桌上，Song讓一切看起來都很輕鬆，每一個決定都是正確的，並且在正確的時機得到了好牌。"
       },
       {
         type: "image",
@@ -3021,7 +3497,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "TLPT $15K MAIN EVENT FINAL TABLE RESULTS"
+        content: "TLPT $15K MAIN EVENT FINAL TABLE RESULTS",
+        content_cn: "TLPT $15K 主赛事决赛桌结果",
+        content_tw: "TLPT $15K 主賽事決賽桌結果"
       },
       {
         type: "image",
@@ -3030,15 +3508,21 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "DAY 3 ACTION"
+        content: "DAY 3 ACTION",
+        content_cn: "DAY 3 精彩回顾",
+        content_tw: "DAY 3 精彩回顧"
       },
       {
         type: "paragraph",
-        content: "There were 15 players who returned to their seats at the start of Day 3, all with the hopes of lifting the trophy at the day's end. Marius Gierse entered the day with a commanding lead over the rest of the competition and that lead continued to grow in the early going. There were no real short stacks when play got underway which led to a slow pace of chips being passed around the two tables. The seat finally broke when Jumbo Qu was eliminated with his pocket sevens against Song's pocket kings."
+        content: "There were 15 players who returned to their seats at the start of Day 3, all with the hopes of lifting the trophy at the day's end. Marius Gierse entered the day with a commanding lead over the rest of the competition and that lead continued to grow in the early going. There were no real short stacks when play got underway which led to a slow pace of chips being passed around the two tables. The seat finally broke when Jumbo Qu was eliminated with his pocket sevens against Song's pocket kings.",
+        content_cn: "Day 3开始时有15名选手回到座位，都希望在一天结束时捧起奖杯。Marius Gierse以绝对优势领先进入比赛日，这一领先优势在早期继续扩大。比赛开始时没有真正的短码，导致两桌之间的筹码流动缓慢。最终Jumbo Qu用口袋77对抗Song的口袋KK被淘汰，局面才被打破。",
+        content_tw: "Day 3開始時有15名選手回到座位，都希望在一天結束時捧起獎盃。Marius Gierse以絕對優勢領先進入比賽日，這一領先優勢在早期繼續擴大。比賽開始時沒有真正的短碼，導致兩桌之間的籌碼流動緩慢。最終Jumbo Qu用口袋77對抗Song的口袋KK被淘汰，局面才被打破。"
       },
       {
         type: "paragraph",
-        content: "Not long after followed the eliminations of Gary Thompson, Martin Sedlak, Mauricio Salazar Sanchez, and Quan Zhou before the first break of the day. Upon returning from that break, Bin Leng managed to double his short stack but then was sent home in 10th place on the very next hand. The final nine players then took a production break and were introduced with smoke and mirrors before the final table got started."
+        content: "Not long after followed the eliminations of Gary Thompson, Martin Sedlak, Mauricio Salazar Sanchez, and Quan Zhou before the first break of the day. Upon returning from that break, Bin Leng managed to double his short stack but then was sent home in 10th place on the very next hand. The final nine players then took a production break and were introduced with smoke and mirrors before the final table got started.",
+        content_cn: "不久后Gary Thompson、Martin Sedlak、Mauricio Salazar Sanchez和Quan Zhou在第一次休息前相继被淘汰。休息回来后，Bin Leng成功将短码翻倍，但下一手牌就在第10名出局。最后9名选手随后进行了制作休息，在决赛桌开始前进行了隆重介绍。",
+        content_tw: "不久後Gary Thompson、Martin Sedlak、Mauricio Salazar Sanchez和Quan Zhou在第一次休息前相繼被淘汰。休息回來後，Bin Leng成功將短碼翻倍，但下一手牌就在第10名出局。最後9名選手隨後進行了製作休息，在決賽桌開始前進行了隆重介紹。"
       },
       {
         type: "image",
@@ -3047,19 +3531,27 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The final nine players battled it out for well over an hour before anyone even got a sniff of the payout desk. Despite a massive three-way cooler, no eliminations took place, although, James Mendoza was left with just a single big blind. That didn't deter the eventual runner-up as he managed to double up three consecutive times, which brought him back to the middle of the pack. The first elimination belonged to Haitao Lei, which started a flurry of payouts."
+        content: "The final nine players battled it out for well over an hour before anyone even got a sniff of the payout desk. Despite a massive three-way cooler, no eliminations took place, although, James Mendoza was left with just a single big blind. That didn't deter the eventual runner-up as he managed to double up three consecutive times, which brought him back to the middle of the pack. The first elimination belonged to Haitao Lei, which started a flurry of payouts.",
+        content_cn: "最后9名选手激战了一个多小时，才有人接近领奖台。尽管出现了一个三人冷牌局面，但没有淘汰发生，不过James Mendoza只剩下一个大盲。这并没有阻止最终亚军，他连续三次翻倍，回到了中游位置。第一个被淘汰的是Haitao Lei，这引发了一连串的奖金发放。",
+        content_tw: "最後9名選手激戰了一個多小時，才有人接近領獎台。儘管出現了一個三人冷牌局面，但沒有淘汰發生，不過James Mendoza只剩下一個大盲。這並沒有阻止最終亞軍，他連續三次翻倍，回到了中游位置。第一個被淘汰的是Haitao Lei，這引發了一連串的獎金發放。"
       },
       {
         type: "paragraph",
-        content: "Jiaming Zhao held the chip lead at one point on the final day, but it only lasted a matter of hands. Zhao eventually bowed out in eighth place at the hands of Mendoza, who was now in contention for the top stack. After the second break of the day, Song caught the end of the deck and was nearly unbeatable."
+        content: "Jiaming Zhao held the chip lead at one point on the final day, but it only lasted a matter of hands. Zhao eventually bowed out in eighth place at the hands of Mendoza, who was now in contention for the top stack. After the second break of the day, Song caught the end of the deck and was nearly unbeatable.",
+        content_cn: "Jiaming Zhao在决赛日一度领先，但只维持了几手牌。Zhao最终在第八名被Mendoza淘汰，后者现在正争夺头筹。在当天第二次休息后，Song开始手气爆发，几乎无人能敌。",
+        content_tw: "Jiaming Zhao在決賽日一度領先，但只維持了幾手牌。Zhao最終在第八名被Mendoza淘汰，後者現在正爭奪頭籌。在當天第二次休息後，Song開始手氣爆發，幾乎無人能敵。"
       },
       {
         type: "paragraph",
-        content: "The last female standing in the competition was Huawei Lin, but her time was limited upon returning to the shortest stack of the seven players remaining. Lin was poised for a double-up to stay alive, but Song managed to spike a pair on the river, which vaulted him into the chip lead. Ivan Zhang, co-founder of the TLPT, was next on the chopping block. A fairly quiet day at the felt by his standards, as Zhang was unable to gain any traction and eventually fell to Song as well."
+        content: "The last female standing in the competition was Huawei Lin, but her time was limited upon returning to the shortest stack of the seven players remaining. Lin was poised for a double-up to stay alive, but Song managed to spike a pair on the river, which vaulted him into the chip lead. Ivan Zhang, co-founder of the TLPT, was next on the chopping block. A fairly quiet day at the felt by his standards, as Zhang was unable to gain any traction and eventually fell to Song as well.",
+        content_cn: "比赛中最后一位女选手是Huawei Lin，但她回来时是剩余7名选手中最短的筹码。Lin准备翻倍求生，但Song在河牌击中对子，跃居筹码领先。TLPT联合创始人Ivan Zhang是下一个被淘汰的。按他的标准来说，这是相当安静的一天，Zhang无法获得任何优势，最终也倒在Song手下。",
+        content_tw: "比賽中最後一位女選手是Huawei Lin，但她回來時是剩餘7名選手中最短的籌碼。Lin準備翻倍求生，但Song在河牌擊中對子，躍居籌碼領先。TLPT聯合創始人Ivan Zhang是下一個被淘汰的。按他的標準來說，這是相當安靜的一天，Zhang無法獲得任何優勢，最終也倒在Song手下。"
       },
       {
         type: "paragraph",
-        content: "Patrik Demus made the final table at the last minute, but the Czech pro was not as kind to him. Demus managed to stave off elimination multiple times despite the cold deck. An epic fold after flopping two pair against the set of Song allowed Demus to survive a little longer, but eventually his demise came in fifth place. Martin Nielsen was one of the last players to enter the field on Day 2 and proved that a spin-up is always possible by reaching the final table. Laddering all the way up to fourth place for a payout of over $200,000 on just one bullet will go down as a success no matter what."
+        content: "Patrik Demus made the final table at the last minute, but the Czech pro was not as kind to him. Demus managed to stave off elimination multiple times despite the cold deck. An epic fold after flopping two pair against the set of Song allowed Demus to survive a little longer, but eventually his demise came in fifth place. Martin Nielsen was one of the last players to enter the field on Day 2 and proved that a spin-up is always possible by reaching the final table. Laddering all the way up to fourth place for a payout of over $200,000 on just one bullet will go down as a success no matter what.",
+        content_cn: "Patrik Demus在最后时刻进入决赛桌，但牌运对这位捷克职业选手并不友好。尽管手气不佳，Demus多次成功避免被淘汰。在翻牌击中两对却面对Song的暗三时做出了史诗级弃牌，让Demus又多存活了一段时间，但最终在第五名出局。Martin Nielsen是Day 2最后报名的选手之一，证明了逆袭总是可能的。仅用一颗子弹就爬升到第四名获得超过20万美元奖金，无论如何都是成功。",
+        content_tw: "Patrik Demus在最後時刻進入決賽桌，但牌運對這位捷克職業選手並不友好。儘管手氣不佳，Demus多次成功避免被淘汰。在翻牌擊中兩對卻面對Song的暗三時做出了史詩級棄牌，讓Demus又多存活了一段時間，但最終在第五名出局。Martin Nielsen是Day 2最後報名的選手之一，證明了逆襲總是可能的。僅用一顆子彈就爬升到第四名獲得超過20萬美元獎金，無論如何都是成功。"
       },
       {
         type: "image",
@@ -3068,11 +3560,234 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "As for the start-of-day chip leader, Gierse struggled for the latter half of the day and was unable to turn things around. There was a brief glimpse of hope for the German man when he nearly doubled up off Song, but the very next hand would see it all come to an end. At first sight, it appeared that Song would end the tournament with a double knockout when he picked up pocket jacks against the ace-king from both Gierse and Mendoza. However, Mendoza managed to find a four-bet and fold after two all-ins in front of him. Gierse wasn't as lucky with his chips in the middle, and some of his outs were already dead."
+        content: "As for the start-of-day chip leader, Gierse struggled for the latter half of the day and was unable to turn things around. There was a brief glimpse of hope for the German man when he nearly doubled up off Song, but the very next hand would see it all come to an end. At first sight, it appeared that Song would end the tournament with a double knockout when he picked up pocket jacks against the ace-king from both Gierse and Mendoza. However, Mendoza managed to find a four-bet and fold after two all-ins in front of him. Gierse wasn't as lucky with his chips in the middle, and some of his outs were already dead.",
+        content_cn: "至于开局筹码领先者Gierse，他在后半程陷入困境无法翻盘。当他差点从Song那里翻倍时，这位德国人看到了一丝希望，但下一手牌就结束了一切。乍一看，当Song拿着口袋JJ面对Gierse和Mendoza都是AK时，似乎会以双杀结束比赛。然而，Mendoza在面前两个全下后设法找到四注并弃牌。Gierse就没那么幸运了，他的一些补牌已经死掉。",
+        content_tw: "至於開局籌碼領先者Gierse，他在後半程陷入困境無法翻盤。當他差點從Song那裡翻倍時，這位德國人看到了一絲希望，但下一手牌就結束了一切。乍一看，當Song拿著口袋JJ面對Gierse和Mendoza都是AK時，似乎會以雙殺結束比賽。然而，Mendoza在面前兩個全下後設法找到四注並棄牌。Gierse就沒那麼幸運了，他的一些補牌已經死掉。"
       },
       {
         type: "paragraph",
-        content: "That left Song and Mendoza to battle it out heads-up, with Song holding a massive chip lead. It turned out to be a lot of small-pot poker between the two players to kick things off until Song spiked a full house against the two pair of Mendoza. With just a few big blinds left, all of the chips went in the middle on the next hand. The hot streak continued for Song as he made two pair with some rags and brought an end to the inaugural Main Event of the TLPT."
+        content: "That left Song and Mendoza to battle it out heads-up, with Song holding a massive chip lead. It turned out to be a lot of small-pot poker between the two players to kick things off until Song spiked a full house against the two pair of Mendoza. With just a few big blinds left, all of the chips went in the middle on the next hand. The hot streak continued for Song as he made two pair with some rags and brought an end to the inaugural Main Event of the TLPT.",
+        content_cn: "这样Song和Mendoza进入单挑，Song拥有巨大的筹码优势。一开始两人打了很多小底池，直到Song用葫芦击败Mendoza的两对。Mendoza只剩几个大盲时，下一手牌所有筹码都进入了底池。Song的火热手气继续，用杂牌做成两对，为TLPT首届主赛事画上句号。",
+        content_tw: "這樣Song和Mendoza進入單挑，Song擁有巨大的籌碼優勢。一開始兩人打了很多小底池，直到Song用葫蘆擊敗Mendoza的兩對。Mendoza只剩幾個大盲時，下一手牌所有籌碼都進入了底池。Song的火熱手氣繼續，用雜牌做成兩對，為TLPT首屆主賽事畫上句號。"
+      }
+    ]
+  },
+  "tlpt-jeju-2025-main-event-circuit-winner-wezheng": {
+    heroImage: "/image/news/details-news/new47/1-BJRjznbR.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "The inaugural The Lord Poker Tournament in Jeju Island, South Korea has reached the halfway point. The action has been in full swing since May 13 with games continuing through May 22 at the Landing Casino within the Jeju Shinhwa World Resort. With a jaw-dropping USD 8,000,000 guarantee announced, expectedly players flocked in to earn their share. Below are the early highlights."
+      },
+      {
+        type: "heading",
+        content: "TLPT JEJU – HALFWAY HIGHLIGHTS"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/1-BJRjznbR.png",
+        alt: "TLPT Jeju Tournament"
+      },
+      {
+        type: "paragraph",
+        content: "The main attraction is currently underway, the USD 3,000,000 guaranteed TLPT Main Event 15K Super High Roller, and expectedly, the field is populated with some of the world's most decorated players. Out of the 115 that signed up at Day 1, only 58 players advanced to Day 2 led by Haohui Ma."
+      },
+      {
+        type: "paragraph",
+        content: "Others in the mix were TLPT Ambassadors Quan Zhou and Dan Cates, Nguyen Quang Minh, Amichai Barer, Sean Ooi, Renji Mao, James Mendoza, Dominik Nitsche, and Lei Yu. Registration is still open on May 17 with buy-in at USD 15,000. Read up on the action via the Live Updates."
+      },
+      {
+        type: "heading",
+        content: "#2 MAIN EVENT (CS) - 8 HANDED"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/2-Bismu3rc.png",
+        alt: "TLPT Trophy"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/3-BxpfpXC6.png",
+        alt: "Weizheng Zhong Champion"
+      },
+      {
+        type: "heading",
+        content: "INTERVIEW WITH WEIZHENG ZHONG - INAUGURAL TLPT MAIN EVENT CHAMPION"
+      },
+      {
+        type: "paragraph",
+        content: "The $700,000 guaranteed inaugural The Lord Poker Tournament Circuit Main Event crowned Weizheng Zhong capturing his first poker trophy and $120,000, to more than double his all-time live earnings."
+      },
+      {
+        type: "qa",
+        question: "Congratulations on winning the biggest event of the series so far! How do you feel?",
+        answer: "I feel very happy and very lucky to win this."
+      },
+      {
+        type: "qa",
+        question: "This was quite the marathon heads up, how did you adjust to your opponent?",
+        answer: "So basically I tried to play as much as possible against him, but still I folded when I had KQ off suit against him. If I didn't get that cooler hand I'd probably lose the heads up."
+      },
+      {
+        type: "qa",
+        question: "Starting day 2 with only 15BB how has the journey been to become champion?",
+        answer: "It was pretty sweet honestly, on Day 1, I almost bubbled, before late reg I only had 3 or 4 bb left. Then I rounded up to 112K in one level, then eventually I bagged around 70K. You know the first two level of Day 2, I actually didn't get any spots so I was down to like 3 bb, then when I moved and got pretty good spots and cooler get paid."
+      },
+      {
+        type: "qa",
+        question: "Who was your toughest opponent in the final table and why?",
+        answer: "It was Stephen Song because he is the most experienced player, but I didn't play many pots against him, but at last five players left I think it was William Jia because he was the better opponent after Stephen busted."
+      },
+      {
+        type: "qa",
+        question: "How did you get into poker?",
+        answer: "I started playing poker when I was in college during the pandemic. My first time playing poker was in like 2019 and I started to play a lot during the first year of pandemic so 2020."
+      },
+      {
+        type: "qa",
+        question: "Is it just a hobby or you play poker for a living?",
+        answer: "Right now I play cards and crypto stuff."
+      },
+      {
+        type: "qa",
+        question: "How will your poker career change now that you have this massive win?",
+        answer: "I mean it's not really like life changing money for me, but definitely I can travel more now."
+      },
+      {
+        type: "qa",
+        question: "Will you try your luck in one of the high rollers in the coming days?",
+        answer: "My initial plan was not playing, but honestly I don't know now (laughs)"
+      },
+      {
+        type: "qa",
+        question: "How did you find out about The Lord Poker Tournament and what made you play?",
+        answer: "My friend invited me to come here (Zhou Yinan) so he said there was a freeroll in Jeju and I was traveling to China so said sure yeah."
+      },
+      {
+        type: "paragraph",
+        content: "Read up on the action via the Live Updates."
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/5-Cekw5IQr.png",
+        alt: "Main Event Payouts"
+      },
+      {
+        type: "heading",
+        content: "#2 MAIN EVENT (CS) - 8 HANDED"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/6-AyEJOqf2.png",
+        alt: "Xiaqing Ji Champion"
+      },
+      {
+        type: "heading",
+        content: "XIAQING JI TURNED HIS AAPOKER FREEROLL TICKET TO $120,000!"
+      },
+      {
+        type: "paragraph",
+        content: "The first event of the inaugural TLPT Jeju blasted in as players poured for the $600,000 guaranteed Freezeout Freeroll. To enter players had to obtain entry via the AAPoker app. A total of 446 players showed up with the top 75 claiming a portion of the prize pool. In the end, it was Xiaqing Ji who turned his freeroll ticket to a whopping $120,000!"
+      },
+      {
+        type: "paragraph",
+        content: "Interview With the Champion"
+      },
+      {
+        type: "qa",
+        question: "What does it feel like winning 100k from nothing",
+        answer: "I feel great and very happy right now"
+      },
+      {
+        type: "qa",
+        question: "How did you hear about the event?",
+        answer: "From a good friend of mine Evan Zhang"
+      },
+      {
+        type: "qa",
+        question: "How did you approach the final table coming in as cl and having position on the 2nd biggest stack?",
+        answer: "I just played my style, be aggressive and used my stack properly to build more and more stack."
+      },
+      {
+        type: "qa",
+        question: "How do you approach this tournament strategically? (e.g., do you play a wide range of hands, focus on post-flop play, or try to get a good chip stack early?)",
+        answer: "First of all I read all the body movement of the player in my table so i know how will i adjust my play style."
+      },
+      {
+        type: "qa",
+        question: "How do you handle the pressure of a big field?(Explore their ability to stay calm and make rational decisions despite the large number of players)",
+        answer: "There is still some pressure on the big field, because some time ago compare the low period the grades are not very good."
+      },
+      {
+        type: "qa",
+        question: "What is your poker history? You took a long break from playing poker after 2020",
+        answer: "My Buglix probably started in 2017, I have also been all over the world,Including EPT the Australian Millions will participate there will be participation in domestic Asian competitions. Then give me more after winning the championship this time. It has greatly increased my confidence I hope that on the way to the next game you can also get better results."
+      },
+      {
+        type: "qa",
+        question: "Any advice for young players?",
+        answer: "First of all, we should do a good job of fund management. Then through continuous learning I think everyone through hard work Naturally, there will be good grades."
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/8-Bnniu1d6.png",
+        alt: "Freeroll Payouts"
+      },
+      {
+        type: "heading",
+        content: "#3 AAPOKER DEEP STACK (CS) - 8 HANDED - UNLIMITED RE-BUY ($1,000)"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/9-ZKcALnec.png",
+        alt: "Nevan Chang"
+      },
+      {
+        type: "heading",
+        content: "NEVAN CHANG WINS AAPOKER DEEP STACK"
+      },
+      {
+        type: "paragraph",
+        content: "The $1,000 buy-in AAPoker Deep stack event pulled in a healthy 202 entries to boost the prize pool to just over the guarantee for $202,000, shared among the top 26 places. Leading up to that moment, the bubble burst on Kanghao Yang with A♦ K♦ outdrawn by Lei Yu's Q♦ J♦."
+      },
+      {
+        type: "paragraph",
+        content: "With the money certain, it was a race to the final table. Notables Patrik Demus (20th) and Dong Chen (15th) were among the fallen while Yu missed the final 9 by one spot. With nearly every player decorated in achievements, it was anyone's game."
+      },
+      {
+        type: "paragraph",
+        content: "TLPT's Ivan Zhang fell in 8th place, TLPT Ambassador Quan Zhou was out next in 7th falling to Nevan Chang with A♦ A♦ dominating A♥ K♥."
+      },
+      {
+        type: "paragraph",
+        content: "At six remaining, poker couple Chang and Hua Wei Lin dominated the action. Lin built a wide lead after eliminating Zhengfang Huang in 6th place with pocket Jacks over pocket Fives however it didn't last as Chang overtook by railing Yongwei Mo in 4th place."
+      },
+      {
+        type: "paragraph",
+        content: "Down to three-handed Yanghao Fu went on a heater to see him surge to the top then took down Lin who was behind with Q♥ 6♥ at the flop K♥ Q♦ 3♦ against Fu's K♦ 3♦and didn't improve on the turn J♥ and river A♦."
+      },
+      {
+        type: "paragraph",
+        content: "It was a tight race for the trophy. Chang scored a decisive double up with A♦ 7♦ over A♦ 6♥ leaving Fu with crumbs. It quickly wrapped up with Chang sealing the victory sending Fu to settle for a runner-up finish."
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/11-CLUb-_JJ.png",
+        alt: "Deep Stack Payouts"
+      },
+      {
+        type: "heading",
+        content: "#7 SINGLE DAY HR (SHR) - 8 HANDED ($7,500)"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/12-WIzkogdJ.png",
+        alt: "Yuzhu Wang Champion"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new47/14-BioqKqNM.png",
+        alt: "Single Day HR Payouts"
       }
     ]
   }
@@ -3101,7 +3816,11 @@ interface ArticleSection {
 
 interface ArticleContent {
   heroImage: string;
+  heroImage_tw?: string;
+  heroImage_cn?: string;
   sections: ArticleSection[];
+  sections_tw?: ArticleSection[];
+  sections_cn?: ArticleSection[];
 }
 
 export default function NewsDetailPage() {
@@ -3115,6 +3834,24 @@ export default function NewsDetailPage() {
   }
 
   const content = articleContent[slug];
+  
+  // Get language-specific sections
+  const getSections = () => {
+    if (!content) return [];
+    if (language === "tw" && content.sections_tw) return content.sections_tw;
+    if (language === "cn" && content.sections_cn) return content.sections_cn;
+    return content.sections;
+  };
+  
+  // Get language-specific hero image
+  const getHeroImage = () => {
+    if (!content) return article.image;
+    if (language === "tw" && content.heroImage_tw) return content.heroImage_tw;
+    if (language === "cn" && content.heroImage_cn) return content.heroImage_cn;
+    return content.heroImage;
+  };
+  
+  const currentSections = getSections();
   
   // Get translated title based on language
   const getTitle = () => {
@@ -3180,7 +3917,7 @@ export default function NewsDetailPage() {
           className="relative w-full overflow-hidden mb-10 flex justify-center"
         >
           <img
-            src={content?.heroImage || article.image}
+            src={getHeroImage()}
             alt={article.title}
             className="max-w-[90%] md:max-w-[80%] h-auto object-contain rounded-lg"
           />
@@ -3194,7 +3931,7 @@ export default function NewsDetailPage() {
             transition={{ delay: 0.2 }}
             className="prose prose-invert max-w-none"
           >
-            {content.sections.map((section, index) => {
+            {currentSections.map((section, index) => {
               switch (section.type) {
                 case "paragraph":
                   return (

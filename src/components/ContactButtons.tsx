@@ -42,7 +42,14 @@ const contactList: ContactInfo[] = [
 ];
 
 export default function ContactButtons() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
+  
+  // Get tooltip text based on language
+  const getTooltipText = () => {
+    if (language === "cn") return "新手优惠领取中，欢迎咨询！";
+    if (language === "tw") return "新手優惠領取中，歡迎諮詢！";
+    return "New player bonuses are available—contact us to claim!";
+  };
   const [activePopup, setActivePopup] = useState<string | null>(null);
   const [copied, setCopied] = useState(false);
   const [isContactMenuOpen, setIsContactMenuOpen] = useState(false);
@@ -144,7 +151,7 @@ export default function ContactButtons() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 20, scale: 0.8 }}
               transition={{ duration: 0.2 }}
-              className="flex flex-col gap-3"
+              className="flex flex-col gap-0"
             >
               {/* Sigua Button */}
               <motion.button
@@ -243,14 +250,14 @@ export default function ContactButtons() {
               </button>
 
               {/* Chat bubble */}
-              <div className="relative bg-yellow-400 text-gray-900 px-4 py-3 rounded-xl shadow-2xl font-bold text-sm pointer-events-auto" style={{ minWidth: '180px', maxWidth: '220px' }}>
+              <div className="relative px-4 py-3 rounded-xl shadow-2xl font-bold text-sm pointer-events-auto" style={{ minWidth: '180px', maxWidth: '220px', backgroundColor: '#FFF3D6', color: '#2B2B2B' }}>
                 <div className="text-center leading-snug">
-                  {t("contact.tooltip")}
+                  {getTooltipText()}
                 </div>
                 
                 {/* Chat bubble tail - positioned to point at green button */}
                 <div className="absolute bottom-[20px] -right-[6px]">
-                  <div className="w-3 h-3 bg-yellow-400 transform rotate-45"></div>
+                  <div className="w-3 h-3 transform rotate-45" style={{ backgroundColor: '#FFF3D6' }}></div>
                 </div>
               </div>
             </motion.div>
@@ -265,7 +272,7 @@ export default function ContactButtons() {
               ? "bg-gray-500" 
               : "bg-gradient-to-r from-[#39cb61] to-[#2ea350]"
           }`}
-          animate={{ rotate: isContactMenuOpen ? 45 : 0 }}
+          animate={{ rotate: 0 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -276,7 +283,7 @@ export default function ContactButtons() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              strokeWidth={2}
+              strokeWidth={2.5}
             >
               <path
                 strokeLinecap="round"

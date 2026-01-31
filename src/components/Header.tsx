@@ -64,7 +64,7 @@ export default function Header() {
             <img
               src="/image/home/logo/logotext-XjxNBhSC.png"
               alt="AA Poker"
-              className="h-6 w-auto object-contain"
+              className="h-10 w-auto object-contain"
             />
           </Link>
 

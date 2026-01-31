@@ -20,13 +20,31 @@ export default function NewsSection() {
     return news.title;
   };
 
+  // Format date based on language
+  const formatDate = (dateString: string) => {
+    if (language === "en") return dateString;
+    
+    try {
+      const date = new Date(dateString);
+      if (isNaN(date.getTime())) return dateString;
+      
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      
+      return `${year}年${month}月${day}日`;
+    } catch (e) {
+      return dateString;
+    }
+  };
+
   return (
     <section 
-      className="py-16 bg-[#0a1f14]"
+      className="py-4 sm:py-16 bg-[#0a1f14]"
     >
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
-        <div className="text-center mb-10">
+        <div className="text-center mb-4 sm:mb-10">
           <h2 className="text-[#f2e29e] text-3xl md:text-4xl font-bold tracking-widest uppercase mb-4">
             {t("news.title")}
           </h2>
@@ -54,7 +72,7 @@ export default function NewsSection() {
                   {getTitle(featuredNews)}
                 </h3>
                 <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">
-                  {featuredNews.date}
+                  {formatDate(featuredNews.date)}
                 </p>
               </div>
             </Link>
@@ -82,7 +100,7 @@ export default function NewsSection() {
                     {getTitle(news)}
                   </h4>
                   <p className="text-[#4ade80]/60 text-[11px] mt-1 italic">
-                    {news.date}
+                    {formatDate(news.date)}
                   </p>
                 </div>
               </Link>
