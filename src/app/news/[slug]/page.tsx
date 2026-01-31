@@ -3577,11 +3577,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "paragraph",
-        content: "The inaugural The Lord Poker Tournament in Jeju Island, South Korea has reached the halfway point. The action has been in full swing since May 13 with games continuing through May 22 at the Landing Casino within the Jeju Shinhwa World Resort. With a jaw-dropping USD 8,000,000 guarantee announced, expectedly players flocked in to earn their share. Below are the early highlights."
+        content: "The inaugural The Lord Poker Tournament in Jeju Island, South Korea has reached the halfway point. The action has been in full swing since May 13 with games continuing through May 22 at the Landing Casino within the Jeju Shinhwa World Resort. With a jaw-dropping USD 8,000,000 guarantee announced, expectedly players flocked in to earn their share. Below are the early highlights.",
+        content_cn: "首届Lord扑克锦标赛在韩国济州岛已进行到一半。自5月13日以来，比赛在济州神话世界度假村的Landing Casino火热进行，将持续到5月22日。随着令人惊叹的800万美元保底奖金的公布，选手们蜂拥而至争夺他们的份额。以下是早期亮点。",
+        content_tw: "首屆Lord撲克錦標賽在韓國濟州島已進行到一半。自5月13日以來，比賽在濟州神話世界度假村的Landing Casino火熱進行，將持續到5月22日。隨著令人驚嘆的800萬美元保底獎金的公佈，選手們蜂擁而至爭奪他們的份額。以下是早期亮點。"
       },
       {
         type: "heading",
-        content: "TLPT JEJU – HALFWAY HIGHLIGHTS"
+        content: "TLPT JEJU – HALFWAY HIGHLIGHTS",
+        content_cn: "TLPT济州 – 半程亮点",
+        content_tw: "TLPT濟州 – 半程亮點"
       },
       {
         type: "image",
@@ -3590,15 +3594,21 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The main attraction is currently underway, the USD 3,000,000 guaranteed TLPT Main Event 15K Super High Roller, and expectedly, the field is populated with some of the world's most decorated players. Out of the 115 that signed up at Day 1, only 58 players advanced to Day 2 led by Haohui Ma."
+        content: "The main attraction is currently underway, the USD 3,000,000 guaranteed TLPT Main Event 15K Super High Roller, and expectedly, the field is populated with some of the world's most decorated players. Out of the 115 that signed up at Day 1, only 58 players advanced to Day 2 led by Haohui Ma.",
+        content_cn: "主要赛事目前正在进行中，300万美元保底的TLPT主赛事15K超级豪客赛，如预期的那样，场上聚集了一些世界上最优秀的选手。在第一天报名的115人中，只有58名选手晋级第二天，由马浩辉领先。",
+        content_tw: "主要賽事目前正在進行中，300萬美元保底的TLPT主賽事15K超級豪客賽，如預期的那樣，場上聚集了一些世界上最優秀的選手。在第一天報名的115人中，只有58名選手晉級第二天，由馬浩輝領先。"
       },
       {
         type: "paragraph",
-        content: "Others in the mix were TLPT Ambassadors Quan Zhou and Dan Cates, Nguyen Quang Minh, Amichai Barer, Sean Ooi, Renji Mao, James Mendoza, Dominik Nitsche, and Lei Yu. Registration is still open on May 17 with buy-in at USD 15,000. Read up on the action via the Live Updates."
+        content: "Others in the mix were TLPT Ambassadors Quan Zhou and Dan Cates, Nguyen Quang Minh, Amichai Barer, Sean Ooi, Renji Mao, James Mendoza, Dominik Nitsche, and Lei Yu. Registration is still open on May 17 with buy-in at USD 15,000. Read up on the action via the Live Updates.",
+        content_cn: "其他参赛者包括TLPT大使周全和Dan Cates、Nguyen Quang Minh、Amichai Barer、Sean Ooi、毛仁基、James Mendoza、Dominik Nitsche和于磊。5月17日报名仍然开放，买入费用为15,000美元。通过实时更新了解比赛动态。",
+        content_tw: "其他參賽者包括TLPT大使周全和Dan Cates、Nguyen Quang Minh、Amichai Barer、Sean Ooi、毛仁基、James Mendoza、Dominik Nitsche和於磊。5月17日報名仍然開放，買入費用為15,000美元。通過實時更新了解比賽動態。"
       },
       {
         type: "heading",
-        content: "#2 MAIN EVENT (CS) - 8 HANDED"
+        content: "#2 MAIN EVENT (CS) - 8 HANDED",
+        content_cn: "#2 主赛事 (CS) - 8人桌",
+        content_tw: "#2 主賽事 (CS) - 8人桌"
       },
       {
         type: "image",
@@ -3612,60 +3622,102 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "INTERVIEW WITH WEIZHENG ZHONG - INAUGURAL TLPT MAIN EVENT CHAMPION"
+        content: "INTERVIEW WITH WEIZHENG ZHONG - INAUGURAL TLPT MAIN EVENT CHAMPION",
+        content_cn: "专访钟伟正 - 首届TLPT主赛事冠军",
+        content_tw: "專訪鍾偉正 - 首屆TLPT主賽事冠軍"
       },
       {
         type: "paragraph",
-        content: "The $700,000 guaranteed inaugural The Lord Poker Tournament Circuit Main Event crowned Weizheng Zhong capturing his first poker trophy and $120,000, to more than double his all-time live earnings."
+        content: "The $700,000 guaranteed inaugural The Lord Poker Tournament Circuit Main Event crowned Weizheng Zhong capturing his first poker trophy and $120,000, to more than double his all-time live earnings.",
+        content_cn: "70万美元保底的首届Lord扑克锦标赛巡回赛主赛事冠军由钟伟正获得，这是他的第一个扑克奖杯，奖金12万美元，使他的职业生涯现场收入翻了一番多。",
+        content_tw: "70萬美元保底的首屆Lord撲克錦標賽巡迴賽主賽事冠軍由鍾偉正獲得，這是他的第一個撲克獎杯，獎金12萬美元，使他的職業生涯現場收入翻了一番多。"
       },
       {
         type: "qa",
         question: "Congratulations on winning the biggest event of the series so far! How do you feel?",
-        answer: "I feel very happy and very lucky to win this."
+        question_cn: "恭喜你赢得了迄今为止系列赛中最大的赛事！你感觉如何？",
+        question_tw: "恭喜你贏得了迄今為止系列賽中最大的賽事！你感覺如何？",
+        answer: "I feel very happy and very lucky to win this.",
+        answer_cn: "我感到非常高兴，能赢得这个比赛非常幸运。",
+        answer_tw: "我感到非常高興，能贏得這個比賽非常幸運。"
       },
       {
         type: "qa",
         question: "This was quite the marathon heads up, how did you adjust to your opponent?",
-        answer: "So basically I tried to play as much as possible against him, but still I folded when I had KQ off suit against him. If I didn't get that cooler hand I'd probably lose the heads up."
+        question_cn: "这是一场马拉松式的单挑，你是如何调整应对对手的？",
+        question_tw: "這是一場馬拉松式的單挑，你是如何調整應對對手的？",
+        answer: "So basically I tried to play as much as possible against him, but still I folded when I had KQ off suit against him. If I didn't get that cooler hand I'd probably lose the heads up.",
+        answer_cn: "基本上我尽可能多地与他对抗，但当我有KQ杂色时还是弃牌了。如果没有那手冷牌我可能会输掉单挑。",
+        answer_tw: "基本上我盡可能多地與他對抗，但當我有KQ雜色時還是棄牌了。如果沒有那手冷牌我可能會輸掉單挑。"
       },
       {
         type: "qa",
         question: "Starting day 2 with only 15BB how has the journey been to become champion?",
-        answer: "It was pretty sweet honestly, on Day 1, I almost bubbled, before late reg I only had 3 or 4 bb left. Then I rounded up to 112K in one level, then eventually I bagged around 70K. You know the first two level of Day 2, I actually didn't get any spots so I was down to like 3 bb, then when I moved and got pretty good spots and cooler get paid."
+        question_cn: "第二天开始时只有15BB，成为冠军的旅程是怎样的？",
+        question_tw: "第二天開始時只有15BB，成為冠軍的旅程是怎樣的？",
+        answer: "It was pretty sweet honestly, on Day 1, I almost bubbled, before late reg I only had 3 or 4 bb left. Then I rounded up to 112K in one level, then eventually I bagged around 70K. You know the first two level of Day 2, I actually didn't get any spots so I was down to like 3 bb, then when I moved and got pretty good spots and cooler get paid.",
+        answer_cn: "说实话真的很甜蜜，第一天我差点泡沫出局，晚报名前我只剩3或4bb。然后在一个级别内我涨到了112K，最终打包了大约70K。你知道第二天的前两个级别，我实际上没有任何机会，所以我降到了大约3bb，然后当我换位后得到了很好的位置，冷牌也得到了回报。",
+        answer_tw: "說實話真的很甜蜜，第一天我差點泡沫出局，晚報名前我只剩3或4bb。然後在一個級別內我漲到了112K，最終打包了大約70K。你知道第二天的前兩個級別，我實際上沒有任何機會，所以我降到了大約3bb，然後當我換位後得到了很好的位置，冷牌也得到了回報。"
       },
       {
         type: "qa",
         question: "Who was your toughest opponent in the final table and why?",
-        answer: "It was Stephen Song because he is the most experienced player, but I didn't play many pots against him, but at last five players left I think it was William Jia because he was the better opponent after Stephen busted."
+        question_cn: "决赛桌上谁是你最难对付的对手，为什么？",
+        question_tw: "決賽桌上誰是你最難對付的對手，為什麼？",
+        answer: "It was Stephen Song because he is the most experienced player, but I didn't play many pots against him, but at last five players left I think it was William Jia because he was the better opponent after Stephen busted.",
+        answer_cn: "是Stephen Song，因为他是最有经验的选手，但我没有和他打太多底池。但在最后五人时我认为是William Jia，因为在Stephen出局后他是更好的对手。",
+        answer_tw: "是Stephen Song，因為他是最有經驗的選手，但我沒有和他打太多底池。但在最後五人時我認為是William Jia，因為在Stephen出局後他是更好的對手。"
       },
       {
         type: "qa",
         question: "How did you get into poker?",
-        answer: "I started playing poker when I was in college during the pandemic. My first time playing poker was in like 2019 and I started to play a lot during the first year of pandemic so 2020."
+        question_cn: "你是怎么开始玩扑克的？",
+        question_tw: "你是怎麼開始玩撲克的？",
+        answer: "I started playing poker when I was in college during the pandemic. My first time playing poker was in like 2019 and I started to play a lot during the first year of pandemic so 2020.",
+        answer_cn: "我在大学期间疫情时开始玩扑克。我第一次玩扑克大约是2019年，然后在疫情第一年也就是2020年开始大量玩。",
+        answer_tw: "我在大學期間疫情時開始玩撲克。我第一次玩撲克大約是2019年，然後在疫情第一年也就是2020年開始大量玩。"
       },
       {
         type: "qa",
         question: "Is it just a hobby or you play poker for a living?",
-        answer: "Right now I play cards and crypto stuff."
+        question_cn: "这只是爱好还是你靠扑克谋生？",
+        question_tw: "這只是愛好還是你靠撲克謀生？",
+        answer: "Right now I play cards and crypto stuff.",
+        answer_cn: "目前我玩牌和做加密货币相关的事情。",
+        answer_tw: "目前我玩牌和做加密貨幣相關的事情。"
       },
       {
         type: "qa",
         question: "How will your poker career change now that you have this massive win?",
-        answer: "I mean it's not really like life changing money for me, but definitely I can travel more now."
+        question_cn: "赢得这场大胜后，你的扑克生涯会有什么变化？",
+        question_tw: "贏得這場大勝後，你的撲克生涯會有什麼變化？",
+        answer: "I mean it's not really like life changing money for me, but definitely I can travel more now.",
+        answer_cn: "对我来说这并不是改变人生的钱，但我现在肯定可以更多地旅行了。",
+        answer_tw: "對我來說這並不是改變人生的錢，但我現在肯定可以更多地旅行了。"
       },
       {
         type: "qa",
         question: "Will you try your luck in one of the high rollers in the coming days?",
-        answer: "My initial plan was not playing, but honestly I don't know now (laughs)"
+        question_cn: "你会在接下来的几天里参加高额赛吗？",
+        question_tw: "你會在接下來的幾天裡參加高額賽嗎？",
+        answer: "My initial plan was not playing, but honestly I don't know now (laughs)",
+        answer_cn: "我最初的计划是不参加，但老实说我现在不确定了（笑）",
+        answer_tw: "我最初的計劃是不參加，但老實說我現在不確定了（笑）"
       },
       {
         type: "qa",
         question: "How did you find out about The Lord Poker Tournament and what made you play?",
-        answer: "My friend invited me to come here (Zhou Yinan) so he said there was a freeroll in Jeju and I was traveling to China so said sure yeah."
+        question_cn: "你是怎么知道Lord扑克锦标赛的，是什么让你决定参加？",
+        question_tw: "你是怎麼知道Lord撲克錦標賽的，是什麼讓你決定參加？",
+        answer: "My friend invited me to come here (Zhou Yinan) so he said there was a freeroll in Jeju and I was traveling to China so said sure yeah.",
+        answer_cn: "我的朋友邀请我来这里（周一男），他说济州有免费赛，我正好在去中国旅行，所以就说好啊。",
+        answer_tw: "我的朋友邀請我來這裡（周一男），他說濟州有免費賽，我正好在去中國旅行，所以就說好啊。"
       },
       {
         type: "paragraph",
-        content: "Read up on the action via the Live Updates."
+        content: "Read up on the action via the Live Updates.",
+        content_cn: "通过实时更新了解比赛动态。",
+        content_tw: "通過實時更新了解比賽動態。"
       },
       {
         type: "image",
@@ -3674,7 +3726,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "#2 MAIN EVENT (CS) - 8 HANDED"
+        content: "#2 MAIN EVENT (CS) - 8 HANDED",
+        content_cn: "#2 主赛事 (CS) - 8人桌",
+        content_tw: "#2 主賽事 (CS) - 8人桌"
       },
       {
         type: "image",
@@ -3683,15 +3737,21 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "XIAQING JI TURNED HIS AAPOKER FREEROLL TICKET TO $120,000!"
+        content: "XIAQING JI TURNED HIS AAPOKER FREEROLL TICKET TO $120,000!",
+        content_cn: "XIAQING JI将AAPOKER免费赛门票变成了$120,000！",
+        content_tw: "XIAQING JI將AAPOKER免費賽門票變成了$120,000！"
       },
       {
         type: "paragraph",
-        content: "The first event of the inaugural TLPT Jeju blasted in as players poured for the $600,000 guaranteed Freezeout Freeroll. To enter players had to obtain entry via the AAPoker app. A total of 446 players showed up with the top 75 claiming a portion of the prize pool. In the end, it was Xiaqing Ji who turned his freeroll ticket to a whopping $120,000!"
+        content: "The first event of the inaugural TLPT Jeju blasted in as players poured for the $600,000 guaranteed Freezeout Freeroll. To enter players had to obtain entry via the AAPoker app. A total of 446 players showed up with the top 75 claiming a portion of the prize pool. In the end, it was Xiaqing Ji who turned his freeroll ticket to a whopping $120,000!",
+        content_cn: "首届TLPT济州的第一场赛事火爆开场，选手们涌入60万美元保底的冻结免费赛。参赛选手必须通过AAPoker应用程序获得参赛资格。共有446名选手参赛，前75名瓜分奖池。最终，Xiaqing Ji将他的免费赛门票变成了惊人的12万美元！",
+        content_tw: "首屆TLPT濟州的第一場賽事火爆開場，選手們湧入60萬美元保底的凍結免費賽。參賽選手必須通過AAPoker應用程序獲得參賽資格。共有446名選手參賽，前75名瓜分獎池。最終，Xiaqing Ji將他的免費賽門票變成了驚人的12萬美元！"
       },
       {
         type: "paragraph",
-        content: "Interview With the Champion"
+        content: "Interview With the Champion",
+        content_cn: "冠军专访",
+        content_tw: "冠軍專訪"
       },
       {
         type: "qa",
@@ -3735,7 +3795,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "#3 AAPOKER DEEP STACK (CS) - 8 HANDED - UNLIMITED RE-BUY ($1,000)"
+        content: "#3 AAPOKER DEEP STACK (CS) - 8 HANDED - UNLIMITED RE-BUY ($1,000)",
+        content_cn: "#3 AAPOKER深筹赛 (CS) - 8人桌 - 无限重买 ($1,000)",
+        content_tw: "#3 AAPOKER深籌賽 (CS) - 8人桌 - 無限重買 ($1,000)"
       },
       {
         type: "image",
@@ -3744,31 +3806,45 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "NEVAN CHANG WINS AAPOKER DEEP STACK"
+        content: "NEVAN CHANG WINS AAPOKER DEEP STACK",
+        content_cn: "NEVAN CHANG赢得AAPOKER深筹赛",
+        content_tw: "NEVAN CHANG贏得AAPOKER深籌賽"
       },
       {
         type: "paragraph",
-        content: "The $1,000 buy-in AAPoker Deep stack event pulled in a healthy 202 entries to boost the prize pool to just over the guarantee for $202,000, shared among the top 26 places. Leading up to that moment, the bubble burst on Kanghao Yang with A♦ K♦ outdrawn by Lei Yu's Q♦ J♦."
+        content: "The $1,000 buy-in AAPoker Deep stack event pulled in a healthy 202 entries to boost the prize pool to just over the guarantee for $202,000, shared among the top 26 places. Leading up to that moment, the bubble burst on Kanghao Yang with A♦ K♦ outdrawn by Lei Yu's Q♦ J♦.",
+        content_cn: "1000美元买入的AAPoker深筹赛吸引了202名参赛者，将奖池提升到略高于保底的20.2万美元，由前26名分享。在此之前，泡沫在Kanghao Yang身上破裂，他的A♦ K♦被Lei Yu的Q♦ J♦击败。",
+        content_tw: "1000美元買入的AAPoker深籌賽吸引了202名參賽者，將獎池提升到略高於保底的20.2萬美元，由前26名分享。在此之前，泡沫在Kanghao Yang身上破裂，他的A♦ K♦被Lei Yu的Q♦ J♦擊敗。"
       },
       {
         type: "paragraph",
-        content: "With the money certain, it was a race to the final table. Notables Patrik Demus (20th) and Dong Chen (15th) were among the fallen while Yu missed the final 9 by one spot. With nearly every player decorated in achievements, it was anyone's game."
+        content: "With the money certain, it was a race to the final table. Notables Patrik Demus (20th) and Dong Chen (15th) were among the fallen while Yu missed the final 9 by one spot. With nearly every player decorated in achievements, it was anyone's game.",
+        content_cn: "确定奖金后，比赛进入决赛桌争夺战。知名选手Patrik Demus（第20名）和Dong Chen（第15名）相继出局，而Yu差一名未能进入最后9人。几乎每位选手都成就斐然，比赛悬念十足。",
+        content_tw: "確定獎金後，比賽進入決賽桌爭奪戰。知名選手Patrik Demus（第20名）和Dong Chen（第15名）相繼出局，而Yu差一名未能進入最後9人。幾乎每位選手都成就斐然，比賽懸念十足。"
       },
       {
         type: "paragraph",
-        content: "TLPT's Ivan Zhang fell in 8th place, TLPT Ambassador Quan Zhou was out next in 7th falling to Nevan Chang with A♦ A♦ dominating A♥ K♥."
+        content: "TLPT's Ivan Zhang fell in 8th place, TLPT Ambassador Quan Zhou was out next in 7th falling to Nevan Chang with A♦ A♦ dominating A♥ K♥.",
+        content_cn: "TLPT的Ivan Zhang在第8名出局，TLPT大使Quan Zhou紧随其后在第7名出局，被Nevan Chang的A♦ A♦压制A♥ K♥。",
+        content_tw: "TLPT的Ivan Zhang在第8名出局，TLPT大使Quan Zhou緊隨其後在第7名出局，被Nevan Chang的A♦ A♦壓制A♥ K♥。"
       },
       {
         type: "paragraph",
-        content: "At six remaining, poker couple Chang and Hua Wei Lin dominated the action. Lin built a wide lead after eliminating Zhengfang Huang in 6th place with pocket Jacks over pocket Fives however it didn't last as Chang overtook by railing Yongwei Mo in 4th place."
+        content: "At six remaining, poker couple Chang and Hua Wei Lin dominated the action. Lin built a wide lead after eliminating Zhengfang Huang in 6th place with pocket Jacks over pocket Fives however it didn't last as Chang overtook by railing Yongwei Mo in 4th place.",
+        content_cn: "剩余6人时，扑克情侣Chang和Hua Wei Lin主导了比赛。Lin在用口袋JJ淘汰Zhengfang Huang的口袋55后建立了巨大领先，但这并未持续，Chang通过在第4名淘汰Yongwei Mo而反超。",
+        content_tw: "剩餘6人時，撲克情侶Chang和Hua Wei Lin主導了比賽。Lin在用口袋JJ淘汰Zhengfang Huang的口袋55後建立了巨大領先，但這並未持續，Chang通過在第4名淘汰Yongwei Mo而反超。"
       },
       {
         type: "paragraph",
-        content: "Down to three-handed Yanghao Fu went on a heater to see him surge to the top then took down Lin who was behind with Q♥ 6♥ at the flop K♥ Q♦ 3♦ against Fu's K♦ 3♦and didn't improve on the turn J♥ and river A♦."
+        content: "Down to three-handed Yanghao Fu went on a heater to see him surge to the top then took down Lin who was behind with Q♥ 6♥ at the flop K♥ Q♦ 3♦ against Fu's K♦ 3♦and didn't improve on the turn J♥ and river A♦.",
+        content_cn: "三人桌时Yanghao Fu手气爆发冲到榜首，然后淘汰了Lin，Lin在翻牌K♥ Q♦ 3♦时拿着Q♥ 6♥落后于Fu的K♦ 3♦，转牌J♥和河牌A♦都没有改进。",
+        content_tw: "三人桌時Yanghao Fu手氣爆發衝到榜首，然後淘汰了Lin，Lin在翻牌K♥ Q♦ 3♦時拿著Q♥ 6♥落後於Fu的K♦ 3♦，轉牌J♥和河牌A♦都沒有改進。"
       },
       {
         type: "paragraph",
-        content: "It was a tight race for the trophy. Chang scored a decisive double up with A♦ 7♦ over A♦ 6♥ leaving Fu with crumbs. It quickly wrapped up with Chang sealing the victory sending Fu to settle for a runner-up finish."
+        content: "It was a tight race for the trophy. Chang scored a decisive double up with A♦ 7♦ over A♦ 6♥ leaving Fu with crumbs. It quickly wrapped up with Chang sealing the victory sending Fu to settle for a runner-up finish.",
+        content_cn: "冠军争夺战非常激烈。Chang用A♦ 7♦对A♦ 6♥完成决定性翻倍，让Fu只剩残局。Chang很快封印胜利，Fu获得亚军。",
+        content_tw: "冠軍爭奪戰非常激烈。Chang用A♦ 7♦對A♦ 6♥完成決定性翻倍，讓Fu只剩殘局。Chang很快封印勝利，Fu獲得亞軍。"
       },
       {
         type: "image",
