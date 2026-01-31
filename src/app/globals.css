@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
 @import "tailwindcss";
+
+/* Google Font – gần nhất với AA Poker UI */
 
 /* AAPoker Custom Theme Configuration */
 @theme inline {
@@ -7,46 +10,93 @@
   --color-aa-darker-green: #011008;
   --color-aa-emerald: #00a651;
   --color-aa-light-green: #4ade80;
-  
+
   /* Golden Colors */
   --color-aa-gold-light: #fff2c6;
   --color-aa-gold: #efce79;
   --color-aa-gold-medium: #f8e6ab;
   --color-aa-gold-dark: #d4af37;
-  
-  /* Text Colors */
-  --color-aa-white: #ffffff;
-  --color-aa-gray: #b1b1b1;
-  --color-aa-gray-dark: #6b7280;
-  
+
+  /* Text Colors – chỉnh lại giống AA Poker */
+  --color-aa-text-primary: rgba(255, 255, 255, 0.88);
+  --color-aa-text-secondary: rgba(255, 255, 255, 0.65);
+  --color-aa-text-muted: rgba(255, 255, 255, 0.45);
+
   /* Background Colors */
   --color-aa-card-bg: rgba(0, 30, 20, 0.6);
   --color-aa-card-border: rgba(74, 222, 128, 0.3);
-  
+
   /* Font Family */
-  --font-sans: 'Inter', 'Montserrat', sans-serif;
+  --font-sans: "SansSCRegular", sans-serif;
+  --font-heading: "SansSCBold", sans-serif;
 }
 
 /* Root Variables */
 :root {
   --background-gradient: linear-gradient(180deg, #001d10, #011008);
   --gold-gradient: linear-gradient(90deg, #fff2c6, #efce79 43%, #f8e6ab);
-  --gold-text-gradient: linear-gradient(90deg, #fff2c6, #efce79 50%, #d4af37);
+  --gold-text-gradient: linear-gradient(
+    90deg,
+    rgba(255, 242, 198, 0.9),
+    rgba(239, 206, 121, 0.85) 50%,
+    rgba(212, 175, 55, 0.8)
+  );
   --green-glow: 0 0 20px rgba(74, 222, 128, 0.3);
   --gold-glow: 0 0 20px rgba(239, 206, 121, 0.4);
 }
 
 /* Base Body Styles */
 body {
-  background: linear-gradient(180deg, #001d10, #011008);
-  color: #ffffff;
-  font-family: 'Inter', 'Montserrat', sans-serif;
+  background: var(--background-gradient);
+  color: var(--color-aa-text-primary);
+  font-family: var(--font-sans);
   min-height: 100vh;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
 
-/* Golden Text Gradient Utility */
+/* Headings use Bold font */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* Typography Utilities – giống AA Poker */
+.text-light {
+  font-weight: 300;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-primary {
+  color: var(--color-aa-text-primary);
+}
+
+.text-secondary {
+  color: var(--color-aa-text-secondary);
+}
+
+.text-muted {
+  color: var(--color-aa-text-muted);
+}
+
+.tracking-soft {
+  letter-spacing: 0.04em;
+}
+
+.tracking-wide-soft {
+  letter-spacing: 0.08em;
+}
+
+/* Golden Text Gradient – làm mềm để không bị đậm */
 .text-gold-gradient {
-  background: linear-gradient(90deg, #fff2c6, #efce79 50%, #d4af37);
+  background: var(--gold-text-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -56,45 +106,50 @@ body {
 .btn-gold-hover {
   position: relative;
   background: transparent;
-  border: 2px solid #efce79;
-  color: #efce79;
+  border: 1.5px solid rgba(239, 206, 121, 0.8);
+  color: rgba(239, 206, 121, 0.9);
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .btn-gold-hover:hover {
-  background: linear-gradient(90deg, #fff2c6, #efce79 43%, #f8e6ab);
+  background: var(--gold-gradient);
   color: #001d10;
   border-color: transparent;
-  box-shadow: 0 0 20px rgba(239, 206, 121, 0.4);
+  box-shadow: var(--gold-glow);
 }
 
 /* Green Button Style */
 .btn-green {
   background: linear-gradient(135deg, #00a651, #4ade80);
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .btn-green:hover {
-  box-shadow: 0 0 25px rgba(74, 222, 128, 0.5);
+  box-shadow: 0 0 25px rgba(74, 222, 128, 0.45);
   transform: translateY(-2px);
 }
 
-/* Nav Link Underline Animation */
+/* Nav Link Underline Animation – tất cả chữ đều rõ, không bị mờ */
 .nav-link {
   position: relative;
-  color: #ffffff;
+  color: var(--color-aa-text-primary);
+  font-weight: 600;
+  letter-spacing: 0.06em;
   transition: color 0.3s ease;
+  opacity: 1;
 }
 
 .nav-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, #fff2c6, #efce79 43%, #f8e6ab);
+  background: var(--gold-gradient);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -138,8 +193,8 @@ body {
 
 /* Green Glow Effect */
 .green-glow {
-  box-shadow: 0 0 30px rgba(74, 222, 128, 0.3),
-              0 0 60px rgba(0, 166, 81, 0.2);
+  box-shadow: 0 0 30px rgba(74, 222, 128, 0.25),
+    0 0 60px rgba(0, 166, 81, 0.18);
 }
 
 /* 3D Card Effect */

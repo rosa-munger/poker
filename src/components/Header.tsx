@@ -74,7 +74,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`nav-link text-base font-bold tracking-wider uppercase ${
+                className={`nav-link text-lg font-bold tracking-wider uppercase ${
                   pathname === link.href ? "active text-aa-gold" : ""
                 }`}
               >
@@ -89,10 +89,10 @@ export default function Header() {
                   e.stopPropagation();
                   setIsLangOpen(!isLangOpen);
                 }}
-                className="flex items-center gap-2 text-white hover:text-aa-gold transition-colors text-base font-bold tracking-wider"
+                className="flex items-center gap-2 text-white hover:text-aa-gold transition-colors text-lg font-bold tracking-wider uppercase"
               >
 
-                <span>LANGUAGE</span>
+                <span>{t("nav.language")}</span>
                 <svg
                   className={`w-4 h-4 transition-transform ${
                     isLangOpen ? "rotate-180" : ""

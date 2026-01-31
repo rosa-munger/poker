@@ -121,16 +121,16 @@ export default function NewsPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={`/news/${news.slug}`} className="group block bg-[#052e16] p-0 overflow-hidden hover:border-[#f2e29e]/50 border border-transparent transition-all">
-                  <div className="relative w-full overflow-hidden bg-[#052e16]">
+                <Link href={`/news/${news.slug}`} className="group flex flex-col h-full bg-[#052e16] p-0 overflow-hidden hover:border-[#f2e29e]/50 border border-transparent transition-all">
+                  <div className="relative w-full h-48 overflow-hidden bg-[#052e16] flex-shrink-0">
                     <img
                       src={news.image}
                       alt={news.title}
-                      className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-white font-medium text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
+                  <div className="p-4 flex-grow flex flex-col">
+                    <h3 className="text-white font-medium text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2 flex-grow">
                       {getTitle(news)}
                     </h3>
                     <p className="text-[#4ade80]/60 text-xs mt-3 italic">{news.date}</p>

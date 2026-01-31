@@ -150,25 +150,25 @@ const articleContent: { [key: string]: ArticleContent } = {
         content_cn: "通过实时更新了解比赛动态。",
         content_tw: "通過實時更新了解比賽動態。"
       },
-      {
-        type: "table",
-        title: "Main Event Results",
-        headers: ["#", "Payout", "Player"],
-        rows: [
-          ["1", "$124,000", "Weizheng Zhong 🇨🇳"],
-          ["2", "$67,000", "Xuecong Wu 🇨🇳"],
-          ["3", "$48,500", "William Jia 🇦🇺"],
-          ["4", "$40,300", "Fangzhou Zhu 🇨🇳"],
-          ["5", "$29,500", "Yiyu Zhou 🇨🇳"],
-          ["6", "$22,500", "Jiaming Zhao 🇨🇳"],
-          ["7", "$17,500", "Stephen Song 🇺🇸"],
-          ["8", "$16,500", "Jin Zeng 🇨🇳"],
-          ["9", "$13,700", "Huan Wen 🇨🇳"]
-        ],
-        totalPrize: "$700,000",
-        entries: "505",
-        itm: "60"
-      },
+      // {
+      //   type: "table",
+      //   title: "Main Event Results",
+      //   headers: ["#", "Payout", "Player"],
+      //   rows: [
+      //     ["1", "$124,000", "Weizheng Zhong 🇨🇳"],
+      //     ["2", "$67,000", "Xuecong Wu 🇨🇳"],
+      //     ["3", "$48,500", "William Jia 🇦🇺"],
+      //     ["4", "$40,300", "Fangzhou Zhu 🇨🇳"],
+      //     ["5", "$29,500", "Yiyu Zhou 🇨🇳"],
+      //     ["6", "$22,500", "Jiaming Zhao 🇨🇳"],
+      //     ["7", "$17,500", "Stephen Song 🇺🇸"],
+      //     ["8", "$16,500", "Jin Zeng 🇨🇳"],
+      //     ["9", "$13,700", "Huan Wen 🇨🇳"]
+      //   ],
+      //   totalPrize: "$700,000",
+      //   entries: "505",
+      //   itm: "60"
+      // },
       {
         type: "image",
         src: "/image/news/details-news/new1/5-Cekw5IQr.png",
@@ -640,8 +640,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "As 2024 quietly draws to a close, 2025 ushers in a fresh start. At this time of year, the circle of poker's annual rankings are being released with great fanfare. Over the past year, Chinese players have made their presence felt across poker tournaments worldwide, achieving numerous impressive results. As a result, they have performed exceptionally well in the annual rankings. In the recently released 2024 GPI (Global Poker Index) Annual Rankings, five Chinese players have made it into the top 100 in the world! Notably, two members of the AA poker teams, Quan Zhou and Dong Chen, have both secured spots in the GPI Top 100, ranking 26th and 66th, respectively, showcasing their incredible talent and competitive strength.",
-        content_cn: "随着2024年悄然落幕，2025年迎来了新的开始。每年这个时候，扑克界的年度排名都会隆重发布。在过去的一年里，中国选手在世界各地的扑克锦标赛中崭露头角，取得了众多令人瞩目的成绩。因此，他们在年度排名中表现出色。在最近发布的2024年GPI（全球扑克指数）年度排名中，五位中国选手进入了全球前100名！值得注意的是，AA扑克团队的两名成员周全和陈东都成功进入GPI前100名，分别排名第26位和第66位，展示了他们非凡的天赋和竞争实力。",
-        content_tw: "隨著2024年悄然落幕，2025年迎來了新的開始。每年這個時候，撲克界的年度排名都會隆重發布。在過去的一年裡，中國選手在世界各地的撲克錦標賽中嶄露頭角，取得了眾多令人矚目的成績。因此，他們在年度排名中表現出色。在最近發布的2024年GPI（全球撲克指數）年度排名中，五位中國選手進入了全球前100名！值得注意的是，AA撲克團隊的兩名成員周全和陳東都成功進入GPI前100名，分別排名第26位和第66位，展示了他們非凡的天賦和競爭實力。"
+        content_cn: "2024悄然已过，2025崭新来临，在这岁末年初时刻，扑克圈的年度榜单纷纷重磅出炉。 在过去的一年，国人选手的足迹踏遍世界各地的赛场，也取得了各种耀眼的成绩， 因此在年度榜单的表现非常出色。在新近出炉的2024GPI全球年度排行榜上，中国有5名选手跻身世界百强！ 尤其是AA POKER战队成员周全和陈东，他们分别闯入GPI百强榜的第26名和第66名！",
+        content_tw: "2024年悄悄已過，2025嶄新來臨，在這歲末年初時刻，撲克圈的年度榜單紛紛重磅出爐。 在過去的一年，國人選手的足跡踏遍世界各地的賽場，也取得了各種耀眼的成績， 因此在年度榜單的表現非常出色。在新近出爐的2024GPI全球年度排行榜上，中國有5名選手躋身世界百強！ 尤其是AA POKER戰隊成員周全和陳東，他們分別闖入GPI百強榜的第26名和第66名！"
       },
       {
         type: "image",
@@ -651,14 +651,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "heading",
         content: "Global Poker Index (GPI)",
-        content_cn: "全球扑克指数（GPI）",
-        content_tw: "全球撲克指數（GPI）"
+        content_cn: "Global Poker Index 全球扑克指数",
+        content_tw: "Global Poker Index 全球撲克指數"
       },
       {
         type: "paragraph",
         content: "The GPI is a ranking system used to track and measure the performance of poker players in major global tournaments. It evaluates players' results across various prestigious poker events to provide a global ranking that reflects their overall skill and performance in the competitive poker scene.",
-        content_cn: "GPI是一个用于跟踪和衡量扑克选手在全球主要锦标赛中表现的排名系统。它评估选手在各种著名扑克赛事中的成绩，提供一个反映他们在竞技扑克领域整体技术和表现的全球排名。",
-        content_tw: "GPI是一個用於跟踪和衡量撲克選手在全球主要錦標賽中表現的排名系統。它評估選手在各種著名撲克賽事中的成績，提供一個反映他們在競技撲克領域整體技術和表現的全球排名。"
+        content_cn: "是一个用于记录和衡量世界各国选手在各大扑克锦标赛现场成绩的排行榜",
+        content_tw: "是用來記錄和衡量世界各國選手在各大撲克錦標賽現場成績的排行榜"
       },
       {
         type: "image",
@@ -668,14 +668,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Achieving a spot in the GPI Top 100 is a prestigious honor, reflecting a player's consistent and high-level performance over the past six months.",
-        content_cn: "进入GPI前100名是一项殊荣，反映了选手在过去六个月内稳定且高水平的表现。",
-        content_tw: "進入GPI前100名是一項殊榮，反映了選手在過去六個月內穩定且高水準的表現。"
+        content_cn: "能够进入GPI百强榜的含金量不言而喻，表明了该选手在过去的36个月里持续稳定地输出好成绩。",
+        content_tw: "能夠進入GPI百強榜的含金量不言而喻，顯示了該選手在過去的36個月裡持續穩定地輸出好成績。"
       },
       {
         type: "paragraph",
         content: "Quan Zhou's 2024: A Year of Glorious Achievements Let's first take a look at the 2024 journey of 'King' Zhou Quan, which is a 'breakout year' for him, marked by five championships, two runner-up finishes, two third-place finishes, and seven final table (FT) appearances. Among his five titles, three stand out as major victories in high-stakes tournaments: the Jeju Triton High Roller in March, the Cyprus Super High Roller in August, and the Brisbane TLPT High Roller in October.",
-        content_cn: "周全的2024：辉煌成就之年 让我们先来看看『王者』周全的2024年征程，这是他的『爆发年』，收获了五个冠军、两个亚军、两个季军和七次决赛桌（FT）入围。在他的五个冠军中，有三个是高额赛事的重大胜利：3月的济州Triton豪客赛、8月的塞浦路斯超级豪客赛和10月的布里斯班TLPT豪客赛。",
-        content_tw: "周全的2024：輝煌成就之年 讓我們先來看看『王者』周全的2024年征程，這是他的『爆發年』，收穫了五個冠軍、兩個亞軍、兩個季軍和七次決賽桌（FT）入圍。在他的五個冠軍中，有三個是高額賽事的重大勝利：3月的濟州Triton豪客賽、8月的塞浦路斯超級豪客賽和10月的布里斯班TLPT豪客賽。"
+        content_cn: "先来看下\"国王\"周全的2024，过去的一年堪称周全的\"高光元年\"，5个冠军、2个亚军、2个季军以及7个FT成绩。 而在5个冠军中，还包含3个分量十足、超级厚重的豪客赛冠军，分别是3月份的济州岛传奇豪客赛、8月份的塞浦路斯超级豪客赛、10月份的布里斯班TLPT豪客赛。",
+        content_tw: "先來看下\"國王\"周全的2024，過去的一年堪稱周全的\"高光元年\"，5個冠軍、2個亞軍、2個季軍以及7個FT成績。 而在5個冠軍中，還包含3個分量十足、超級厚重的豪客賽冠軍，分別是3月份的濟州島傳奇豪客賽、8月份的塞浦路斯超級豪客賽、10月份的布里斯班TLPT豪客賽。"
       },
       {
         type: "image",
@@ -685,8 +685,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Zhou has been on an unstoppable rise throughout the entire year, and by November 2024, his career earnings surpassed the $10 million dollar. Currently, Zhou is undoubtedly at the peak of his career, and if he maintains this sizzling form, 2025 will surely bring even more championships! Dong Chen's 2024: Consistent and Rising Dong Chen, known as the 'Tough Guy' of Chinese poker players, combines good looks with exceptional poker skills. Despite his always considered himself a 'semi-professional' player, Chen stunned the poker world by winning the $10K High Roller at the WSOP Paradise Island event in December 2023, claiming a coveted WSOP bracelet—a dream come true for many pro players.",
-        content_cn: "周全在整年都保持着不可阻挡的上升势头，到2024年11月，他的职业生涯收入已超过1000万美元。目前，周全无疑正处于职业生涯的巅峰，如果他能保持这种火热状态，2025年必将带来更多冠军！陈东的2024：稳定与上升 陈东被称为中国扑克选手中的『硬汉』，外表英俊与出色的扑克技术兼备。尽管他一直自认为是『半职业』选手，但陈东在2023年12月的WSOP天堂岛赛事中赢得1万美元豪客赛冠军，获得了令人垂涎的WSOP金手链——这是许多职业选手梦寐以求的成就，震惊了扑克界。",
-        content_tw: "周全在整年都保持著不可阻擋的上升勢頭，到2024年11月，他的職業生涯收入已超過1000萬美元。目前，周全無疑正處於職業生涯的巔峰，如果他能保持這種火熱狀態，2025年必將帶來更多冠軍！陳東的2024：穩定與上升 陳東被稱為中國撲克選手中的『硬漢』，外表英俊與出色的撲克技術兼備。儘管他一直自認為是『半職業』選手，但陳東在2023年12月的WSOP天堂島賽事中贏得1萬美元豪客賽冠軍，獲得了令人垂涎的WSOP金手鍊——這是許多職業選手夢寐以求的成就，震驚了撲克界。"
+        content_cn: "周全在一整年里几乎都在高歌猛进，到了2024年11月份，他的职业生涯总奖金一举迈过1000万刀大关。 目前的周全无疑正值事业的巅峰期，这样火热的状态保持下去，2025势必会收获更多冠军！ 现在让我们看下\"硬汉\"陈东，作为国内男牌手的颜值担当，牌技同样过硬。一直以\"半职业选手\"自居的他，却在2023年12月的WSOP天堂岛站一举拿下$10K豪客赛冠军，收获了让众多职业选手梦寐以求的金手链。",
+        content_tw: "周全在一整年幾乎都在高歌猛進，到了2024年11月份，他的職業生涯總獎金一舉邁過1000萬刀大關。 目前的周全無疑正值事業的巔峰期，這樣火熱的狀態保持下去，2025勢必會收穫更多冠軍！ 現在讓我們看下「硬漢」陳東，身為國內男牌手的顏值擔當，牌技同樣過硬。一直以「半職業選手」自居的他，卻在2023年12月的WSOP天堂島站一舉拿下$10K豪客賽冠軍，收穫了讓眾多職業選手夢寐以求的金手鍊。"
       },
       {
         type: "image",
@@ -696,26 +696,20 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "In 2024, Dong Chen continued his steady progress, earning one championship, two fourth-place finishes, and three final table (FT) appearances. The highlight of his year came in November 2024, when he clinched the WPT Super High Roller event.",
-        content_cn: "2024年，陈东继续稳步前进，赢得一个冠军、两个第四名和三次决赛桌入围。他这一年的亮点出现在2024年11月，当时他夺得了WPT超级豪客赛冠军。",
-        content_tw: "2024年，陳東繼續穩步前進，贏得一個冠軍、兩個第四名和三次決賽桌入圍。他這一年的亮點出現在2024年11月，當時他奪得了WPT超級豪客賽冠軍。"
+        content_cn: "2024年的陈东依旧稳扎稳打，保持着稳健的发挥，收获1个冠军、2个殿军、3个FT成绩。 全年的高光时刻，就是在2024年11月夺得了WPT超级豪客赛的冠军。",
+        content_tw: "2024年的陳東依舊穩紮穩打，保持穩健的發揮，收穫1個冠軍、2個殿軍、3個FT成績。 全年的高光時刻，就是在2024年11月奪得了WPT超級豪客賽的冠軍。"
       },
       {
         type: "paragraph",
         content: "With a career earnings total of $3 million, Chen is in the ascendant phase of his journey compared to Quan Zhou, who is already at the peak of his career. Chen steadily increasing his participation in high roller events, and joining the AA POKER team is a significant opportunity for him. With the full support of the team, Chen's potential is immense, and he is poised for an explosive rise in 2025!",
-        content_cn: "职业生涯总收入达到300万美元的陈东，与已处于职业巅峰的周全相比，正处于上升阶段。陈东正在稳步增加参与豪客赛事的次数，加入AA POKER团队对他来说是一个重要机遇。在团队的全力支持下，陈东的潜力巨大，他有望在2025年实现爆发式增长！",
-        content_tw: "職業生涯總收入達到300萬美元的陳東，與已處於職業巔峰的周全相比，正處於上升階段。陳東正在穩步增加參與豪客賽事的次數，加入AA POKER團隊對他來說是一個重要機遇。在團隊的全力支持下，陳東的潛力巨大，他有望在2025年實現爆發式增長！"
+        content_cn: "目前陈东的职业生涯总奖金为300万刀，与已经处于巅峰期的周全不同，陈东正值事业的上升期，正在逐步增加豪客赛的参赛密度。 而加入AA poker战队，对他来说是一个巨大的契机，在整个团队的加持之下，陈东这支蓄势待发的火箭，有望在2025年迎来\"爆发式蹿升\"！",
+        content_tw: "目前陳東的職業生涯總獎金為300萬刀，與已經處於巔峰期的周全不同，陳東正值事業的上升期，正在逐步增加豪客賽的參賽密度。 而加入AA poker戰隊，對他來說是一個巨大的契機，在整個團隊的加持之下，陳東這支蓄勢待發的火箭，預計在2025年迎來\"爆發式躥升\"！"
       },
       {
         type: "paragraph",
-        content: "The AA POKER Teams: A Stellar Roster",
-        content_cn: "AA POKER团队：全明星阵容",
-        content_tw: "AA POKER團隊：全明星陣容"
-      },
-      {
-        type: "paragraph",
-        content: "Dan Cates: One of the most elusive and prestigious players in the world, the owner of two gold bracelets(most difficult-to-obtain world gold bracelets). Joe Hachem: WSOP Main Event champion and holder of the prestigious WSOP bracelet. Quan Zhou: Multiple world champion titles holder and the highest-performing Chinese player in poker. Dong Chen: WSOP bracelet winner. YARA: The most influential Chinese poker player globally, known for her charm and sweetness. Yisha Chen: A top Chinese female player and one of the top five ranked Chinese players on the GPI. Yi Ye: The fastest-rising Chinese player in 2024, with improved poker skills, and standout looks. Looking Ahead to 2025: A New Chapter Begins! The brilliance of 2024 is now a thing of the past, and 2025 is ready for a fresh start! We eagerly look forward to the AA POKER team, a powerhouse full of vitality and potential, creating even more exciting moments and winning more championships in 2025. We also wish all domestic players continued success and progress, making the 2025 rankings even more dazzling!",
-        content_cn: "Dan Cates：世界上最神秘和最负盛名的选手之一，拥有两枚金手链（最难获得的世界金手链）。Joe Hachem：WSOP主赛事冠军和著名WSOP金手链持有者。周全：多次世界冠军头衔持有者，扑克界表现最出色的中国选手。陈东：WSOP金手链得主。YARA：全球最具影响力的中国扑克选手，以魅力和甜美著称。陈一莎：中国顶级女选手，GPI排名前五的中国选手之一。叶一：2024年进步最快的中国选手，扑克技术提升，外表出众。展望2025：新篇章开启！2024年的辉煌已成为过去，2025年准备迎接新的开始！我们热切期待AA POKER团队这支充满活力和潜力的强队，在2025年创造更多精彩时刻，赢得更多冠军。我们也祝愿所有国内选手继续成功进步，让2025年的排名更加耀眼！",
-        content_tw: "Dan Cates：世界上最神秘和最負盛名的選手之一，擁有兩枚金手鍊（最難獲得的世界金手鍊）。Joe Hachem：WSOP主賽事冠軍和著名WSOP金手鍊持有者。周全：多次世界冠軍頭銜持有者，撲克界表現最出色的中國選手。陳東：WSOP金手鍊得主。YARA：全球最具影響力的中國撲克選手，以魅力和甜美著稱。陳一莎：中國頂級女選手，GPI排名前五的中國選手之一。葉一：2024年進步最快的中國選手，撲克技術提升，外表出眾。展望2025：新篇章開啟！2024年的輝煌已成為過去，2025年準備迎接新的開始！我們熱切期待AA POKER團隊這支充滿活力和潛力的強隊，在2025年創造更多精彩時刻，贏得更多冠軍。我們也祝願所有國內選手繼續成功進步，讓2025年的排名更加耀眼！"
+        content: "The AA POKER Teams: A Stellar Roster\n\nDan Cates: One of the most elusive and prestigious players in the world, the owner of two gold bracelets(most difficult-to-obtain world gold bracelets). Joe Hachem: WSOP Main Event champion and holder of the prestigious WSOP bracelet. Quan Zhou: Multiple world champion titles holder and the highest-performing Chinese player in poker. Dong Chen: WSOP bracelet winner. YARA: The most influential Chinese poker player globally, known for her charm and sweetness. Yisha Chen: A top Chinese female player and one of the top five ranked Chinese players on the GPI. Yi Ye: The fastest-rising Chinese player in 2024, with improved poker skills, and standout looks. Looking Ahead to 2025: A New Chapter Begins! The brilliance of 2024 is now a thing of the past, and 2025 is ready for a fresh start! We eagerly look forward to the AA POKER team, a powerhouse full of vitality and potential, creating even more exciting moments and winning more championships in 2025. We also wish all domestic players continued success and progress, making the 2025 rankings even more dazzling!",
+        content_cn: "附：AA poker战队全体成员\n\n世界号称最难拿到的世界金手链，背靠背拥有者，两条混合游戏世界冠军，Dan Cates 世界WSOP主赛金手链拥有者，Joe Hachem 多个世界冠军头衔得主，华人竞技天花板，周全 WSOP金手链得主，陈东 世界华人最具影响力，可爱与甜美化身，YARA 中国本土女选手，GPI排名中国前五的美女牌手，陈易莎 中国2024年德州竞技技术提高最多，水平增长最快，颜值最高，叶依 2024的辉煌已成过去，2025要再度扬帆起航！ 期待这支实力雄厚、活力十足又充满看点的AA poker战队在2025年创造更多的精彩，收获更多的冠军！ 也祝所有的国人选手百尺竿头更进一步，让2025年的年度榜单更加耀眼！",
+        content_tw: "附：AA POKER戰隊全體成員\n\n世界號稱最難拿到的世界金手鍊，背靠背擁有者，兩條混合遊戲世界冠軍，Dan Cates 世界WSOP主賽金手鍊擁有者，Joe Hachem 多個世界冠軍頭銜得主，華人競技天花板，周全 WSOP金手鍊得主，陳東 世界華人最具影響力，可愛與甜美化身，YARA 中國本土女選手，GPI排名中國前五的美女牌手，陳易莎 中國2024年德州競技技術提升最多，水準成長最快，顏值最高，葉依 2024的輝煌已成過去，2025要再度揚帆起航！ 期待這支實力雄厚、活力十足又充滿看點的AA poker戰隊在2025年創造更多的精彩，收穫更多的冠軍！ 也祝福所有的國人選手百尺竿頭更進一步，讓2025年的年度榜單更加耀眼！"
       }
     ]
   },
@@ -725,8 +719,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "After 7 days of intense battles, the WSOP Paradise Island $2,500 Mini Main Event has finally crowned its champion. The event attracted a total of 2,031 entries, with a prize pool of an impressive $5.077 million, surpassing the $5 million guarantee. The payout was structured so that 304 of whom would receive at least a minimum prize of $5,350. By Day 3, only 17 players remained, all vying for the coveted top prize of $575,050. In the end, Jeffrey Hakim triumphed in a heads-up battle against the talented Alina Pailahoshka, securing his first WSOP gold bracelet. Hakim has earned over $2 million in live tournament earnings, and this victory marks a new peak in his career. However, for him, the prize money was not the most important thing. 'The gold bracelet is what matters most. Winning my first gold bracelet is the most important and happiest thing.'",
-        content_cn: "经过7天的激烈战斗，WSOP天堂岛2500美元迷你主赛事终于加冕了冠军。该赛事共吸引了2031人参赛，奖池达到令人印象深刻的507.7万美元，超过了500万美元的保底。奖金结构设置为304人将至少获得5350美元的最低奖金。到第三天，只剩17名选手，都在争夺令人垂涎的575050美元冠军奖金。最终，Jeffrey Hakim在与才华横溢的Alina Pailahoshka的单挑战中获胜，获得了他的第一枚WSOP金手链。Hakim的现场锦标赛收入超过200万美元，这场胜利标志着他职业生涯的新高峰。然而，对他来说，奖金并不是最重要的。『金手链才是最重要的。赢得我的第一枚金手链是最重要和最幸福的事情。』",
-        content_tw: "經過7天的激烈戰鬥，WSOP天堂島2500美元迷你主賽事終於加冕了冠軍。該賽事共吸引了2031人參賽，獎池達到令人印象深刻的507.7萬美元，超過了500萬美元的保底。獎金結構設置為304人將至少獲得5350美元的最低獎金。到第三天，只剩17名選手，都在爭奪令人垂涎的575050美元冠軍獎金。最終，Jeffrey Hakim在與才華橫溢的Alina Pailahoshka的單挑戰中獲勝，獲得了他的第一枚WSOP金手鍊。Hakim的現場錦標賽收入超過200萬美元，這場勝利標誌著他職業生涯的新高峰。然而，對他來說，獎金並不是最重要的。『金手鍊才是最重要的。贏得我的第一枚金手鍊是最重要和最幸福的事情。』"
+        content_cn: "历时7天的鏖战，WSOP天堂岛$2,500迷你主赛事终于决出了最后的胜利者。 该赛事共吸引了2,031人次参赛，总奖池达到惊人的507.7w美元，超过了赛事500w美元的保证奖池，奖励圈设为306人，他们将获得至少$5,360最低奖金。 第3天比赛只有17名选手继续较量，争夺令人垂涎的$575,050最高奖金。最终，Jeffrey Hakim在单挑中击败美女牌手Alina Paliahoshka ，夺得他的第一条WSOP金手链。 Hakim在现场锦标赛中赢得的奖金超过200w美元，这次胜利让他达到了新的巅峰。但对他来说，奖金并不是最重要的。\"金手链才是最重要的，赢得第一条金手链是最重要、最幸福的事情。\"",
+        content_tw: "歷時7天的鏖戰，WSOP天堂島$2,500迷你主賽事終於決出了最後的勝利者。 該賽事共吸引了2,031人次參賽，總獎金池達到驚人的507.7w美元，超過了賽事500w美元的保證獎池，獎勵圈設為306人，他們將獲得至少$5,360最低獎金。 第3天比賽只有17名選手繼續較量，爭奪令人垂涎的$575,050最高獎金。最終，Jeffrey Hakim在單挑中擊敗美女牌手Alina Paliahoshka ，奪得他的第一條WSOP金手鍊。 Hakim在現場錦標賽中贏得的獎金超過200w美元，這場勝利讓他達到了新的巔峰。但對他來說，獎金並不是最重要的。 \"金手鍊才是最重要的，贏得第一條金手鍊是最重要、最幸福的事情。\""
       },
       {
         type: "image",
@@ -760,8 +754,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Last year, Dong Chen won a gold bracelet in the WSOP Paradise Island Event #15 High Roller, and this time he achieved an impressive 10th place finish in the event, earning $51,080. Tournament Results:",
-        content_cn: "去年，陈东在WSOP天堂岛第15场豪客赛中获得金手链，这次他在赛事中取得了令人印象深刻的第10名，赢得了51,080美元。锦标赛结果：",
-        content_tw: "去年，陳東在WSOP天堂島第15場豪客賽中獲得金手鍊，這次他在賽事中取得了令人印象深刻的第10名，贏得了51,080美元。錦標賽結果："
+        content_cn: "去年在WSOP天堂岛赛事#15豪客赛中获得金手链的陈东在这场比赛中获得第10名的好成绩，奖金$51,080。 比赛结果：",
+        content_tw: "去年在WSOP天堂島賽事#15豪客賽中獲得金手鍊的陳東在這場比賽中獲得第10名的好成績，獎金$51,080。 比賽結果："
       },
       {
         type: "image",
@@ -771,14 +765,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Zhen Chen, Jianwei Lin, and other Chinese players made it to the payout positions with the following results:",
-        content_cn: "陈震、林健伟和其他中国选手进入了奖金位置，成绩如下：",
-        content_tw: "陳震、林健偉和其他中國選手進入了獎金位置，成績如下："
+        content_cn: "陈真、林健伟等国人选手获得奖励圈成绩：",
+        content_tw: "陳真、林健偉等國人選手獲得獎勵圈成績："
       },
       {
         type: "paragraph",
         content: "Event #5: The $25,000 Dealer's Choice Tournament attracted 49 entries, with a total prize pool of $1,225,000. Among the participants were many players considered to be the best mixed-game players in the world.",
-        content_cn: "第5场赛事：25,000美元庄家选择锦标赛吸引了49人参赛，总奖池达到1,225,000美元。参赛者中有许多被认为是世界上最好的混合游戏选手。",
-        content_tw: "第5場賽事：25,000美元莊家選擇錦標賽吸引了49人參賽，總獎池達到1,225,000美元。參賽者中有許多被認為是世界上最好的混合遊戲選手。"
+        content_cn: "赛事#5：$25,000庄家选择赛共吸引49人次参赛，总奖池$1,225,000，他们中有很多人被认为是世界上最优秀的混合游戏玩家。",
+        content_tw: "賽事#5：$25,000莊家選擇賽共吸引49人次參賽，總獎金池$1,225,000，他們中有很多人被認為是世界上最優秀的混合遊戲玩家。"
       },
       {
         type: "image",
@@ -788,8 +782,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Only 4 players returned to the Bahamas Atlantis Paradise Island to compete in the Day 3 overtime session of Event #5. After 4 hours of intense play, Eric Wasserson emerged victorious, winning his first career gold bracelet and a reward of $353,340. Wasserson's career has been filled with many notable achievements. He had previously finished as a runner-up twice and third three times in bracelet events. Now, he can finally breathe a sigh of relief. 'I've always wanted to win a gold bracelet,' Wasserson admitted. 'It feels amazing to finally take it down. I can't even explain how it feels.' Event #5 Results:",
-        content_cn: "只有4名选手返回巴哈马亚特兰蒂斯天堂岛参加第5场赛事第三天的加时赛。经过4小时的激烈比赛，Eric Wasserson获胜，赢得了他职业生涯的第一枚金手链和353,340美元的奖金。Wasserson的职业生涯充满了许多显著成就。他此前曾两次获得亚军，三次获得第三名。现在，他终于可以松一口气了。『我一直想赢得金手链，』Wasserson承认道。『终于拿下感觉太棒了。我甚至无法形容这种感觉。』第5场赛事结果：",
-        content_tw: "只有4名選手返回巴哈馬亞特蘭蒂斯天堂島參加第5場賽事第三天的加時賽。經過4小時的激烈比賽，Eric Wasserson獲勝，贏得了他職業生涯的第一枚金手鍊和353,340美元的獎金。Wasserson的職業生涯充滿了許多顯著成就。他此前曾兩次獲得亞軍，三次獲得第三名。現在，他終於可以鬆一口氣了。『我一直想贏得金手鍊，』Wasserson承認道。『終於拿下感覺太棒了。我甚至無法形容這種感覺。』第5場賽事結果："
+        content_cn: "只有4人返回巴哈马亚特兰蒂斯天堂岛参加第3天的加时赛。经过4个小时的比拼后，Eric Wasserson从众多参赛选手中脱颖而出，夺得生涯首条金手链以及$353,340奖励。 Wasserson的职业生涯充满了很多的高光时刻。他在金手链赛事中曾获得过两次亚军和3次季军，现在他终于可以松一口气了。 \"我一直想赢得金手链，\" Wasserson承认。\"最终夺冠的感觉真的很好。我甚至无法解释这种感觉。\" 赛事#5比赛结果：",
+        content_tw: "只有4人返回巴哈馬亞特蘭提斯天堂島參加第3天的加時賽。 經過4小時的比拼後，Eric Wasserson從眾多參賽者中脫穎而出，奪得生涯首條金手鍊以及$353,340獎勵。 Wasserson的職業生涯充滿了許多的高光時刻。 他在金手鍊賽事中曾經獲得過兩次亞軍和3次季軍，現在他終於可以鬆一口氣了。 「我一直想贏得金手鍊，」 Wasserson承認。 \"最終奪冠的感覺真的很好。我什至無法解釋這種感覺。\" 賽事#5比賽結果："
       },
       {
         type: "image",
@@ -799,14 +793,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Ongoing Tournament: Event #6: $5,000 Deep Stack Tournament attracted 363 entries, with a total prize pool of $1,815,000.",
-        content_cn: "进行中的赛事：第6场赛事：5,000美元深筹码锦标赛吸引了363人参赛，总奖池达到1,815,000美元。",
-        content_tw: "進行中的賽事：第6場賽事：5,000美元深籌碼錦標賽吸引了363人參賽，總獎池達到1,815,000美元。"
+        content_cn: "正在进行的比赛： 赛事#6：$5,000深筹赛共吸引了363人次参与角逐，总奖池为$1,815,000。",
+        content_tw: "正在進行的比賽： 賽事#6：$5,000深籌賽共吸引了363人次參與角逐，總獎金池為$1,815,000。"
       },
       {
         type: "paragraph",
         content: "On Day 1, 253 players participated, with 94 players advancing to the next round. Lei Yu from Red Dragon Team and Yinan Zhou, also from China, both advanced smoothly to the next stage, thanks to their impressive chip stacks.",
-        content_cn: "第一天，253名选手参赛，94名选手晋级下一轮。来自红龙队的于磊和同样来自中国的周一男，凭借他们令人印象深刻的筹码量顺利晋级下一阶段。",
-        content_tw: "第一天，253名選手參賽，94名選手晉級下一輪。來自紅龍隊的於磊和同樣來自中國的周一男，憑藉他們令人印象深刻的籌碼量順利晉級下一階段。"
+        content_cn: "首日比赛，有 253 人次参赛，最终 94 人成功晋级。红龙战队的余磊以及同样来自中国的周懿楠凭借可观的记分牌量顺利闯入下一轮。",
+        content_tw: "首日比賽，有 253 人次參賽，最後 94 人成功晉級。紅龍戰隊的餘磊以及同樣來自中國的周懿楠憑藉可觀的記分牌量順利闘入下一輪。"
       },
       {
         type: "image",
@@ -816,14 +810,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "On the following day, 110 players joined the battle, bringing the total number of competitors to 204, who started the new day of play. After Day 2, only the final 9 players remained, all of whom will compete in the next round, fiercely chasing the coveted gold bracelet. Among them, Lei Yu is currently in 9th place with a chip stack of 540,000.",
-        content_cn: "第二天，110名选手加入战斗，使参赛者总数达到204人，开始新一天的比赛。第二天结束后，只剩下最后9名选手，他们都将在下一轮激烈争夺令人垂涎的金手链。其中，于磊目前以540,000的筹码量排名第9。",
-        content_tw: "第二天，110名選手加入戰鬥，使參賽者總數達到204人，開始新一天的比賽。第二天結束後，只剩下最後9名選手，他們都將在下一輪激烈爭奪令人垂涎的金手鍊。其中，於磊目前以540,000的籌碼量排名第9。"
+        content_cn: "次日，110 人加入战斗，他们与上一轮晋级的 94 位选手共同开启了新一天的较量。 Day2比赛结束后，比赛只剩下最后9人，他们将在下一轮比赛中全力追逐珍贵的金手链。其中余磊凭借54w记分暂居第9位：",
+        content_tw: "隔天，110 人加入戰鬥，他們與上一輪晉級的 94 位選手共同開啟了新一天的較量。 Day2比賽結束後，比賽只剩下最後9人，他們將在下一輪比賽中全力追逐珍貴的金手鍊。其中余磊以54w記分暫居第9名："
       },
       {
         type: "paragraph",
         content: "Event #7: $100,000 Triton Main Event Day 2: This tournament attracted 182 entries, featuring not only high-stakes regulars but also celebrity players and numerous world champions. The total prize pool reached an astonishing $18.2 million. As Day 2 began, David Yan (1,166,000), Dimitar Danchev (1,107,000), and Biao Ding (990,000) topped the leaderboard. These three experienced players are no strangers to high-stakes events at both WSOP and Triton, with impressive results in the highest-level tournaments.",
-        content_cn: "第7场赛事：100,000美元Triton主赛事第二天：该锦标赛吸引了182人参赛，不仅有高额赛常客，还有明星选手和众多世界冠军。总奖池达到惊人的1820万美元。第二天开始时，David Yan（1,166,000）、Dimitar Danchev（1,107,000）和丁彪（990,000）位居排行榜前列。这三位经验丰富的选手对WSOP和Triton的高额赛事并不陌生，在最高级别锦标赛中有着令人印象深刻的成绩。",
-        content_tw: "第7場賽事：100,000美元Triton主賽事第二天：該錦標賽吸引了182人參賽，不僅有高額賽常客，還有明星選手和眾多世界冠軍。總獎池達到驚人的1820萬美元。第二天開始時，David Yan（1,166,000）、Dimitar Danchev（1,107,000）和丁彪（990,000）位居排行榜前列。這三位經驗豐富的選手對WSOP和Triton的高額賽事並不陌生，在最高級別錦標賽中有著令人印象深刻的成績。"
+        content_cn: "赛事#7：$100,000 Triton主赛事Day2： 该比赛吸引了 182 人次参赛，其中不乏超高额常客、明星牌手以及众多世界冠军。比赛总奖池达到令人惊叹的 1820w美元。 随着 Day2 的开启，David Yan (116.6w)、 Dimitar Danchev (110.7w) 和丁彪 (99w) 位居排行榜榜首。这3位经验丰富的选手对 WSOP 和 Triton 的高额赛事并不陌生，他们在最高级别的比赛中均取得了令人瞩目的成绩。",
+        content_tw: "賽事#7：$100,000 Triton主賽事Day2： 該比賽吸引了 182 人次參賽，其中不乏超高額常客、明星牌手以及眾多世界冠軍。比賽總獎池達到令人驚嘆的 1820w美元。 隨著 Day2 的開啟，David Yan (116.6w)、 Dimitar Danchev (110.7w) 和丁彪 (99w) 位居排行榜榜首。這3位經驗豐富的選手對 WSOP 和 Triton 的高額賽事並不陌生，他們在最高級別的比賽中均取得了令人矚目的成績。"
       },
       {
         type: "image",
@@ -833,8 +827,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "However, as the competition intensified, many big-name players were eliminated. As of the latest update, only the final 15 players remain, all battling hard for the title. Finnish player Ossi Ketola currently leads with a chip stack of 6.6 million, followed closely by well-known players Fedor Holz and Alex Foxen. Other notable competitors still in the race include Mikita Badziakouski, Joao Vieira, and Stephen Chidwick.",
-        content_cn: "然而，随着竞争的加剧，许多大牌选手被淘汰。截至最新更新，只剩下最后15名选手，都在为冠军努力拼搏。芬兰选手Ossi Ketola目前以660万的筹码量领先，紧随其后的是知名选手Fedor Holz和Alex Foxen。其他仍在竞争中的著名选手包括Mikita Badziakouski、Joao Vieira和Stephen Chidwick。",
-        content_tw: "然而，隨著競爭的加劇，許多大牌選手被淘汰。截至最新更新，只剩下最後15名選手，都在為冠軍努力拼搏。芬蘭選手Ossi Ketola目前以660萬的籌碼量領先，緊隨其後的是知名選手Fedor Holz和Alex Foxen。其他仍在競爭中的著名選手包括Mikita Badziakouski、Joao Vieira和Stephen Chidwick。"
+        content_cn: "然而，随着比赛的激烈进行，众多大牌选手纷纷被淘汰。截至发稿时，场上仅剩下最后 15 名选手仍在奋力拼搏。 芬兰选手 Ossi Ketola 暂时以660w记分牌领先，广为人知的 Fedor Holz、Alex Foxen 紧随其后。 同样参与竞争的还有知名选手 Mikita Badziakouski、Joao Vieira、Stephen Chidwick 等。",
+        content_tw: "然而，隨著比賽的激烈進行，許多大牌選手紛紛被淘汰。截至發稿時，場上僅剩下最後 15 名選手仍在奮力奮鬥。 芬蘭選手 Ossi Ketola 暫時以660w記分板領先，廣為人知的 Fedor Holz、Alex Foxen 緊隨其後。 同樣參與競爭的還有知名選手 Mikita Badziakouski、Joao Vieira、Stephen Chidwick 等。"
       }
     ]
   },
@@ -844,8 +838,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Time flies, and the year 2024 is about to pass. Looking back on the past year, AApoker team has achieved fruitful results. AApoker's luxury tournament brand 'TLPT King's Road' and Triton Legendary Poker have reached an official cooperation, the two luxury giants have joined forces, and 2025 is full of infinite imagination. From September 27th to October 6th, TLPT joined hands with APT Australian Championship to successfully hold the 2024 Brisbane Hawker Series, which was highly praised by the circle. In addition, the AApoker team lineup continues to grow with an influx of strong reinforcements. The AApoker team has also been performing well in international tournaments, and in the recently concluded KPC Super Hustler, two AA players met in the final and took the first and second place.",
-        content_cn: "时光飞逝，2024年即将过去。回顾过去一年，AApoker团队取得了丰硕成果。AApoker的豪华赛事品牌『TLPT王者之路』与Triton传奇扑克达成了官方合作，两大豪华巨头强强联合，2025年充满无限想象。从9月27日到10月6日，TLPT携手APT澳大利亚锦标赛成功举办了2024布里斯班豪客系列赛，获得了圈内高度评价。此外，AApoker团队阵容持续壮大，强援不断涌入。AApoker团队在国际赛事中也表现出色，在刚刚结束的KPC超级豪客赛中，两名AA选手在决赛中相遇，包揽了冠亚军。",
-        content_tw: "時光飛逝，2024年即將過去。回顧過去一年，AApoker團隊取得了豐碩成果。AApoker的豪華賽事品牌『TLPT王者之路』與Triton傳奇撲克達成了官方合作，兩大豪華巨頭強強聯合，2025年充滿無限想象。從9月27日到10月6日，TLPT攜手APT澳大利亞錦標賽成功舉辦了2024布里斯班豪客系列賽，獲得了圈內高度評價。此外，AApoker團隊陣容持續壯大，強援不斷湧入。AApoker團隊在國際賽事中也表現出色，在剛剛結束的KPC超級豪客賽中，兩名AA選手在決賽中相遇，包攬了冠亞軍。"
+        content_cn: "时光飞逝，日月如梭，转眼2024年即将过去。回顾过去的一年，AApoker可谓是硕果累累。 旗下豪客赛品牌『TLPT王者之路』与Triton传奇扑克达成正式合作，两大豪客巨头强强联手，2025年充满无限想象。 9月27日-10月6日，TLPT携手APT 澳大利亚锦标赛，成功举办2024布里斯班豪客系列赛，备受圈内好评。 此外，AApoker战队阵容继续壮大，强援涌入。而且近期在国际赛事上表现不俗，在刚刚结束的KPC超级豪客赛上，两位AA选手会师决赛，包揽冠亚军。",
+        content_tw: "時光飛逝，日月如梭，轉眼2024年即將過去。回顧過去的一年，AApoker可謂是碩果累累。 旗下豪客賽品牌『TLPT王者之路』與Triton傳奇撲克達成正式合作，兩大豪客巨頭強強聯手，2025年充滿無限想像。 9月27日-10月6日，TLPT攜手APT 澳洲錦標賽，成功舉辦2024布里斯本豪客系列賽，備受圈內好評。 此外，AApoker戰隊陣容持續壯大，強援湧入。而且近期在國際賽事上表現不俗，在剛結束的KPC超級豪客賽上，兩位AA選手會師決賽，包辦冠亞軍。"
       },
       {
         type: "image",
@@ -855,8 +849,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The current AApoker team includes both WSOP Main Event champion Joe Hachem, the former GPI Global No. 1 Quan Zhou, and WSOP gold bracelet winner Dong Chen... The lineup is so impressive, let's take a look at it now!",
-        content_cn: "目前的AApoker团队包括WSOP主赛事冠军Joe Hachem、前GPI全球第一周全、以及WSOP金手链得主陈东……阵容如此豪华，让我们现在来看看吧！",
-        content_tw: "目前的AApoker團隊包括WSOP主賽事冠軍Joe Hachem、前GPI全球第一周全、以及WSOP金手鍊得主陳東……陣容如此豪華，讓我們現在來看看吧！"
+        content_cn: "目前这支AApoker战队既有WSOP主赛事冠军Joe Hachem，又有曾经的GPI全球第一周全，还有WSOP金手链获得者陈东...阵容太过豪华，现在让我们一睹为快！",
+        content_tw: "目前這支AApoker戰隊既有WSOP主賽事冠軍Joe Hachem，又有曾經的GPI全球第一周全，還有WSOP金手鍊獲得者陳東...陣容太過豪華，現在讓我們一睹為快！"
       },
       {
         type: "heading",
@@ -872,8 +866,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Dan \"Jungleman\" Cates, who is also the global brand ambassador of AApoker, is an old friend of Chinese players, with a delicate and interesting mind hidden under his rough exterior. \"Dan is a strong, well-rounded player with a dominant presence in live and online tournaments and at regular tables. He has two WSOP gold bracelets, the $50,000 Poker Players Championship, which he won back-to-back in 2021 and 2022, a miracle in WSOP history. And his live tournament winnings totaled a whopping $14.4 million. In the online, \"Jungleman\" is also legendary, with a profit of $11 million. What's even more terrifying is that \"Jungleman\" is still at the peak of his career and is bound to create more miracles.",
-        content_cn: "Dan「Jungleman」Cates也是AApoker的全球品牌大使，是中国选手的老朋友，粗犷的外表下隐藏着细腻有趣的内心。Dan是一位强大的全能选手，在现场和在线锦标赛以及常规桌上都有着主导地位。他拥有两枚WSOP金手链，5万美元扑克选手锦标赛，他在2021年和2022年连续夺冠，这是WSOP历史上的奇迹。他的现场锦标赛奖金总额高达1440万美元。在线上，「Jungleman」同样传奇，盈利达1100万美元。更可怕的是，「Jungleman」仍处于职业生涯巅峰，必将创造更多奇迹。",
-        content_tw: "Dan「Jungleman」Cates也是AApoker的全球品牌大使，是中國選手的老朋友，粗獷的外表下隱藏著細膩有趣的內心。Dan是一位強大的全能選手，在現場和在線錦標賽以及常規桌上都有著主導地位。他擁有兩枚WSOP金手鍊，5萬美元撲克選手錦標賽，他在2021年和2022年連續奪冠，這是WSOP歷史上的奇蹟。他的現場錦標賽獎金總額高達1440萬美元。在線上，「Jungleman」同樣傳奇，盈利達1100萬美元。更可怕的是，「Jungleman」仍處於職業生涯巔峰，必將創造更多奇蹟。"
+        content_cn: "\"野人\"Dan Cates，同时也是AApoker的全球品牌大使，可以说是国人玩家的老朋友了，粗犷的外表下隐藏着一颗细腻、有趣的心灵。 \"野人\"实力强悍，技术全面，无论是现场还是线上，比赛还是常规桌，都具有很强的统治力。 他的名下有两条含金量超高的WSOP金手链，分别是在2021年和2022年背靠背赢得的$50,000 扑克玩家冠军赛，堪称WSOP史上的一个神迹。而他的现场赛事总奖金也高达1440万刀。在线上世界中，\"野人\"同样是堪称传奇般的存在，他的盈利高达1100万刀。更为恐怖的是，\"野人\"依旧处于事业的巅峰期，势必会创造更多的奇迹。",
+        content_tw: "\"野人\"Dan Cates，同時也是AApoker的全球品牌大使，可以說是國人玩家的老朋友了，粗獷的外表下隱藏著一顆細膩、有趣的心靈。 \"野人\"實力強悍，技術全面，無論是現場或線上，比賽或常規桌，都具有很強的統治力。 他的名下有兩條含金量超高的WSOP金手鍊，分別是在2021年和2022年背靠背贏得的$50,000 撲克玩家冠軍賽，堪稱WSOP史上的一個神蹟。而他的現場賽事總獎金也高達1440萬刀。在線上世界中，\"野人\"同樣是堪稱傳奇般的存在，他的利潤高達1100萬刀。更恐怖的是，\"野人\"仍處於事業的巔峰期，勢必會創造更多的奇蹟。"
       },
       {
         type: "heading",
@@ -889,8 +883,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Quan Zhou, who also serves as AApoker's global brand ambassador, has been a leading figure in Chinese competitive poker for a long time, but he still has a long track record. Zhou won first place in GPI China back in 2017, and then in 2020, he won first place in GPI Global, as well as Poker Player of the Year that year, but those were just one of Zhou's many highlights. The year 2024 is still Zhou's \"highlight year\", and he has already won 5 championships, 2 runner-ups and 2 third-place finishes in the world's top tournaments, and his total career winnings have surpassed the 1,000-watt mark. Quan Zhou is not only skilled in poker, but also caring, as early as 2016 he initiated the establishment of the Deyi All-Stars charity organization to donate school supplies and living supplies to children in impoverished mountainous areas, which has persisted for nine years now. Whether it's in competitive play or character and morality, Zhou has set a noble example for the younger generation of poker players.",
-        content_cn: "同样担任AApoker全球品牌大使的周全，长期以来一直是中国竞技扑克的领军人物，但他的成就远不止于此。周全早在2017年就获得了GPI中国第一名，然后在2020年获得了GPI全球第一名，以及当年的年度扑克选手，但这些只是周全众多亮点之一。2024年仍然是周全的『高光年』，他已经在世界顶级锦标赛中赢得了5个冠军、2个亚军和2个季军，职业生涯总奖金已突破1000万美元大关。周全不仅扑克技术高超，还富有爱心，早在2016年他就发起成立了德艺全明星慈善组织，为贫困山区儿童捐赠学习用品和生活用品，至今已坚持九年。无论是在竞技比赛还是品格道德方面，周全都为年轻一代扑克选手树立了高尚的榜样。",
-        content_tw: "同樣擔任AApoker全球品牌大使的周全，長期以來一直是中國競技撲克的領軍人物，但他的成就遠不止於此。周全早在2017年就獲得了GPI中國第一名，然後在2020年獲得了GPI全球第一名，以及當年的年度撲克選手，但這些只是周全眾多亮點之一。2024年仍然是周全的『高光年』，他已經在世界頂級錦標賽中贏得了5個冠軍、2個亞軍和2個季軍，職業生涯總獎金已突破1000萬美元大關。周全不僅撲克技術高超，還富有愛心，早在2016年他就發起成立了德藝全明星慈善組織，為貧困山區兒童捐贈學習用品和生活用品，至今已堅持九年。無論是在競技比賽還是品格道德方面，周全都為年輕一代撲克選手樹立了高尚的榜樣。"
+        content_cn: "周全，同样担任AApoker的全球品牌大使，作为中国竞技扑克领军人物的他，可谓是成名已久，但依然业绩长青。 周全早在2017年就获得了GPI中国区第一名，然后在2020年，他获得了GPI全球第一名，同时也是当年的年度最佳牌手，但这些只是周全众多的高光时刻之一。 而2024年，依旧是周全的\"高光之年\"，征战全球顶级赛事的他已经夺得了5个冠军、2个亚军、2个季军，职业生涯总奖金也是迈过了1000W刀大关。 周全不仅牌技高超，而且富有爱心，早在2016年他就发起成立了德益全明星公益组织，为贫困山区儿童捐助学习用品和生活用品，至今已经坚持了9年之久。 无论是在竞技比赛上，还是人品道德上，周全都为年轻一代的牌手们树立了一个高尚的榜样。",
+        content_tw: "周全，同樣擔任AApoker的全球品牌大使，身為中國競技撲克領導人物的他，可謂是成名已久，但依然業績長青。 周全早在2017年就獲得了GPI中國區第一名，然後在2020年，他獲得了GPI全球第一名，同時也是當年的年度最佳牌手，但這些只是周全眾多的高光時刻之一。 而2024年，依舊是周全的\"高光之年\"，徵戰全球頂級賽事的他已經奪得了5個冠軍、2個亞軍、2個季軍，職業生涯總獎金也是邁過了1000W刀大關。 周全不僅牌技高超，而且富有愛心，早在2016年他就發起成立了德益全明星公益組織，為貧困山區兒童捐助學習用品和生活用品，至今已經堅持了9年之久。 無論是在競技比賽上，或是人品道德上，周全都為年輕一代的牌手們樹立了一個高尚的榜樣。"
       },
       {
         type: "heading",
@@ -906,14 +900,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Wesley Fei, a wealth man, entered the coinage industry at the age of 15 and amassed a huge fortune early on, becoming renowned in the coinage industry. Then a chance encounter with Texas Hold'em poker, then quickly began the road to the poker circle of the skyrocketing popularity. Because of his strong strength, he was nicknamed \"Unlimited Backhand\" by netizens. Unlike traditional domestic poker players, Wesly has an outgoing and high-profile personality, and soon became the star of the famous live poker program HCL, and is one of the few national poker players who can consistently compete at the high stakes tables against foreign players. During the June 2023 HCL Million live broadcast, Wesley made a huge splash on the poker scene when he first played Tom Dwan for the largest pot in live poker history at $3.1 million, and then for the second largest pot in live poker history at $2.2 million. Wesley's strong performance at the high stakes table demonstrated that national poker players also have a place at the high stakes table. As he matures in the poker world, Wesley is bound to play even better.",
-        content_cn: "Wesley Fei是一位财富人士，15岁就进入币圈，早早积累了巨额财富，在币圈声名鹊起。后来偶然接触到德州扑克，随即开始了在扑克圈人气飙升的道路。因为实力强劲，被网友称为『无限反手』。与传统的国内扑克选手不同，Wesley性格外向高调，很快成为著名现场扑克节目HCL的明星，是少数能够在高额桌上与外国选手持续竞争的国内扑克选手之一。在2023年6月的HCL百万直播中，Wesley首先与Tom Dwan打出了现场扑克历史上最大的底池310万美元，然后又打出了现场扑克历史上第二大的底池220万美元，在扑克界引起轰动。Wesley在高额桌上的强劲表现证明了国内扑克选手在高额桌上也有一席之地。随着他在扑克界的成熟，Wesley必将发挥得更好。",
-        content_tw: "Wesley Fei是一位財富人士，15歲就進入幣圈，早早積累了巨額財富，在幣圈聲名鵲起。後來偶然接觸到德州撲克，隨即開始了在撲克圈人氣飆升的道路。因為實力強勁，被網友稱為『無限反手』。與傳統的國內撲克選手不同，Wesley性格外向高調，很快成為著名現場撲克節目HCL的明星，是少數能夠在高額桌上與外國選手持續競爭的國內撲克選手之一。在2023年6月的HCL百萬直播中，Wesley首先與Tom Dwan打出了現場撲克歷史上最大的底池310萬美元，然後又打出了現場撲克歷史上第二大的底池220萬美元，在撲克界引起轟動。Wesley在高額桌上的強勁表現證明了國內撲克選手在高額桌上也有一席之地。隨著他在撲克界的成熟，Wesley必將發揮得更好。"
+        content_cn: "Wesley Fei，一个自带流量、英年早富的男人，15岁时就进入币圈，并且早早地积累起巨额财富，在币圈享誉盛名。 后来一个偶然的机会接触到德州扑克，便迅速开启了在扑克圈的蹿红之路。因其雄厚的实力，被广大网友戏称为\"无限后手\"。 与传统的国内牌手不同，Wesly性格外放、行事高调，很快就成为著名的扑克直播节目HCL的焦点明星，也是少有的能够持续征战高额桌与国外强手对抗的国人牌手。 在2023年6月的HCL百万赛直播中，Wesley先是与Tom Dwan打出了一个310万刀的扑克直播史上的最大底池，接着又打出一个220万刀的直播史上的第二大底池，在整个扑克圈引起巨大轰动。 Wesley在高额桌的强硬表现，彰示着国人牌手在高额桌同样拥有一席之地。随着在扑克圈的日渐成熟，Wesley势必有着更加精彩的发挥。",
+        content_tw: "Wesley Fei，一個自備流量、英年早富的男人，15歲時就進入幣圈，並且早早地積累起巨額財富，在幣圈享譽盛名。 後來一個偶然的機會接觸到德州撲克，便迅速開啟了在撲克圈的躥紅之路。因其雄厚的實力，被廣大網友戲稱為「無限後手」。 與傳統的國內牌手不同，Wesly性格外放、行事高調，很快就成為著名的撲克直播節目HCL的焦點明星，也是少有的能夠持續徵戰高額桌與國外強手對抗的國人牌手。 在2023年6月的HCL百萬賽直播中，Wesley先是與Tom Dwan打出了一個310萬刀的撲克直播史上的最大底池，接著又打出一個220萬刀的直播史上的第二大底池，在整個撲克圈引起巨大轟動。 Wesley在高額桌的強硬表現，彰示國人牌手在高額桌同樣擁有一席之地。隨著在撲克圈的日漸成熟，Wesley勢必有著更精彩的發揮。"
       },
       {
         type: "heading",
         content: "Yisha Chen",
-        content_cn: "陈一莎",
-        content_tw: "陳一莎"
+        content_cn: "陈易莎",
+        content_tw: "陳易莎"
       },
       {
         type: "image",
@@ -923,8 +917,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The beautiful poker player Yisha Chen can be said to be the most eye-catching domestic female poker player in 2024. Originally a dance teacher, her tough and unyielding character has allowed her to survive in this male-dominated game and fight for her own piece of sky. The year 2024 was a year of great success for Chen. According to The Hendon Mob's database, her total career winnings amounted to $85W, but her winnings in 2024 accounted for $74W, with winnings coming from top international tournaments such as the APT, Triton, TLPT, and EPT. It can be seen that Chen already has a strong competitive edge. With both beauty and wisdom, face value and strength, she is very promising to grow into the leading female poker player in China.",
-        content_cn: "美丽的扑克选手陈一莎可以说是2024年最引人注目的国内女扑克选手。原本是一名舞蹈老师，她坚韧不屈的性格让她在这个男性主导的游戏中生存下来，并为自己争得一片天空。2024年是陈一莎大获成功的一年。根据The Hendon Mob数据库，她的职业生涯总奖金达到85万美元，但2024年的奖金就占了74万美元，奖金来自APT、Triton、TLPT和EPT等顶级国际赛事。可以看出，陈一莎已经具备了很强的竞争力。她集美貌与智慧、颜值与实力于一身，很有希望成长为中国领先的女扑克选手。",
-        content_tw: "美麗的撲克選手陳一莎可以說是2024年最引人注目的國內女撲克選手。原本是一名舞蹈老師，她堅韌不屈的性格讓她在這個男性主導的遊戲中生存下來，並為自己爭得一片天空。2024年是陳一莎大獲成功的一年。根據The Hendon Mob數據庫，她的職業生涯總獎金達到85萬美元，但2024年的獎金就佔了74萬美元，獎金來自APT、Triton、TLPT和EPT等頂級國際賽事。可以看出，陳一莎已經具備了很強的競爭力。她集美貌與智慧、顏值與實力於一身，很有希望成長為中國領先的女撲克選手。"
+        content_cn: "美女牌手陈易莎，可以说是2024年表现最为亮眼的国内女牌手了。 气质不凡的她原本是一名舞蹈老师，坚韧不服输的性格让她在这个男性为主导的游戏中生存下来，并且打拼出了自己的一片天空。 2024年是陈易莎高歌猛进的一年，根据The Hendon Mob数据库的记录，她的职业生涯总奖金为85W刀，但2024年的奖金就占据了74W刀，而奖金则来自APT、Triton、TLPT、EPT这些国际顶级赛事上。可见陈易莎已经具备了很强的竞争力。 美貌与智慧并重，颜值与实力齐飞，陈易莎非常有希望成长为国内女牌手的领军人物。",
+        content_tw: "美女牌手陳易莎，可以說是2024年表現最亮眼的國內女牌手了。 氣質不凡的她原本是一名舞蹈老師，堅韌不服輸的性格讓她在這個男性為主導的遊戲中生存下來，並且打拼出了自己的一片天空。 2024年是陳易莎高歌猛進的一年，根據The Hendon Mob數據庫的記錄，她的職業生涯總獎金為85W刀，但2024年的獎金就佔據了74W刀，而獎金則來自APT、Triton、TLPT、EPT這些國際頂級賽事上。可見陳易莎已經具備了很強的競爭力。 美貌與智慧並重，顏值與實力齊飛，陳易莎非常有希望成長為國內女牌手的領導者。"
       },
       {
         type: "heading",
@@ -940,8 +934,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Dong Chen, a well-known \"tough guy\" in China's poker circle, got this name from an unforgettable experience in 2019. At that time, Dong Chen participated in the WSOP main event suffered an earthquake, just as he was the big blind, someone Open, many poker players are running out, and he sat motionless, friends asked him how not to run, he domineeringly threw out a sentence: life can not want to, the big blind can not be lost. But the name is true, Chen is indeed very \"hard\", whether it is poker skills, or face value, are very resistant to fight. He came into contact with Texas Hold'em in 2016, and usually learns to play online. Although he claims not to be a professional player, his number of games, competitive strength, and prizes and honors have far exceeded those of a good professional player. At the 2023 WSOP Bahamas, he won the 10,000-dollar Mansion tournament, reaping the first WSOP gold bracelet of his competitive career and a whopping $411,659 in prize money, a dream that many pros have struggled to reach. According to The Hendon Mob database, his live tournament winnings have reached 2.63 million knives. Joining the AApoker team will be a great addition for him, and he is bound to achieve even more amazing results in the future.",
-        content_cn: "陈东，中国扑克圈知名的『硬汉』，这个名字源于2019年的一次难忘经历。当时，陈东参加WSOP主赛事遭遇地震，正好他是大盲位，有人Open，许多扑克选手都跑出去了，而他坐着一动不动，朋友问他为什么不跑，他霸气地抛出一句：命可以不要，大盲不能丢。但这个名字确实名副其实，陈东确实很『硬』，无论是扑克技术还是颜值，都非常能打。他在2016年接触德州扑克，通常在线上学习打牌。虽然他声称自己不是职业选手，但他的比赛次数、竞技实力以及奖金和荣誉都远远超过了一个优秀的职业选手。在2023年WSOP巴哈马，他赢得了1万美元豪宅锦标赛，收获了竞技生涯的第一枚WSOP金手链和高达411,659美元的奖金，这是许多职业选手努力追求的梦想。根据The Hendon Mob数据库，他的现场锦标赛奖金已达到263万美元。加入AApoker团队对他来说将是一个很好的补充，他必将在未来取得更加惊人的成绩。",
-        content_tw: "陳東，中國撲克圈知名的『硬漢』，這個名字源於2019年的一次難忘經歷。當時，陳東參加WSOP主賽事遭遇地震，正好他是大盲位，有人Open，許多撲克選手都跑出去了，而他坐著一動不動，朋友問他為什麼不跑，他霸氣地拋出一句：命可以不要，大盲不能丟。但這個名字確實名副其實，陳東確實很『硬』，無論是撲克技術還是顏值，都非常能打。他在2016年接觸德州撲克，通常在線上學習打牌。雖然他聲稱自己不是職業選手，但他的比賽次數、競技實力以及獎金和榮譽都遠遠超過了一個優秀的職業選手。在2023年WSOP巴哈馬，他贏得了1萬美元豪宅錦標賽，收穫了競技生涯的第一枚WSOP金手鍊和高達411,659美元的獎金，這是許多職業選手努力追求的夢想。根據The Hendon Mob數據庫，他的現場錦標賽獎金已達到263萬美元。加入AApoker團隊對他來說將是一個很好的補充，他必將在未來取得更加驚人的成績。"
+        content_cn: "陈东，中国扑克圈的知名\"硬汉\"，之所以有这个称呼，源于2019年的一段难忘经历。 当时陈东参加WSOP主赛事遭遇地震，刚好他是大盲位，有人起了Open，很多牌手都往外跑，而他坐着一动不动，朋友问他怎么不跑，他霸气地丢出一句：命可以不要，大盲不能丢。 不过名不虚传，陈东确实很\"硬\"，无论是牌技，还是颜值，都很抗打。他是2016年接触德州扑克，平时学习以线上比赛为主，虽然自称不是职业选手，但他的参赛场次、竞技实力、奖金荣誉已经远超一个优秀的职业选手。在2023年的WSOP巴哈马站，陈东夺得了1万刀豪客赛的冠军，收获了竞技生涯中的第一条WSOP金手链和高达411,659刀的奖金，这是很多职业选手都难以企及的梦想。 根据The Hendon Mob数据库的记录，陈东的现场赛事奖金已经达到263万刀。而加入AApoker战队，对于陈东来说无疑是如虎添翼，未来势必会创造更加惊艳的成绩。",
+        content_tw: "陳東，中國撲克圈的知名\"硬漢\"，之所以有這個稱呼，源自於2019年的一段難忘經歷。 當時陳東參加WSOP主賽事遭遇地震，剛好他是大盲位，有人起了Open，很多牌手都往外跑，而他坐著一動不動，朋友問他怎麼不跑，他霸氣地丟出一句：命可以不要，大盲不能丟。 不過名不虛傳，陳東確實很\"硬\"，無論是牌技，還是顏值，都很抗打。他是2016年接觸德州撲克，平時學習以線上比賽為主，雖然自稱不是職業選手，但他的參賽場次、競技實力、獎金榮譽已經遠超一個優秀的職業選手。在2023年的WSOP巴哈馬站，陳東贏得了1萬刀豪客賽的冠軍，收穫了競技生涯中的第一條WSOP金手鍊和高達411,659刀的獎金，這是很多職業選手都難以企及的夢想。 根據The Hendon Mob資料庫的記錄，陳東的現場賽事獎金已經達到263萬刀。而加入AApoker戰隊，對陳東來說無疑是如虎添翼，未來勢必會創造出更驚豔的成績。"
       },
       {
         type: "heading",
@@ -957,8 +951,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Yara, a 23-year-old beauty, is a rising star in the poker world. While most of her peers are just leaving school, Yara has already had multiple identities and rich experiences as a trainee, girl group member, model and beauty pageant champion. With her sweet appearance and perfect body, Yara won the Miss Oriental Chinese beauty contest in 2021. Yara's interest in poker has been evident since she was a child, and she has worked hard to learn and develop her skills, gradually making a name for herself in major tournaments. Her soft appearance and fierce poker style made her popular on the live poker show HCL, where she was nicknamed \"Yara the Destroyer,\" and her outspoken personality has won her a large number of fans around the world. Despite her young age, Yara is a multi-talented player and we look forward to seeing her continue to shine on the poker scene!",
-        content_cn: "23岁的美女Yara是扑克界的后起之秀。当大多数同龄人刚刚离开学校时，Yara已经拥有了练习生、女团成员、模特和选美冠军等多重身份和丰富经历。凭借甜美的外表和完美的身材，Yara在2021年赢得了东方华裔小姐选美比赛。Yara从小就对扑克表现出浓厚兴趣，她努力学习和发展自己的技能，逐渐在各大赛事中崭露头角。她柔美的外表和凶猛的扑克风格让她在现场扑克节目HCL上大受欢迎，被昵称为『毁灭者Yara』，她直率的性格为她赢得了全球大量粉丝。尽管年纪轻轻，Yara是一位多才多艺的选手，我们期待看到她在扑克舞台上继续闪耀！",
-        content_tw: "23歲的美女Yara是撲克界的後起之秀。當大多數同齡人剛剛離開學校時，Yara已經擁有了練習生、女團成員、模特和選美冠軍等多重身份和豐富經歷。憑藉甜美的外表和完美的身材，Yara在2021年贏得了東方華裔小姐選美比賽。Yara從小就對撲克表現出濃厚興趣，她努力學習和發展自己的技能，逐漸在各大賽事中嶄露頭角。她柔美的外表和兇猛的撲克風格讓她在現場撲克節目HCL上大受歡迎，被暱稱為『毀滅者Yara』，她直率的性格為她贏得了全球大量粉絲。儘管年紀輕輕，Yara是一位多才多藝的選手，我們期待看到她在撲克舞台上繼續閃耀！"
+        content_cn: "23岁的小美女Yara，是扑克圈冉冉升起的一颗新星。 当绝大多数的同龄人刚刚迈出校园时，Yara已经拥有了练习生、女团成员、模特、选美冠军等多重身份和丰富的阅历。凭借甜美的外型、完美的身材，Yara还在2021年获得了东方华美小姐比赛的冠军。 Yara从小就展现出了对扑克的浓厚兴趣，她勤奋好学，不断钻研技巧，逐渐在各大赛事中崭露头角。外表柔美的她实则牌风凶猛，这也让她在扑克直播节目HCL中大受欢迎，并被授予绰号\"Yara the Destroyer\"，加上率直可爱的个性，Yara赢得了世界各地的大批粉丝。虽然年纪轻轻，却是多才多艺，让我们期待这位小美女在扑克圈继续大放异彩！",
+        content_tw: "23歲的小美人Yara，是撲克圈冉冉升起的一顆新星。 當絕大多數的同儕剛踏出校園時，Yara已經擁有了練習生、女團成員、模特兒、選美冠軍等多重身分和豐富的閱歷。憑藉著甜美的外型、完美的身材，Yara還在2021年贏得了東方華美小姐比賽的冠軍。 Yara從小就展現了對撲克牌的濃厚興趣，她勤奮好學，不斷鑽研技巧，逐漸在各大賽事中嶄露頭角。外表柔美的她實則牌風兇猛，這也讓她在撲克直播節目HCL中大受歡迎，並被授予綽號\"Yara the Destroyer\"，加上率直可愛的個性，Yara贏得了世界各地的大批粉絲。雖然年紀輕輕，卻是多才多藝，讓我們期待這位小美女在撲克圈繼續大放異彩！"
       },
       {
         type: "heading",
@@ -974,14 +968,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Joe Hachem, 58 years old, is a Lebanese-Australian professional poker player whose poker resume is both illustrious and long, with a total of $12.98 million in career winnings. Back in 2005, Hachem shocked the world of poker by winning the WSOP Main Event on his first trip to Las Vegas, taking home $7.5 million in prize money, which at the time was the highest tournament prize money ever, and was the first Australian poker player to win the WSOP Main Event. In 2006, he won his first WPT title, taking home $2.2 million, making him one of only six poker players to win both the WSOP Main Event and the WPT. Hachem is known as Australia's \"Godfather of Poker\" and was inducted into the Australian Poker Hall of Fame in 2009 for his role in solidifying the poker boom in Australia. Hachem is still active in top tournaments around the world, with his most recent win coming at the Australian Poker Championship on October 5th of this year. Hachem's poker resume will be even more impressive when he joins the AApoker team.",
-        content_cn: "58岁的Joe Hachem是一位黎巴嫩裔澳大利亚职业扑克选手，他的扑克履历既辉煌又悠久，职业生涯总奖金达1298万美元。早在2005年，Hachem首次前往拉斯维加斯就赢得了WSOP主赛事，震惊了扑克界，带回了750万美元的奖金，这在当时是有史以来最高的锦标赛奖金，他也是第一位赢得WSOP主赛事的澳大利亚扑克选手。2006年，他赢得了第一个WPT冠军，带回了220万美元，使他成为仅有的六位同时赢得WSOP主赛事和WPT的扑克选手之一。Hachem被称为澳大利亚的『扑克教父』，并于2009年入选澳大利亚扑克名人堂，因为他在巩固澳大利亚扑克热潮中发挥了重要作用。Hachem仍然活跃在世界各地的顶级赛事中，他最近的一次胜利是在今年10月5日的澳大利亚扑克锦标赛上。加入AApoker团队后，Hachem的扑克履历将更加令人印象深刻。",
-        content_tw: "58歲的Joe Hachem是一位黎巴嫩裔澳大利亞職業撲克選手，他的撲克履歷既輝煌又悠久，職業生涯總獎金達1298萬美元。早在2005年，Hachem首次前往拉斯維加斯就贏得了WSOP主賽事，震驚了撲克界，帶回了750萬美元的獎金，這在當時是有史以來最高的錦標賽獎金，他也是第一位贏得WSOP主賽事的澳大利亞撲克選手。2006年，他贏得了第一個WPT冠軍，帶回了220萬美元，使他成為僅有的六位同時贏得WSOP主賽事和WPT的撲克選手之一。Hachem被稱為澳大利亞的『撲克教父』，並於2009年入選澳大利亞撲克名人堂，因為他在鞏固澳大利亞撲克熱潮中發揮了重要作用。Hachem仍然活躍在世界各地的頂級賽事中，他最近的一次勝利是在今年10月5日的澳大利亞撲克錦標賽上。加入AApoker團隊後，Hachem的撲克履歷將更加令人印象深刻。"
+        content_cn: "Joe Hachem，今年58岁，是一位黎巴嫩裔澳大利亚职业玩家，他的扑克履历可以说既辉煌又悠远，目前他的职业生涯总奖金高达1298万刀。 早在2005年，Hachem就震惊了世界扑克圈，他首次前往拉斯维加斯参加 WSOP，就夺得了当年WSOP主赛事的冠军，豪揽750万刀奖金，这在当时创下了有史以来的最高锦标赛奖金记录，同时也是第一位赢得WSOP主赛事的澳大利亚牌手。 而到了2006年，他又赢得了自己的第一个WPT冠军头衔，收获220万刀奖金，成为仅有的六名同时赢得WSOP主赛事和WPT冠军的扑克玩家之一。 Hachem被称为澳大利亚的\"扑克教父\"，以一己之力巩固了扑克在澳大利亚的繁荣发展，并于2009年入选澳大利亚扑克名人堂。 如今的Hachem依旧活跃在世界各地的顶级赛场，他最近的一次奖金记录就来自今年10月5日的澳大利亚扑克锦标赛。相信加入AApoker战队以后，Hachem的扑克履历会更加辉煌。",
+        content_tw: "Joe Hachem，今年58歲，是黎巴嫩裔澳洲職業玩家，他的撲克履歷可以說既輝煌又悠遠，目前他的職業生涯總獎金高達1298萬刀。 早在2005年，Hachem就震驚了世界撲克圈，他首次前往拉斯維加斯參加WSOP，就奪得了當年WSOP主賽事的冠軍，豪攬750萬刀獎金，這在當時創下了有史以來的最高錦標賽獎金紀錄，同時也是第一位贏得WSOP主賽事的澳洲牌手。 而到了2006年，他又贏得了自己的第一個WPT冠軍頭銜，收穫220萬刀獎金，成為僅有的六名同時贏得WSOP主賽事和WPT冠軍的撲克玩家之一。 Hachem被稱為澳洲的\"撲克教父\"，以一己之力鞏固了撲克在澳洲的繁榮發展，並於2009年入選澳洲撲克名人堂。 如今的Hachem依舊活躍在世界各地的頂級賽場，他最近的一次獎金記錄就來自今年10月5日的澳洲撲克錦標賽。相信加入AApoker戰隊以後，Hachem的撲克履歷會更輝煌。"
       },
       {
         type: "heading",
         content: "Yi Ye",
-        content_cn: "叶一",
-        content_tw: "葉一"
+        content_cn: "叶依",
+        content_tw: "葉依"
       },
       {
         type: "image",
@@ -991,8 +985,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Yi Ye is a newcomer to the poker scene in 2024. With a wide range of interests and a passion for competitive poker tournaments, Ye has made her professional debut in 2024 with a series of dazzling results. By joining the AApoker team and playing alongside her predecessors in the poker world, Ye's competitive strength is sure to soar, and her future will be immeasurable! The AApoker team is strong and star-studded. With experienced veterans, stalwarts in their prime, and energetic up-and-comers full of potential, let's look forward to their exciting performance in the global arena!",
-        content_cn: "叶一是2024年扑克界的新人。凭借广泛的兴趣和对竞技扑克锦标赛的热情，叶一在2024年以一系列耀眼的成绩完成了职业首秀。通过加入AApoker团队并与扑克界的前辈们并肩作战，叶一的竞技实力必将飙升，她的未来不可限量！AApoker团队实力强大，星光熠熠。有经验丰富的老将，有正值巅峰的中坚力量，还有充满潜力的朝气新秀，让我们期待他们在全球舞台上的精彩表现！",
-        content_tw: "葉一是2024年撲克界的新人。憑藉廣泛的興趣和對競技撲克錦標賽的熱情，葉一在2024年以一系列耀眼的成績完成了職業首秀。通過加入AApoker團隊並與撲克界的前輩們並肩作戰，葉一的競技實力必將飆升，她的未來不可限量！AApoker團隊實力強大，星光熠熠。有經驗豐富的老將，有正值巔峰的中堅力量，還有充滿潛力的朝氣新秀，讓我們期待他們在全球舞台上的精彩表現！"
+        content_cn: "叶依，2024年的扑克圈新人，兴趣爱好广泛的她，对竞技扑克赛事有着浓厚的兴趣，2024年正式出道后就交出了一系列亮眼的成绩单。 通过加入AApoker战队，与扑克圈前辈们并肩同行，叶依的竞技实力势必飙升，她的未来不可限量！ 这支AApoker战队实力强劲、星光璀璨，既有经验丰富的老将，又有当打之年的中流砥柱，还有充满潜力的朝气新秀，让我们期待他们在全球赛场上的精彩发挥！",
+        content_tw: "葉依，2024年的撲克圈新人，興趣愛好廣泛的她，對競技撲克賽事有濃厚的興趣，2024年正式出道後就交出了一系列亮眼的成績單。 透過加入AApoker戰隊，與撲克圈前輩們並肩同行，葉依的競技實力勢必飆升，她的未來不可限量！ 這支AApoker戰隊實力強勁、星光璀璨，既有經驗豐富的老將，又有當打之年的中流砥柱，還有充滿潛力的朝氣新秀，讓我們期待他們在全球賽場上的精彩發揮！"
       }
     ]
   },
@@ -1002,8 +996,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The next two weeks will be a thrilling celebration of the WSOP Paradise Island Series. Poker players from around the world have gathered at the Bahamas' Atlantis Paradise Island to continue adding to their illustrious poker careers. Event #1: $2,500 Mini Main Event Day 1b The $2,500 Mini Main Event Day 1b attracted a total of 937 entries, with only 73 players making it through to the next round. American player Jerry Wong leads the field with a chip stack of 97.4k.",
-        content_cn: "接下来的两周将是WSOP天堂岛系列赛的激动人心的庆典。来自世界各地的扑克选手齐聚巴哈马的亚特兰蒂斯天堂岛，继续为他们辉煌的扑克生涯增光添彩。第1场赛事：2500美元迷你主赛事第1b天 2500美元迷你主赛事第1b天共吸引了937人参赛，只有73名选手晋级下一轮。美国选手Jerry Wong以97.4k的筹码量领先。",
-        content_tw: "接下來的兩週將是WSOP天堂島系列賽的激動人心的慶典。來自世界各地的撲克選手齊聚巴哈馬的亞特蘭蒂斯天堂島，繼續為他們輝煌的撲克生涯增光添彩。第1場賽事：2500美元迷你主賽事第1b天 2500美元迷你主賽事第1b天共吸引了937人參賽，只有73名選手晉級下一輪。美國選手Jerry Wong以97.4k的籌碼量領先。"
+        content_cn: "接下来的两周将是WSOP天堂岛系列赛精彩纷呈的盛宴，来自全球的扑克牌手们汇聚一堂，来到巴哈马亚特兰蒂斯天堂岛继续书写他们辉煌的扑克履历。 赛事#1：$2,500迷你主赛Day1b $2,500迷你主赛Day1b共有937人次参赛，其中只有73人成功晋级。美国牌手Jerry Wong以97.4k记分牌领跑全场。",
+        content_tw: "接下來的兩週將是WSOP天堂島系列賽精彩紛呈的盛宴，來自全球的撲克牌手們匯聚一堂，來到巴哈馬亞特蘭蒂斯天堂島繼續書寫他們輝煌的撲克履歷。 賽事#1：$2,500迷你主賽Day1b $2,500迷你主賽Day1b共有937人次參賽，其中只有73人成功晉級。美國牌手Jerry Wong以97.4k記分牌領跑全場。"
       },
       {
         type: "image",
@@ -1013,8 +1007,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Wong earned his first gold bracelet at the 2023 WSOP, winning Event #33: $10,000 Razz Championship. His biggest live cash came in the 2016 WSOP Main Event, where he finished 8th for $1,100,076.",
-        content_cn: "Wong在2023年WSOP赢得了他的第一枚金手链，赢得了第33场赛事：10,000美元Razz锦标赛。他最大的现场奖金来自2016年WSOP主赛事，他获得第8名，赢得1,100,076美元。",
-        content_tw: "Wong在2023年WSOP贏得了他的第一枚金手鍊，贏得了第33場賽事：10,000美元Razz錦標賽。他最大的現場獎金來自2016年WSOP主賽事，他獲得第8名，贏得1,100,076美元。"
+        content_cn: "Wong在2023年WSOP第33场赛事：$10,000 Razz锦标赛中夺冠，获得了他的首条金手链。Wong最大的现场赛奖金来自2016年WSOP主赛事，他在那场比赛中获得第8名，奖金为$1,100,076。",
+        content_tw: "Wong在2023年WSOP第33場賽事：$10,000 Razz錦標賽中奪冠，獲得了他的首條金手鍊。Wong最大的現場賽獎金來自2016年WSOP主賽事，他在那場比賽中獲得第8名，獎金為$1,100,076。"
       },
       {
         type: "image",
@@ -1024,8 +1018,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Other notable players advancing include Timothy Adams, Anthony Zinno, David Peters, Georgios Sotiropoulos, Justin Saliba, and more.",
-        content_cn: "其他晋级的著名选手包括Timothy Adams、Anthony Zinno、David Peters、Georgios Sotiropoulos、Justin Saliba等。",
-        content_tw: "其他晉級的著名選手包括Timothy Adams、Anthony Zinno、David Peters、Georgios Sotiropoulos、Justin Saliba等。"
+        content_cn: "其他成功晋级的知名牌手还包括Timothy Adams、Anthony Zinno、David Peters、Georgios Sotiropoulos、Justin Saliba等。",
+        content_tw: "其他成功晉級的知名牌手還包括Timothy Adams、Anthony Zinno、David Peters、Georgios Sotiropoulos、Justin Saliba等。"
       },
       {
         type: "image",
@@ -1035,8 +1029,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Quan Zhou and Dong Chen also advanced to the next stage, showcasing excellent play.",
-        content_cn: "周全和陈东也晋级下一阶段，展现了出色的表现。",
-        content_tw: "周全和陳東也晉級下一階段，展現了出色的表現。"
+        content_cn: "周全和陈东也成功晋级，发挥出色。",
+        content_tw: "周全和陳東也成功晉級，發揮出色。"
       },
       {
         type: "image",
@@ -1046,14 +1040,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "heading",
         content: "Event #2: $100,000 Triton Million Invitational",
-        content_cn: "第2场赛事：100,000美元Triton百万邀请赛",
-        content_tw: "第2場賽事：100,000美元Triton百萬邀請賽"
+        content_cn: "赛事#2：$100,000 Triton百万邀请赛",
+        content_tw: "賽事#2：$100,000 Triton百萬邀請賽"
       },
       {
         type: "paragraph",
         content: "The prestigious $100,000 Triton Million Invitational has officially concluded its entry phase, with 96 entries, including 22 re-entries, creating a prize pool of $48 million.",
-        content_cn: "享有盛誉的100,000美元Triton百万邀请赛已正式结束报名阶段，共有96人参赛，包括22次重新买入，创造了4800万美元的奖池。",
-        content_tw: "享有盛譽的100,000美元Triton百萬邀請賽已正式結束報名階段，共有96人參賽，包括22次重新買入，創造了4800萬美元的獎池。"
+        content_cn: "享有盛誉的$100,000 Triton百万邀请赛已正式结束报名阶段，共有96人次参赛，包括22次重新买入，创造了$4800w的奖池。",
+        content_tw: "享有盛譽的$100,000 Triton百萬邀請賽已正式結束報名階段，共有96人次參賽，包括22次重新買入，創造了$4800w的獎池。"
       },
       {
         type: "image",
@@ -1063,8 +1057,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The first-place winner will take home an impressive $12,070,000, along with a WSOP gold bracelet and the Triton trophy. The top 17 players are guaranteed at least $755,000 in prize money.",
-        content_cn: "冠军将获得令人印象深刻的12,070,000美元，以及一枚WSOP金手链和Triton奖杯。前17名选手保证至少获得755,000美元的奖金。",
-        content_tw: "冠軍將獲得令人印象深刻的12,070,000美元，以及一枚WSOP金手鍊和Triton獎杯。前17名選手保證至少獲得755,000美元的獎金。"
+        content_cn: "冠军将获得令人印象深刻的$12,070,000，以及一枚WSOP金手链和Triton奖杯。前17名选手保证至少获得$755,000的奖金。",
+        content_tw: "冠軍將獲得令人印象深刻的$12,070,000，以及一枚WSOP金手鍊和Triton獎盃。前17名選手保證至少獲得$755,000的獎金。"
       },
       {
         type: "image",
@@ -1074,8 +1068,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "At the conclusion of Day 2, only 14 players remain in contention. Michael Moncek, who led the Day 1 chip counts, continued his strong performance on Day 2, retaining the lead with 125k in chips. Moncek has become a fan favorite for his aggressive playstyle and nearly 100% VPIP (voluntarily put money in pot). However, after suffering a loss of nearly $2 million in the high-stakes cash games, Moncek had a tough summer. Now, he hopes to recover his losses and add to his winnings. Following Moncek are Daniel Dvoress with 123.5k and Alejandro Lococo with 107.75k.",
-        content_cn: "第二天结束时，只剩下14名选手在竞争。在第一天筹码量领先的Michael Moncek在第二天继续保持强劲表现，以125k的筹码量保持领先。Moncek因其激进的打法和近100%的VPIP（自愿投钱入池）而成为粉丝的最爱。然而，在高额现金游戏中损失近200万美元后，Moncek度过了一个艰难的夏天。现在，他希望挽回损失并增加奖金。紧随Moncek的是拥有123.5k的Daniel Dvoress和拥有107.75k的Alejandro Lococo。",
-        content_tw: "第二天結束時，只剩下14名選手在競爭。在第一天籌碼量領先的Michael Moncek在第二天繼續保持強勁表現，以125k的籌碼量保持領先。Moncek因其激進的打法和近100%的VPIP（自願投錢入池）而成為粉絲的最愛。然而，在高額現金遊戲中損失近200萬美元後，Moncek度過了一個艱難的夏天。現在，他希望挽回損失並增加獎金。緊隨Moncek的是擁有123.5k的Daniel Dvoress和擁有107.75k的Alejandro Lococo。"
+        content_cn: "Day2结束时，场上只剩下14名选手。Day1记分牌领先的Michael Moncek在Day2继续保持强劲势头，以125k记分牌继续领跑。Moncek以其激进的打法和接近100%的VPIP（自愿入池率）而成为粉丝的最爱。然而，在高额现金局中损失近200w刀后，Moncek度过了一个艰难的夏天。现在，他希望能挽回损失并增加奖金。紧随Moncek之后的是拥有123.5k的Daniel Dvoress和拥有107.75k的Alejandro Lococo。",
+        content_tw: "Day2結束時，場上只剩下14名選手。Day1記分牌領先的Michael Moncek在Day2繼續保持強勁勢頭，以125k記分牌繼續領跑。Moncek以其激進的打法和接近100%的VPIP（自願入池率）而成為粉絲的最愛。然而，在高額現金局中損失近200w刀後，Moncek度過了一個艱難的夏天。現在，他希望能挽回損失並增加獎金。緊隨Moncek之後的是擁有123.5k的Daniel Dvoress和擁有107.75k的Alejandro Lococo。"
       },
       {
         type: "image",
@@ -1085,8 +1079,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Notable players who fell short of the money include Phil Ivey, Jason Koon, Patrik Antonius, Isaac Haxton, Nick Schulman, and Justin Bonomo.",
-        content_cn: "未能进入奖金圈的著名选手包括Phil Ivey、Jason Koon、Patrik Antonius、Isaac Haxton、Nick Schulman和Justin Bonomo。",
-        content_tw: "未能進入獎金圈的著名選手包括Phil Ivey、Jason Koon、Patrik Antonius、Isaac Haxton、Nick Schulman和Justin Bonomo。"
+        content_cn: "未能进入奖励圈的知名选手包括Phil Ivey、Jason Koon、Patrik Antonius、Isaac Haxton、Nick Schulman和Justin Bonomo。",
+        content_tw: "未能進入獎勵圈的知名選手包括Phil Ivey、Jason Koon、Patrik Antonius、Isaac Haxton、Nick Schulman和Justin Bonomo。"
       },
       {
         type: "image",
@@ -1096,8 +1090,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "This marked Daniel Negreanu's first appearance in a Triton event, and despite being a newcomer, he made it to Day 2. However, in Level 12 (Blinds 15,000/30,000/30,000), his AK failed to overcome Kayhan Mokri's KK, and he was eliminated in 58th place. Although Ivey and Daniel Negreanu did not make it to the end, they still have multiple opportunities to win their second gold bracelet of the year, as there are several events left on the schedule.",
-        content_cn: "这是Daniel Negreanu首次参加Triton赛事，尽管是新手，他还是进入了第二天。然而，在第12级（盲注15,000/30,000/30,000）中，他的AK未能战胜Kayhan Mokri的KK，他以第58名被淘汰。虽然Ivey和Daniel Negreanu没有坚持到最后，但他们仍有多次机会赢得今年的第二枚金手链，因为赛程中还有几场赛事。",
-        content_tw: "這是Daniel Negreanu首次參加Triton賽事，儘管是新手，他還是進入了第二天。然而，在第12級（盲注15,000/30,000/30,000）中，他的AK未能戰勝Kayhan Mokri的KK，他以第58名被淘汰。雖然Ivey和Daniel Negreanu沒有堅持到最後，但他們仍有多次機會贏得今年的第二枚金手鍊，因為賽程中還有幾場賽事。"
+        content_cn: "这是Daniel Negreanu首次参加Triton赛事，尽管是新手，他还是进入了Day2。然而，在Level 12（盲注15,000/30,000/30,000）中，他的AK未能战胜Kayhan Mokri的KK，以第58名被淘汰。虽然Ivey和Daniel Negreanu没有坚持到最后，但他们仍有多次机会赢得今年的第二枚金手链，因为赛程中还有几场赛事。",
+        content_tw: "這是Daniel Negreanu首次參加Triton賽事，儘管是新手，他還是進入了Day2。然而，在Level 12（盲注15,000/30,000/30,000）中，他的AK未能戰勝Kayhan Mokri的KK，以第58名被淘汰。雖然Ivey和Daniel Negreanu沒有堅持到最後，但他們仍有多次機會贏得今年的第二枚金手鍊，因為賽程中還有幾場賽事。"
       },
       {
         type: "image",
@@ -1107,14 +1101,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "heading",
         content: "ST Wang Takes Over the Torch",
-        content_cn: "ST Wang接过火炬",
-        content_tw: "ST Wang接過火炬"
+        content_cn: "ST Wang接过接力棒",
+        content_tw: "ST Wang接過接力棒"
       },
       {
         type: "paragraph",
         content: "Despite the early exits of players like Biao Ding and Elton Tsang, ST Wang has taken up the mantle for the Chinese players and advanced with the hopes of many. At the end of Day 2, ST Wang qualified for the next round with a chip stack of 1,000,000. While he holds the smallest stack among the remaining players, poker is unpredictable, and anything can happen. We wish him the best of luck in making an incredible comeback.",
-        content_cn: "尽管丁彪和Elton Tsang等选手早早出局，但ST Wang为中国选手扛起了大旗，带着许多人的希望晋级。第二天结束时，ST Wang以1,000,000的筹码量晋级下一轮。虽然他在剩余选手中筹码量最少，但扑克是不可预测的，任何事情都可能发生。我们祝他好运，实现令人难以置信的逆转。",
-        content_tw: "儘管丁彪和Elton Tsang等選手早早出局，但ST Wang為中國選手扛起了大旗，帶著許多人的希望晉級。第二天結束時，ST Wang以1,000,000的籌碼量晉級下一輪。雖然他在剩餘選手中籌碼量最少，但撲克是不可預測的，任何事情都可能發生。我們祝他好運，實現令人難以置信的逆轉。"
+        content_cn: "尽管丁彪、Elton Tsang等选手早早出局，但ST Wang为国人选手扛起了大旗，带着众人的期望晋级。Day2结束时，ST Wang以1,000,000的记分牌晋级下一轮。虽然他在剩余选手中记分牌最少，但扑克是不可预测的，任何事情都可能发生。我们祝他好运，实现令人难以置信的逆转。",
+        content_tw: "儘管丁彪、Elton Tsang等選手早早出局，但ST Wang為國人選手扛起了大旗，帶著眾人的期望晉級。Day2結束時，ST Wang以1,000,000的記分牌晉級下一輪。雖然他在剩餘選手中記分牌最少，但撲克是不可預測的，任何事情都可能發生。我們祝他好運，實現令人難以置信的逆轉。"
       },
       {
         type: "image",
@@ -1124,8 +1118,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The remaining 14 players will return for the final showdown at 12:00 PM local time on December 9 to compete for the title in this historic event.",
-        content_cn: "剩余的14名选手将在12月9日当地时间下午12:00返回进行最后对决，争夺这一历史性赛事的冠军。",
-        content_tw: "剩餘的14名選手將在12月9日當地時間下午12:00返回進行最後對決，爭奪這一歷史性賽事的冠軍。"
+        content_cn: "剩余的14名选手将在12月9日当地时间中午12:00返回进行最后对决，争夺这一历史性赛事的冠军。",
+        content_tw: "剩餘的14名選手將在12月9日當地時間中午12:00返回進行最後對決，爭奪這一歷史性賽事的冠軍。"
       }
     ]
   },
@@ -1412,9 +1406,21 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "paragraph",
-        content: "JEJU, SOUTH KOREA, April 26, 2024 – Welcome to the APT Jeju 2024, with the action-packed 10-day festival featuring 91 events (including satellites) with the series proper comprising a substantial 86 Trophy Events and boasting over KRW 5 billion (~USD 3.7M) in prize pool guarantees. Running April 26 to May 5 in partnership with Landing Entertainment Korea (LEK) the series is playing out at the luxurious Jeju Shinhwa Resort. While this will be the fourth time the APT has visited Jeju, this marks the first visit of the new era following a seven-year hiatus, with Japan's Katsuhiro Muto the last APT Jeju Main Event champion crowned back in March 2017. The new era prize pools are over twenty times larger, with the APT Main Event running from April 26 to May 4 and coming with a sizable KRW 2 billion (~USD 1.5 million) guarantee. In addition to the guaranteed marquee events, the series boasts daily High Roller tournaments and an assorted poker variants, as well as cash games. Getting underway at 6:30pm local time on April 26th, the KRW 2M Event #11: NL Hold'em – Freezeout saw 25 players enter the action, battling at the baize for eighteen 25-minute levels to win a slice of the KRW 43,650,000 (~USD 31,700) prize pool. Once again, it was a Chinese player taking the tournament top spot with Boxin Jin beating compatriot and Korea National Cup Flight A frontrunner Fei Wang head-up to claim the KRW 18,333,000 (~USD 13,310) top prize, in addition to his maiden APT title.",
-        content_cn: "韩国济州，2024年4月26日 – 欢迎来到APT济州2024，这是一个为期10天的精彩赛事，共有91场赛事（包括卫星赛），系列赛包含86场奖杯赛事，奖池保证超50亿韩元（约370万美元）。赛事与Landing Entertainment Korea（LEK）合作，于4月26日至5月5日在豪华的济州神话度假村举行。虽然这是APT第四次访问济州，但这是新时代的第一次访问，在七年中断后，日本的Katsuhiro Muto是2017年3月加冒的最后一位APT济州主赛事冠军。新时代的奖池是以前的20倍以上，APT主赛事于4月26日至5月4日进行，奖池保证高达20亿韩元（约150万美元）。除了保证的重大赛事外，系列赛还有每日豪客赛、各种扑克变体以及现金游戏。4月26日当地时间晚上6:30开始，200万韩元第11场赛事：无限注德州扑克 – Freezeout共有25名选手参赛，争夺43,650,000韩元（约31,700美元）奖池。再次，一位中国选手夺得冠军，金博欣在单挑中击败同胞和韩国国家杯A组领先者王飞，获得18,333,000韩元（约13,310美元）的头奖和他的首个APT冠军。",
-        content_tw: "韓國濟州，2024年4月26日 – 歡迎來到APT濟州2024，這是一個為期10天的精彩賽事，共有91場賽事（包括衛星賽），系列賽包含86場獎杯賽事，獎池保證超50億韓元（約370萬美元）。賽事與Landing Entertainment Korea（LEK）合作，於4月26日至5月5日在豪華的濟州神話度假村舉行。雖然這是APT第四次訪問濟州，但這是新時代的第一次訪問，在七年中斷後，日本的Katsuhiro Muto是2017年3月加冒的最後一位APT濟州主賽事冠軍。新時代的獎池是以前的20倍以上，APT主賽事於4月26日至5月4日進行，獎池保證高達20億韓元（約150萬美元）。除了保證的重大賽事外，系列賽還有每日豪客賽、各種撲克變體以及現金遊戲。4月26日當地時間晚上6:30開始，200萬韓元第11場賽事：無限注德州撲克 – Freezeout共有25名選手參賽，爭奪43,650,000韓元（約31,700美元）獎池。再次，一位中國選手奪得冠軍，金博欣在單挑中擊敗同胞和韓國國家盃A組領先者王飛，獲得18,333,000韓元（約13,310美元）的頭獎和他的首個APT冠軍。"
+        content: "JEJU, SOUTH KOREA, April 26, 2024 – Welcome to the APT Jeju 2024, with the action-packed 10-day festival featuring 91 events (including satellites) with the series proper comprising a substantial 86 Trophy Events and boasting over KRW 5 billion (~USD 3.7M) in prize pool guarantees. Running April 26 to May 5 in partnership with Landing Entertainment Korea (LEK) the series is playing out at the world-class Landing Hotel at the luxurious Jeju Shinhwa World Marriott Resort. While this will be the fourth time the APT has visited Jeju, this marks the first visit of the new era following a seven-year hiatus, with Japan's Katsuhiro Muto the last APT Jeju Main Event champion crowned back in March 2017. The new era prize pools are over twenty times larger, with the APT Main Event running from April 26 to May 4 and coming with a sizable KRW 2 billion (~USD 1.5 million) guarantee. In addition to the guaranteed marquee events, the series boasts daily High Roller tournaments, mixed games, assorted poker variants, as well as cash games.",
+        content_cn: "2024年4月26日，韩国济州--欢迎来到APT济州2024，这个为期10天的系列赛将举办91场赛事（包括卫星赛），其中包括86场奖杯赛，奖金池保证金超过50亿韩元（约合370万美元）。 该系列赛于4月26日至5月5日与韩国蓝鼎娱乐公司（LEK）合作，在位于豪华济州神话世界万豪度假村的世界级蓝鼎酒店举行。 虽然这是APT第四次造访济州岛，但这也标志着APT在时隔七年之后首次造访济州岛，日本选手Katsuhiro Muto上一次获得APT济州岛主赛事冠军还要追溯到2017年3月。新时代的奖金池是原来的二十多倍，此次APT主赛事从4月26日持续到5月4日，并有高达20亿韩元（约合150万美元）的保底奖金。 除了有保证金的大型赛事外，该系列赛事还包括每日豪客锦标赛、混合游戏、各种扑克变体以及常规桌游戏。",
+        content_tw: "2024年4月26日，韓國濟州--歡迎來到APT濟州2024，這個為期10天的系列賽將舉辦91場賽事（包括衛星賽），其中包括86場獎杯賽，獎金池保證金超過50億韓元 （約370萬美元）。 該系列賽於4月26日至5月5日與韓國藍鼎娛樂公司（LEK）合作，在位於豪華濟州神話世界萬豪度假村的世界級藍鼎酒店舉行。 雖然這是APT第四次造訪濟州島，但這也標誌著APT在時隔七年之後首次造訪濟州島，日本選手Katsuhiro Muto上一次獲得APT濟州島主賽事冠軍還要追溯到2017年3月。新時代的獎金池是原來的二十多倍，這場APT主賽事從4月26日持續到5月4日，並有高達20億韓元（約150萬美元）的保底獎金。 除了有保證金的大型賽事外，該系列還包括每日豪客錦標賽、混合遊戲、各種撲克變體以及常規桌遊戲。"
+      },
+      {
+        type: "heading",
+        content: "Boxin Jin Claims Event #11",
+        content_cn: "Boxin Jin夺得第11场赛事",
+        content_tw: "Boxin Jin奪得第11場賽事"
+      },
+      {
+        type: "paragraph",
+        content: "Getting underway at 2:30pm local time, the KRW 2M event saw 25 players enter the action, battling at the baize for eighteen 25-minute levels to win a slice of the KRW 43,650,000 (~USD 31,700) prize pool. Boxin Jin beat compatriot and Korea National Cup Flight A frontrunner Fei Wang head-up to claim the KRW 18,333,000 (~USD 13,310) top prize, in addition to his maiden APT title.",
+        content_cn: "这场赛事在当地时间下午2:30开始，200万韩元赛事有25名玩家参赛，他们在18个25分钟的游戏级别中为赢得 43,650,000 韩元（约合 31,700 美元）的奖金池而战。 Boxin Jin击败了同胞、韩国国家杯A组头名Fei Wang，夺得了18,333,000 韩元（约合13,310 美元的最高奖金，这也是他首次获得APT冠军。",
+        content_tw: "這場賽事在當地時間下午2:30開始，200萬韓元賽事有25名玩家參賽，他們在18個25分鐘的遊戲級別中為贏得 43,650,000 韓元（約 31,700 美元）的獎金池而戰。 Boxin Jin擊敗了同胞、韓國國家杯A組頭名Fei Wang，贏得了18,333,000 韓元（約13,310 美元的最高獎金，這也是他首次獲得APT冠軍。"
       },
       {
         type: "heading",
@@ -1441,8 +1447,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Exciting Recap: WPT Korea Jeju Dragon Quest Day 1A and Day 1B Highlights!",
-        content_cn: "精彩回顾：WPT韩国济州龙之探索第1A天和第1B天精彩集锦！",
-        content_tw: "精彩回顧：WPT韓國濟州龍之探索第1A天和第1B天精彩集錦！"
+        content_cn: "济州寻龙争霸赛现场赛况视频：",
+        content_tw: "濟州尋龍爭霸賽現場賽況影片："
       },
       {
         type: "video",
@@ -1452,8 +1458,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Jin Boxin has emerged as the latest JEJU Dragon Quest Champion at WPT Korea! In addition to winning a WPT Trophy and a side event Champion Ring, Jin Boxin bested a field of 276 players to take home KRW 47,770,000 in prize money. He agreed to split the winnings with Li Zhongxian, ensuring each received KRW 47,770,000.",
-        content_cn: "金博欣成为WPT韩国最新的济州龙之探索冠军！除了赢得WPT奖杯和边赛冠军戒指外，金博欣击败了276名选手，带走了47,770,000韩元的奖金。他同意与李中贤分奖，确保每人获得47,770,000韩元。",
-        content_tw: "金博欣成為WPT韓國最新的濟州龍之探索冠軍！除了贏得WPT獎杯和邊賽冠軍戒指外，金博欣擊敗了276名選手，帶走了47,770,000韓元的獎金。他同意與李中賢分獎，確保每人獲得47,770,000韓元。"
+        content_cn: "济州寻龙争霸战决赛日回顾 ： 2024济州寻龙争霸赛就已经决出了冠军，由国人选手Jin Boxin拿下此战冠军！恭喜他！",
+        content_tw: "濟州尋龍爭霸戰決賽日回顧 ： 2024濟州尋龍爭霸賽就已經決出了冠軍，由國人選手Jin Boxin拿下此戰冠軍！ 恭喜他！"
       },
       {
         type: "image",
@@ -1463,8 +1469,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Date/s: March 27-28, 2024 Buy-in: KRW 1,100,000 (~USD 810) Prize pool: KRW 265,043,000 (~USD 197,130) Entries: 276 (188 unique) ITM: 36 players Event #5: Jeju Dragon Quest – Final Table Results",
-        content_cn: "日期：2024年3月27-28日 买入：1,100,000韩元（约810美元） 奖池：265,043,000韩元（约197,130美元） 参赛人数：276（188个独立参赛） 奖金圈：36人 第5场赛事：济州龙之探索 – 决赛桌结果",
-        content_tw: "日期：2024年3月27-28日 買入：1,100,000韓元（約810美元） 獎池：265,043,000韓元（約197,130美元） 參賽人數：276（188個獨立參賽） 獎金圈：36人 第5場賽事：濟州龍之探索 – 決賽桌結果"
+        content_cn: "时间：2024年3月27日-28日 买入：1,100,000韩元 奖池：265,043,000韩元 参赛人数：276人 进钱圈：36人 赛事决赛桌赛况：",
+        content_tw: "時間：2024年3月27日-28日 買入：1,100,000韓元 獎金池：265,043,000韓元 參賽人數：276人 進錢圈：36人 賽事決賽桌賽況："
       },
       {
         type: "table",
@@ -1490,8 +1496,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Congratulation to AA POKER team Jin Boxin!",
-        content_cn: "祝贺AA POKER团队金博欣！",
-        content_tw: "祝賀AA POKER團隊金博欣！"
+        content_cn: "再次恭喜AA POKER团队Jin Boxin 拿下冠军，更多信息继续关注AA POKER！",
+        content_tw: "再次恭喜AA POKER團隊Jin Boxin 拿下冠軍，更多資訊繼續關注AA POKER！"
       }
     ]
   },
@@ -1501,8 +1507,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The final Saturday of the Triton Super High Roller Series festival in Jeju, South Korea, started with the search for Quan Zhou. It ended with the Chinese player in the most prominent place of all: holding aloft his first Triton winner's trophy.",
-        content_cn: "韩国济州Triton超级豪客系列赛的最后一个周六，从寻找周全开始。最终，这位中国选手站在了最显赫的位置：高举他的第一座Triton冠军奖杯。",
-        content_tw: "韓國濟州Triton超級豪客系列賽的最後一個週六，從尋找周全開始。最終，這位中國選手站在了最顯赫的位置：高舉他的第一座Triton冠軍獎杯。"
+        content_cn: "在韩国济州岛举行的Triton超级豪客系列赛的最后一个星期六，“国王”周全站在了最显眼的位置：高举他的第一座Triton冠军奖杯。",
+        content_tw: "在韓國濟州島舉行的Triton超級豪客系列賽的最後一個星期六，“國王”周全站在了最顯眼的位置：高舉他的第一座Triton冠軍獎杯。"
       },
       {
         type: "image",
@@ -1512,8 +1518,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Zhou was the overnight chip leader of the $25K Pot Limit Omaha event here at the Jeju Shinhwa World Landing Resort, but was late to arrive for the tournament room for the 1pm restart of the event. It meant Zhou was missing from the customary pre-final table line-up photo. But no matter. Zhou set about his task today with customary focus and ensured that he was present for the most important photos of the day. Those were the ones featuring Zhou alone, alongside his winner's cap, winning hand, winning chips and that trophy. The $530,000 first prize is also now into his Triton account.",
-        content_cn: "周全是济州神话世界Landing度假村这场25,000美元底池限注奥马哈赛事的隔夜筹码领先者，但他在下午1点赛事重新开始时迟到了比赛室。这意味着周全缺席了传统的决赛桌前合影。但没关系。周全今天以一贯的专注投入任务，并确保他出现在当天最重要的照片中。那些是周全独自一人的照片，旁边是他的冠军帽、获胜手牌、获胜筹码和那座奖杯。530,000美元的头奖现在也进入了他的Triton账户。",
-        content_tw: "周全是濟州神話世界Landing度假村這場25,000美元底池限注奧馬哈賽事的隔夜籌碼領先者，但他在下午1點賽事重新開始時遲到了比賽室。這意味著周全缺席了傳統的決賽桌前合影。但沒關係。周全今天以一貫的專注投入任務，並確保他出現在當天最重要的照片中。那些是周全獨自一人的照片，旁邊是他的冠軍帽、獲勝手牌、獲勝籌碼和那座獎杯。530,000美元的頭獎現在也進入了他的Triton賬戶。"
+        content_cn: "周全是25K奥马哈比赛的隔夜记分牌领先者，但在下午1点重新开始比赛时，他却迟迟没有到达比赛室。 这意味着他没有按照惯例在决赛桌前合影留念。 不过没关系。 周全以一贯的专注开始了他今天的工作，并确保在当天最重要的照片中出现他的身影。 这些照片中只有周全一个人，还有他的冠军帽、获胜牌和奖杯。",
+        content_tw: "周全是25K奧馬哈比賽的隔夜記分牌領先者，但在下午1點重新開始比賽時，他却遲遲沒有到達比賽室。 這意味著他沒有按照慣例在決賽桌前合影留念。 不過沒關係。 周全以一貫的專注開始了他今天的工作，並確保在當天最重要的照片中出現他的身影。 這些照片中只有周全一個人，還有他的冠軍帽、獲勝牌和獎杯。"
       },
       {
         type: "image",
@@ -1523,8 +1529,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "This 39-year-old has come close to a Triton victory before, most notably when he was beaten heads-up in a PLO event in Monte Carlo last year. But this time he was not to be denied and blazed through the final day in a little more than four hours. He despatched his final challenger, Canada's Matthew Wood, on the first hand of head-up play. It ensured his first cash in Jeju came with a \"1st place\" notice beside it. He has staked a real claim as the man to beat in these PLO events, and confirmed that he's here to stay. 'I'm very happy with the win,' Zhou said, through an interpreter, as he began his celebrations. 'I have been looking forward to this title because there are a lot of strong competitors on the Triton Series.' He added: 'I played a lot of the no limit events and didn't cash, so there was a bit of pressure on me. But fortunately I have a lot of support from friends that keeps me going. Some of my friends came here to support me. Winning this title has helped me to relieve the pressure. It's a confidence boost.'",
-        content_cn: "这位39岁的选手之前已经接近Triton胜利，最著名的是去年在蒙特卡洛的PLO赛事中单挑失利。但这次他不会再被拒之门外，在四个多小时内风驰电掌般完成了最后一天的比赛。他在单挑的第一手就击败了最后的挑战者、加拿大的Matthew Wood。这确保了他在济州的第一次奖金旁边有一个『第一名』的标注。他已经真正奠定了自己作为这些PLO赛事中需要击败的人的地位，并证明了他会继续留下来。『我对这次胜利非常高兴，』周全通过翻译在开始庆祝时说。『我一直期待这个冠军，因为Triton系列赛有很多强大的竞争对手。』他补充说：『我参加了很多无限注赛事但没有获得奖金，所以我有一些压力。但幸运的是，我有很多朋友的支持让我继续前进。我的一些朋友来这里支持我。赢得这个冠军帮助我缓解了压力。这是信心的提升。』",
-        content_tw: "這位39歲的選手之前已經接近Triton勝利，最著名的是去年在蒙特卡洛的PLO賽事中單挑失利。但這次他不會再被拒之門外，在四個多小時內風馳電掌般完成了最後一天的比賽。他在單挑的第一手就擊敗了最後的挑戰者、加拿大的Matthew Wood。這確保了他在濟州的第一次獎金旁邊有一個『第一名』的標注。他已經真正奠定了自己作為這些PLO賽事中需要擊敗的人的地位，並證明了他會繼續留下來。『我對這次勝利非常高興，』周全通過翻譯在開始慶祝時說。『我一直期待這個冠軍，因為Triton系列賽有很多強大的競爭對手。』他補充說：『我參加了很多無限注賽事但沒有獲得獎金，所以我有一些壓力。但幸運的是，我有很多朋友的支持讓我繼續前進。我的一些朋友來這裡支持我。贏得這個冠軍幫助我緩解了壓力。這是信心的提升。』"
+        content_cn: "周全以前曾经差点赢得Triton锦标赛，最著名的一次是去年在蒙地卡罗举行的PLO锦标赛中惜败。 但这一次，他不负众望，在最后一天的比赛中花了四个多小时就大获全胜。 他在单挑的第一手牌中就击败了最后一位挑战者、加拿大选手Matthew Wood。 这确保了他在济州岛的第一笔奖金，旁边还写着 ‘第一名’。\n\n‘我对这次胜利感到非常高兴，我一直期待着这个冠军，因为Triton系列赛有很多强劲的竞争对手。’ 他补充说：‘我参加了很多赛事，但都没有赢，所以压力有点大。但幸运的是，我得到了很多朋友的支持，让我坚持了下来。赢得这个冠军帮我减轻了压力。这让我信心倍增’。",
+        content_tw: "周全以前曾經差點贏得Triton錦標賽，最著名的一次是去年在蒙地卡羅舉行的PLO錦標賽中惜敗。 但這一次，他不負眾望，在最後一天的比賽中花了四個多小時就大獲全勝。 他在單挑的第一手牌中就擊敗了最後一位挑戰者、加拿大選手Matthew Wood。 這確保了他在濟州島的第一筆獎金，旁邊還寫著 ‘第一名’。\n\n‘我對這次勝利感到非常高興，我一直期待著這個冠軍，因為Triton系列賽有很多強勁的競爭對手。’ 他補充說：‘我參加了很多賽事，但都沒有贏，所以壓力有點大。但幸運的是，我得到了很多朋友的支持，讓我堅持了下來。贏得這個冠軍幫我減輕了壓力。這讓我信心倍增’。"
       }
     ]
   },
@@ -1534,8 +1540,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Paris is the City of Light, and today at the 2024 PokerStars European Poker Tour Paris €10,200 Mystery Bounty, the light shined brightest on Duco ten Haven.",
-        content_cn: "巴黎是光之城，今天在2024年PokerStars欧洲扑克巡回赛巴黎站€10,200神秘赏金赛上，Duco ten Haven成为最耀眼的明星。",
-        content_tw: "巴黎是光之城，今天在2024年PokerStars歐洲撲克巡迴賽巴黎站€10,200神秘賞金賽上，Duco ten Haven成為最耀眼的明星。"
+        content_cn: "EPT连续第二年重返巴黎，这次是在巴黎会议中心举行，为玩家们提供了一个更大、更宽敞的比赛场地，并致力为大家带来无与伦比的参赛体验。",
+        content_tw: "EPT連續第二年重返巴黎，這次是在巴黎會議中心舉行，為玩家們提供了一個更大、更寬敢的比賽場地，並致力於為大家帶來無與倫比的參賽體驗。"
       },
       {
         type: "image",
@@ -1544,7 +1550,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The Dutch pro, who considers Paris a second home, is usually an online crusher but captured his first EPT title today at Le Palais des Congrès by defeating Quan Zhou heads-up to win the trophy and €126,500. In addition to the top prize, he also earned €117,500 in bounties including one of the €50,000 top mystery bounty envelopes as he began his festival here in Paris with a total score of €244,000, the best of his career. That's great. I didn't even want to play this tournament,\" ten Haven said following his victory. \"It's amazing. My first EPT. My best live score. Can't get any better. I come also from Paris, kind of, so it's the best feeling to win the EPT in the city that I come from.\" Mystery bounty tournaments have become a fixture on the poker calendar within a few short years. Players can collect a bounty by eliminating a player, but the amount is left up to chance. An envelope is pulled out of a wooden box and the figure that is in there is the player's to keep. For ten Haven, it's a way to keep poker more interesting, especially with how it affects the overall strategy of the tournament. It's fun. A mixture of the different types of tournaments is the best thing to have. I enjoy all the formats as much as one another, but the best is having diversification so you're not bored at any point in time,\" he said. When the mystery bounty is first getting into play there were a lot, so you should gamble way more at that point, especially if there are short stacks that you cover. But as the tournament goes towards the end they are worth less and less so it plays out more or less like a normal format.\" Final Table Results"
+        content: "The Dutch pro, who considers Paris a second home, is usually an online crusher but captured his first EPT title today at Le Palais des Congrès by defeating Quan Zhou heads-up to win the trophy and €126,500. In addition to the top prize, he also earned €117,500 in bounties including one of the €50,000 top mystery bounty envelopes as he began his festival here in Paris with a total score of €244,000, the best of his career.",
+        content_cn: "€10,200神秘赏金赛共103人参赛，总奖池达到€473,800。 名叫 Duco ten Haven 的优秀荷兰选手，将巴黎视为自己的第二故乡。作为知名的在线高手，他终于在巴黎会议宫凭借出色实力，成功斩获EPT神秘赏金赛冠军奖杯以及高达€126,500的冠军奖金。 这是他职业生涯中最好的一次，除了最高奖金外，他还赢得了€117,500的神秘赏金，其中一笔是5w欧元的顶级神秘悬赏金。",
+        content_tw: "€10,200神秘賞金賽共103人參賽，總獎金池達到€473,800。 名叫 Duco ten Haven 的優秀荷蘭選手，將巴黎視為自己的第二個家。身為知名的線上高手，他終於在巴黎會議宮憑借出色實力，成功斬獲EPT神秘賞金賽冠軍獎盃以及高達€126,500的冠軍獎金。 這是他職業生涯中最好的一次，除了最高獎金外，他還贏得了€117,500的神秘賞金，其中一筆是5w歐元的頂級神秘懸賞金。"
       },
       {
         type: "table",
@@ -1564,7 +1572,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Day 2 Action Day 2 began with 46 surviving players from Day 1 beginning play at 12:30 p.m. local time. With late registration open for the first two levels of the day, they were joined by 32 new arrivals to bring the total field up to 103. Mystery bounties kicked in beginning on Level 13. Team PokerStars Pros Alejandro Lococo and Sam Grafton, as well as EPT champion Steve O'Dwyer, Chris Brewer, and Day1 chip leader Joris Ruijs were among those who busted early. Stephen Chidwick fell two spots shy of the money, while Manig Loeser fell victim to Quan Zhou's flush in 14th place as the unfortunate bubble boy. Once the bubble burst and the remaining 13 players guaranteed themselves a payday, Joakim Anderson had his aces cracked by Mike Watson to fall in 13th. Atanas Malinov lost to Elias Gutierrez's rivered pair of aces as he busted in 12th. Thomas Boivin earned a massive double up when he spiked a set of kings on the river to beat Sergi Reixach's two aces. Gutierrez then won a race against EPT champion Adrian Mateos to double up and leave Mateos nursing an extreme short stack. Reixach, though, managed to climb back into contention after a crucial double through Lin, eliminating Jean-Noel Thorel in 11th place. Jakob Miegel suffered a massive cooler when his tens over queens lost to Boivin's queens full of tens as he finished on the final table bubble in 10th place. Boivin took the chip lead into the nine-handed final table with 1,940,000, ten Haven following close behind in second on a stack of 1,815,000."
+        content: "Day 2 Action Day 2 began with 46 surviving players from Day 1 beginning play at 12:30 p.m. local time. With late registration open for the first two levels of the day, they were joined by 32 new arrivals to bring the total field up to 103.",
+        content_cn: "在这场激烈的FT最终一对一单挑决战中输给Haven的“国王”周全，虽然未能得偿所愿夺取冠军，但他收获了一个令人欣慰的战果——赢得第二名的优异成绩。 除此以外，他还赢得同样价值5W欧元的另一个最高额的赏金。 比赛结果：",
+        content_tw: "在這場激烈的FT最終一對一單挑決戰中輸給Haven的“國王”周全，雖然未能得償所願奪取冠軍，但他收穫了一個令人欣慰的戰果——贏得第二名的優異成績。 除此以外，他還贏得同樣價值5W歐元的另一個最高額的賞金。 比賽結果："
       },
       {
         type: "image",
@@ -1573,7 +1583,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Two-time EPT champion Watson was the first to fall, losing a three-way all in to Sirzat Hissou's turned flush. Mateos picked off a bluff from Gutierrez to double up yet again before Aurelien Russo was eliminated in eighth place when his eights lost to Reixach's flopped pair of kings. A hand later, Reixach made a straight on the river to beat Gutierrez's pocket deuces to send the online phenom and streamer known as \"SimKarma\" to the rail in seventh. Mateos finally fell when he moved all in for 850,000 with king-six. Zhou called with ace-six and both players made two pair on the flop, but Zhou's ace earned him the pot as Mateos was sent to the exit in sixth. Zhou took the chip lead, but his turn atop the leaderboard was short-lived as Boivin won a massive flip with nines against Reixach's ace-king to double up. Reixach was eliminated the next hand by Zhou's turned straight."
+        content: "Two-time EPT champion Watson was the first to fall, losing a three-way all in to Sirzat Hissou's turned flush.",
+        content_cn: "€1,100 FPS主赛事正在火爆进行，目前前三个比赛日的赛程已经结束，比赛吸引了大量热爱扑克的选手慕名前来。 参赛人次达到创纪录的2,262人次，总奖池已达到$2,360,640，超过了2023年的2,071人次。Day1还剩下三个比赛日，随着赛程的推进，相信今年的参赛人数将达到顶峰。\n\nDay1 b组共167人次参赛，最终人获得晋级资格。保加利亚选手Boris Angelov在获得404,000记分后成为领先者。 其他晋级的名人包括Daniel Rezaei、Marcello Miniucchi、Cecile Ticherfatine、扑克大使Felix Schneiders和Maria Lampropulos。\n\nDay1 c组比赛共有1,208人次参赛，其中181人成功晋级，法国选手Alexandre Correia在获得895,000记分后成为领先者。",
+        content_tw: "€1,100 FPS主賽事正在火爆進行，目前前三個比賽日的賽程已經結束，比賽吸引了大量熱愛撲克的選手慕名前來。 參賽人次達到創紀錄的2,262人次，總獎金池已達到$2,360,640，超過了2023年的2,071人次。 Day1還剩下三個比賽日，隨著賽程的推進，相信今年的參賽人數將達到頂峰。\n\nDay1 b組共167人次參賽，最後25人獲得晉級資格。保加利亞選手Boris Angelov在獲得404,000記分後成為領先者。 其他晉升的名人包括Daniel Rezaei、Marcello Miniucchi、Cecile Ticherfatine、撲克大使Felix Schneiders和Maria Lampropulos。\n\nDay1 c組比賽共有1,208人次參賽，其中181人成功晉級，法國選手Alexandre Correia在獲得895,000記分後成為領先者。"
       },
       {
         type: "image",
@@ -1587,11 +1599,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The biggest hand of the tournament, though, was yet to come as ten Haven catapulted into a massive lead. Zhou four-bet jammed and ten Haven snap-called for 2,530,000 with two aces. Zhou had ace-king and was forced to hand over most of his chips as ten Haven took firm control of the tournament. Zhou nearly tripled up a few hands later to get back into contention. Hissou doubled up his short stack several times before calling off his last 650,000 against ten Haven, who made a pair of aces to bust Hissou in fourth place. Boivin then moved all in for 3,100,000 with a pair of eights and ten Haven called with a dominating pair of nines. Ten Haven ended up with quads to eliminate Boivin in third and take a 6,600,000 to 1,330,000 lead over Zhou into heads-up play."
+        content: "The biggest hand of the tournament, though, was yet to come as ten Haven catapulted into a massive lead.",
+        content_cn: "紧随其后的是2023 FPS 蒙特卡洛主赛事冠军日本选手Daisuke Ogita。 同样拥有健康筹记分量的还有Conor Beresford。这位英国扑克职业玩家已经在现场锦标赛中积累了超过200w美元的收入，他正在全力追逐自己的第一个EPT冠军。 其他获得晋级资格的名人包括Tamas Adamszki、Daniel Smiljkovic以及扑克大使Ramon Collillas。\n\n孙云升老师也凭借354,000记分成功晋级下一轮，并在晋级名单中排名第80位。",
+        content_tw: "緊隨其後的是2023 FPS 蒙特卡羅主賽事冠軍日本選手Daisuke Ogita。 同樣擁有健康籌記分量的還有Conor Beresford。這位英國撲克職業玩家已經在現場錦標賽中積累了超過200w美元的收入，他正在全力追逐自己的第一個EPT冠軍。 其他獲得晉級資格的名人包括Tamas Adamszki、Daniel Smiljkovic以及撲克大使Ramon Collillas。\n\n孫雲升老師也憑借354,000記分成功晉級下一輪，並在晉級名單中排名第80位。"
       },
       {
         type: "paragraph",
-        content: "Zhou managed two double ups until he jammed again for 1,825,000 with jack-four. Ten Haven called with king-three and ended up with a full house to win the pot and tournament. Ten Haven's night only got better from there, as he claimed the last remaining €50,000 mystery bounty after clinching the title. Fittingly, Zhou won the other top bounty prize. His career-defining windfall today is going to change ten Haven's plans for the rest of the EPT Paris festival. The high roller events weren't on his original schedule, but that might change now with his win today. \"I wasn't planning to, but now this makes me reconsider it. So I think so,\" ten Haven said. That concludes PokerNews' coverage of the €10,200 Mystery Bounty at the 2024 EPT Paris. Stay tuned for more coverage throughout the festival."
+        content: "Zhou managed two double ups until he jammed again for 1,825,000 with jack-four. Ten Haven called with king-three and ended up with a full house to win the pot and tournament.",
+        content_cn: "在这场激烈的FT最终一对一单挑决战中输给Haven的“国王”周全，虽然未能得偿所愿夺取冠军，但他收获了一个令人欣慰的战果——赢得第二名的优异成绩。 除此以外，他还赢得同样价值5W欧元的另一个最高额的赏金。 比赛结果：",
+        content_tw: "在這場激烈的FT最終一對一單挑決戰中輸給Haven的“國王”周全，雖然未能得償所願奪取冠軍，但他收穫了一個令人欣慰的戰果——贏得第二名的優異成績。 除此以外，他還贏得同樣價值5W歐元的另一個最高額的賞金。 比賽結果："
       }
     ]
   },
@@ -1601,8 +1617,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The most heinous cheater in history is actually the WSOP Main Event Champion! Everyone despises cheaters, especially poker players. Nowadays, with the more popularity of poker all over the world, more questions have emerged, such as various cheating behaviors. There are some just as little thieves, but some are robbers with insatiable desires. Today, let's meet the most despicable, greedy, and famous cheater in history. You can hardly imagine how nasty he is! He has stolen over $20 million from players through cheating, without returning anything to the players or spending a day in jail. He is the former American professional player, Russ Hamilton.",
-        content_cn: "历史上最可恶的作弊者竟然是WSOP主赛事冠军！每个人都鄙视作弊者，尤其是扑克选手。如今，随着扑克在全球的普及，更多的问题浮现，如各种作弊行为。有些只是小偷，但有些是贪得无厌的强盗。今天，让我们来认识历史上最卑鄙、最贪婪、最臭名昭著的作弊者。你很难想象他有多丑恶！他通过作弊从选手那里窃取了超2000万美元，既没有返还给选手，也没有坐过一天牢。他就是前美国职业选手Russ Hamilton。",
-        content_tw: "歷史上最可惡的作弊者竟然是WSOP主賽事冠軍！每個人都鄙視作弊者，尤其是撲克選手。如今，隨著撲克在全球的普及，更多的問題浮現，如各種作弊行為。有些只是小偷，但有些是貪得無厭的強盜。今天，讓我們來認識歷史上最卑鄙、最貪婪、最臭名昭著的作弊者。你很難想象他有多醜惡！他通過作弊從選手那裡竊取了超2000萬美元，既沒有返還給選手，也沒有坐過一天牢。他就是前美國職業選手Russ Hamilton。"
+        content_cn: "史上最可恶的作弊者竟然是WSOP主赛冠军！相信每个人都是痛恨作弊者的，尤其作为竞技扑克游戏玩家来说。明明大家都在比拼智力，某些『人』却暗戳戳地用上了『高科技』，我拿你当兄弟，你却拿我当『提款机』。 自竞技扑克流行以来，各种作弊行为就层出不穷，既有小打小闹的『小骗子』，也有贪婪无度的『大骗子』，今天我们就来认识这位堪称史上最可恶、最贪婪也是最大的作弊者。 他通过作弊窃取的玩家资金高达2000多万刀，更可恨的是他没有偿还玩家一分钱，甚至没有因此坐过一天牢。 他就是美国前职业玩家Russ Hamilton。",
+        content_tw: "史上最可惡的作弊者竟然是WSOP主賽冠軍！相信每個人都是痛恨作弊者的，尤其作為競技撲克遊戲玩家來說。明明大家都在比拼智力，某些『人』卻暗戳戳地用上了『高科技』，我拿你當兄弟，你卻拿我當『提款機』。 自競技撲克流行以來，各種作弊行為就層出不窮，既有小打小鬧的『小騙子』，也有貪婪無度的『大騙子』，今天我們就來認識這位堪稱史上最可惡、最貪婪也是最大的作弊者。 他透過作弊竊取的玩家資金高達2000多萬刀，更可恨的是他沒有償還玩家一分錢，甚至沒有因此坐過一天牢。 他就是美國前職業玩家Russ Hamilton。"
       },
       {
         type: "image",
@@ -1612,8 +1628,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "He was the 1994 World Series of Poker main event champion, defeating Hugh Vincent in heads-up play to win $1 million in first prize money as well as his body weight in silver. He was a bona fide poker pro. Instead of leaving a legacy, he chose infamy. During the online poker craze of the early 2000s, he launched his Ultimate Bet, the world's first online poker site named 'POTRIPPER,' which could directly see players' hole cards. This 'simple and easy' method enabled him to effortlessly steal over $20 million from other players between January 2005 and December 2007. After his misdeeds were exposed, Hamilton vehemently denied his crimes. Although being blacklisted by the poker community, he still faced no any punishment. Now, with the rapid development of AI technology, cheating methods have also evolved. Safeguarding the legitimate rights and interests of our poker players and creating a fair and fun gaming environment have become the top priorities for every poker platform operator.",
-        content_cn: "他是1994年世界扑克系列赛主赛事冠军，在单挑中击败Hugh Vincent，赢得100万美元头奖以及与他体重相等的银子。他是一位真正的扑克职业选手。但他没有留下传奇，而是选择了臭名昭著。21世纪初的在线扑克热潮期间，他创建了Ultimate Bet，世界上第一个名为『POTRIPPER』的在线扑克网站，可以直接看到选手的底牌。这种『简单易行』的方法使他在2005年1月至2007年12月期间轻松从其他选手那里窃取了超2000万美元。在他的丑行暴露后，Hamilton极力否认他的罪行。尽管被扑克界列入黑名单，他仍然没有受到任何惩罚。现在，随着AI技术的快速发展，作弊方法也在不断演变。保护我们扑克选手的合法权益，创造一个公平有趣的游戏环境，已成为每个扑克平台运营商的首要任务。",
-        content_tw: "他是1994年世界撲克系列賽主賽事冠軍，在單挑中擊敗Hugh Vincent，贏得100萬美元頭獎以及與他體重相等的銀子。他是一位真正的撲克職業選手。但他沒有留下傳奇，而是選擇了臭名昭著。21世紀初的在線撲克熱潮期間，他創建了Ultimate Bet，世界上第一個名為『POTRIPPER』的在線撲克網站，可以直接看到選手的底牌。這種『簡單易行』的方法使他在2005年1月至2007年12月期間輕鬆從其他選手那裡竊取了超2000萬美元。在他的醜行暴露後，Hamilton極力否認他的罪行。儘管被撲克界列入黑名單，他仍然沒有受到任何懲罰。現在，隨著AI技術的快速發展，作弊方法也在不斷演變。保護我們撲克選手的合法權益，創造一個公平有趣的遊戲環境，已成為每個撲克平台運營商的首要任務。"
+        content_cn: "他是1994年WSOP主赛事冠军，单挑击败Hugh Vincent赢得100万刀的奖金，外加上等同于他体重的白银！这是一个真正的扑克职业牌手，但他没有给扑克留下好的遗产，而是被钉上了扑克的耻辱柱！在21世纪初期的在线扑克热潮中，他创立了UltimateBet，这是世界上第一个在线扑克网站，期间他创立了一个叫做『POTRIPPER』的账户，使用的作弊软件是他可以直接看到对手的底牌，通过这种『简单粗暴』的方式，他在2005年1月至2007年12月期间从别的玩家那里轻松窃取了超过2000万刀的资金。 在他的恶行被揭穿后，Russ Hamilton坚决否认，虽然他被扑克界列入了永久黑名单，但从未接受过任何惩罚。现在，随着AI技术的飞速发展，伴随着线上扑克的发展和软件、AI层出不穷，各种作弊手段也在不断推陈出新，不知道还有多少Russ Hamilton在暗处行事。 维护玩家的合法权益，创造公平公正的游戏环境已经成为每一个运营商的首要任务。",
+        content_tw: "他是1994年WSOP主賽事冠軍，單挑擊敗Hugh Vincent贏得100萬刀的獎金，外加上等同於他體重的白銀！這是一個真正的撲克職業牌手，但他沒有給撲克留下好的遺產，而是被釘上了撲克的恥辱柱！在21世紀初期的線上撲克熱潮中，他創立了UltimateBet，這是世界上第一個線上撲克網站，期間他創立了一個叫做『POTRIPPER』的帳戶，使用的作弊軟體是他可以直接看到對手的底牌，透過這種『簡單粗暴』的方式，他在2005年1月至2007年12月期間從別的玩家那裡輕鬆竊取了超過2000萬刀的資金。 在他的惡行被揭穿後，Russ Hamilton堅決否認，雖然他被撲克界列入了永久黑名單，但從未接受過任何懲罰。現在，隨著AI技術的飛速發展，伴隨著線上撲克的發展和軟體、AI層出不窮，各種作弊手段也在不斷推陳出新，不知道還有多少Russ Hamilton在暗處行事。 維護玩家的合法權益，創造公平公正的遊戲環境已經成為每一個運營商的首要任務。"
       },
       {
         type: "image",
@@ -1623,32 +1639,32 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "So recently, AApoker has had all better hope that the profession can get its act together, creating a fair gaming environment for our players. We aim to eradicate all cheating behaviors and safeguard regular players! In order to create a fair tournament environment, improve gaming quality, establish industry standards, and combat any forms of collusion and cheating, AApoker has made the following technological enhancements for players:",
-        content_cn: "因此，AApoker最近希望行业能够行动起来，为我们的选手创造一个公平的游戏环境。我们的目标是根除所有作弊行为，保护普通选手！为了创造公平的比赛环境、提升游戏质量、建立行业标准、打击任何形式的串谋和作弊，AApoker为选手进行了以下技术升级：",
-        content_tw: "因此，AApoker最近希望行業能夠行動起來，為我們的選手創造一個公平的遊戲環境。我們的目標是根除所有作弊行為，保護普通選手！為了創造公平的比賽環境、提升遊戲質量、建立行業標準、打擊任何形式的串謀和作弊，AApoker為選手進行了以下技術升級："
+        content_cn: "AA POKER祭出『天下无贼』,全方位组合拳打击作弊！为了创造公平的比赛环境、提升游戏质量、建立行业标准、打击任何形式的串通和作弊，AA POKER为玩家进行了以下技术升级：",
+        content_tw: "AA POKER祭出『天下無賊』,全方位組合拳打擊作弊！為了創造公平的比賽環境、提升遊戲質量、建立行業標準、打擊任何形式的串通和作弊，AA POKER為玩家進行了以下技術升級："
       },
       {
         type: "paragraph",
         content: "For Players",
-        content_cn: "为选手提供：",
-        content_tw: "為選手提供："
+        content_cn: "玩家端：",
+        content_tw: "玩家端："
       },
       {
         type: "paragraph",
         content: "1.Online table function 2. Face liveness detection",
-        content_cn: "1.在线桌功能 2.人脸活体检测",
-        content_tw: "1.在線桌功能 2.人臉活體檢測"
+        content_cn: "1.线上桌功能 2.人脸活体检测",
+        content_tw: "1.線上桌功能 2.人臉活體檢測"
       },
       {
         type: "paragraph",
         content: "AApoker System Protection:",
-        content_cn: "AApoker系统保护：",
-        content_tw: "AApoker系統保護："
+        content_cn: "AA POKER系统端：",
+        content_tw: "AA POKER系統端："
       },
       {
         type: "paragraph",
         content: "1. Automatic scanning and detection of IP address. 2. Big data detection of real location. 3. Automatic detection of AI bot cheaters. Prohibition of wormhole attacks. 5. Data protection: Use of blockchain technology AES256 encryption, making data interception and decryption impossible midway. AApoker attaches great importance to anti-cheating work this time. AA POKER always adheres to the spirit of fair and just game competition, has zero tolerance for cheating, protects the game rights of every player, and allows players to enjoy healthy, fair and fun poker games. Although combating cheating may seem like an arduous task, with the joint efforts of the professions, victory this time is inevitable!",
-        content_cn: "1.自动扫描和检测IP地址。 2.大数据检测真实位置。 3.自动检测AI机器人作弊者。 4.禁止虫洞攻击。 5.数据保护：使用区块链技术AES256加密，使数据在中途无法被截取和解密。AApoker非常重视这次的反作弊工作。AA POKER始终坚持公平公正的游戏竞技精神，对作弊零容忍，保护每个选手的游戏权利，让选手享受健康、公平、有趣的扑克游戏。虽然打击作弊可能看起来是一项艰巨的任务，但在行业的共同努力下，这次的胜利是必然的！",
-        content_tw: "1.自動掃描和檢測IP地址。 2.大數據檢測真實位置。 3.自動檢測AI機器人作弊者。 4.禁止蟲洞攻擊。 5.數據保護：使用區塊鏈技術AES256加密，使數據在中途無法被截取和解密。AApoker非常重視這次的反作弊工作。AA POKER始終堅持公平公正的遊戲競技精神，對作弊零容忍，保護每個選手的遊戲權利，讓選手享受健康、公平、有趣的撲克遊戲。雖然打擊作弊可能看起來是一項艱鉅的任務，但在行業的共同努力下，這次的勝利是必然的！"
+        content_cn: "1.自动扫描并探测IP地址 2.大数据探测真实地点 3.自动检测机器人 4.禁止虫洞攻击 5.数据保护：采用区块链技术AES256加密，数据中途无法截取和解密 AA POKER非常重视本次反作弊工作，AA POKER始终坚守公平公正的游戏竞赛精神，对作弊行为零容忍，保障每位玩家的游戏权益，让玩家玩的健康、公平和有趣！ 虽然打击作弊行为道阻且长，但我相信在大家的共同努力下，胜利终会到来！",
+        content_tw: "1.自動掃描並偵測IP地址 2.大數據偵測真實地點 3.自動檢測機器人 4.禁止蟲洞攻擊 5.數據保護：採用區塊鏈技術AES256加密，數據中途無法截取和解密 AA POKER非常重視本次反作弊工作，AA POKER始終堅守公平公正的遊戲競賽精神，對作弊行為零容忍，保障每位玩家的遊戲權益，讓玩家玩的健康、公平和有趣！ 雖然打擊作弊行為道阻且長，但我相信在大家的共同努力下，勝利終會到來！"
       }
     ]
   },
@@ -1658,8 +1674,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "heading",
         content: "King Quan Zhou is Becoming AA POKER Global Tournament Ambassador",
-        content_cn: "“周王”周全成为AA POKER全球赛事大使",
-        content_tw: "「周王」周全成為AA POKER全球賽事大使"
+        content_cn: "『国王』周全-AA POKER全球赛事形像大使",
+        content_tw: "『國王』周全-AA POKER全球賽事形像大使"
       },
       {
         type: "paragraph",
@@ -1812,14 +1828,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "heading",
         content: "WESLEY-NEW BRAND AMBASSADOR OF AA POKER",
-        content_cn: "WESLEY-AA POKER新品牌大使",
-        content_tw: "WESLEY-AA POKER新品牌大使"
+        content_cn: "Wesley-AAPOKER新全球品牌代言人",
+        content_tw: "Wesley-AAPOKER新全球品牌代言人"
       },
       {
         type: "paragraph",
         content: "Congratulations! Wesley become one of the global brand ambassadors for a well-known poker brand, AAPoker! For Wesley, who entered the poker field just two years ago, this good news is undoubtedly industry recognition and an acknowledgment of his growing influence. 2023 was a thrilling year for Wesley. But this cooperation with AAPoker marks a satisfying conclusion to the 'turbulent' 2023 and also sets the stage for a promising start in 2024.",
-        content_cn: "祝贺！Wesley成为知名扑克品牌AAPoker的全球品牌大使之一！对于两年前才进入扑克领域的Wesley来说，这个好消息无疑是行业的认可和对他日益增长的影响力的肯定。对Wesley来说，2023年是惊心动魄的一年。但与AAPoker的合作标志着“动荡”的2023年圆满结束，也为2024年的良好开端奠定了基础。",
-        content_tw: "祝賀！Wesley成為知名撲克品牌AAPoker的全球品牌大使之一！對於兩年前才進入撲克領域的Wesley來說，這個好消息無疑是行業的認可和對他日益增長的影響力的肯定。對Wesley來說，2023年是驚心動魄的一年。但與AAPoker的合作標誌著「動盪」的2023年圓滿結束，也為2024年的良好開端奠定了基礎。"
+        content_cn: "恭喜！Wesley成为知名扑克品牌AAPoker的全球品牌代言人之一！对于两年前才正式进入扑克领域的Wesley来说，这一好消息无疑是对其日益增长的影响力的肯定，和来自行业的认可。对Wesley来说，2023年是跌宕起伏的一年，而与AAPoker的合作，标志着『动荡』的2023年完美收官，同时也开启了2024年的良好开端。",
+        content_tw: "恭喜！Wesley成為知名撲克品牌AAPoker的全球品牌代言人之一！對於兩年前才正式進入撲克領域的Wesley來說，這一好消息無疑是對其日益增長的影響力的肯定，和來自行業的認可。對Wesley來說，2023年是跌宕起伏的一年，而與AAPoker的合作，標誌著『動盪』的2023年完美收官，同時也開啟了2024年的良好開端。"
       },
       {
         type: "image",
@@ -1829,8 +1845,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "As we all know, most Chinese poker players tend to be modest, because of their personalities and the environments where they are. However, Wesley, who grew up on the other side of the globe, is different. He isn't bound by rules and regulations. Since entering the 'poker world' after making a name for himself in the cryptocurrency sphere, he has embraced a 'high-profile' approach—appearing on popular shows, engaging in high-stakes poker games, and indulging in various forms of 'flaunting wealth.' This unconventional style has naturally polarized public opinion. Some people said he was too ostentatious. However, as 2023 comes to a close, we seem to witness a true Wesley. He seems to be a warrior with an inherent sense of never giving up. On the American poker stage, he bravely showcases a different image of a Chinese poker player, contributing to a unique form of cultural export through his actions and words.",
-        content_cn: "众所周知，大多数中国扑克选手由于他们的性格和所处的环境，往往比较谦虚。然而，在地球另一端长大的Wesley则不同。他不受规则和条例的束缚。自从在加密货币领域成名后进入“扑克世界”，他就采取了“高调”的方式——出现在热门节目中、参与高额扑克游戏、并以各种形式“炙富”。这种非常规的风格自然引起了公众的两极化看法。有人说他太招摇了。然而，随着2023年接近尾声，我们似乎见证了真正的Wesley。他似乎是一个具有不屈不挠精神的战士。在美国扑克舞台上，他勇敢地展现了中国扑克选手的不同形象，通过他的行动和言语为一种独特的文化输出做出了贡献。",
-        content_tw: "眾所周知，大多數中國撲克選手由於他們的性格和所處的環境，往往比較謙虛。然而，在地球另一端長大的Wesley則不同。他不受規則和條例的束縚。自從在加密貨幣領域成名後進入「撲克世界」，他就採取了「高調」的方式——出現在熱門節目中、參與高額撲克遊戲、並以各種形式「炙富」。這種非常規的風格自然引起了公眾的兩極化看法。有人說他太招搖了。然而，隨着2023年接近尾聲，我們似乎見證了真正的Wesley。他似乎是一個具有不屈不撓精神的戰士。在美國撲克舞台上，他勇敢地展現了中國撲克選手的不同形象，通過他的行動和言語為一種獨特的文化輸出做出了貢獻。"
+        content_cn: "众所周知，由于性格和所处的环境等因素，大多数中国牌手都偏内敛。然而，在地球另一端长大的Wesley则截然不同。他不受条条框框的束缚，自从在加密货币领域功成名就，跨界进入『扑克世界』后，他便开启了『高调』模式——上热门节目、打高额扑克、以各种形式『炫富』。这种非常规的风格自然引起了公众的两极化评价。然而，随着2023年接近尾声，我们似乎见识到了一个真正的Wesley。他像是一个『打不死的小强』。在美国扑克圈，他勇敢地展示了一个与众不同的中国牌手形象，以他的行动和言语做出了别样的文化输出。",
+        content_tw: "眾所周知，由於性格和所處的環境等因素，大多數中國牌手都偏內斂。然而，在地球另一端長大的Wesley則截然不同。他不受條條框框的束縛，自從在加密貨幣領域功成名就，跨界進入『撲克世界』後，他便開啟了『高調』模式——上熱門節目、打高額撲克、以各種形式『炫富』。這種非常規的風格自然引起了公眾的兩極化評價。然而，隨著2023年接近尾聲，我們似乎見識到了一個真正的Wesley。他像是一個『打不死的小強』。在美國撲克圈，他勇敢地展示了一個與眾不同的中國牌手形象，以他的行動和言語做出了別樣的文化輸出。"
       },
       {
         type: "heading",
@@ -1846,14 +1862,14 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "Wesley etched his name into history with the Hustler's Million Dollar Cash Game. During the showdown against Tom Dwan, he lost $3.1 million at first, the biggest pot TV poker history. But subsequently, he won another massive pot of $2.2 million, the second biggest pot on the history of televised poker. Throughout the huge fluctuation of this field, we also can glimpse the real nervousness on Wesley's face. However, what seems to be overlooked is his courage to sit at that table and take on top-notch professionals in the field. At that time, he had been in the profession for just over a year, and he did not sell his shares but rather used his own money to challenge the cream of the crop in American professional poker.",
-        content_cn: "Wesley通过Hustler的百万美元现金游戏将自己的名字载入史册。在与Tom Dwan的对决中，他首先输了310万美元，这是电视扑克历史上最大的底池。但随后，他赢了另一个220万美元的巨大底池，这是电视扑克历史上第二大的底池。在这场比赛的巨大波动中，我们也可以从 Wesley的脸上看到真实的紧张。然而，似乎被忽略的是他坐在那张桌子上与顶级专业人士对决的勇气。当时，他进入这个行业才一年多，他没有出售他的份额，而是用自己的钱来挑战美国职业扑克的精英。",
-        content_tw: "Wesley通過Hustler的百萬美元現金遊戲將自己的名字載入史冊。在與Tom Dwan的對決中，他首先輸了310萬美元，這是電視撲克歷史上最大的底池。但隨後，他贏了另一個220萬美元的巨大底池，這是電視撲克歷史上第二大的底池。在這場比賽的巨大波動中，我們也可以從Wesley的臉上看到真實的緊張。然而，似乎被忽略的是他坐在那張桌子上與頂級專業人士對決的勇氣。當時，他進入這個行業才一年多，他沒有出售他的份額，而是用自己的錢來挑戰美國職業撲克的精英。"
+        content_cn: "Wesley通过Hustler百万美金现金桌将他的名字载入史册。在与Tom Dwan的对决中，他首先输掉了310万刀，这是电视扑克历史上最大的底池。但紧接着，他又赢下了一个220万刀的天文数字底池，这是电视扑克历史上第二大的底池。在整场比赛的巨大波动中，我们也可以从Wesley的脸上看到真实的紧张。然而，似乎被忽略的是他能够坐上那张桌子对抗顶级职业牌手的勇气。那时他进入这个行业才一年出头，他没有出售任何份额，完全是用自己的钱在跟美国职业扑克的精英对决。",
+        content_tw: "Wesley透過Hustler百萬美金現金桌將他的名字載入史冊。在與Tom Dwan的對決中，他首先輸掉了310萬刀，這是電視撲克歷史上最大的底池。但緊接著，他又贏下了一個220萬刀的天文數字底池，這是電視撲克歷史上第二大的底池。在整場比賽的巨大波動中，我們也可以從Wesley的臉上看到真實的緊張。然而，似乎被忽略的是他能夠坐上那張桌子對抗頂級職業牌手的勇氣。那時他進入這個行業才一年出頭，他沒有出售任何份額，完全是用自己的錢在跟美國職業撲克的精英對決。"
       },
       {
         type: "heading",
         content: "Bravely reporting international cheating syndicate illegal behavior",
-        content_cn: "勇敢揭露国际作弊集团的违法行为",
-        content_tw: "勇敢揭露國際作弊集團的違法行為"
+        content_cn: "勇敢揭发国际诈骗集团",
+        content_tw: "勇敢揭發國際詐騙集團"
       },
       {
         type: "image",
@@ -1863,8 +1879,8 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "paragraph",
         content: "The details of this incident are well-known. Wesley and his friends were deceived out of $4.1 million by Mars and an international cheating syndicate. After discovering the fraud, Wesley chose to expose it, although he was faced with personal threats. It's worth mentioning that this international cheating syndicate has existed for a long time, but no one has ever stepped forward online to expose them. Wesley was the first to bravely confront them, his act of justice exposing the fraudsters and purging the industry of its evil. Hope we live in a world without thieves!",
-        content_cn: "这个事件的细节大家都知道。Wesley和他的朋友们被Mars和一个国际作弊集团骗了410万美元。发现欺诈后，尽管面临人身威胁，Wesley还是选择了揭露。值得一提的是，这个国际作弊集团已经存在很长时间了，但从来没有人在网上站出来揭露他们。Wesley是第一个勇敢面对他们的人，他的正义行为揭露了骗子，清除了行业的邪恶。希望我们生活在一个没有小偷的世界！",
-        content_tw: "這個事件的細節大家都知道。Wesley和他的朋友們被Mars和一個國際作弊集團騙了410萬美元。發現欺詐後，儘管面臨人身威脅，Wesley還是選擇了揭露。值得一提的是，這個國際作弊集團已經存在很長時間了，但從來沒有人在網上站出來揭露他們。Wesley是第一個勇敢面對他們的人，他的正義行為揭露了騙子，清除了行業的邪惡。希望我們生活在一個沒有小偷的世界！"
+        content_cn: "这个事件的细节大家都知道了，Wesley和他的朋友们被Mars和一个国际诈骗集团骗了410万刀。在发现欺诈后，尽管面临人身威胁，Wesley仍然选择了公开。值得一提的是，这个国际诈骗集团存在已久，却从来没有人在网上站出来揭露过他们。Wesley是第一个。他正义的行为揭露了骗子，为行业除害。希望我们生活在天下无贼的世界！",
+        content_tw: "這個事件的細節大家都知道了，Wesley和他的朋友們被Mars和一個國際詐騙集團騙了410萬刀。在發現欺詐後，儘管面臨人身威脅，Wesley仍然選擇了公開。值得一提的是，這個國際詐騙集團存在已久，卻從來沒有人在網上站出來揭露過他們。Wesley是第一個。他正義的行為揭露了騙子，為行業除害。希望我們生活在天下無賊的世界！"
       },
       {
         type: "image",
@@ -2569,11 +2585,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "WSOP CYPRUS \"KING\" FULLY WINS THE CHAMPIONSHIP OF THE SUPER MYSTERY BOUNTY TOURNAMENT AND RANKS FIFTH IN THE SUPER FAST BOUNTY BOTTOM POOL LIMITED BET OMAHA TOURNAMENT"
+        content: "WSOP CYPRUS \"KING\" FULLY WINS THE CHAMPIONSHIP OF THE SUPER MYSTERY BOUNTY TOURNAMENT AND RANKS FIFTH IN THE SUPER FAST BOUNTY BOTTOM POOL LIMITED BET OMAHA TOURNAMENT",
+        content_cn: "WSOP塞浦路斯 \"国王\"周全勇夺超级神秘赏金赛冠军及超快速赏金底池限注奥马哈赛第五名",
+        content_tw: "WSOP賽普勒斯 \"國王\"周全勇奪超級神秘賞金賽冠軍及超快速賞金底池限注奧馬哈賽第五名"
       },
       {
         type: "paragraph",
-        content: "As the WSOP Cyprus race draws to a close on October 20th local time, the event has entered a white hot phase. The 18 WSOP Tour championship rings that symbolize the highest honor in poker are few and far between, and every championship battle has become a battleground for players, creating a tense atmosphere!"
+        content: "As the WSOP Cyprus race draws to a close on October 20th local time, the event has entered a white hot phase. The 18 WSOP Tour championship rings that symbolize the highest honor in poker are few and far between, and every championship battle has become a battleground for players, creating a tense atmosphere!",
+        content_cn: "随着当地时间10月20日WSOP塞浦路斯站赛程临近收官，赛事进入白热化阶段。象征扑克至高荣誉的18枚WSOP巡回赛冠军戒指所剩无几，每一场冠军争夺战都成了选手们的必争之地，紧张氛围拉满！",
+        content_tw: "隨著當地時間10月20日WSOP賽普勒斯站賽程臨近收官，賽事進入白熱化階段。 象徵撲克至高榮譽的18枚WSOP巡迴賽冠軍戒指所剩無幾，每一場冠軍爭奪戰都成了選手們的必爭之地，緊張氛圍拉滿！"
       },
       {
         type: "image",
@@ -2587,7 +2607,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "In the just concluded $5,300 Super Mystery Bounty Tournament, the 'King' staged a comprehensive strength breakthrough. Facing 421 competitors, we steadily fought our way and ultimately won the championship, receiving generous championship rewards and mysterious bounties!"
+        content: "In the just concluded $5,300 Super Mystery Bounty Tournament, the 'King' staged a comprehensive strength breakthrough. Facing 421 competitors, we steadily fought our way and ultimately won the championship, receiving generous championship rewards and mysterious bounties!",
+        content_cn: "在刚结束的$5,300 超级神秘赏金赛中，\"国王\"周全上演实力突围。面对421位竞争对手，一路稳扎稳打，最终斩获冠军宝座，将丰厚的冠军奖励和神秘赏金收入囊中！",
+        content_tw: "在剛結束的$5,300超級神秘賞金賽中，\"國王\"周全上演實力突圍。 面對421比特競爭對手，一路穩紮穩打，最終斬獲冠軍寶座，將豐厚的冠軍獎勵和神秘賞金收入囊中！"
       },
       {
         type: "image",
@@ -2596,19 +2618,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The FT final table can be regarded as a highlight moment for Chinese players, with Tian Hao, Liu Xiaohu, and Yuan Yilu joining hands to break in."
-      },
-      {
-        type: "paragraph",
-        content: "Liu Xiaohu won sixth place and earned $39,000;"
-      },
-      {
-        type: "paragraph",
-        content: "Tian Hao ranked eighth and received $23,000 in revenue;"
-      },
-      {
-        type: "paragraph",
-        content: "Yuan Yilu ranked ninth and won $18,500."
+        content: "The FT final table can be regarded as a highlight moment for Chinese players, with Tian Hao, Liu Xiaohu, and Yuan Yilu joining hands to break in.\nLiu Xiaohu won sixth place and earned $39,000;\nTian Hao ranked eighth and received $23,000 in revenue;\nYuan Yilu ranked ninth and won $18,500.",
+        content_cn: "FT决赛桌堪称中国选手的高光时刻，田浩、刘小虎、袁亿璐携手闯入。\n刘小虎拿下第六名，收获$39,000；\n田浩获得第八名，入账$23,000；\n袁亿璐位居第九，赢得$18,500。",
+        content_tw: "FT決賽桌堪稱中國選手的高光時刻，田浩、劉小虎、袁億璐攜手闖入。\n劉小虎拿下第六名，收穫$39,000；\n田浩獲得第八名，入帳$23,000；\n袁億璐位居第九，贏得$18,500。"
       },
       {
         type: "image",
@@ -2617,7 +2629,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "In the mysterious bounty lottery, Chinese players have also been lucky. Zheng Xiaosheng and Yang Haiyang each received a generous bounty of $100,000, while Wei Guoliang received $37,000."
+        content: "In the mysterious bounty lottery, Chinese players have also been lucky. Zheng Xiaosheng and Yang Haiyang each received a generous bounty of $100,000, while Wei Guoliang received $37,000.",
+        content_cn: "神秘赏金抽奖环节，中国选手也幸运连连。郑晓生和杨海洋各自捧走$100,000的丰厚赏金，魏国梁则收获$37,000。",
+        content_tw: "神秘賞金抽獎環節，中國選手也幸運連連。 鄭曉生和楊海洋各自捧走$100,000的豐厚賞金，魏國梁則收穫$37,000。"
       },
       {
         type: "image",
@@ -2626,7 +2640,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The ultra fast bounty pool limited bet Omaha tournament, which followed with a $1,000 purchase, attracted 43 participants."
+        content: "The ultra fast bounty pool limited bet Omaha tournament, which followed with a $1,000 purchase, attracted 43 participants.\n\nZhou Quan once again entered the final table and achieved fifth place.",
+        content_cn: "紧接着进行的1,000美元买入的超快速赏金底池限注奥马哈赛吸引了43人参赛。\n\n周全再次进入决赛桌并获得第五名。",
+        content_tw: "緊接著進行的1,000美元買入的超快速賞金底池限注奧馬哈賽吸引了43人參賽。\n\n周全再次进入决赛桌并获得第五名。"
       },
       {
         type: "image",
@@ -2640,32 +2656,38 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The $5,300 WSOP Super Tour main event attracted a total of 1,372 participants, and the main event on Day 4 has ended. Only 8 contestants continue to fight for the championship ring and the highest prize of $1,000,000!"
-      },
-      {
-        type: "paragraph",
-        content: "Chinese athlete Xinchen Huang ultimately won 21st place and a prize of $40,800."
+        content: "The $5,300 WSOP Super Tour main event attracted a total of 1,372 participants, and the main event on Day 4 has ended. Only 8 contestants continue to fight for the championship ring and the highest prize of $1,000,000!\nChinese athlete Xinchen Huang ultimately won 21st place and a prize of $40,800.",
+        content_cn: "$5,300 的WSOP超级巡回赛主赛事共吸引了1,372人次参赛，主赛事Day4的比赛已结束。仅有8名选手继续为冠军戒指以及1,000,000美元的最高奖金而战！\n中国选手Xinchen Huang最终获得第21名及$40,800的奖金。",
+        content_tw: "$5,300的WSOP超級巡迴賽主賽事共吸引了1,372人次參賽，主賽事Day4的比賽已結束。僅有8名選手繼續為冠軍戒指以及1,000,000美元的最高獎金而戰！\n中國選手Xinchen Huang最終獲得第21名及$40,800的獎金。"
       }
     ]
   },
   "congratulations-michael-mizrachi-aa-poker": {
-    heroImage: "/image/news/details-news/new41/1-DJ_7N-Q2.png",
+    heroImage: "/image/news/details-news/new41/11-Bn_EQLZv.png",
     sections: [
       {
-        type: "heading",
-        content: "CONGRATULATIONS! MICHAEL MIZRACHI, IN COLLABORATION WITH AA POKER CLAIMED THE CHAMPIONSHIP OF WSOP MAIN EVENT INDUCTED INTO THE WORLD POKER HALL OF FAME WON A PRIZE OF 10,000,000USD"
+        type: "paragraph",
+        content: "On Day 9 of the 2025 WSOP Main Event, at the 79th hand of the final table, when AA Poker team member Michael 'The Grinder' Mizrachi instantly called his opponent's all-in, the entire Las Vegas erupted. This was not just Mizrachi's championship moment, but his moment of ascension to godhood! At this moment, the AA Poker team logo on his left arm became even more prominent under the spotlight...",
+        content_cn: "2025WSOP主赛事Day9，决赛桌第79手牌，当AA Poker战队成员Michael \"The Grinder\" Mizrachi秒跟对手的全下后，整个拉斯维加斯沸腾了，这不仅仅是Mizrachi的夺冠瞬间，更是他的封神时刻！此时他左臂的AA Poker队标在聚光灯下更加醒目了...",
+        content_tw: "2025WSOP主賽事Day9，決賽桌第79手牌，當AA Poker戰隊成員Michael\"The Grinder\"Mizrachi秒跟對手的全下後，整個拉斯維加斯沸騰了，這不僅僅是Mizrachi的奪冠瞬間，更是他的封神時刻！ 此時他左臂的AA Poker隊標在聚光燈下更加醒目了. .."
       },
       {
         type: "paragraph",
-        content: "The Crowning of a Poker God: Mizrachi's WSOP Triumph Lights Up Vegas On Day 9 of the 2025 WSOP Main Event, at the 79th hand of the final table, history erupted when Michael 'The Grinder' Mizrachi – AA POKER's star player – made an instant call against his opponent's all-in. This wasn't just Mizrachi's championship moment; it was his ascension to poker immortality. Under the spotlight, the AA POKER logo on his left arm gleamed with symbolic intensity. Mizrachi first conquered online poker through his signature steadfast, pragmatic style, rapidly achieving monumental success that earned him the revered nickname 'The Grinder' – a title whose prestige every poker connoisseur recognizes. After discovering professional fulfillment at the tables, he made a pivotal decision: abandoning his medical career aspirations to pursue professional poker. This defining choice set him on the path to legendhood – a journey supercharged after joining AA POKER. This summer, Mizrachi demonstrated what undeniable dominance and destiny fulfilled truly look like."
+        content: "Mizrachi initially entered online poker, but with his stable and pragmatic playing style, he quickly achieved great success, earning the nickname 'The Grinder'. Everyone understands the value of this nickname. After realizing the sense of achievement from playing cards, Mizrachi decided to give up his dream of becoming a doctor and devoted himself fully to his professional poker career. It was this key decision that put him on the path to poker legend, especially after joining the AA Poker team, his career took off. It can be said that this summer, Mizrachi truly showed us what it means to be worthy of the name and destined by fate!",
+        content_cn: "Mizrachi最初进军的是线上扑克，但他凭借稳定、务实的打法，很快就取得了巨大的成功，因此赢得了\"The Grinder（磨王）\"的绰号。相信大家都清楚这个绰号的含金量。意识到打牌能获得成就感后，Mizrachi决定放弃了成为医生的梦想，全身心投入到职业扑克事业中。也正是这一关键抉择，让他走在了扑克传奇之路上，尤其是在加入AA Poker战队之后，更是迎来了事业的狂飙。可以说今年的这个夏天， Mizrachi 让我们真正见识到了什么叫实至名归、天命所属！",
+        content_tw: "Mizrachi最初進軍的是線上撲克，但他憑藉穩定、務實的打法，很快就取得了巨大的成功，囙此贏得了\"The Grinder（磨王）\"的綽號。 相信大家都清楚這個綽號的含金量。意識到打牌能獲得成就感後，Mizrachi决定放弃了成為醫生的夢想，全身心投入到職業撲克事業中。 也正是這一關鍵抉擇，讓他走在了撲克傳奇之路上，尤其是在加入AA Poker戰隊之後，更是迎來了事業的狂飆。 可以說今年的這個夏天，Mizrachi讓我們真正見識到了什麼叫實至名歸、天命所屬！"
       },
       {
         type: "heading",
-        content: "Ascension Moment I: Fourth Poker Players Championship Crown"
+        content: "Ascension Moment I: Fourth Poker Players Championship Crown",
+        content_cn: "封神时刻一：第四个扑克玩家冠军赛冠军",
+        content_tw: "封神時刻一：第四個撲克玩家冠軍賽冠軍"
       },
       {
         type: "paragraph",
-        content: "Event #66: 2025 WSOP Poker Players Championship (PPC) – widely recognized as one of the most challenging and prestigious tournaments in poker. While not as marked by 'Jungleman' Cates' seemingly unbeatable record of back-to-back titles in 2021 and 2022, Michael Mizrachi has elevated another record to near-impossible difficulty. On June 28 this year, Mizrachi claimed his fourth Poker Players Championship title – along with his seventh WSOP gold bracelet – becoming the undisputed winningest champion in the event's history. This achievement sounds almost surreal, yet it has unequivocally happened."
+        content: "Event #66: 2025 WSOP Poker Players Championship (PPC) – widely recognized as one of the most challenging and prestigious tournaments in poker. While we talk about 'Jungleman' Dan Cates' back-to-back championship record in 2021 and 2022 being difficult to break, Mizrachi has elevated another record to hell difficulty. On June 28 this year, he won the Poker Players Championship for the fourth time, which is also his seventh WSOP gold bracelet, becoming the player with the most championships in this event. This record sounds so magical, but it really happened.",
+        content_cn: "2025WSOP赛事#66：扑克玩家冠军赛（Poker Players Championship），这是扑克圈公认的难度最大、含金量最高的赛事之一。当我们津津乐道\"野人\"Dan Cates的在2021和2022背靠背夺冠的纪录难以被打破时，Mizrachi却将另一个纪录提升到地狱难度。他在今年6月28日，第四次夺得了扑克玩家冠军赛的桂冠，也是他的第七条WSOP金手链，从而成为获得该项赛事冠军最多的选手。这个纪录听起来都是那么的魔幻，但是却真实的发生了。",
+        content_tw: "2025WSOP賽事#66：撲克玩家冠軍賽（Poker Players Championship），這是撲克圈公認的難度最大、含金量最高的賽事之一。 當我們津津樂道「野人」Dan Cates的在2021和2022背靠背奪冠的紀錄難以被打破時，Mizrachi卻將另一個紀錄提升到地獄難度。 他在今年6月28日，第四次奪得了撲克玩家冠軍賽的桂冠，也是他的第七條WSOP金手鏈，從而成為獲得該項賽事冠軍最多的選手。 這個紀錄聽起來都是那麼的魔幻，但是卻真實的發生了。"
       },
       {
         type: "image",
@@ -2674,23 +2696,33 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "Legendary Moment II: Winning the 3BB Main Event with Divine Intervention"
+        content: "Legendary Moment II: Winning the 3BB Main Event with Divine Intervention",
+        content_cn: "封神时刻二：如有神助的3BB主赛事夺冠",
+        content_tw: "封神時刻二：如有神助的3BB主賽事奪冠"
       },
       {
         type: "paragraph",
-        content: "The 2025 WSOP Main Event attracted 9,735 entrants. Emerging victorious from such a massive field requires both skill and luck in equal measure. Whether by fate or the fortune gained from joining Team AA POKER, Mizrachi delivered an epic comeback story for the ages.On Day 8 of the Main Event, Mizrachi found himself all-in with A♥J♠ against John Wasnock's A♠K♠. As the stack dwindled to just 3 BB—teetering on the brink of elimination. Yet, in a matter of hours, he staged a miraculous comeback, rebounding from 1.9 million chips to a staggering 38.4 million, ultimately securing his spot at the final table!"
+        content: "The 2025 WSOP Main Event attracted 9,735 participants. To stand out from such a large group of participants, technology and luck are indispensable. Whether it was fate or the lucky blessing brought by joining the AA Poker team, Mizrachi staged a thrilling divine script for us. On Day 8 of the Main Event, Mizrachi's AJ ran into John Wasnock's AQ, and the scoreboard was only 3BB left, and it seemed that he would be eliminated in the next second. But in just a few hours, he rebounded from 1.9 million scoreboards all the way to 38.4 million, successfully breaking into the Main Event FT!",
+        content_cn: "2025WSOP主赛事的参赛人数为9735人，要从这么庞大的参赛群体中脱颖而出，技术和运气缺一不可。不知道是命中注定还是加入AA Poker战队带来的幸运加持，Mizrachi给我们上演了一出惊心动魄的神级剧本。主赛事Day8时，Mizrachi的AJ碰上了John Wasnock的AQ，记分牌只剩下3BB，似乎下一秒就要出局。但就在短短数小时内，他从190万记分牌一路反弹至3,840万，成功闯入主赛事FT！",
+        content_tw: "2025WSOP主賽事的參賽人數為9735人，要從這麼龐大的參賽群體中脫穎而出，科技和運氣缺一不可。 不知道是命中註定還是加入AA Poker戰隊帶來的幸運加持，Mizrachi給我們上演了一出驚心動魄的神級劇本。 主賽事Day8時，Mizrachi的AJ碰上了John Wasnock的AQ，記分牌只剩下3BB，似乎下一秒就要出局。 但就在短短數小時內，他從190萬記分牌一路反彈至3840萬，成功闖入主賽事FT！"
       },
       {
         type: "paragraph",
-        content: "Let's briefly revisit two miraculous double-ups — both survival stories written on the river:"
+        content: "Let's simply look at two magical doubles, both river cards续命:",
+        content_cn: "我们简单的看两手神奇的翻倍，都是河牌续命：",
+        content_tw: "我們簡單的看兩手神奇的翻倍，都是河牌續命："
       },
       {
         type: "paragraph",
-        content: "①A♠5♠ VS. A♥7♥, Board: K♥6♠5♣J♦K♥ VS. 55, Board: 4♥7♦9♣3♦10♠"
+        content: "①A♦6♠ VS. A♣7♥，Board: K♥8♠5♠J♠A♠\n②K♦J♥ VS. 55，Board: 4♦7♦9♥3♦10♦",
+        content_cn: "①A♦6♠ VS. A♣7♥，公共牌发出：K♥8♠5♠J♠A♠\n②K♦J♥ VS. 55 ，公共牌发出：4♦7♦9♥3♦10♦",
+        content_tw: "①A♦6♠ VS. A♣7♥，公共牌發出：K♥8♠5♠J♠A♠\n②K♦J♥ VS. 55 ，公共牌發出：4♦7♦9♥3♦10♦"
       },
       {
         type: "paragraph",
-        content: "Upon reaching the final table, Mizrachi again faced his longtime rival John Wasnock. This time, however, fortune favored Mizrachi — with yet another river delivering salvation. A♠K♥ VS. K♠K♠ Board: J♠9♥7♦Q♠A♥ This pivotal hand propelled Mizrachi to undisputed chip leadership. By the time the battle reached four-handed play, he commanded a staggering 76% of all chips in play — mathematically cementing his victory and rendering the tournament virtually unchallenged."
+        content: "After entering the final table, Mizrachi met his old rival John Wasnock again, but in this key duel, luck was on Mizrachi's side, and it was still a river card救险. A♠K♦ VS. K♠K♣, Board: J♠9♥7♦Q♣A♦ After this hand, Mizrachi became the CL of the whole table. When it came to the four-player table, he already had 76% of the scoreboards in the whole field, almost killing the suspense of the game.",
+        content_cn: "进入决赛桌后，Mizrachi又碰上了老对手John Wasnock，但是在这次的关键对决中，幸运站在了Mizrachi这边，还是河牌救险。\nA♠K♦ VS. K♠K♣，公共牌发出：J♠9♥7♦Q♣A♦\n这手牌过后，Mizrachi成为了全桌CL，打至四人桌时，他已经坐拥全场76%的记分牌，几乎杀死了比赛的悬念。",
+        content_tw: "進入決賽桌後，Mizrachi又碰上了老對手John Wasnock，但是在這次的關鍵對決中，幸運站在了Mizrachi這邊，還是河牌救險。\nA♠K♦  VS. K♠K♣， 公共牌發出：J♠9♥7♦Q♣A♦\n這手牌過後，Mizrachi成為了全桌CL，打至四人桌時，他已經坐擁全場76%的記分牌，幾乎殺死了比賽的懸念。 "
       },
       {
         type: "image",
@@ -2704,7 +2736,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "But fortune's relentless favor persisted. Mizrachi's K♦J♦ went all-in against Kenny Hallaert's A♥Q♣. Board: 10♠5♠4♦J♣9♣ The river 9♣ secured Mizrachi's victory with a pair of jacks, eliminating Hallaert in fourth place as his ace-high failed to improve."
+        content: "But luck is still continuing. Mizrachi's K♦J♦ and Kenny Hallaert's A♥Q♣ went all-in, the board came out 10♠5♠4♠J♣9♠, Hallaert got fourth place.",
+        content_cn: "但是幸运依旧在继续。\nMizrachi的K♦J♦和Kenny Hallaert的A♥Q♣全下，公共牌发出10♠5♠4♠J♣9♠，Hallaert获得第四名。",
+        content_tw: "但是幸運依舊在繼續。\nMizrachi的K♦J♦ 和Kenny Hallaert的A ♥ Q ♣ 全下，公共牌發出10♠5♠4♠J♣9♠， Hallaert獲得第四名。"
       },
       {
         type: "image",
@@ -2713,7 +2747,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Mizrachi's A♠T♦ then clashed with Braxton Dunaway's T♥6♥ in an all-in confrontation. Board: Q♦4♦K♣4♣3♦ The river 3♦ completed Mizrachi's diamond flush, eliminating Dunaway in third place as his paired tens were crushed."
+        content: "Next, Mizrachi's A♦10♦ and Braxton Dunaway's 10♥6♥ went all-in, the board came out Q♦4♦K♣4♠3♦, Dunaway got third place.",
+        content_cn: "接下来Mizrachi的A♦10♦和Braxton Dunaway的10♥6♥打到全下，公共牌发出Q♦4♦K♣4♠3♦，Dunaway获得第三名。",
+        content_tw: "接下來Mizrachi的A♦10♦ 和Braxton Dunaway的10♥6♥ 打到全下，公共牌發出Q♦4♦K♣4♠3♦， Dunaway獲得第三名。"
       },
       {
         type: "image",
@@ -2722,7 +2758,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The final hand of this historic duel: Mizrachi: T♣3♣ John Wasnock: A♠9♦ Board: A♦9♠7♠4♣5♠ The river 5♠ completed Mizrachi's backdoor flush, cracking Wasnock's two pair (aces and nines) to crown Mizrachi champion and relegate Wasnock to runner-up."
+        content: "The final hand of the ultimate showdown, Mizrachi: 10♣3♣, John Wasnock: A♠9♦, the board came out A♦9♣7♣4♣5♣, flush kills two pair, Wasnock got runner-up.",
+        content_cn: "最后一手的终极对决，Mizrachi：10♣3♣，John Wasnock：A♠9♦，公共牌发出A♦9♣7♣4♣5♣，同花杀两对，Wasnock获得亚军。",
+        content_tw: "最後一手的終極對決， Mizrachi：10♣3♣， John Wasnock：A♠9♦， 公共牌發出A♦9♣7♣4♣5♣， 同花殺兩對，Wasnock獲得亞軍。"
       },
       {
         type: "image",
@@ -2731,7 +2769,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Thus, in a whirlwind 60-minute domination, Michael Mizrachi blitzed through three opponents in a record-shattering 79 hands — demolishing the two-decade mark for fewest hands at a Main Event final table — to seize poker's most coveted prize: the WSOP Main Event bracelet. This historic victory delivered his eighth career WSOP gold while claiming the $10,000,000 top prize."
+        content: "Just like this, Michael Mizrachi swept three opponents in just 79 hands and 1 hour, breaking the record of the fewest hands at the final table in the past 20 years, winning the most coveted Main Event gold bracelet in the world, which is also his personal 8th gold bracelet, and at the same time took the $10 million prize into his pocket!",
+        content_cn: "就这样，Michael Mizrachi仅用79手牌、1小时，横扫三位对手，打破了过去20年来决赛桌最少手牌的纪录，夺下这条全世界最梦寐以求的主赛事金手链，也是他个人的第8条金手链，同时并将1,000万刀奖励收入囊中！",
+        content_tw: "就這樣，Michael Mizrachi僅用79手牌、1小時，橫掃三比特對手，打破了過去20年來決賽桌最少手牌的紀錄，奪下這條全世界最夢寐以求的主賽事金手鏈，也是他個人的第8條金手鏈，同時並將1000萬刀獎勵收入囊中！"
       },
       {
         type: "image",
@@ -2740,15 +2780,21 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "Legendary Moment III: Defying Conventions with Immediate Induction into the Poker Hall of Fame"
+        content: "Legendary Moment III: Breaking the Rules and Being Inducted into the World Poker Hall of Fame",
+        content_cn: "封神时刻三：破格火速入选世界扑克名人堂",
+        content_tw: "封神時刻三：破格火速入選世界撲克名人堂"
       },
       {
         type: "paragraph",
-        content: "The poker world had already been buzzing with anticipation the night before Mizrachi claimed the Main Event bracelet. As the realization dawned that he stood on the brink of a historic achievement, overwhelming demands for his 'immediate, convention-defying induction into the Hall of Fame' flooded the community. Even poker legends Phil Hellmuth and 'DNegs' Daniel Negreanu joined forces, releasing a collaborative social media video with a public plea: 'We stand united! If 'The Grinder' wins the Main Event tomorrow, he deserves instant Hall of Fame induction. Danny and I are pushing HARD for this—right, Daniel?' Negreanu left no doubt about his endorsement: 'The Grinder should've been in years ago! He's a legend—a LIVING legend of poker. He embodies everything this game should be: dominating the felt while enjoying the competition, never taking it too seriously. And he's done it consistently for DECADES.' True to the crescendo, moments after Mizrachi raised his championship bracelet, WSOP Vice President Jack Effel made an unprecedented announcement: 'Mizrachi is elected to the Poker Hall of Fame—effective immediately!' No vote. No nomination process. No one-year wait. In that defining moment, poker rewrote its rulebook for him."
+        content: "In fact, the night before Mizrachi won the Main Event gold bracelet, the entire poker circle was already restless. When people realized that he was very likely to complete a historic achievement, the call for 'directly breaking the rules to be inducted into the Hall of Fame' was almost overwhelming! Even Poker Hall of Fame members Phil Hellmuth and Daniel 'DNegs' Negreanu stood up and jointly filmed a video to publicly call on social media: 'We unanimously agree! As long as 'The Grinder' wins the Main Event tomorrow, he should immediately enter the Hall of Fame. Daniel and I are really working hard to promote this, right, Daniel?' DNegs made no secret of his support: 'The Grinder should have been in long ago! He is a legend, a living legend of the poker circle. He represents what poker should really be like! Enjoy the game, love the competition, don't have to be too serious, and still dominate the field. And he has been doing this for decades.' Sure enough, shortly after Mizrachi raised the Main Event championship bracelet, WSOP Vice President Jack Effel announced on the spot: 'Mizrachi is immediately inducted into the Poker Hall of Fame!' No voting, no nomination process, no delay of one year, at this moment, the poker circle broke the rules for him.",
+        content_cn: "其实早在Mizrachi拿下主赛事金手链的前一晚，整个扑克圈已经躁动不安。当人们意识到他极有可能完成历史级成就时，\"直接破例入选名人堂\"的呼声几乎铺天盖地！\n连扑克名人堂成员Phil Hellmuth 与 丹牛\"Daniel Negreanu\"也站出来，联名拍摄视频，在社群媒体上上公开喊话：\n\"我们一致同意！只要\"磨王\"明天赢下主赛事，他就应该立刻进名人堂。我和Daniel真的很努力在推动这件事，对吧，Daniel？\"\n丹牛更是毫不掩饰自己的力挺：\n\"磨王\"早就该进了！他是个传奇，是扑克圈的活传奇。他代表了扑克真正该有的样子！享受游戏、热爱比赛、不必太严肃，也照样能统治赛场。而且他这一做，就是几十年。\"\n果不其然，就在Mizrachi举起主赛事冠军手链不久，WSOP副总裁Jack Effel就当场宣布： \"Mizrachi即刻入选扑克名人堂！\"。\n没有投票、没有提名流程、没有延后一年，这一刻，扑克圈为他打破规则。",
+        content_tw: "其實早在Mizrachi拿下主賽事金手鏈的前一晚，整個撲克圈已經躁動不安。 當人們意識到他極有可能完成歷史級成就時，「直接破例入選名人堂」的呼聲幾乎鋪天蓋地！\n連撲克名人堂成員Phil Hellmuth與丹牛「Daniel Negreanu」也站出來，聯名拍攝視頻，在社群媒體上上公開喊話：\n「我們一致同意！ 只要「磨王」明天贏下主賽事，他就應該立刻進名人堂。 我和Daniel真的很努力在推動這件事，對吧， Daniel？ 」\n丹牛更是毫不掩飾自己的力挺：\n「磨王」早就該進了！ 他是個傳奇，是撲克圈的活傳奇。 他代表了撲克真正該有的樣子！ 享受遊戲、熱愛比賽、不必太嚴肅，也照樣能統治賽場。 而且他這一做，就是幾十年。 」\n果不其然，就在Mizrachi舉起主賽事冠軍手鏈不久，WSOP副總裁Jack Effel就當場宣佈：「Mizrachi即刻入選撲克名人堂！ 」。\n沒有投票、沒有提名流程、沒有延後一年，這一刻，撲克圈為他打破規則。"
       },
       {
         type: "paragraph",
-        content: "Today, Michael Mizrachi has achieved the two ultimate dreams of every poker player: scaling the summit of the WSOP Main Event and ascending into the game's pantheon of immortals. As the undisputed flagship player of Team AA POKER, we stand ready to witness more divine chapters in his legendary saga!"
+        content: "Now, Michael Mizrachi has achieved the two ultimate goals that all poker players dream of: reaching the peak of the WSOP Main Event and entering the Hall of Poker Immortals. At the same time, he has also become the absolute leader of the AA Poker team, and we look forward to him creating more miracles!",
+        content_cn: "现在，Michael Mizrachi已经达成了所有牌手梦寐以求两个终极目标：登顶WSOP主赛事巅峰，跻身扑克不朽之殿。同时他也成为了AA Poker战队的绝对领军人物，我们期待他创造更多的神迹！",
+        content_tw: "現在，Michael Mizrachi已經達成了所有牌手夢寐以求兩個終極目標：登頂WSOP主賽事巔峰，躋身撲克不朽之殿。 同時他也成為了AA Poker戰隊的絕對領軍人物，我們期待他創造更多的神迹！"
       }
     ]
   },

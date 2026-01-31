@@ -53,16 +53,16 @@ export const mainChampions: Champion[] = [
       "For winning this event, Kenney collected $6.86 million in prize money, bringing his career total to $65.03 million, and once again surpassing Justin Bonomo for the top spot on the all-time money list."
     ],
     introduction_cn: [
-      "在参加完2023年夏季WSOP后，Kenney出现在Triton伦敦赛事上。这次他以AApoker赞助选手的身份参赛，在前几场比赛中表现出色后，最终以绝对优势赢得了第9场赛事，获得了他职业生涯第3座Triton奖杯。",
-      "AApoker的赞助可能给了Kenney一些助力，因为他在比赛中打出了5A级别的表现，总是在关键时刻拿到需要的牌，展现了无与伦比的技术和运气。",
-      "决赛单挑是在Kenney和英国商人、Triton越南主赛冠军Talal Shakerchi之间进行的。最后一手牌两人全押，Kenney的9♠8♠对阵Shakerchi的A♠K♠，Kenney幸运地在翻牌圈击中8并保持优势直到最后。",
-      "凭借这场胜利，Kenney获得了686万美元奖金，使他的职业生涯总奖金达到6503万美元，再次超越Justin Bonomo登上历史奖金榜首位。"
+      "在征战完2023年夏天的WSOP后，Kenney出现在了Triton伦敦赛事的现场。这次他以AApoker赞助选手的身份参赛，经过前几场比赛后，终于在第9场赛事中获得了Triton冠军奖杯，这是他职业生涯第3座Triton奖杯。",
+      "可能AApoker的赞助给Kenney带来了加持，他在比赛中有着5A级的发挥，总能在适当的时候拿到需要的牌，技术和运气无人可及。",
+      "最后的单挑是在Kenney与英国商人Triton越南主赛冠军Talal Shakerchi之间进行，最后一手牌两人全入，Kenney的9♠8♠对阵Shakerchi的A♠K♠，而Kenney在翻牌圈幸运地击中了8，并将优势保持到最后。",
+      "凭借这场胜利的夺冠，Kenney收获了686万的奖金，职业生涯总奖金入达到了6503万力，再次超越Justin Bonomo成为历史奖金榜第一人。"
     ],
     introduction_tw: [
-      "在參加完2023年夏季WSOP後，Kenney出現在Triton倫敦賽事上。這次他以AApoker贊助選手的身份參賽，在前幾場比賽中表現出色後，最終以絕對優勢贏得了第9場賽事，獲得了他職業生涯第3座Triton獎盃。",
-      "AApoker的贊助可能給了Kenney一些助力，因為他在比賽中打出了5A級別的表現，總是在關鍵時刻拿到需要的牌，展現了無與倫比的技術和運氣。",
-      "決賽單挑是在Kenney和英國商人、Triton越南主賽冠軍Talal Shakerchi之間進行的。最後一手牌兩人全押，Kenney的9♠8♠對陣Shakerchi的A♠K♠，Kenney幸運地在翻牌圈擊中8並保持優勢直到最後。",
-      "憑藉這場勝利，Kenney獲得了686萬美元獎金，使他的職業生涯總獎金達到6503萬美元，再次超越Justin Bonomo登上歷史獎金榜首位。"
+      "在征戰完2023年夏天的WSOP後，Kenney出現在了Triton倫敦賽事的現場。這次他以AApoker贊助選手的身份參賽，經過前幾場比賽後，終於在第9場賽事中獲得了Triton冠軍獎杯，這是他職業生涯第3座Triton獎杯。",
+      "可能AApoker的贊助給Kenney帶來了加持，他在比賽中有著5A級的發揮，總能在適當的時候拿到需要的牌，技術和運氣無人可及。",
+      "最後的單挑是在Kenney與英國商人Triton越南主賽冠軍Talal Shakerchi之間進行，最後一手牌兩人全入，Kenney的9♠8♠對陣Shakerchi的A♠K♠，而Kenney在翻牌圈幸運地擊中了8，並將優勢保持到最後。",
+      "憑藉這場勝利的奪冠，Kenney收穫了686萬的獎金，職業生涯總獎金入達到了6503萬力，再次超越Justin Bonomo成為歷史獎金榜第一人。"
     ],
     playersHighlights: [
       "https://www.youtube.com/shorts/i5JFhTjSBhs",
@@ -99,14 +99,16 @@ export const mainChampions: Champion[] = [
       "Cates, who is best known for his high-stakes cash game success both online and in the live arena, now also has nearly $11.7 million in career tournament earnings to his name."
     ],
     introduction_cn: [
-      "Daniel 'jungleman' Cates在2022年世界扑克系列赛上创造了历史性壮举。",
-      "这位32岁的高额现金游戏职业选手在游戏中最负盛名的比赛之一成功卫冕：50,000美元买入的扑克玩家锦标赛九项混合赛。2021年，Cates在艰难的混合游戏比赛中击败了仅63名参赛者，赢得了他的第一条WSOP金手链。仅仅239天后（由于疫情，2020年的系列赛在秋季举行，作为一次性的赛程调整），Cates在112人的参赛阵容中脱颖而出，赢得了他职业生涯第二条金手链和1,449,103美元的头奖。",
-      "Cates以其在线上和线下高额现金游戏中的成功而闻名，现在他的职业比赛奖金也接近1170万美元。"
+      "Dan 'jungleman' Cates在2022年世界扑克系列赛上创造了历史性就绩。这位32岁的高额扑克玩家选手在扑克赛事中最负盛名的锦标赛之一——中成功卫冠：买入费50,000美元的九场扑克竞赛混合赛。",
+      "2021年，Cates在这场艰难的混合游戏锦标赛中击败了仅63名参赛者，赢得了他的第一个WSOP手镲。",
+      "仅仅239天后（由于疫情，2020年的系列赛在秋季举行，这是一次性的赛程变更），Cates在112名选手的比赛中脱颖而出，赢得了他职业生涯的第二条手镲周1,449,103美元的最高奖金。",
+      "Cates以线上和现场高额现金游戏的成功而闻名，现在他的职业比赛奖金接近1,170万美元。"
     ],
     introduction_tw: [
-      "Daniel 'jungleman' Cates在2022年世界撲克系列賽上創造了歷史性壯舉。",
-      "這位32歲的高額現金遊戲職業選手在遊戲中最負盛名的比賽之一成功衛冕：50,000美元買入的撲克玩家錦標賽九項混合賽。2021年，Cates在艱難的混合遊戲比賽中擊敗了僅63名參賽者，贏得了他的第一條WSOP金手鏈。僅僅239天後（由於疫情，2020年的系列賽在秋季舉行，作為一次性的賽程調整），Cates在112人的參賽陣容中脫穎而出，贏得了他職業生涯第二條金手鏈和1,449,103美元的頭獎。",
-      "Cates以其在線上和線下高額現金遊戲中的成功而聞名，現在他的職業比賽獎金也接近1170萬美元。"
+      "Dan 'jungleman' Cates在2022年世界撲克系列賽上創造了歷史性就績。這位32歲的高額撲克玩家選手在撲克賽事中最負盛名的錦標賽之一——中成功衛冕：買入費50,000美元的九場撲克競賽混合賽。",
+      "2021年，Cates在這場艱難的混合遊戲錦標賽中擊敗了僅63名參賽者，贏得了他的第一個WSOP手鐲。",
+      "僅僅239天後（由於疫情，2020年的系列賽在秋季舉行，這是一次性的賽程變更），Cates在112名選手的比賽中脫穎而出，贏得了他職業生涯的第二條手鐲和1,449,103美元的最高獎金。",
+      "Cates以線上和現場高額現金遊戲的成功而聞名，現在他的職業比賽獎金接近1,170萬美元。"
     ],
     playersHighlights: [
       "https://www.youtube.com/watch?v=6tDHS3us0ls"
@@ -144,14 +146,14 @@ export const mainChampions: Champion[] = [
       "Earlier year 2023, Hachem finished runner-up in a WPT Prime event and this summer, he made a deep run in the WSOP main event. The Australian Poker Hall of Famer now has $12.5 million in career tournament earnings."
     ],
     introduction_cn: [
-      "在拉斯维加斯永利酒店的世界扑克巡回赛锦标赛中，Joe Hachem从3,835人的破纪录参赛阵容中存活下来，却发现自己在奖金泡沫时陷入了一个令人缡慕的困境，当时还剩481名选手。",
-      "Hachem一直以他做出重大弃牌的能力而自豪，甚至将这种能力归功于他在2004年WSOP主赛事冠军的征程。",
-      "2023年初，Hachem在WPT Prime赛事中获得亚军，今年夏天，他在WSOP主赛事中走得很远。这位澳大利亚扑克名人堂成员现在的职业比赛奖金达到1250万美元。"
+      "在永利拉斯加维斯举行的世界扑克巡回赛锦标赛上，Joe Hachem从创纪录的3,835名选手中脱颖而出，随后发现自己陷入了一个令人缡慕的困境，当时还剩481名选手，恰入了泡沫期。",
+      "Hachem一直以自己大手笔下注的能力而自豪，甚至将这种能力归功于他在2004年WSOP主赛事中的夺冠。",
+      "2023年早些时候，Hachem在WPT Prime赛事中获得亚军，同年夏天，他在WSOP主赛事中走得很远。这位澳大利亚扑克名人堂成员收入自前已达到1250万美元。"
     ],
     introduction_tw: [
-      "在拉斯維加斯永利酒店的世界撲克巡迴賽錦標賽中，Joe Hachem從3,835人的破紀錄參賽陣容中存活下來，卻發現自己在獎金泡沫時陷入了一個令人羨慕的困境，當時還剩481名選手。",
-      "Hachem一直以他做出重大棄牌的能力而自豪，甚至將這種能力歸功於他在2004年WSOP主賽事冠軍的征程。",
-      "2023年初，Hachem在WPT Prime賽事中獲得亞軍，今年夏天，他在WSOP主賽事中走得很遠。這位澳大利亞撲克名人堂成員現在的職業比賽獎金達到1250萬美元。"
+      "在永利拉斯加維斯舉行的世界撲克巡迴賽錦標賽上，Joe Hachem從創紀錄的3,835名選手中脫穎而出，隨後發現自己陷入了一個令人羨慕的困境，當時還剩481名選手，恰入了泡沫期。",
+      "Hachem一直以自己大手筆下注的能力而自豪，甚至將這種能力歸功於他在2004年WSOP主賽事中的奪冠。",
+      "2023年早些時候，Hachem在WPT Prime賽事中獲得亞軍，同年夏天，他在WSOP主賽事中走得很遠。這位澳大利亞撲克名人堂成員收入自前已達到1250萬美元。"
     ],
     socialLinks: {},
     events: []
@@ -175,16 +177,16 @@ export const mainChampions: Champion[] = [
       "The Chinese player bested a 39-entry field in the $25,750 buy-in no-limit hold'em tournament to earn $316,000 and his third title of 2024."
     ],
     introduction_cn: [
-      "2017年GPI中国区第一名是周全众多亮点之一。",
-      "也许你认为这个成就离现在有点远，但这证明了周全成名已久，且表现稳定。",
-      "因为在2020年，周全赢得了GPI世界第一和POY（年度最佳选手）第一。周全在塞浦路斯Merit Crystal Cove酒店和赌场赢得了2024年超级高满赛系列赛第2场比赛。",
-      "这位中国选手在$25,750买入的无限注德州扑克比赛中击败39人参赛阵容，赢得316,000美元，这是他2024年的第三个冠军。"
+      "2017年的GPI中国区第一名，是周全众多高光时刻之一。",
+      "也许你会觉得这个成就距现在有些遥远，但这能证明了周全成名已久，而且成绩稳定。因为就在2020年，周全赢得了GPI全球第一名，同时是POY第一名（年度最佳牌手）。",
+      "周全在赛浦路斯Merit Crystal Cove酒店和赌场举行的2024年超级豪客杯系列赛第2场比赛中获胜。",
+      "这位中国选手手在25,750美元买入的无限注德州扑克赛事中击败了39名参赛者，赢得了316,000美元，这是他2024年的第三个冠军。"
     ],
     introduction_tw: [
-      "2017年GPI中國區第一名是周全眾多亮點之一。",
-      "也許你認為這個成就離現在有點遠，但這證明了周全成名已久，且表現穩定。",
-      "因為在2020年，周全贏得了GPI世界第一和POY（年度最佳選手）第一。周全在塞浦路斯Merit Crystal Cove酒店和賭場贏得了2024年超級高滿賽系列賽第2場比賽。",
-      "這位中國選手在$25,750買入的無限注德州撲克比賽中擊敥39人參賽陣容，贏得316,000美元，這是他2024年的第三個冠軍。"
+      "2017年的GPI中國區第一名，是周全眾多高光時刻之一。",
+      "也許你會覺得這個成就距現在有些遙遠，但這能證明了周全成名已久，而且成績穩定。因為就在2020年，周全贏得了GPI全球第一名，同時是POY第一名（年度最佳牌手）。",
+      "周全在賽浦路斯Merit Crystal Cove酒店和賭場舉行的2024年超級豪客杯系列賽第2場比賽中獲勝。",
+      "這位中國選手手在25,750美元買入的無限注德州撲克賽事中擊敗了39名參賽者，贏得了316,000美元，這是他2024年的第三個冠軍。"
     ],
     socialLinks: {
       tiktok: "#"
@@ -250,16 +252,14 @@ export const secondRowChampions: Champion[] = [
       "With Chen's win at WSOP, his previous best was nearly tripled."
     ],
     introduction_cn: [
-      "陈东在2023年WSOP $10,000高满赛中单挑击败Thomas Santerne，获得411,659美元的头奖和他的第一条WSOP金手链。",
-      "在比赛最后一天，他在记分牌上对最后三个对手保持着压倒性的领先优势，这个优势他在夺冠过程中从未放弃。",
-      "陈东的职业比赛奖金刚刚超过100万美元，在夺冠之前，他的最佳成绩是2018年在澳门APPT获得亚军，奖金153,473美元。",
-      "随着陈东在WSOP的胜利，他之前的最佳成绩几乎翻了三倍。"
+      "陈东在2023年WSOP天堂赛10,000美元豪客赛中单挑中击败了Thomas Santerne，获得了411,659美元的最高奖金和他的第一条WSOP金手链。",
+      "陈东在最后一天的比赛中以绝对的记分牌优势在最后三位对手，他在夺冠的道路上从未放弃这一优势。",
+      "陈的职业生涯总奖金收入刚超过100万美元，夺冠前的最佳成绩是2018年在澳门APPT获得亚军，奖金为153473美元。随着陈在WSOP天堂赛夺冠，此前的最佳成绩几乎翻了三倍。"
     ],
     introduction_tw: [
-      "陳東在2023年WSOP $10,000高滿賽中單挑擊敗Thomas Santerne，獲得411,659美元的頭獎和他的第一條WSOP金手鏈。",
-      "在比賽最後一天，他在記分牌上對最後三個對手保持著壓倒性的領先優勢，這個優勢他在奪冠過程中從未放棄。",
-      "陳東的職業比賽獎金剛剛超過100萬美元，在奪冠之前，他的最佳成績是2018年在澳門APPT獲得亞軍，獎金153,473美元。",
-      "隨著陳東在WSOP的勝利，他之前的最佳成績幾乎翻了三倍。"
+      "陳東在2023年WSOP天堂賽10,000美元豪客賽中單挑中擊敗了Thomas Santerne，獲得了411,659美元的最高獎金和他的第一條WSOP金手鏈。",
+      "陳東在最後一天的比賽中以絕對的記分牌優勢在最後三位對手，他在奪冠的道路上從未放棄這一優勢。",
+      "陳的職業生涯總獎金收入剛超過100萬美元，奪冠前的最佳成績是2018年在澳門APPT獲得亞軍，獎金為153473美元。隨著陳在WSOP天堂賽奪冠，此前的最佳成績幾乎翻了三倍。"
     ],
     socialLinks: {
       instagram: "#",
@@ -293,14 +293,14 @@ export const secondRowChampions: Champion[] = [
       "With his career on the rise, Didier is sure to shine even brighter in the future."
     ],
     introduction_cn: [
-      "Didier在2023年$2,500无限注德州扑克-高额赛事中获胜，该赛事吸引了120名选手，他夺得了冠军头衔。",
-      "凭借这次成功，他在2024年继续保持强劲表现，在8月和9月分别在$2,250 + $250无限注德州扑克赛事和$9,500 + $500无限注德州扑克-WPT世界锦标赛热身赛中获得第二名。",
-      "随着他的职业生涯不断上升，Didier在未来必将更加耀眼。"
+      "Didier在2023年$2,500无限注德州扑克-高额赛泠120人的比赛中脱颖而出，获得冠军。",
+      "在2024年乘胜追击，在8月和9月2,250美元+250无限注德州扑克赛事和9,500美元+500无限注德州扑克-WPT世界锦标赛热身赛中获得第三名的好成绩。",
+      "处于事业上升期的他一定会在未来大放异彩。"
     ],
     introduction_tw: [
-      "Didier在2023年$2,500無限注德州撲克-高額賽事中獲勝，該賽事吸引了120名選手，他奪得了冠軍頭銜。",
-      "憑藉這次成功，他在2024年繼續保持強勁表現，在8月和9月分別在$2,250 + $250無限注德州撲克賽事和$9,500 + $500無限注德州撲克-WPT世界錦標賽熱身賽中獲得第二名。",
-      "隨著他的職業生涯不斷上升，Didier在未來必將更加耀眼。"
+      "Didier在2023年$2,500無限注德州撲克-高額賽注120人的比賽中脫穎而出，獲得冠軍。",
+      "在2024年乘勝追擊，在8月和9月2,250美元+250無限注德州撲克賽事和9,500美元+500無限注德州撲克-WPT世界錦標賽熱身賽中獲得第三名的好成績。",
+      "處於事業上升期的他一定會在未來大放異彩。"
     ],
     socialLinks: {
       youtube: "#",
@@ -371,16 +371,14 @@ export const secondRowChampions: Champion[] = [
       "According to the records of The Hendon Mob database, her total career prize money is 850,000 US dollars, but the prize money in 2024 accounts for 740,000 US dollars, and the prize money comes from top international events such as APT, Triton, TLPT, and EPT."
     ],
     introduction_cn: [
-      "耐心和勇气是德州扑克游戏中不可或缺的品质。很明显，依沙在这项需要策略和技巧的运动中冷静专注，仔细观察对手并理性分析牌局。",
-      "当面临重要决定时，她能够克服内心的恐惧和犹豫，勇敢地做出决定。",
-      "在2024年TLPT主赛事中，依沙获得了第三名。",
-      "根据The Hendon Mob数据库的记录，她的职业生涯总奖金为85万美元，但2024年的奖金占了74万美元，奖金来自APT、Triton、TLPT和EPT等顶级国际赛事。"
+      "需要集结和技巧的运动中冷静又专注，细腻地观察对手，理智地分析牌局时，她能克服内心的恐惧和犹豫，并勇敢地做出决定。",
+      "在2024年TLPT Main Event的比赛中Yisha取得了第三名的佳绩。",
+      "根据The Hendon Mob数据库的记录，她的职业生涯总奖金为85万美元，但2024年的奖金就占了74万美元，而奖金全部来自APT、Triton、TLPT、EPT这些国际顶级赛事上。"
     ],
     introduction_tw: [
-      "耐心和勇氣是德州撲克遊戲中不可或缺的品質。很明顯，依沙在這項需要策略和技巧的運動中冷靜專注，仔細觀察對手並理性分析牌局。",
-      "當面臨重要決定時，她能夠克服內心的恐懼和猶豫，勇敢地做出決定。",
-      "在2024年TLPT主賽事中，依沙獲得了第三名。",
-      "根據The Hendon Mob數據庫的記錄，她的職業生涯總獎金為85萬美元，但2024年的獎金佔74萬美元，獎金來自APT、Triton、TLPT和EPT等頂級國際賽事。"
+      "需要集結和技巧的運動中冷靜又專注，細膩地觀察對手，理智地分析牌局時，她能克服內心的恐懼和猶豫，並勇敢地做出決定。",
+      "在2024年TLPT Main Event的比賽中Yisha取得了第三名的佳績。",
+      "根據The Hendon Mob數據庫的記錄，她的職業生涯總獎金為85萬美元，但2024年的獎金就佔了74萬美元，而獎金全部來自APT、Triton、TLPT、EPT這些國際頂級賽事上。"
     ],
     socialLinks: {},
     events: []
@@ -408,16 +406,16 @@ export const thirdRowChampions: Champion[] = [
       "Zhu has yet to win a major title, although he has had some success throughout the Australian poker circuit, with three cashes in the WSOP International Circuit events at Star Gold Coast last year including the High Roller and the Main Event."
     ],
     introduction_cn: [
-      "经过今天短暂而精彩的8小时比赛，WPT Prime黄金海岸开幕赛的77名选手进入第2天后现在只剩9人。",
-      "朱哲明脱颖而出，以比赛筹码领先者的身份占据杆位，淘汰了Shane Thompson，这证明是他当晚建立筹码堆的真正转折点。随着最后淘汰Patrick Barba，朱已经很好地奠定了自己的位置，拥有近400万筹码。",
-      "朱紧随其后的是David Luong，以及决赛桌上的一些强劲竞争者，包括Anthony Cierco、TuLe、Adrian Pacheco和Brandon Bailey。",
-      "朱尚未赢得重大冠军，尽管他在澳大利亚扑克巡回赛中取得了一些成功，去年在黄金海岸星光赌场的WSOP国际巡回赛事中有三次入钱，包括高满赛和主赛事。"
+      "今天，经过了短暂而激烈的8小时比赛，WPT Prime Gold Coast开幕赛第2天的参赛者从77名减少到9名。",
+      "Zheming Zhu脱颖而出，赢得领先的筹码领先者的位置，淘汰了Shane Thompson，这成为他当晚堆疊筹码的真正转折点。",
+      "随着Patrick Barba的最终淘汰法，Zhu已经以近400万筹码的优势为自己已记录了良好的战绩。紧随其后的是David Luong，决赛桌上还有一些强大的竞争者，包括Anthony Cierco、Tu Le、Adrian Pacheco和Brandon Bailey。",
+      "Zhu还没有赢得重大冠军，尽管他在澳洲扑克巡回赛中取得了一些成功，去年他在澳洲黄金海岸星光赌场的WSOP国际巡回赛事中获得了三次奖金，包括高满赛和主赛事。"
     ],
     introduction_tw: [
-      "經過今天短暫而精彩的8小時比賽，WPT Prime黃金海岸開幕賽的77名選手進入第2天後現在只剩9人。",
-      "朱哲明脫穎而出，以比賽籌碼領先者的身份佔據框位，淘汰了Shane Thompson，這證明是他當晚建立籌碼堆的真正轉折點。隨著最後淘汰Patrick Barba，朱已經很好地奠定了自己的位置，擁有近400萬籌碼。",
-      "朱緊隨其後的是David Luong，以及決賽桌上的一些強勁競爭者，包括Anthony Cierco、TuLe、Adrian Pacheco和Brandon Bailey。",
-      "朱尚未贏得重大冠軍，儘管他在澳大利亞撲克巡迴賽中取得了一些成功，去年在黃金海岸星光賭場的WSOP國際巡迴賽事中有三次入錢，包括高滿賽和主賽事。"
+      "今天，經過了短暫而激烈的8小時比賽，WPT Prime Gold Coast開幕賽第2天的參賽者從77名減少到9名。",
+      "Zheming Zhu脫穎而出，贏得領先的籌碼領先者的位置，淘汰了Shane Thompson，這成為他當晚堆疊籌碼的真正轉折點。",
+      "隨著Patrick Barba的最終淘汰法，Zhu已經以近400萬籌碼的優勢為自己已記錄了良好的戰績。緊隨其後的是David Luong，決賽桌上還有一些強大的競爭者，包括Anthony Cierco、Tu Le、Adrian Pacheco和Brandon Bailey。",
+      "Zhu還沒有贏得重大冠軍，儘管他在澳洲撲克巡迴賽中取得了一些成功，去年他在澳洲黃金海岸星光賭場的WSOP國際巡迴賽事中獲得了三次獎金，包括高滿賽和主賽事。"
     ],
     socialLinks: {},
     events: [
@@ -448,14 +446,12 @@ export const thirdRowChampions: Champion[] = [
       "He is widely known as 'xiaoyao', which means 'happy' in Chinese and Xiao was certainly all smiles after the final hand."
     ],
     introduction_cn: [
-      "首届2024年金杯赛——这手牌的胜者小遥再也没有放弃排名第一的位置，以压倒性的方式夺得了赛事。",
-      "凭借他的努力，他获得了131,000美元的头奖，并为这次胜利欣喜若狂。",
-      "他被广泛称为'小遥'，在中文中意为'快乐'，在最后一手牌后，小遥确实满面笑容。"
+      "首届2024金杯第一——获胜者Yao Xiao以压倒性的优势赢得了比赛。凭借他的努力，他获得了131,000美元的最高奖金，并为此利益而兴奋若狂。",
+      "他以“xiaoyao”著称，在中文中意为“快乐”，最后一局结束后，他的脸上挂着笑容。"
     ],
     introduction_tw: [
-      "首屆2024年金盃賽——這手牌的勝者小遙再也沒有放棄排名第一的位置，以壓倒性的方式奪得了賽事。",
-      "憑藉他的努力，他獲得了131,000美元的頭獎，並為這次勝利欣喜若狂。",
-      "他被廣泛稱為'小遙'，在中文中意為'快樂'，在最後一手牌後，小遙確實滿面笑容。"
+      "首屆2024金杯第一——獲勝者Yao Xiao以壓倒性的優勢贏得了比賽。憑借他的努力，他獲得了131,000美元的最高獎金，並為此利益而興奮若狂。",
+      "他以“xiaoyao”著稱，在中文中意為“快樂”，最後一局結束後，他的臉上挂著笑容。"
     ],
     socialLinks: {},
     events: [
@@ -486,14 +482,16 @@ export const thirdRowChampions: Champion[] = [
       "China's Boxin Jin Claims Maiden APT Title in Event #11: NL Hold'em – Freezeout. Once again, in July of 2024 it was a Chinese player taking the tournament top spot with Boxin Jin besting compatriot and Korea National Cup Flight A frontrunner Fei Wang head-up to claim the KRW 18,333,000 (~USD 13,310) top prize, in addition to his maiden APT title."
     ],
     introduction_cn: [
-      "2024年3月的WPT济州龙之探索赛事是一场为期两天的比赛，买入为1,100,000韩元（约817美元）。第1天共有276人参赛，创建了265,043,000韩元（约196,792美元）的总奖池。第2天所36名幸存者都保证获得1,950,000韩元（约1,448美元）的最低奖金。",
-      "经过精彩的决赛桌，中国的金除了获得47,770,000韩元（约35,488美元）的头奖外，还获得了WPT奖杯和WPT韩国戒指。",
-      "中国的金博欣在第11场赛事：无限注德州扑克-冻结赛中夺得首个APT冠军。2024年7月，又一次是中国选手占据比赛首位，金博欣在单挑中击败了同胞和韩国国家杯第A场领先者王飞，夺得18,333,000韩元（约13,310美元）的头奖，以及他的首个APT冠军。"
+      "2024年3月举行的WPT济州吉该字学赛事为期两天，参赛费为1,100,000韩元（约合817美元）。",
+      "第一天共有276人参赛，总奖池为265,043,000韩元（约合196,792美元）。",
+      "第二天，所有36名幸存者保底能获得1,950,000韩元（约合1,448美元）的最低奖金。经过一场张动人心的决赛桌后，中国选手Jinbo Xin除了获得47,770,000韩元（约35,488美元）的头奖外，还获得了一座WPT奖杯和一枚WPT韩国戒指。",
+      "中国选手Jinbo Xin在第11场赛事：NL Hold'em–Freezeout中夺得首个APT冠军。2024年7月，中国选手再次占据比赛顶层冠军，Boxin Jin与同胞、韩国国家杯一组领先者Fei Wang，夺得18,333,000韩元（约13,310美元）的最高奖金，并获得了他的首个APT冠军。"
     ],
     introduction_tw: [
-      "2024年3月的WPT濟州龍之探索賽事是一場為期兩天的比賽，買入為1,100,000韓元（約817美元）。第1天共有276人參賽，創建了265,043,000韓元（約196,792美元）的總獎池。第2天所36名幸存者都保證獲得1,950,000韓元（約1,448美元）的最低獎金。",
-      "經過精彩的決賽桌，中國的金除了獲得47,770,000韓元（約35,488美元）的頭獎外，還獲得了WPT獎盃和WPT韓國戒指。",
-      "中國的金博欣在第11場賽事：無限注德州撲克-凍結賽中奪得首個APT冠軍。2024年7月，又一次是中國選手佔據比賽首位，金博欣在單挑中擊敗了同胞和韓國國家盃第A場領先者王飛，奪得18,333,000韓元（約13,310美元）的頭獎，以及他的首個APT冠軍。"
+      "2024年3月舉行的WPT濟州吉該字學賽事為期兩天，參賽費為1,100,000韓元（約合817美元）。",
+      "第一天共有276人參賽，總獎池為265,043,000韓元（約合196,792美元）。",
+      "第二天，所有36名幸存者保底能獲得1,950,000韓元（約合1,448美元）的最低獎金。經過一場張動人心的決賽桌後，中國選手Jinbo Xin除了獲得47,770,000韓元（約35,488美元）的頭獎外，還獲得了一座WPT獎杯和一枚WPT韓國戒指。",
+      "中國選手Jinbo Xin在第11場賽事：NL Hold'em–Freezeout中奪得首個APT冠軍。2024年7月，中國選手再次佔據比賽頂層冠軍，Boxin Jin與同胞、韓國國家杯一組領先者Fei Wang，奪得18,333,000韓元（約13,310美元）的最高獎金，並獲得了他的首個APT冠軍。"
     ],
     socialLinks: {},
     events: [
@@ -531,14 +529,14 @@ export const thirdRowChampions: Champion[] = [
       "Another key milestone in her career came in 2024, when she became the ambassador for AA POKER. We can't wait to see this rising star continue to shine in the poker world!"
     ],
     introduction_cn: [
-      "Yara从小就对扑克表现出强烈的热情。她勤奋努力，不断磨练自己的技能，逐渐在大型比赛中崭露头角。",
-      "尽管她外表柔美优雅，但Yara激进的打法为她在扑克直播节目HCL中赢得了'毁灭者Yara'的绰号，她直率而迷人的个性帮助她在世界各地赢得了大量粉丝。",
-      "她职业生涯的另一个重要里程碑是在2024年，她成为AA POKER的品牌大使。我们迫不及待地想看到这位崛起之星继续在扑克世界闪耀！"
+      "Yara从小就展现出了对扑克的浓厚兴趣。她勤奋好学，不断研究技巧，逐渐在各大赛事中崭露头角。",
+      "外表柔美的她拥有则风格，这也让她在直播节目HCL中大欢迎，并获得了“Yara the Destroyer”，加上她可爱的个性，Yara赢得了世界各地的大批粉丝。",
+      "她还有一个非常重要的职业生涯里程碑是在2024年成为AA poker的代言人，让我们期待这位小美女在扑克圈内大放异彩！"
     ],
     introduction_tw: [
-      "Yara從小就對撲克表現出強烈的熱情。她勤奮努力，不斷磨練自己的技能，逐漸在大型比賽中嶄露頭角。",
-      "儘管她外表柔美優雅，但Yara激進的打法為她在撲克直播節目HCL中贏得了'毀滅者Yara'的綰號，她直率而迷人的個性幫助她在世界各地贏得了大量粉絲。",
-      "她職業生涯的另一個重要里程碑是在2024年，她成為AA POKER的品牌大使。我們迫不及待地想看到這位崛起之星繼續在撲克世界閃耀！"
+      "Yara從小就展現出了對撲克的濃厚興趣。她勤奮好學，不斷研究技巧，逐漸在各大賽事中嶄露頭角。",
+      "外表柔美的她擁有則風格，這也讓她在直播節目HCL中大歡迎，並獲得了“Yara the Destroyer”，加上她可愛的個性，Yara贏得了世界各地的大批粉絲。",
+      "她還有一個非常重要的職業生涯里程碑是在2024年成為AA poker的代言人，讓我們期待這位小美女在撲克圈內大放異彩！"
     ],
     socialLinks: {},
     events: []

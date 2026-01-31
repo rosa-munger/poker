@@ -60,7 +60,7 @@ export default function AboutPage() {
                 {t("about.brandCooperation")}
               </h3>
               <p className="text-white/80">
-                {t("about.pleaseContact")}: <a href="mailto:mixue66@outlook.com" className="text-aa-gold hover:text-aa-gold/80 transition-colors">branding@aapoker.app</a>
+                {t("about.pleaseContact")}: <a href="mailto:mixue66@outlook.com" className="text-aa-gold hover:text-aa-gold/80 transition-colors">mixue66@outlook.com</a>
               </p>
             </div>
           </div>

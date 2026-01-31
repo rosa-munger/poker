@@ -176,23 +176,7 @@ export default function ContactButtons() {
                   alt="Telegram"
                   className="w-full h-full object-contain"
                 />
-              </motion.button>
-
-              {/* MChat Button */}
-              {/* <motion.button
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 20 }}
-                transition={{ delay: 0.15 }}
-                onClick={() => handleButtonClick("mchat")}
-                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
-              >
-                <img
-                  src="/image/logo-cskh/mclogo.png"
-                  alt="MChat"
-                  className="w-full h-full object-contain"
-                />
-              </motion.button> */}
+              </motion.button>   
 
               {/* WhatsApp Button */}
               <motion.button
@@ -217,7 +201,7 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.25 }}
                 onClick={() => handleButtonClick("kf")}
-                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-white flex items-center justify-center p-1"
+                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-black flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/kf.png"
@@ -237,16 +221,16 @@ export default function ContactButtons() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.9 }}
               transition={{ duration: 0.3, type: "spring" }}
-              className="absolute right-0 bottom-[72px] z-[60]"
+              className="absolute right-[70px] bottom-[72px] z-[60]"
             >
               {/* Close button */}
               <button
                 onClick={handleCloseTooltip}
-                className="absolute -top-2 -right-2 w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition-colors z-10 border-2 border-gray-900"
+                className="absolute -top-2 -right-2 w-6 h-6 bg-black rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800 transition-colors z-10"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-4 w-4 text-gray-900 font-bold"
+                  className="h-4 w-4 text-white font-bold"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -265,7 +249,7 @@ export default function ContactButtons() {
                 </div>
                 
                 {/* Chat bubble tail - positioned to point at green button */}
-                <div className="absolute bottom-[-6px] right-[22px]">
+                <div className="absolute bottom-[20px] -right-[6px]">
                   <div className="w-3 h-3 bg-yellow-400 transform rotate-45"></div>
                 </div>
               </div>
@@ -276,7 +260,11 @@ export default function ContactButtons() {
         {/* Main Toggle Button */}
         <motion.button
           onClick={() => setIsContactMenuOpen(!isContactMenuOpen)}
-          className="w-16 h-16 rounded-full shadow-xl bg-gradient-to-r from-[#39cb61] to-[#2ea350] flex items-center justify-center hover:scale-110 transition-all duration-300"
+          className={`w-16 h-16 rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition-all duration-300 ${
+            isContactMenuOpen 
+              ? "bg-gray-500" 
+              : "bg-gradient-to-r from-[#39cb61] to-[#2ea350]"
+          }`}
           animate={{ rotate: isContactMenuOpen ? 45 : 0 }}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
