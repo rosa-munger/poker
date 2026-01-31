@@ -31,7 +31,7 @@ export default function TermsPage() {
 
         {/* Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex gap-0 rounded-lg overflow-hidden border-2 border-[#39CB61]">
+          <div className="inline-flex gap-0 rounded-full overflow-hidden border-2 border-[#39CB61]">
             <button
               onClick={() => setActiveTab("terms")}
               className={`px-16 sm:px-24 py-4 font-bold tracking-wider transition-all ${
