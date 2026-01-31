@@ -19,7 +19,7 @@ const contactList: ContactInfo[] = [
     name: "三条(原名丝瓜)",
     logo: "/image/logo-cskh/sigua-logo.png",
     qrCode: "/image/logo-cskh/QR-sigua.jpg",
-    username: "dpk777",
+    username: "mxbc1",
     copyText: "三条(原名丝瓜)号"
   },
   {
