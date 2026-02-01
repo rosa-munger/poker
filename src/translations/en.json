@@ -99,6 +99,11 @@
   "champion.gpiRanking": "GLOBAL POKER INDEX RANKING",
   "champion.playersHighlights": "PLAYERS' HIGHLIGHTS",
   "champion.backToChampions": "Back to Champions",
+  "champion.eventName": "Event name",
+  "champion.region": "Region",
+  "champion.date": "Date",
+  "champion.rank": "Rank",
+  "champion.prize": "Prize",
 
   "footer.followUs": "FOLLOW US",
   "footer.termsOfUse": "TERMS OF USE",

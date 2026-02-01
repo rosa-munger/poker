@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound, useParams } from "next/navigation";
 import { newsArticles, getNewsArticleBySlug } from "@/data/news";
 import { useLanguage } from "@/context/LanguageContext";
@@ -176,11 +177,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The first event of the inaugural TLPT Jeju blasted in as players poured for the $600,000 guaranteed Freezeout Freeroll. To enter players had to obtain entry via the AAPoker app. A total of 446 players showed up with the top 75 claiming a portion of the prize pool. In the end, it was Xiaqing Ji who turned his freeroll ticket to a whopping $120,000!"
+        content: "The first event of the inaugural TLPT Jeju blasted in as players poured for the $600,000 guaranteed Freezeout Freeroll. To enter players had to obtain entry via the AAPoker app. A total of 446 players showed up with the top 75 claiming a portion of the prize pool. In the end, it was Xiaqing Ji who turned his freeroll ticket to a whopping $120,000!",
+        content_cn: "首届TLPT济州的第一场赛事火爆开场，选手们涌入60万美元保底的冻结免费赛。参赛者必须通过AAPoker应用程序获得参赛资格。共有446名选手参赛，前75名瓜分奖池。最终，Ji Xiaqing将他的免费赛门票变成了惊人的12万美元！",
+        content_tw: "首屆TLPT濟州的第一場賽事火爆開場，選手們湧入60萬美元保底的凍結免費賽。參賽者必須通過AAPoker應用程式獲得參賽資格。共有446名選手參賽，前75名瓜分獎池。最終，Ji Xiaqing將他的免費賽門票變成了驚人的12萬美元！"
       },
       {
         type: "heading",
-        content: "Interview With the Champion"
+        content: "Interview With the Champion",
+        content_cn: "冠军专访",
+        content_tw: "冠軍專訪"
       },
       {
         type: "qa",
@@ -200,7 +205,11 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "qa",
         question: "How do you approach this tournament strategically? (e.g., do you play a wide range of hands, focus on post-flop play, or try to get a good chip stack early?)",
-        answer: "First of all I read all the body movement of the player in my table so I know how will I adjust my play style."
+        question_cn: "你在战略上如何处理这场锦标赛？（例如，你是打广泛的牌型范围，专注于翻牌后的打法，还是试图尽早获得良好的筹码量？）",
+        question_tw: "你在戰略上如何處理這場錦標賽？（例如，你是打廣泛的牌型範圍，專注於翻牌後的打法，還是試圖儘早獲得良好的籌碼量？）",
+        answer: "First of all I read all the body movement of the player in my table so I know how will I adjust my play style.",
+        answer_cn: "首先，我会观察牌桌上所有选手的肢体动作，这样我就知道如何调整我的打法风格。",
+        answer_tw: "首先，我會觀察牌桌上所有選手的肢體動作，這樣我就知道如何調整我的打法風格。"
       },
       {
         type: "qa",
@@ -210,7 +219,11 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "qa",
         question: "What is your poker history? You took a long break from playing poker after 2020",
-        answer: "My Buglix probably started in 2017, I have also been all over the world, Including EPT the Australian Millions will participate there will be participation in domestic Asian competitions. Then give me more after winning the championship this time. It has greatly increased my confidence I hope that on the way to the next game you can also get better results."
+        question_cn: "你的扑克历史是什么？你在2020年后休息了很长时间",
+        question_tw: "你的撲克歷史是什麼？你在2020年後休息了很長時間",
+        answer: "My Buglix probably started in 2017, I have also been all over the world, Including EPT the Australian Millions will participate there will be participation in domestic Asian competitions. Then give me more after winning the championship this time. It has greatly increased my confidence I hope that on the way to the next game you can also get better results.",
+        answer_cn: "我的扑克生涯大概从2017年开始，我也去过世界各地，包括EPT、澳洲百万赛，也参加过国内的亚洲赛事。这次夺冠后给了我更多信心，我希望在接下来的比赛中也能取得更好的成绩。",
+        answer_tw: "我的撲克生涯大概從2017年開始，我也去過世界各地，包括EPT、澳洲百萬賽，也參加過國內的亞洲賽事。這次奪冠後給了我更多信心，我希望在接下來的比賽中也能取得更好的成績。"
       },
       {
         type: "qa",
@@ -238,7 +251,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "#3 AAPOKER DEEP STACK (CS) - 8 HANDED - UNLIMITED RE-BUY ($1,000)"
+        content: "#3 AAPOKER DEEP STACK (CS) - 8 HANDED - UNLIMITED RE-BUY ($1,000)",
+        content_cn: "#3 AAPOKER深筹赛 (CS) - 8人桌 - 无限重买 ($1,000)",
+        content_tw: "#3 AAPOKER深籌賽 (CS) - 8人桌 - 無限重買 ($1,000)"
       },
       {
         type: "image",
@@ -247,19 +262,27 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "The $1,000 buy-in AAPoker Deep stack event pulled in a healthy 202 entries to boost the prize pool to just over the guarantee for $202,000, shared among the top 26 places. Leading up to that moment, the bubble burst on Kanghao Yang with A♦ K♦ outdrawn by Lei Yu's Q♦ J♣."
+        content: "The $1,000 buy-in AAPoker Deep stack event pulled in a healthy 202 entries to boost the prize pool to just over the guarantee for $202,000, shared among the top 26 places. Leading up to that moment, the bubble burst on Kanghao Yang with A♦ K♦ outdrawn by Lei Yu's Q♦ J♣.",
+        content_cn: "1,000美元买入的AAPoker深筹赛吸引了202人次参赛，将奖池提升至略高于保底的202,000美元，由前26名分享。在此之前，泡沫在Kanghao Yang身上破裂，他的A♦ K♦被Lei Yu的Q♦ J♣击败。",
+        content_tw: "1,000美元買入的AAPoker深籌賽吸引了202人次參賽，將獎池提升至略高於保底的202,000美元，由前26名分享。在此之前，泡沫在Kanghao Yang身上破裂，他的A♦ K♦被Lei Yu的Q♦ J♣擊敗。"
       },
       {
         type: "paragraph",
-        content: "With the money certain, it was a race to the final table. Notables Patrik Demus (20th) and Dong Chen (15th) were among the fallen while Yu missed the final 9 by one spot. With nearly every player decorated in achievements, it was anyone's game. TLPT's Ivan Zhang fell in 8th place, TLPT Ambassador Quan Zhou was out next in 7th falling to Nevan Chang with A♦ A♠ dominating A♥ K♥."
+        content: "With the money certain, it was a race to the final table. Notables Patrik Demus (20th) and Dong Chen (15th) were among the fallen while Yu missed the final 9 by one spot. With nearly every player decorated in achievements, it was anyone's game. TLPT's Ivan Zhang fell in 8th place, TLPT Ambassador Quan Zhou was out next in 7th falling to Nevan Chang with A♦ A♠ dominating A♥ K♥.",
+        content_cn: "确定进钱圈后，就是冲向决赛桌的竞赛。知名选手Patrik Demus（第20名）和陈东（第15名）都出局了，而Yu差一名未能进入最后9人。几乎每位选手都有辉煌成就，这是任何人的比赛。TLPT的Ivan Zhang在第8名出局，TLPT大使周全接下来在第7名出局，被Nevan Chang的A♦ A♠击败，对手持有A♥ K♥。",
+        content_tw: "確定進錢圈後，就是衝向決賽桌的競賽。知名選手Patrik Demus（第20名）和陳東（第15名）都出局了，而Yu差一名未能進入最後9人。幾乎每位選手都有輝煌成就，這是任何人的比賽。TLPT的Ivan Zhang在第8名出局，TLPT大使周全接下來在第7名出局，被Nevan Chang的A♦ A♠擊敗，對手持有A♥ K♥。"
       },
       {
         type: "paragraph",
-        content: "At six remaining, poker couple Chang and Hua Wei Lin dominated the action. Lin built a wide lead after eliminating Zhengfang Huang in 6th place with pocket Jacks over pocket Fives however it didn't last as Chang overtook by railing Yongwei Mo in 4th place."
+        content: "At six remaining, poker couple Chang and Hua Wei Lin dominated the action. Lin built a wide lead after eliminating Zhengfang Huang in 6th place with pocket Jacks over pocket Fives however it didn't last as Chang overtook by railing Yongwei Mo in 4th place.",
+        content_cn: "剩下六人时，扑克情侣档Chang和林华伟主导了比赛。林华伟在第6名用口袋JJ击败黄正方的口袋55后建立了巨大领先优势，但这并没有持续太久，Chang在第4名淘汰了莫永伟后反超。",
+        content_tw: "剩下六人時，撲克情侶檔Chang和林華偉主導了比賽。林華偉在第6名用口袋JJ擊敗黃正方的口袋55後建立了巨大領先優勢，但這並沒有持續太久，Chang在第4名淘汰了莫永偉後反超。"
       },
       {
         type: "paragraph",
-        content: "Down to three-handed Yanghao Fu went on a heater to see him surge to the top then took down Lin who was behind with Q♥ 6♥ at the flop K♥ Q♦ 3♣ against Fu's K♣ 3♠ and didn't improve on the turn J♥ and river A♠. It was a tight race for the trophy. Chang scored a decisive double up with A♦ 7♠ over A♠ 6♥ leaving Fu with crumbs. It quickly wrapped up with Chang sealing the victory sending Fu to settle for a runner-up finish."
+        content: "Down to three-handed Yanghao Fu went on a heater to see him surge to the top then took down Lin who was behind with Q♥ 6♥ at the flop K♥ Q♦ 3♣ against Fu's K♣ 3♠ and didn't improve on the turn J♥ and river A♠. It was a tight race for the trophy. Chang scored a decisive double up with A♦ 7♠ over A♠ 6♥ leaving Fu with crumbs. It quickly wrapped up with Chang sealing the victory sending Fu to settle for a runner-up finish.",
+        content_cn: "剩下三人时，傅杨浩开始发威冲到榜首，然后击败了林华伟，林在翻牌K♥ Q♦ 3♣时持有Q♥ 6♥落后于傅的K♣ 3♠，转牌J♥和河牌A♠都没有改善。这是一场激烈的冠军争夺战。Chang用A♦ 7♠对A♠ 6♥完成了决定性的翻倍，让傅只剩下少量筹码。比赛很快结束，Chang封印胜利，傅获得亚军。",
+        content_tw: "剩下三人時，傅楊浩開始發威衝到榜首，然後擊敗了林華偉，林在翻牌K♥ Q♦ 3♣時持有Q♥ 6♥落後於傅的K♣ 3♠，轉牌J♥和河牌A♠都沒有改善。這是一場激烈的冠軍爭奪戰。Chang用A♦ 7♠對A♠ 6♥完成了決定性的翻倍，讓傅只剩下少量籌碼。比賽很快結束，Chang封印勝利，傅獲得亞軍。"
       },
       {
         type: "table",
@@ -1248,6 +1271,41 @@ const articleContent: { [key: string]: ArticleContent } = {
       }
     ]
   },
+  "2024-pgt-super-high-roller-series-chinese-poker-star": {
+    heroImage: "/image/news/details-news/new13/1-v6iw6zI6.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "China's Quan Zhou (cover image) made a statement at the 2024 Super High Roller Series in North Cyprus. Fresh off a win in the Red Dragon High Roller in Jeju just two weeks before, Zhou, looking sharp in an unusually bright white suit, conquered a field of 39 top-tier players in Event #2: $25,750 No-Limit Hold'em (7-Max). He walked away with his first PGT title, the coveted PGT Gold Cup, and a grand $316,000 prize – the eighth-biggest win of his career.",
+        content_cn: "中国的周全（封面图片）在2024年北塞浦路斯超级豪客系列赛上大放异彩。两周前刚刚在济州红龙豪客赛夺冠，周全穿着一身格外亮眼的白色西装，在第2场赛事：25,750美元无限注德州扑克（7人桌）中击败了39名顶级选手。他带走了他的第一个PGT冠军头衔、令人垂涎的PGT金杯和316,000美元的奖金——这是他职业生涯第八大的胜利。",
+        content_tw: "中國的周全（封面圖片）在2024年北塞浦路斯超級豪客系列賽上大放異彩。兩週前剛剛在濟州紅龍豪客賽奪冠，周全穿著一身格外亮眼的白色西裝，在第2場賽事：25,750美元無限注德州撲克（7人桌）中擊敗了39名頂級選手。他帶走了他的第一個PGT冠軍頭銜、令人垂涎的PGT金杯和316,000美元的獎金——這是他職業生涯第八大的勝利。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new13/2-CVImvW7J.png",
+        alt: "Quan Zhou with PGT Gold Cup"
+      },
+      {
+        type: "paragraph",
+        content: "The final table was intense, full of quick hands and big moves. It all came down to a fast-paced heads-up match between Zhou and the UK's Lewis Spencer. Spencer put up a good fight but, in the end, fell short, taking home a sizeable $220,000 in second place.",
+        content_cn: "决赛桌非常激烈，充满了快速的手牌和大动作。最终归结为周全和英国的Lewis Spencer之间快节奏的单挑对决。Spencer奋力拼搏，但最终落败，带走了22万美元的亚军奖金。",
+        content_tw: "決賽桌非常激烈，充滿了快速的手牌和大動作。最終歸結為周全和英國的Lewis Spencer之間快節奏的單挑對決。Spencer奮力拼搏，但最終落敗，帶走了22萬美元的亞軍獎金。"
+      },
+      {
+        type: "table",
+        title: "Final Results",
+        headers: ["Place", "Player", "Country", "Prize"],
+        rows: [
+          ["1", "Quan Zhou", "China", "$316,000"],
+          ["2", "Lewis Spencer", "UK", "$220,000"],
+          ["3", "Ren Lin", "China", "$158,000"],
+          ["4", "Benjamin Heath", "UK", "$116,500"],
+          ["5", "Felipe Ketzer", "Brazil", "$83,000"],
+          ["6", "Jeremy Ausmus", "USA", "$62,000"]
+        ]
+      }
+    ]
+  },
   "pgt-super-high-roller-quan-zhou-victory": {
     heroImage: "/image/news/details-news/new13/1-v6iw6zI6.png",
     sections: [
@@ -1401,6 +1459,17 @@ const articleContent: { [key: string]: ArticleContent } = {
       }
     ]
   },
+  "china-boxin-jin-claims-maiden-apt-title": {
+    heroImage:"/image/news/section-more-information/new23-zF0Rc3Ik.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "JEJU, SOUTH KOREA, April 26, 2024 – Welcome to the APT Jeju 2024, with the action-packed 10-day festival featuring 91 events (including satellites) with the series proper comprising a substantial 86 Trophy Events and boasting over KRW 5 billion (~USD 3.7M) in prize pool guarantees. Running April 26 to May 5 in partnership with Landing Entertainment Korea (LEK) the series is playing out at the world-class Landing Hotel & Casino located in the luxurious Jeju Shinhwa Resort. While this will be the fourth time the APT has visited Jeju, this marks the first visit of the new era following a seven-year hiatus, with Japan's Katsuhiro Muto the last APT Jeju Main Event champion crowned back in March 2017. The new era prize pools are over twenty times larger, with the APT Main Event running from April 26 to May 4 and coming with a sizable KRW 2 billion (~USD 1.5 million) guarantee. In addition to the guaranteed marquee events, the series boasts daily High Roller tournaments and an eclectic selection of mixed games and assorted poker variants, as well as cash games.  Getting underway at 2:30pm local time on April 26th, the KRW 2M Event #11: NL Hold'em - Freezeout saw 25 players enter the action, battling at the baize for eighteen 25-minute levels to win a slice of the KRW 43,650,000 (~USD 31,700) prize pool. Once again, it was a Chinese player taking the tournament top spot with Boxin Jin besting compatriot and Korea National Cup Flight A frontrunner Fei Wang head-up to claim the KRW 18,333,000 (~USD 13,310) top prize, in addition to his maiden APT title. NLHE FREEZEOUT FINAL TABLE RESULTS",
+        content_cn: "2024年4月26日，韩国济州--欢迎来到APT济州2024，这个为期10天的系列赛将举办91场赛事（包括卫星赛），其中包括86场奖杯赛，奖金池保证金超过50亿韩元（约合370万美元）。 该系列赛于4月26日至5月5日与韩国蓝鼎娱乐公司（LEK）合作，在位于豪华济州神话世界万豪度假村的世界级蓝鼎酒店举行。 虽然这是APT第四次造访济州岛，但这也标志着APT在时隔七年之后首次造访济州岛，日本选手Katsuhiro Muto上一次获得APT济州岛主赛事冠军还要追溯到2017 年3月。新时代的奖金池是原来的二十多倍，此次APT主赛事从4月26日持续到5月4日，并有高达20亿韩元（约合150万美元）的保底奖金。 除了有保证金的大型赛事外，该系列赛事还包括每日豪客锦标赛、混合游戏、各种扑克变体以及常规桌游戏。Boxin Jin夺得第11场赛事这场赛事在当地时间下午2:30开始，200万韩元赛事有25名玩家参赛，他们在18个25分钟的游戏级别中为赢得 43,650,000 韩元（约合 31,700 美元）的奖金池而战。 Boxin Jin击败了同胞、韩国国家杯A组头名Fei Wang，夺得了18,333,000 韩元（约合13,310 美元的最高奖金，这也是他首次获得APT冠军。",
+        content_tw: "2024年4月26日，韓國濟州--歡迎來到APT濟州2024，這個為期10天的系列賽將舉辦91場賽事（包括衛星賽），其中包括86場獎杯賽，獎金池保證金超過50億韓元 （約370萬美元）。 該系列賽於4月26日至5月5日與韓國藍鼎娛樂公司（LEK）合作，在位於豪華濟州神話世界萬豪度假村的世界級藍鼎酒店舉行。 雖然這是APT第四次造訪濟州島，但這也標誌著APT在時隔七年之後首次造訪濟州島，日本選手Katsuhiro Muto上一次獲得APT濟州島主賽事冠軍還要追溯到2017 年3月。新時代的獎金池是原來的二十多倍，這場APT主賽事從4月26日持續到5月4日，並有高達20億韓元（約150萬美元）的保底獎金。 除了有保證金的大型賽事外，該系列還包括每日豪客錦標賽、混合遊戲、各種撲克變體以及常規桌遊戲。Boxin Jin奪得第11場賽事這場賽事在當地時間下午2:30開始，200萬韓元賽事有25名玩家參賽，他們在18個25分鐘的遊戲級別中為贏得 43,650,000 韓元（約 31,700 美元）的獎金池而戰。 Boxin Jin擊敗了同胞、韓國國家杯A組頭名Fei Wang，贏得了18,333,000 韓元（約13,310 美元的最高獎金，這也是他首次獲得APT冠軍。"
+      }
+    ],
+  },
   "china-boxin-jin-claims-maiden-apt-title-freezeout": {
     heroImage: "/image/news/details-news/new16/1-CYdDSjTl.png",
     sections: [
@@ -1438,6 +1507,66 @@ const articleContent: { [key: string]: ArticleContent } = {
           ["3", "Hao-Ting Chao", "Taiwan", "KRW 7,857,000"],
           ["4", "Edward Chun Ho Yam", "Hong Kong", "KRW 5,238,000"]
         ]
+      }
+    ]
+  },
+  "china-jin-boxin-beats-jeju-dragon-quest-field": {
+    heroImage: "/image/news/details-news/new17/1-1-en-BQkgythn.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Exciting Recap: WPT Korea Jeju Dragon Quest Day 1A and Day 1B Highlights!",
+        content_cn: "济州寻龙争霸赛现场赛况视频：",
+        content_tw: "濟州尋龍爭霸賽現場賽況影片："
+      },
+      {
+        type: "video",
+        src: "/image/news/details-news/new17/AA22.mp4",
+        alt: "WPT Korea Jeju Dragon Quest Highlights Video"
+      },
+      {
+        type: "paragraph",
+        content: "Jin Boxin has emerged as the latest JEJU Dragon Quest Champion at WPT Korea! In addition to winning a WPT Trophy and a side event Champion Ring, Jin Boxin bested a field of 276 players to take home KRW 47,770,000 in prize money. He agreed to split the winnings with Li Zhongxian, ensuring each received KRW 47,770,000.",
+        content_cn: "济州寻龙争霸战决赛日回顾 ： 2024济州寻龙争霸赛就已经决出了冠军，由国人选手Jin Boxin拿下此战冠军！恭喜他！",
+        content_tw: "濟州尋龍爭霸戰決賽日回顧 ： 2024濟州尋龍爭霸賽就已經決出了冠軍，由國人選手Jin Boxin拿下此戰冠軍！ 恭喜他！"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new17/2-2zHN3ItS.png",
+        alt: "Jin Boxin Champion"
+      },
+      {
+        type: "paragraph",
+        content: "Date/s: March 27-28, 2024 Buy-in: KRW 1,100,000 (~USD 810) Prize pool: KRW 265,043,000 (~USD 197,130) Entries: 276 (188 unique) ITM: 36 players Event #5: Jeju Dragon Quest – Final Table Results",
+        content_cn: "时间：2024年3月27日-28日 买入：1,100,000韩元 奖池：265,043,000韩元 参赛人数：276人 进钱圈：36人 赛事决赛桌赛况：",
+        content_tw: "時間：2024年3月27日-28日 買入：1,100,000韓元 獎金池：265,043,000韓元 參賽人數：276人 進錢圈：36人 賽事決賽桌賽況："
+      },
+      {
+        type: "table",
+        title: "Final Results",
+        headers: ["Rank", "Last Name", "First Name", "Flag", "Prize(KRW)"],
+        rows: [
+          ["1", "JIN", "BOXIN", "China", "47,770,000"],
+          ["2", "LI", "ZHONGXIAN", "China", "47,770,000"],
+          ["3", "NIELSEN", "MARTIN", "Denmark", "27,950,000"],
+          ["4", "WU", "SHENGHAO", "China", "20,700,000"],
+          ["5", "ZHANG", "XIN", "China", "15,500,000"],
+          ["6", "GAO", "QINRONG", "China", "11,750,000"],
+          ["7", "LI", "LEI", "China", "8,950,000"],
+          ["8", "LOEFFLER", "KILIAN MARKUS HYUN", "Germany", "6,950,000"],
+          ["9", "XU", "YIGUANG", "China", "5,400,000"]
+        ]
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new17/4-ChWeKVXi.png",
+        alt: "Final Table Group Photo"
+      },
+      {
+        type: "paragraph",
+        content: "Congratulation to AA POKER team Jin Boxin!",
+        content_cn: "再次恭喜AA POKER团队Jin Boxin 拿下冠军，更多信息继续关注AA POKER！",
+        content_tw: "再次恭喜AA POKER團隊Jin Boxin 拿下冠軍，更多資訊繼續關注AA POKER！"
       }
     ]
   },
@@ -1501,14 +1630,47 @@ const articleContent: { [key: string]: ArticleContent } = {
       }
     ]
   },
+  "whirlwind-quan-zhou-races-first-triton-title": {
+    heroImage: "/image/news/details-news/new18/21-1-C4YZUrOJ.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "The final Saturday of the Triton Super High Roller Series festival in Jeju, South Korea, started with the search for Quan Zhou. It ended with the Chinese player in the most prominent place of all: holding aloft his first Triton winner's trophy.",
+        content_cn: "在韩国济州岛举行的Triton超级豪客系列赛的最后一个星期六，「国王」周全站在了最显眼的位置：高举他的第一座Triton冠军奖杯。",
+        content_tw: "在韓國濟州島舉行的Triton超級豪客系列賽的最後一個星期六，「國王」周全站在了最顯眼的位置：高舉他的第一座Triton冠軍獎杯。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new18/21-2-jxUPAYCP.png",
+        alt: "Quan Zhou at Poker Table"
+      },
+      {
+        type: "paragraph",
+        content: "Zhou was the overnight chip leader of the $25K Pot Limit Omaha event here at the Jeju Shinhwa World Landing Resort, but was late to arrive for the tournament room for the 1pm restart of the event. It meant Zhou was missing from the customary pre-final table line-up photo. But no matter. Zhou set about his task today with customary focus and ensured that he was present for the most important photos of the day. Those were the ones featuring Zhou alone, alongside his winner's cap, winning hand, winning chips and that trophy. The $530,000 first prize is also now into his Triton account.",
+        content_cn: "周全是25K奥马哈比赛的隔夜记分牌领先者，但在下午1点重新开始比赛时，他却迟迟没有到达比赛室。 这意味着他没有按照惯例在决赛桌前合影留念。 不过没关系。 周全以一贯的专注开始了他今天的工作，并确保在当天最重要的照片中出现他的身影。 这些照片中只有周全一个人，还有他的冠军帽、获胜牌和奖杯。",
+        content_tw: "周全是25K奧馬哈比賽的隔夜記分牌領先者，但在下午1點重新開始比賽時，他却遲遲沒有到達比賽室。 這意味著他沒有按照慣例在決賽桌前合影留念。 不過沒關係。 周全以一貫的專注開始了他今天的工作，並確保在當天最重要的照片中出現他的身影。 這些照片中只有周全一個人，還有他的冠軍帽、獲勝牌和獎杯。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new18/21-3-CJ43Cp5_.png",
+        alt: "Quan Zhou Victory Celebration"
+      },
+      {
+        type: "paragraph",
+        content: "This 39-year-old has come close to a Triton victory before, most notably when he was beaten heads-up in a PLO event in Monte Carlo last year. But this time he was not to be denied and blazed through the final day in a little more than four hours. He despatched his final challenger, Canada's Matthew Wood, on the first hand of head-up play. It ensured his first cash in Jeju came with a \"1st place\" notice beside it. He has staked a real claim as the man to beat in these PLO events, and confirmed that he's here to stay. 'I'm very happy with the win,' Zhou said, through an interpreter, as he began his celebrations. 'I have been looking forward to this title because there are a lot of strong competitors on the Triton Series.' He added: 'I played a lot of the no limit events and didn't cash, so there was a bit of pressure on me. But fortunately I have a lot of support from friends that keeps me going. Some of my friends came here to support me. Winning this title has helped me to relieve the pressure. It's a confidence boost.'",
+        content_cn: "周全以前曾经差点赢得Triton锦标赛，最著名的一次是去年在蒙地卡罗举行的PLO锦标赛中惜败。 但这一次，他不负众望，在最后一天的比赛中花了四个多小时就大获全胜。 他在单挑的第一手牌中就击败了最后一位挑战者、加拿大选手Matthew Wood。 这确保了他在济州岛的第一笔奖金，旁边还写着 '第一名'。\n\n'我对这次胜利感到非常高兴，我一直期待着这个冠军，因为Triton系列赛有很多强劲的竞争对手。' 他补充说：'我参加了很多赛事，但都没有赢，所以压力有点大。但幸运的是，我得到了很多朋友的支持，让我坚持了下来。赢得这个冠军帮我减轻了压力。这让我信心倍增'。",
+        content_tw: "周全以前曾經差點贏得Triton錦標賽，最著名的一次是去年在蒙地卡羅舉行的PLO錦標賽中惜敗。 但這一次，他不負眾望，在最後一天的比賽中花了四個多小時就大獲全勝。 他在單挑的第一手牌中就擊敗了最後一位挑戰者、加拿大選手Matthew Wood。 這確保了他在濟州島的第一筆獎金，旁邊還寫著 '第一名'。\n\n'我對這次勝利感到非常高興，我一直期待著這個冠軍，因為Triton系列賽有很多強勁的競爭對手。' 他補充說：'我參加了很多賽事，但都沒有贏，所以壓力有點大。但幸運的是，我得到了很多朋友的支持，讓我堅持了下來。贏得這個冠軍幫我減輕了壓力。這讓我信心倍增'。"
+      }
+    ]
+  },
   "whirlwind-quan-zhou-races-first-triton-title-25k-plo": {
     heroImage: "/image/news/details-news/new18/21-1-C4YZUrOJ.png",
     sections: [
       {
         type: "paragraph",
         content: "The final Saturday of the Triton Super High Roller Series festival in Jeju, South Korea, started with the search for Quan Zhou. It ended with the Chinese player in the most prominent place of all: holding aloft his first Triton winner's trophy.",
-        content_cn: "在韩国济州岛举行的Triton超级豪客系列赛的最后一个星期六，“国王”周全站在了最显眼的位置：高举他的第一座Triton冠军奖杯。",
-        content_tw: "在韓國濟州島舉行的Triton超級豪客系列賽的最後一個星期六，“國王”周全站在了最顯眼的位置：高舉他的第一座Triton冠軍獎杯。"
+        content_cn: "在韩国济州岛举行的Triton超级豪客系列赛的最后一个星期六，「国王」周全站在了最显眼的位置：高举他的第一座Triton冠军奖杯。",
+        content_tw: "在韓國濟州島舉行的Triton超級豪客系列賽的最後一個星期六，「國王」周全站在了最顯眼的位置：高舉他的第一座Triton冠軍獎杯。"
       },
       {
         type: "image",
@@ -1531,6 +1693,50 @@ const articleContent: { [key: string]: ArticleContent } = {
         content: "This 39-year-old has come close to a Triton victory before, most notably when he was beaten heads-up in a PLO event in Monte Carlo last year. But this time he was not to be denied and blazed through the final day in a little more than four hours. He despatched his final challenger, Canada's Matthew Wood, on the first hand of head-up play. It ensured his first cash in Jeju came with a \"1st place\" notice beside it. He has staked a real claim as the man to beat in these PLO events, and confirmed that he's here to stay. 'I'm very happy with the win,' Zhou said, through an interpreter, as he began his celebrations. 'I have been looking forward to this title because there are a lot of strong competitors on the Triton Series.' He added: 'I played a lot of the no limit events and didn't cash, so there was a bit of pressure on me. But fortunately I have a lot of support from friends that keeps me going. Some of my friends came here to support me. Winning this title has helped me to relieve the pressure. It's a confidence boost.'",
         content_cn: "周全以前曾经差点赢得Triton锦标赛，最著名的一次是去年在蒙地卡罗举行的PLO锦标赛中惜败。 但这一次，他不负众望，在最后一天的比赛中花了四个多小时就大获全胜。 他在单挑的第一手牌中就击败了最后一位挑战者、加拿大选手Matthew Wood。 这确保了他在济州岛的第一笔奖金，旁边还写着 ‘第一名’。\n\n‘我对这次胜利感到非常高兴，我一直期待着这个冠军，因为Triton系列赛有很多强劲的竞争对手。’ 他补充说：‘我参加了很多赛事，但都没有赢，所以压力有点大。但幸运的是，我得到了很多朋友的支持，让我坚持了下来。赢得这个冠军帮我减轻了压力。这让我信心倍增’。",
         content_tw: "周全以前曾經差點贏得Triton錦標賽，最著名的一次是去年在蒙地卡羅舉行的PLO錦標賽中惜敗。 但這一次，他不負眾望，在最後一天的比賽中花了四個多小時就大獲全勝。 他在單挑的第一手牌中就擊敗了最後一位挑戰者、加拿大選手Matthew Wood。 這確保了他在濟州島的第一筆獎金，旁邊還寫著 ‘第一名’。\n\n‘我對這次勝利感到非常高興，我一直期待著這個冠軍，因為Triton系列賽有很多強勁的競爭對手。’ 他補充說：‘我參加了很多賽事，但都沒有贏，所以壓力有點大。但幸運的是，我得到了很多朋友的支持，讓我堅持了下來。贏得這個冠軍幫我減輕了壓力。這讓我信心倍增’。"
+      }
+    ]
+  },
+  "quan-zhou-took-runner-up-prize-mystery-bounty": {
+    heroImage: "/image/news/details-news/new19/20-1-BN6KnOwy.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Paris is the City of Light, and today at the 2024 PokerStars European Poker Tour Paris €10,200 Mystery Bounty, the light shined brightest on Duco ten Haven.",
+        content_cn: "EPT连续第二年重返巴黎，这次是在巴黎会议中心举行，为玩家们提供了一个更大、更宽敞的比赛场地，并致力为大家带来无与伦比的参赛体验。",
+        content_tw: "EPT連續第二年重返巴黎，這次是在巴黎會議中心舉行，為玩家們提供了一個更大、更寬敞的比賽場地，並致力於為大家帶來無與倫比的參賽體驗。"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new19/20-2-BM3eNJXa.png",
+        alt: "Duco ten Haven Champion"
+      },
+      {
+        type: "paragraph",
+        content: "The Dutch pro, who considers Paris a second home, is usually an online crusher but captured his first EPT title today at Le Palais des Congrès by defeating Quan Zhou heads-up to win the trophy and €126,500. In addition to the top prize, he also earned €117,500 in bounties including one of the €50,000 top mystery bounty envelopes as he began his festival here in Paris with a total score of €244,000, the best of his career.",
+        content_cn: "€10,200神秘赏金赛共103人参赛，总奖池达到€473,800。 名叫 Duco ten Haven 的优秀荷兰选手，将巴黎视为自己的第二故乡。作为知名的在线高手，他终于在巴黎会议宫凭借出色实力，成功斩获EPT神秘赏金赛冠军奖杯以及高达€126,500的冠军奖金。",
+        content_tw: "€10,200神秘賞金賽共103人參賽，總獎金池達到€473,800。 名叫 Duco ten Haven 的優秀荷蘭選手，將巴黎視為自己的第二個家。身為知名的線上高手，他終於在巴黎會議宮憑借出色實力，成功斬獲EPT神秘賞金賽冠軍獎盃以及高達€126,500的冠軍獎金。"
+      },
+      {
+        type: "table",
+        title: "Final Results",
+        headers: ["Rank", "Player", "Country", "Prize", "Bounties", "Total Earnings"],
+        rows: [
+          ["1", "Duco ten Haven", "Netherlands", "€126,500", "€117,500", "€244,000"],
+          ["2", "Quan Zhou", "China", "€81,500", "€72,500", "€154,000"],
+          ["3", "Thomas Boivin", "Belgium", "€58,200", "€25,000", "€83,200"],
+          ["4", "Sirzat Hissou", "Germany", "€44,800", "€47,500", "€92,300"],
+          ["5", "Sergi Reixach", "Spain", "€35,800", "€62,500", "€98,300"],
+          ["6", "Adrian Mateos", "Spain", "€28,700", "€7,500", "€36,200"],
+          ["7", "Elias Gutierrez", "Spain", "€22,900", "€15,000", "€37,900"],
+          ["8", "Aurelien Russo", "France", "€18,300", "€7,500", "€25,800"],
+          ["9", "Mike Watson", "Canada", "€14,700", "€35,000", "€49,700"]
+        ]
+      },
+      {
+        type: "paragraph",
+        content: "In this intense final heads-up battle, 'King' Quan Zhou lost to Haven but still achieved an impressive runner-up finish. He also won another €50,000 top mystery bounty envelope.",
+        content_cn: "在这场激烈的FT最终一对一单挑决战中输给Haven的「国王」周全，虽然未能得偿所愿夺取冠军，但他收获了一个令人欣慰的战果——赢得第二名的优异成绩。 除此以外，他还赢得同样价值5W欧元的另一个最高额的赏金。",
+        content_tw: "在這場激烈的FT最終一對一單挑決戰中輸給Haven的「國王」周全，雖然未能得償所願奪取冠軍，但他收穫了一個令人欣慰的戰果——贏得第二名的優異成績。 除此以外，他還贏得同樣價值5W歐元的另一個最高額的賞金。"
       }
     ]
   },
@@ -1896,15 +2102,19 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "jungleman-plays-high-stakes-andy-mariano-pepe": {
-    heroImage: "/image/news/details-news/new23/jungleman-high-stakes.png",
+    heroImage: "/image/news/details-news/new23/图层1-BQrlUn2y.jpg",
     sections: [
       {
         type: "heading",
-        content: "JUNGLEMAN PLAYS HIGH STAKES $50/100/200W/ ANDY, MARIANO, PEPE, DJ WASHBURN & MARS"
+        content: "JUNGLEMAN PLAYS HIGH STAKES $50/100/200W/ ANDY, MARIANO, PEPE, DJ WASHBURN & MARS",
+        content_cn: "JUNGLEMAN高额桌直播 $50/100/200 与ANDY、MARIANO、PEPE、DJ WASHBURN和MARS",
+        content_tw: "JUNGLEMAN高額桌直播 $50/100/200 與ANDY、MARIANO、PEPE、DJ WASHBURN和MARS"
       },
       {
         type: "paragraph",
-        content: "CHIP COUNT"
+        content: "CHIP COUNT",
+        content_cn: "筹码统计",
+        content_tw: "籌碼統計"
       },
       {
         type: "paragraph",
@@ -1938,17 +2148,23 @@ const articleContent: { [key: string]: ArticleContent } = {
         type: "paragraph",
         content: "WILL : $15,225"
       },
+      // {
+      //   type: "heading",
+      //   content: "Chapter",
+      //   content_cn: "章节",
+      //   content_tw: "章節"
+      // },
       {
-        type: "heading",
-        content: "Chapter"
+        type: "paragraph",
+        content: "0:00 : Countdown",
+        content_cn: "0:00 : 倒计时",
+        content_tw: "0:00 : 倒數計時"
       },
       {
         type: "paragraph",
-        content: "0:00 : Countdown"
-      },
-      {
-        type: "paragraph",
-        content: "26:40 : Player Introductions"
+        content: "26:40 : Player Introductions",
+        content_cn: "26:40 : 选手介绍",
+        content_tw: "26:40 : 選手介紹"
       },
       {
         type: "paragraph",
@@ -1984,11 +2200,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "6:16:18 : Final Statistics"
+        content: "6:16:18 : Final Statistics",
+        content_cn: "6:16:18 : 最终统计",
+        content_tw: "6:16:18 : 最終統計"
       },
       {
         type: "paragraph",
-        content: "6:18:08 : Ending Credits"
+        content: "6:18:08 : Ending Credits",
+        content_cn: "6:18:08 : 结束字幕",
+        content_tw: "6:18:08 : 結束字幕"
       },
       {
         type: "paragraph",
@@ -2001,11 +2221,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "THE LORD POKER TOURNAMENT TOP MONEY EARNERS"
+        content: "THE LORD POKER TOURNAMENT TOP MONEY EARNERS",
+        content_cn: "TLPT豪客赛赢家排行榜",
+        content_tw: "TLPT豪客賽贏家排行榜"
       },
       {
         type: "paragraph",
-        content: "The first stop of the 2023 TLPT in Sydney was successfully concluded on October 29th The next stop will be more excited. Looking forward to it."
+        content: "The first stop of the 2023 TLPT in Sydney was successfully concluded on October 29th The next stop will be more excited. Looking forward to it.",
+        content_cn: "2023年TLPT悉尼站于10月29日圆满结束，下一站将更加精彩，让我们拭目以待。",
+        content_tw: "2023年TLPT悉尼站於10月29日圓滿結束，下一站將更加精彩，讓我們拭目以待。"
       },
       {
         type: "image",
@@ -2019,11 +2243,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "TLPT INTERNATIONAL HIGH-ROLLERS"
+        content: "TLPT INTERNATIONAL HIGH-ROLLERS",
+        content_cn: "TLPT国际豪客赛",
+        content_tw: "TLPT國際豪客賽"
       },
       {
         type: "paragraph",
-        content: "The first stop of the 2023 TLPT in Sydney was successfully concluded on October 29th The next stop will be more excited. Looking forward to it."
+        content: "The first stop of the 2023 TLPT in Sydney was successfully concluded on October 29th The next stop will be more excited. Looking forward to it.",
+        content_cn: "2023年TLPT悉尼站于10月29日圆满结束，下一站将更加精彩，让我们拭目以待。",
+        content_tw: "2023年TLPT悉尼站於10月29日圓滿結束，下一站將更加精彩，讓我們拭目以待。"
       },
       {
         type: "image",
@@ -2073,11 +2301,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "TLPT INTERNATIONAL 10K CHALLENGE FINAL TABLE"
+        content: "TLPT INTERNATIONAL 10K CHALLENGE FINAL TABLE",
+        content_cn: "TLPT国隙10K挑战赛决赛桌",
+        content_tw: "TLPT國隙10K挑戰賽決賽桌"
       },
       {
         type: "paragraph",
-        content: "CHIP COUNT"
+        content: "CHIP COUNT",
+        content_cn: "筹码统计",
+        content_tw: "籌碼統計"
       },
       {
         type: "paragraph",
@@ -2126,11 +2358,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "TLPT INTERNATIONAL 25K CHALLENGE FINAL TABLE"
+        content: "TLPT INTERNATIONAL 25K CHALLENGE FINAL TABLE",
+        content_cn: "TLPT国隙25K挑战赛决赛桌",
+        content_tw: "TLPT國隙25K挑戰賽決賽桌"
       },
       {
         type: "paragraph",
-        content: "CHIP COUNT"
+        content: "CHIP COUNT",
+        content_cn: "筹码统计",
+        content_tw: "籌碼統計"
       },
       {
         type: "paragraph",
@@ -2179,11 +2415,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "SUPER HIGH STAKES $100/200/400!! JUNGLEMAN, ANDY, NIK AIRBALL, PEPE, MARS - COMMENTARY BY MARC GOONE"
+        content: "SUPER HIGH STAKES $100/200/400!! JUNGLEMAN, ANDY, NIK AIRBALL, PEPE, MARS - COMMENTARY BY MARC GOONE",
+        content_cn: "超高额现金桌 $100/200/400!! JUNGLEMAN、ANDY、NIK AIRBALL、PEPE、MARS - MARC GOONE解说",
+        content_tw: "超高額現金桌 $100/200/400!! JUNGLEMAN、ANDY、NIK AIRBALL、PEPE、MARS - MARC GOONE解說"
       },
       {
         type: "paragraph",
-        content: "CHIP COUNT"
+        content: "CHIP COUNT",
+        content_cn: "筹码统计",
+        content_tw: "籌碼統計"
       },
       {
         type: "paragraph",
@@ -2219,11 +2459,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "heading",
-        content: "Chapter"
+        content: "Chapter",
+        content_cn: "章节",
+        content_tw: "章節"
       },
       {
         type: "paragraph",
-        content: "0:00 : Countdown"
+        content: "0:00 : Countdown",
+        content_cn: "0:00 : 倒计时",
+        content_tw: "0:00 : 倒數計時"
       },
       {
         type: "paragraph",
@@ -2259,15 +2503,21 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "6:32:03 : Any Biggest HCL Win - $233,000"
+        content: "6:32:03 : Any Biggest HCL Win - $233,000",
+        content_cn: "6:32:03 : Andy最大HCL胜利 - $233,000",
+        content_tw: "6:32:03 : Andy最大HCL勝利 - $233,000"
       },
       {
         type: "paragraph",
-        content: "6:32:24 : Final Statistics"
+        content: "6:32:24 : Final Statistics",
+        content_cn: "6:32:24 : 最终统计",
+        content_tw: "6:32:24 : 最終統計"
       },
       {
         type: "paragraph",
-        content: "6:33:23 : Ending Credits"
+        content: "6:33:23 : Ending Credits",
+        content_cn: "6:33:23 : 结束字幕",
+        content_tw: "6:33:23 : 結束字幕"
       },
       {
         type: "paragraph",
@@ -2276,55 +2526,79 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "aa-poker-largest-sponsor-tlpt-event": {
-    heroImage: "/image/news/details-news/new29/aa-poker-sponsor.png",
+    heroImage: "/image/news/details-news/new23/图层1-BQrlUn2y.jpg",
     sections: [
       {
         type: "heading",
-        content: "AA POKER, THE LARGEST SPONSOR OF THE TLPT EVENT"
+        content: "AA POKER, THE LARGEST SPONSOR OF THE TLPT EVENT",
+        content_cn: "AA POKER，TLPT赛事最大赞助商",
+        content_tw: "AA POKER，TLPT賽事最大贊助商"
       },
+      // {
+      //   type: "heading",
+      //   content: "TLPT Background",
+      //   content_cn: "TLPT背景",
+      //   content_tw: "TLPT背景"
+      // },
       {
-        type: "heading",
-        content: "TLPT Background"
+        type: "paragraph",
+        content: "The TLPT event is a new global high-roller brand series with a grand background and powerful strength. It will become an important part of the global high-roller series map.AA poker is an important part of TLPT with many famous poker stars who would like to join in. Player Bryn Kenney who represented AA POKER in the Triton Series 250K Invitation Event won again the champion title and returned to the top of the world rank of bonus. At the same time, Dan Cates, as the brand ambassador of TLPT, is also well-known among pokers. He is also one of the world's all-round poker players.Therefore, TLPT will have a strong influence in the poker community worldwide.",
+        content_cn: "TLPT赛事是一个全新的全球豪客赛品牌系列，背景雄厚，实力强大。它将成为全球豪客赛系列版图的重要组成部分。AA Poker是TLPT的重要组成部分，许多著名扑克明星都希望加入。代表AA POKER参加传奇系列赛250K邀请赛的选手Bryn Kenney再次获得冠军，重返世界奖金排行榜榜首。同时，作为TLPT品牌大使的Dan Cates在扑克界也家喻户晓，他也是世界顶级全能扑克选手之一。因此，TLPT将在全球扑克界产生强大影响力。",
+        content_tw: "TLPT賽事是一個全新的全球豪客賽品牌系列，背景雄厚，實力強大。它將成為全球豪客賽系列版圖的重要組成部分。AA Poker是TLPT的重要組成部分，許多著名撲克明星都希望加入。代表AA POKER參加傳奇系列賽250K邀請賽的選手Bryn Kenney再次獲得冠軍，重返世界獎金排行榜榜首。同時，作為TLPT品牌大使的Dan Cates在撲克界也家喻戶曉，他也是世界頂級全能撲克選手之一。因此，TLPT將在全球撲克界產生強大影響力。"
+      },
+      // {
+      //   type: "heading",
+      //   content: "TLPT event schedule",
+      //   content_cn: "TLPT赛事日程",
+      //   content_tw: "TLPT賽事日程"
+      // },
+      {
+        type: "paragraph",
+        content: "2023 first stop",
+        content_cn: "2023年第一站",
+        content_tw: "2023年第一站"
       },
       {
         type: "paragraph",
-        content: "The TLPT event is a new global high-roller brand series with a grand background and powerful strength. It will become an important part of the global high-roller series map.AA poker is an important part of TLPT with many famous poker stars who would like to join in. Player Bryn Kenney who represented AA POKER in the Triton Series 250K Invitation Event won again the champion title and returned to the top of the world rank of bonus. At the same time, Dan Cates, as the brand ambassador of TLPT, is also well-known among pokers. He is also one of the world's all-round poker players.Therefore, TLPT will have a strong influence in the poker community worldwide."
-      },
-      {
-        type: "heading",
-        content: "TLPT event schedule"
-      },
-      {
-        type: "paragraph",
-        content: "2023 first stop"
+        content: "TLPT Sydney High-roller Series & APT Australia Championships",
+        content_cn: "TLPT悉尼豪客系列赛 & APT澳大利亚锦标赛",
+        content_tw: "TLPT悉尼豪客系列賽 & APT澳大利亞錦標賽"
       },
       {
         type: "paragraph",
-        content: "TLPT Sydney High-roller Series & APT Australia Championships"
+        content: "Date: October 22nd, 2023-October 29th, 2023",
+        content_cn: "日期：2023年10月22日-2023年10月29日",
+        content_tw: "日期：2023年10月22日-2023年10月29日"
       },
       {
         type: "paragraph",
-        content: "Date: October 22nd, 2023-October 29th, 2023"
+        content: "Prize pool: $3.5M",
+        content_cn: "奖池：350万美元",
+        content_tw: "獎池：350萬美元"
       },
       {
         type: "paragraph",
-        content: "Prize pool: $3.5M"
+        content: "We will have 29 events cross 8 days, which include: Opening events, Monster stack, Mini Main, National champs, Bankroll builder, 10k challenge,Players champ, Celebrity game-bounty, Hachem deepstack, Goliath, Poker hall of fame invitational, The valut, Lockout, 25K challenge, PKO bounty, Pineapple, XHR and etc.",
+        content_cn: "我们将在跨越8天的时间内举办29场赛事，包括：揭幕赛、巨典赛、迷你主赛、国家冠军赛、资金构建赛、10K挑战赛、选手冠军赛、名人赏金赛、Hachem深筹赛、巨人赛、扑克名人堂邀请赛、保险箱赛、封锁赛、25K挑战赛、PKO赏金赛、菠萝赛、XHR等。",
+        content_tw: "我們將在跨越8天的時間內舉辦29場賽事，包括：揭幕賽、巨典賽、迷你主賽、國家冠軍賽、資金構建賽、10K挑戰賽、選手冠軍賽、名人賞金賽、Hachem深籌賽、巨人賽、撲克名人堂邀請賽、保險箱賽、封鎖賽、25K挑戰賽、PKO賞金賽、菠蘿賽、XHR等。"
       },
       {
         type: "paragraph",
-        content: "We will have 29 events cross 8 days, which include: Opening events, Monster stack, Mini Main, National champs, Bankroll builder, 10k challenge,Players champ, Celebrity game-bounty, Hachem deepstack, Goliath, Poker hall of fame invitational, The valut, Lockout, 25K challenge, PKO bounty, Pineapple, XHR and etc."
+        content: "We are expecting to have more than 4,000 players come to play our first stop in Sydney Australia.",
+        content_cn: "我们预计将有4000多名选手来澳大利亚悉尼参加我们的第一站比赛。",
+        content_tw: "我們預計將有4000多名選手來澳大利亞悉尼參加我們的第一站比賽。"
       },
+      // {
+      //   type: "heading",
+      //   content: "TLPT free satellite tournament",
+      //   content_cn: "TLPT免费卫星赛",
+      //   content_tw: "TLPT免費衛星賽"
+      // },
       {
         type: "paragraph",
-        content: "We are expecting to have more than 4,000 players come to play our first stop in Sydney Australia."
-      },
-      {
-        type: "heading",
-        content: "TLPT free satellite tournament"
-      },
-      {
-        type: "paragraph",
-        content: "To allow more players to join the TLPT high-roller series, AA POKER has launched a free satellite tournament on September 22nd, which is currently open.We are delighted to report that three lucky guys got our high-roller packages. Congratulations!Want to become a champion like Moneymaker? detailed information is provided below, come and join it:"
+        content: "To allow more players to join the TLPT high-roller series, AA POKER has launched a free satellite tournament on September 22nd, which is currently open.We are delighted to report that three lucky guys got our high-roller packages. Congratulations!Want to become a champion like Moneymaker? detailed information is provided below, come and join it:",
+        content_cn: "为了让更多选手加入TLPT豪客系列赛，AA POKER于9月22日推出了免费卫星赛，目前正在进行中。我们很高兴地宣布，三位幸运儿获得了我们的豪客赛套餐。恭喜！想成为像Moneymaker一样的冠军吗？详情如下，快来加入：",
+        content_tw: "為了讓更多選手加入TLPT豪客系列賽，AA POKER於9月22日推出了免費衛星賽，目前正在進行中。我們很高興地宣布，三位幸運兒獲得了我們的豪客賽套餐。恭喜！想成為像Moneymaker一樣的冠軍嗎？詳情如下，快來加入："
       }
     ]
   },
@@ -2333,11 +2607,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "THAT MAN ZHEMING ZHU WINS $10K WORLD CHAMPS WARM-UP WITH AA POKER"
+        content: "THAT MAN ZHEMING ZHU WINS $10K WORLD CHAMPS WARM-UP WITH AA POKER",
+        content_cn: "那个中国人zheming zhu代表AA POKER赢得$10K世界冠军赛热身赛",
+        content_tw: "那個中國人Zheming Zhu代表AA POKER贏得$10K世界冠軍賽熱身賽"
       },
       {
         type: "paragraph",
-        content: "Zheming Zhu has completed a wholly dominant final table performance at the WPT Australia $10K World Champs Heads-Up, defeating Malcolm Trayner heads up to claim his first Tier One title.The two players made a deal prior to the start of play, leaving $10,000 and the WPT Passport to play for. Trayner wasted no time, shoving his button on the first hand to a fold from Zhu. The pair then danced around each other for a couple of hands before Zhu shoved his own button. Trayner looked him up, and it was off to the races."
+        content: "Zheming Zhu has completed a wholly dominant final table performance at the WPT Australia $10K World Champs Heads-Up, defeating Malcolm Trayner heads up to claim his first Tier One title.The two players made a deal prior to the start of play, leaving $10,000 and the WPT Passport to play for. Trayner wasted no time, shoving his button on the first hand to a fold from Zhu. The pair then danced around each other for a couple of hands before Zhu shoved his own button. Trayner looked him up, and it was off to the races.",
+        content_cn: "Zheming Zhu在WPT澳大利亚$10K世界冠军赛单挑中完成了全面的决赛桌表现，击败Malcolm Trayner获得了他的第一个顶级头衔。两位选手在比赛开始前达成了协议，留下$10,000和WPT护照作为奖励。Trayner毫不耗时，第一手就在按钮位全下，Zhu弃牌。两人在接下来的几手中互相起舞，然后Zhu在自己的按钮位全下。Trayner跟注，比赛开始。",
+        content_tw: "Zheming Zhu在WPT澳大利亞$10K世界冠軍賽單挑中完成了全面的決賽桌表現，擊敗Malcolm Trayner獲得了他的第一個頂級頭銜。兩位選手在比賽開始前達成了協議，留下$10,000和WPT護照作為獎勵。Trayner毫不耗時，第一手就在按鈕位全下，Zhu棄牌。兩人在接下來的幾手中互相起舞，然後Zhu在自己的按鈕位全下。Trayner跟注，比賽開始。"
       },
       {
         type: "paragraph",
@@ -2349,54 +2627,76 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "Zhu would immediately connect in the window and hold through on the board of 9♦Q♣4♦7♠3♣ to claim the title, the crystal boomerang trophy, and the $273 AUD comes with it. From all of us here at PMA, congratulations Zheming Zhu, WPT Australia $10K World Champs Warm-Up Champion!"
+        content: "Zhu would immediately connect in the window and hold through on the board of 9♦Q♣4♦7♠3♣ to claim the title, the crystal boomerang trophy, and the $273 AUD comes with it. From all of us here at PMA, congratulations Zheming Zhu, WPT Australia $10K World Champs Warm-Up Champion!",
+        content_cn: "Zhu立即在窗口配上，并在牌面 9♦Q♣4♦7♠3♣ 上保持领先，赢得了头衔、水晶回旋镖奖杯以及$273澳元。我们PMA全体成员向Zheming Zhu表示祝贺，WPT澳大利亚$10K世界冠军赛热身赛冠军！",
+        content_tw: "Zhu立即在窗口配上，並在牌面 9♦Q♣4♦7♠3♣ 上保持領先，贏得了頭銜、水晶回旋鏢獎杯以及$273澳元。我們PMA全體成員向Zheming Zhu表示祝賀，WPT澳大利亞$10K世界冠軍賽熱身賽冠軍！"
       }
     ]
   },
   "free-satellite-tournament": {
-    heroImage: "/image/news/details-news/new31/zzazhks-en-DBwW2GrR.jpg",
+    heroImage: "/image/news/details-news/new48/zzazhks-en-DBwW2GrR.jpg",
+    heroImage_cn: "/image/news/details-news/new48/cn/zzazhks-zh-BuVUXbN2.jpg",
+    heroImage_tw: "/image/news/details-news/new48/tw/zzazhks-zh-BuVUXbN2.jpg",
     sections: [
       {
         type: "heading",
-        content: "FREE SATELLITE TOURNAMENT"
+        content: "FREE SATELLITE TOURNAMENT",
+        content_cn: "免费卫星赛开启",
+        content_tw: "免費衛星賽開啟"
       },
-      {
-        type: "image",
-        src: "/image/news/details-news/new31/zzazhks-en-DBwW2GrR.jpg",
-        alt: "Free Satellite Tournament"
-      }
+      // {
+      //   type: "image",
+      //   src: "/image/news/details-news/new48/en.jpg",
+      //   src_cn: "/image/news/details-news/new48/cn/cn.jpg",
+      //   src_tw: "/image/news/details-news/new48/tw/tw.jpg",
+      //   alt: "Free Satellite Tournament"
+      // }
     ]
   },
   "aa-poker-global-pre-launch": {
-    heroImage: "/image/news/details-news/new32/aa-poker-pre-launch.png",
+    heroImage: "/image/news/details-news/new32/1-D1kOLeUQ.jpg",
     sections: [
       {
         type: "heading",
-        content: "AA POKER GLOBAL PRE-LAUNCH"
+        content: "AA POKER GLOBAL PRE-LAUNCH",
+        content_cn: "AA POKER伦敦发布会",
+        content_tw: "AA POKER倫敦發布會"
       },
       {
         type: "paragraph",
-        content: "AA POKER's First Release Conference Takes Place in London, Making a Grand Appearance on the Global Stage of Texas Hold'em Poker."
+        content: "AA POKER's First Release Conference Takes Place in London, Making a Grand Appearance on the Global Stage of Texas Hold'em Poker.",
+        content_cn: "AA POKER首场发布会于伦敦盛大开幕，闪耀全球德扑舞台。",
+        content_tw: "AA POKER首場發布會于倫敦盛大開幕，閃耀全球德撲舞台。"
       },
       {
         type: "paragraph",
-        content: "On August 5, 2023, AA POKER's first release conference, 'A life of poker games, the choice of champions,' had a grand opening in the world-class city of London and the industry in London, which took place concurrently with Triton Poker Highroller Series and World Series of Poker, the two most important poker event in the world, pumping new vigor into the entire circle of Texas hold'em poker."
+        content: "On August 5, 2023, AA POKER's first release conference, 'A life of poker games, the choice of champions,' had a grand opening in the world-class city of London and the industry in London, which took place concurrently with Triton Poker Highroller Series and World Series of Poker, the two most important poker event in the world, pumping new vigor into the entire circle of Texas hold'em poker.",
+        content_cn: "2023年8月5日，AA POKER首场发布会——《牌局人生，冠军之选》在媒体和业界的瞩目下于伦敦盛大开幕，与两个全球顶尖赛事TRITON POKER HIGHROLLER SERIES与WORLD SERIES OF POKER同期进行，为整个德州扑克界注入了无限活力。",
+        content_tw: "2023年8月5日，AA POKER首場發布會——《牌局人生，冠軍之選》在媒體與業界的矚目下於倫敦盛大開幕，與兩個全球頂尖賽事TRITON POKER HIGHROLLER SERIES與WORLD SERIES OF POKER同期進行，為整個德州撲克界注入了無限活力。"
       },
       {
         type: "paragraph",
-        content: "The release conference was attended by a great number of industrial celebrities, top players and media representatives, who shared the trend of the industrial development and their views on Texas hold'em business, tried AA POKER app online games, and witnessed the grand appearance of AA POKER as a highly competitive new power in the field of Texas hold'em games. Meanwhile, players were competing vigorously in two top events in the world, and the whole venue was of an atmosphere of heated competitions."
+        content: "The release conference was attended by a great number of industrial celebrities, top players and media representatives, who shared the trend of the industrial development and their views on Texas hold'em business, tried AA POKER app online games, and witnessed the grand appearance of AA POKER as a highly competitive new power in the field of Texas hold'em games. Meanwhile, players were competing vigorously in two top events in the world, and the whole venue was of an atmosphere of heated competitions.",
+        content_cn: "发布会现场，众多行业知名人士、顶级选手以及媒体代表齐聚一堂，分享德州扑克行业的发展趋势和自己的心得观点，并现场体验AA POKER app线上对战，共同见证了AA POKER作为德州扑克领域充满竞争力的全新势力隆重登场。与此同时，两个全球顶尖赛事中选手们正在展开激烈的角逐，让整个场地充满了热烈的竞技氛围。",
+        content_tw: "發布會現場，眾多行業知名人士、頂級選手以及媒體代表齊聚一堂，分享德州撲克行業的發展趨勢和自己的心得觀點，並現場體驗AA POKER app線上對戰，共同見證了AA POKER作為德州撲克領域充滿競爭力的全新勢力隆重登場。同時，兩個全球頂尖賽事中選手們正在展開激烈的角逐，讓整個場地充滿了熱烈的競技氛圍。"
       },
       {
         type: "paragraph",
-        content: "Most remarkably, player Bryn Kenney who represented AA POKER in the Triton Series 250K Invitation Event won again the champion title and returned to the top of the world rank of bonus. During the competition, he was powerful and confident, kept alert to opportunities and won the game in the end, and the entire global community of Texas hold'em poker cheered for him. This not only proved again AA POKER's capacity to provide top players with high-quality gaming experience and its enormous influence in the society of Texas hold'em poker."
+        content: "Most remarkably, player Bryn Kenney who represented AA POKER in the Triton Series 250K Invitation Event won again the champion title and returned to the top of the world rank of bonus. During the competition, he was powerful and confident, kept alert to opportunities and won the game in the end, and the entire global community of Texas hold'em poker cheered for him. This not only proved again AA POKER's capacity to provide top players with high-quality gaming experience and its enormous influence in the society of Texas hold'em poker.",
+        content_cn: "令人瞩目的是，代表AA POKER出战的牌手Bryn Kenney在TRITON SERIES 250K INVITATION EVENT再次摘下了赛事冠军的桂冠，重返世界奖金排行榜第一。在比赛中，他凭借其强势、自信的风格，紧盯机会并最终夺得胜利，并让全球所有德州扑克爱好者为他欢呼。这一壮举再次证明了AA POKER为全球顶尖选手提供的高品质游戏体验，以及其在德州扑克界的巨大影响力。",
+        content_tw: "令人矚目的是，代表AA POKER出戰的牌手Bryn Kenney在TRITON SERIES 250K INVITATION EVENT再次摘下了賽事冠軍的桂冠，重返世界獎金排行榜第一。在比賽中，他憑借其強勢、自信的風格，緊盯機會並最終奪得勝利，並讓全球所有德州撲克愛好者為他歡呼。這一壯舉再次證明了AA POKER為全球頂尖選手提供的高品質遊戲體驗，以及其在德州撲克界的巨大影響力。"
       },
       {
         type: "paragraph",
-        content: "Several media expressed their unreserved approval and expectation of AA POKER's potentials. They believe AA POKER on the strength of its innovative technologies and excellent services enjoys a gigantic potential of development in Texas hold'em industry. During the release, AA POKER exhibited its outstanding brand and operation technologies which successfully attracted the attention of the media."
+        content: "Several media expressed their unreserved approval and expectation of AA POKER's potentials. They believe AA POKER on the strength of its innovative technologies and excellent services enjoys a gigantic potential of development in Texas hold'em industry. During the release, AA POKER exhibited its outstanding brand and operation technologies which successfully attracted the attention of the media.",
+        content_cn: "多家媒体对AA POKER的潜力表达了极大的赞赏和期待。他们认为AA POKER以其创新的技术和卓越的服务，在德州扑克行业中具备巨大的发展潜力。在发布会上，AA POKER展示了其优异的品牌和运营技术，成功引起了媒体的高度关注。",
+        content_tw: "多家媒體對AA POKER的潛力表達了極大的讚賞和期待。他們認為AA POKER以其創新的技術和卓越的服務，在德州撲克行業中具備巨大的發展潛力。在發表會上，AA POKER展示了其優異的品牌和營運技術，成功引起了媒體的高度關注。"
       },
       {
         type: "paragraph",
-        content: "The ceremonious opening of AA POKER's first release conference in London started a new storm in the community of Texas hold'em poker. The AA POKER CEO said the success of the release conference is a major step in AA POKER's brand strategy. Aiming at a global top platform for Texas hold'em poker, they hold high the slogan of 'anyone could be a star' and will continue to provide first-class games and innovative technology, promote and lead the global market of Texas hold'em poker and afford players with more exciting, wonderful gaming experience."
+        content: "The ceremonious opening of AA POKER's first release conference in London started a new storm in the community of Texas hold'em poker. The AA POKER CEO said the success of the release conference is a major step in AA POKER's brand strategy. Aiming at a global top platform for Texas hold'em poker, they hold high the slogan of 'anyone could be a star' and will continue to provide first-class games and innovative technology, promote and lead the global market of Texas hold'em poker and afford players with more exciting, wonderful gaming experience.",
+        content_cn: "AA POKER在伦敦首场发布会的盛大开幕，掀起了德州扑克界一股新风暴。AA POKER首席执行官表示，此次发布会的成功是AA POKER品牌战略拓展的重要一步。剑指全球顶尖德州扑克平台，他们秉承着「ANYONE COULD BE A STAR」的口号，将继续提供一流的游戏体验和创新技术，不断推进和引领全球德州扑克市场的发展，为玩家提供更加刺激和精彩的游戏体验。",
+        content_tw: "AA POKER在倫敦首場發布會的盛大開幕，掀起了德州撲克界一股新風暴。AA POKER首席執行官表示，此次發布會的成功是AA POKER品牌戰略拓展的重要一步。劍指全球頂尖德州撲克平台，他們秉承著「ANYONE COULD BE A STAR」的口號，將繼續提供一流的遊戲體驗和創新技術，不斷推進和引領全球德州撲克市場的發展，為玩家提供更加刺激和精彩的遊戲體驗。"
       }
     ]
   },
@@ -2405,31 +2705,45 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "JUNGLEMAN--AAPOKER BRAND AMBASSADOR!"
+        content: "AA POKER BRAND AMBASSADOR SIGNING",
+        content_cn: "AA POKER代言人签约",
+        content_tw: "AA POKER發言人簽約"
       },
       {
         type: "paragraph",
-        content: "AAPoker is delighted to announce that one of America's well-known poker stars, Dan Cates (Jungleman), has joined us as our newest brand ambassador!"
+        content: "AAPoker is delighted to announce that one of America's well-known poker stars, Dan Cates (Jungleman), has joined us as our newest brand ambassador!",
+        content_cn: "AA POKER很高兴宣布来自美国知名扑克明星Dan「Jungleman」Cates正式加入AA POKER，成为其品牌代言人。",
+        content_tw: "AA POKER很高興宣布來自美國知名撲克明星Dan「Jungleman」Cates正式加入AA POKER，並成為其品牌代言人。"
       },
       {
         type: "paragraph",
-        content: "You may be surprised to learn that Dan Cates was born on November 14, 1989, which means he is only 33 years old this year. He is reportedly known as 'Jungleman' due to his thick hair and wild behavior. Others gave him the nickname 'Jungleman,' and he found it amusing. Therefore, he used it as his online ID."
+        content: "You may be surprised to learn that Dan Cates was born on November 14, 1989, which means he is only 33 years old this year. He is reportedly known as 'Jungleman' due to his thick hair and wild behavior. Others gave him the nickname 'Jungleman,' and he found it amusing. Therefore, he used it as his online ID.",
+        content_cn: "你很难想象，Dan 'Jungleman' Cates生于1989年11月14日，今年才33岁。他之所以被叫做「野人」，是因为他的线上ID叫「Jungleman12」，据说是因为他毛发浓密，行事狂野，所以别人给他取了这个绰号「Jungleman（野人）」，他自己觉得挺有趣，于是就注册成了线上ID。",
+        content_tw: "你很難想像，Dan 'Jungleman' Cates生於1989年11月14日，今年才33歲。他之所以被叫做「野人」，是因為他的線上ID叫「Jungleman12」，據說是因為他毛髮濃密，行事狂野，所以別人給他取了這個綽號「Jungleman（野人）」，他自己覺得挺有趣，於是就註冊成了線上ID。"
       },
       {
         type: "paragraph",
-        content: "Jungleman holds a prominent position in today's poker world and is considered to be one of the best heads-up No Limit Texas Hold 'em players in the world. Jungleman also has made a splash at poker tournaments with his powerful strength. His online cash game earnings at Full Tilt Poker and PokerStars are over US$11 million. His total live tournament winnings exceed US$14 million."
+        content: "Jungleman holds a prominent position in today's poker world and is considered to be one of the best heads-up No Limit Texas Hold 'em players in the world. Jungleman also has made a splash at poker tournaments with his powerful strength. His online cash game earnings at Full Tilt Poker and PokerStars are over US$11 million. His total live tournament winnings exceed US$14 million.",
+        content_cn: "野人在当今扑克圈是拥有着绝对一席之地的男人，是世界上最好的单挑玩家之一。他的线上扑克收入超过1100万刀，现场扑克收入超过1400万刀，综合实力堪称「恐怖如斯」！",
+        content_tw: "野人在當今撲克圈是擁有著絕對一席之地的男人，是世界上最好的單挑玩家之一。他的線上撲克收入超過1100萬刀，現場撲克收入超過1400萬刀，綜合實力堪稱「恐怖如斯」！"
       },
       {
         type: "paragraph",
-        content: "Jungleman's recent appearance was at the Triton Poker Series (London) in August 2023. As the ambassador for AApoker, he made it to the final table of the $125K Main Event and ultimately secured the third-place position, earning $1.94 million. Jungleman also attended the Release Conference held by AApoker in London. Surprisingly, after shaving off his beard, he appeared much fresher."
+        content: "Jungleman's recent appearance was at the Triton Poker Series (London) in August 2023. As the ambassador for AApoker, he made it to the final table of the $125K Main Event and ultimately secured the third-place position, earning $1.94 million. Jungleman also attended the Release Conference held by AApoker in London. Surprisingly, after shaving off his beard, he appeared much fresher.",
+        content_cn: "野人最近的亮相是在2023年8月的Triton伦敦站，身为AA POKER形象大使的他一路杀进$125K主赛事的决赛桌，并最终夺得第三名，收获奖金194万刀。在比赛之余，野人还出席了AA POKER在伦敦举办的现场发布会。还别说，剃掉胡须的他竟然显得清爽了许多。",
+        content_tw: "野人最近的亮相是在2023年8月的Triton倫敦站，身為AA POKER形象大使的他一路殺進$125K主賽事的決賽桌，並最終奪得第三名，收穫獎金194萬刀。在比賽之餘，野人也出席了AA POKER在倫敦舉辦的現場發表會。別說，剃掉鬍鬚的他竟然顯得清爽了許多。"
       },
       {
         type: "paragraph",
-        content: "Jungleman is described as a legend of online poker. He expressed his great talent in poker skills. But it is much more than that. He wasn't nicknamed Jungleman for nothing, but was also described as a genius in the poker world."
+        content: "If you think Jungleman is just a top professional player, then you may be mistaken. He wasn't nicknamed Jungleman for nothing, but was also described as a genius in the poker world.",
+        content_cn: "如果你认为野人只是一位顶尖的职业牌手，那你可就看走眼了，野人的绰号不是白来的。他还是一位顶尖的「异类天才」。但远远不止于此。",
+        content_tw: "如果你認為野人只是一位頂尖的職業牌手，那你可就看走眼了，野人的綽號不是白來的。他還是一位頂尖的「異類天才」。但遠遠不止於此。"
       },
       {
         type: "paragraph",
-        content: "Jungleman has won two World Series of Poker bracelets that hold exceptional value. As he achieved victories in the $50,000 buy-in Poker Players Championship in 2021 and 2022 respectively, creating a miraculous feat in WSOP history."
+        content: "Jungleman has won two World Series of Poker bracelets that hold exceptional value. As he achieved victories in the $50,000 buy-in Poker Players Championship in 2021 and 2022 respectively, creating a miraculous feat in WSOP history.",
+        content_cn: "目前野人夺得的WSOP金手链不算多，只有2条，但却是含金量极高的两条。他背靠背赢得了2021年和2022年5万刀买入的扑克玩家锦标赛的冠军，创造了WSOP历史上的神迹。",
+        content_tw: "目前野人奪得的WSOP金手鏈不算多，只有2條，但卻是含金量極高的兩條。他背靠背贏得了2021年和2022年5萬刀買入的撲克玩家錦標賽的冠軍，創造了WSOP歷史上的神蹟。"
       },
       {
         type: "image",
@@ -2438,11 +2752,15 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "You should be aware that the Poker Player Championships feature an elite group of players competing in nine different poker games, showcasing Jungleman's overall genius and strength."
+        content: "You should be aware that the Poker Player Championships feature an elite group of players competing in nine different poker games, showcasing Jungleman's overall genius and strength.",
+        content_cn: "要知道，参加扑克玩家锦标赛的几乎全部是精英玩家，而且这个比赛涵盖9种不同的扑克游戏，这也充分体现了野人彪悍的综合实力。",
+        content_tw: "要知道，參加撲克玩家錦標賽的幾乎全部是精英玩家，而且這個比賽涵蓋9種不同的撲克遊戲，這也充分體現了野人彪悍的綜合實力。"
       },
       {
         type: "paragraph",
-        content: "Stay tuned to witness Jungleman information at AApoker! Download AApoker!"
+        content: "Stay tuned to witness Jungleman information at AApoker! Download AApoker!",
+        content_cn: "敬请期待Jungleman的更多赛事精彩信息，快来加入AA POKER。",
+        content_tw: "敬請期待更多Jungleman的賽事精彩訊息，快來加入AA POKER。"
       }
     ]
   },
@@ -2451,11 +2769,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "TRITON POKER SERIES LONDON 2023 - EVENT #11 $125K NLH MAIN EVENT - FINAL TABLE"
+        content: "TRITON POKER SERIES LONDON 2023 - EVENT #11 $125K NLH MAIN EVENT - FINAL TABLE",
+        content_cn: "传奇扑克系列赛伦敨2023 - 赛事#11 $125K无限注主赛事 - 决赛桌",
+        content_tw: "傳奇撲克系列賽倒敨2023 - 賽事#11 $125K無限注主賽事 - 決賽桌"
       },
       {
         type: "paragraph",
-        content: "Total prize pool: $18,875,000"
+        content: "Total prize pool: $18,875,000",
+        content_cn: "总奖池：$18,875,000",
+        content_tw: "總獎池：$18,875,000"
       },
       {
         type: "paragraph",
@@ -2485,11 +2807,15 @@ const articleContent: { [key: string]: ArticleContent } = {
     sections: [
       {
         type: "heading",
-        content: "TRITON POKER SERIES LONDON 2023 - EVENT #9 $250K NLH LUXON INVITATIONAL - FINAL TABLE"
+        content: "TRITON POKER SERIES LONDON 2023 - EVENT #9 $250K NLH LUXON INVITATIONAL - FINAL TABLE",
+        content_cn: "传奇扑克系列赛伦敨2023 - 赛事#9 $250K无限注Luxon邀请赛 - 决赛桌",
+        content_tw: "傳奇撲克系列賽倒敨2023 - 賽事#9 $250K無限注Luxon邀請賽 - 決賽桌"
       },
       {
         type: "paragraph",
-        content: "Date : August 3-5, 2023"
+        content: "Date : August 3-5, 2023",
+        content_cn: "日期：2023年8月3-5日",
+        content_tw: "日期：2023年8月3-5日"
       },
       {
         type: "paragraph",
@@ -2519,64 +2845,90 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "why-bryn-kenney-most-valuable-man-poker": {
-    heroImage: "/image/news/details-news/new36/bryn-kenney.png",
+    heroImage: "/image/news/details-news/new36/new15-CV6z6WoF.png",
     sections: [
       {
         type: "heading",
-        content: "WHY IS BRYN KENNEY THE MOST VALUABLE MAN IN POKER?"
+        content: "WHY IS 36-YEAR-OLD BRYN KENNEY ONCE AGAIN THE MOST VALUABLE MAN IN POKER?",
+        content_cn: "为什么36岁的BRYN KENNEY再一次成为扑克圈最能赚钱的男人？",
+        content_tw: "為什麼36歲的BRYN KENNEY再一次成為撲克圈最能賺錢的男人？"
       },
       {
         type: "paragraph",
-        content: "Bryn Kenney, 36, is truly experiencing a stroke of good luck and double happiness this year. After becoming a sponsored player of AA POKER, he won the $250k Triton Poker London Luxon Invitational for $6.8 million.Until now, his career earnings reached over $65 million, overtaking Justin Bonomo on the All-Time Money List. After ascending to the top of the all-time money list at the age of 32, Bryn Kenney has predominantly maintained his position but sometimes stayed in second place for a short time.It is nearly impossible to articulate in any language the awe-inspiring performances on the tournament and money-making prowess of Bryn Kenney, who stands as the 'godlike figure' in this realm, 'a genius', and undoubtedly a future inductee into the 'Poker Hall of Fame'. How does he achieve such remarkable feats? Bryn Kenney (born November 1, 1986) is an American professional poker player from Long Island, New York. He is 36 years old, but some 80s or 90s players were surprised as he is such a young age.Kenney expressed remarkable memory skills from a very young age, possessing the gift of eidetic memory. As an infant, his mother Carol would show him baseball cards, and even before he could speak, he had memorized the names of at least 60 players.It is almost certain that this innate talent has helped Kenney become a professional poker. And his unique qualities have garnered unwavering support from his mother Carol, who always stands by him, allowing him the freedom to make his own choices and also becoming one of his fan. Kenney played SNS games with friends at first in high school, and his poker career also began. At the age of 17, unable to create his account due to being underage, his mother created an online account in her name for him. At 18, he officially opened his account, which he continues to use.From that on, poker completely consumed his life. A few weeks later, he dropped out of college to pursue a professional poker career, even though he had yet to prove himself as a valuable player. Fortunately, with unconditional support from his mother, his career quickly succeeded."
+        content: "Bryn Kenney, 36, is truly experiencing a stroke of good luck and double happiness this year. After becoming a sponsored player of AA POKER, he won the $250k Triton Poker London Luxon Invitational for $6.8 million.Until now, his career earnings reached over $65 million, overtaking Justin Bonomo on the All-Time Money List. After ascending to the top of the all-time money list at the age of 32, Bryn Kenney has predominantly maintained his position but sometimes stayed in second place for a short time.It is nearly impossible to articulate in any language the awe-inspiring performances on the tournament and money-making prowess of Bryn Kenney, who stands as the 'godlike figure' in this realm, 'a genius', and undoubtedly a future inductee into the 'Poker Hall of Fame'. How does he achieve such remarkable feats? Bryn Kenney (born November 1, 1986) is an American professional poker player from Long Island, New York. He is 36 years old, but some 80s or 90s players were surprised as he is such a young age.Kenney expressed remarkable memory skills from a very young age, possessing the gift of eidetic memory. As an infant, his mother Carol would show him baseball cards, and even before he could speak, he had memorized the names of at least 60 players.It is almost certain that this innate talent has helped Kenney become a professional poker. And his unique qualities have garnered unwavering support from his mother Carol, who always stands by him, allowing him the freedom to make his own choices and also becoming one of his fan. Kenney played SNS games with friends at first in high school, and his poker career also began. At the age of 17, unable to create his account due to being underage, his mother created an online account in her name for him. At 18, he officially opened his account, which he continues to use.From that on, poker completely consumed his life. A few weeks later, he dropped out of college to pursue a professional poker career, even though he hadn't graduated from college. His mother still supported him.",
+        content_cn: "今年对于36岁的Bryn Kenney来说可谓双喜临门。在成为AA POKER签约牌手后，他在Triton伦敦站25万美金买入的Luxon邀请赛中斩获冠军，赢得680万美金奖金。至此，他的职业生涯奖金已超过6500万美金，再次超越Justin Bonomo登顶历史奖金榜第一。自从32岁首次登顶以来，Bryn Kenney基本保持着第一的位置，只是偶尔短暂地屈居第二。用任何语言都难以形容Bryn Kenney在锦标赛中令人惊叹的表现和赚钱能力，他被誉为这个领域的「神一般的存在」、「天才」，毫无疑问未来会入选「扑克名人堂」。他是如何取得如此非凡成就的呢？Bryn Kenney（1986年11月1日出生）是一位来自美国纽约长岛的职业扑克玩家。他今年36岁，但一些80后或90后的玩家可能会惊讶于他如此年轻。Kenney从小就展现出非凡的记忆力，拥有过目不忘的天赋。还在婴儿时期，他的母亲Carol就给他看棒球卡，在他会说话之前，他就已经记住了至少60名球员的名字。可以肯定的是，这种与生俱来的天赋帮助Kenney成为了职业扑克玩家。他的独特才能得到了母亲Carol的坚定支持，她始终站在他身边，让他自由选择，同时也成为了他的粉丝之一。Kenney高中时期开始和朋友玩SNG游戏，他的扑克生涯也由此开始。17岁时，由于未成年无法自己创建账号，他的母亲以自己的名义为他创建了一个网络账号。18岁时，他正式开设了自己的账号，并一直沿用至今。从那时起，扑克完全占据了他的生活。几周后，尽管还没有大学毕业，他还是退学了，开始追求职业扑克生涯。他的母亲依然支持他。",
+        content_tw: "今年對於36歲的Bryn Kenney來說可謂雙喜臨門。在成為AA POKER簽約牌手後，他在Triton倫敦站25萬美金買入的Luxon邀請賽中斬獲冠軍，贏得680萬美金獎金。至此，他的職業生涯獎金已超過6500萬美金，再次超越Justin Bonomo登頂歷史獎金榜第一。自從32歲首次登頂以來，Bryn Kenney基本保持著第一的位置，只是偶爾短暫地屈居第二。用任何語言都難以形容Bryn Kenney在錦標賽中令人驚嘆的表現和賺錢能力，他被譽為這個領域的「神一般的存在」、「天才」，毫無疑問未來會入選「撲克名人堂」。他是如何取得如此非凡成就的呢？Bryn Kenney（1986年11月1日出生）是一位來自美國紐約長島的職業撲克玩家。他今年36歲，但一些80後或90後的玩家可能會驚訝於他如此年輕。Kenney從小就展現出非凡的記憶力，擁有過目不忘的天賦。還在嬰兒時期，他的母親Carol就給他看棒球卡，在他會說話之前，他就已經記住了至少60名球員的名字。可以肯定的是，這種與生俱來的天賦幫助Kenney成為了職業撲克玩家。他的獨特才能得到了母親Carol的堅定支持，她始終站在他身邊，讓他自由選擇，同時也成為了他的粉絲之一。Kenney高中時期開始和朋友玩SNG遊戲，他的撲克生涯也由此開始。17歲時，由於未成年無法自己創建帳號，他的母親以自己的名義為他創建了一個網路帳號。18歲時，他正式開設了自己的帳號，並一直沿用至今。從那時起，撲克完全佔據了他的生活。幾週後，儘管還沒有大學畢業，他還是退學了，開始追求職業撲克生涯。他的母親依然支持他。"
       },
       {
         type: "paragraph",
-        content: "Securing his first gold bracelet is a turning point in Bryn Kenney's career, signaling the gears of destiny to set in motion. In 2014, at the age of 27, Bryn Kenney was already very famous both online and offline. This year was also very important for Kenney, as he not only participated in the WSOP but also gained his first gold bracelet, leaving an indelible mark on the world's largest poker tournament. The 2014 WSOP Event #63 was a $1,500 six-handed game, including 10 different poker games: Razz, 7-Triple-Draw Lowball, Omaha Hi-Lo, Pot-Limit Omaha, 7-Card Stud, 7-Card Stud High-Low Split, Pot-Limit Omaha, Omaha High-Low Split, Badugi, Limit Hold'ern, and No-Limit Hold'em. It's difficult for most players to understand the rules of these games, but for Kenney is very easy, which will also be thanks to his good memory. Kenney dominated Event #63 from the very beginning, bagging up the chip lead on Day 1. From there, Kenney continued to keep his seat at the top of the chip counts, remaining in the top ten chip counts throughout Day 2 and ultimately bagging second-place chips to end the day. With just four players left, Kenney led to a substantial chip lead early and rode that all of the way to his first championship bracelet.This victory earned Kenney his first career gold bracelet and a prize of $153,220. At that time, his total career earnings were $3.6 million, a far cry from his current staggering total of $65 million.However, in the remaining months of 2014, Kenney continued to participate in live poker tournaments, but his focus increasingly shifted toward high-roller and super high-roller events."
+        content: "Securing his first gold bracelet is a turning point in Bryn Kenney's career, signaling the gears of destiny to set in motion. In 2014, at the age of 27, Bryn Kenney was already very famous both online and offline. This year was also very important for Kenney, as he not only participated in the WSOP but also gained his first gold bracelet, leaving an indelible mark on the world's largest poker tournament. The 2014 WSOP Event #63 was a $1,500 six-handed game, including 10 different poker games: Razz, 7-Triple-Draw Lowball, Omaha Hi-Lo, Pot-Limit Omaha, 7-Card Stud, 7-Card Stud High-Low Split, Pot-Limit Omaha, Omaha High-Low Split, Badugi, Limit Hold'ern, and No-Limit Hold'em. It's difficult for most players to understand the rules of these games, but for Kenney is very easy, which will also be thanks to his good memory. Kenney dominated Event #63 from the very beginning, bagging up the chip lead on Day 1. From there, Kenney continued to keep his seat at the top of the chip counts, remaining in the top ten chip counts throughout Day 2 and ultimately bagging second-place chips to end the day. With just four players left, Kenney led to a substantial chip lead early and rode that all of the way to his first championship bracelet.This victory earned Kenney his first career gold bracelet and a prize of $153,220. At that time, his total career earnings were $3.6 million, a far cry from his current staggering total of $65 million.However, in the remaining months of 2014, Kenney continued to participate in live poker tournaments, but his focus increasingly shifted toward high-roller and super high-roller events.",
+        content_cn: "2014年，27岁的Bryn Kenney已经在在线和离线扑克界小有名气。这一年对于Kenney来说也非常重要，因为他不仅参加了WSOP，还获得了他的第一枚金手链，在世界上最大的扑克锦标赛上留下了不可磨灭的印记。2014年WSOP赛事#63是一场1500美元的六人游戏，包括10种不同的扑克游戏：Razz、7-Triple-Draw Lowball、Omaha Hi-Lo、Pot-Limit Omaha、7-Card Stud、7-Card Stud High-Low Split、Pot-Limit Omaha、Omaha High-Low Split、Badugi、Limit Hold'em和No-Limit Hold'em。大多数玩家很难理解这些游戏的规则，但对于Kenney来说却很容易，这也要归功于他的良好记忆力。Kenney从一开始就主导了赛事#63，在第一天就获得了筹码领先。在那里，Kenney继续保持着他的领先地位，在第二天的比赛中始终保持在前十名的筹码领先，最后获得了第二名的筹码。只剩下四名玩家时，Kenney在早期就获得了大量的筹码领先，并一直保持到他获得第一枚冠军手链。这场胜利为Kenney赢得了他的第一枚职业金手链和15.32万美元的奖金。当时，他的职业生涯奖金总额为360万美元，远远低于他现在令人惊叹的6500万美元的奖金总额。然而，在2014年剩余的几个月里，Kenney继续参加现场扑克锦标赛，但他的重点逐渐转向了高额和超高额锦标赛。",
+        content_tw: "2014年，27歲的Bryn Kenney已經在線上和離線撲克界小有名氣。这一年對於Kenney來說也非常重要，因為他不僅參加了WSOP，還獲得了他的第一枚金手鏈，在世界上最大的撲克錦標賽上留下了不可磨滅的印記。2014年WSOP賽事#63是一場1500美元的六人遊戲，包括10種不同的撲克遊戲：Razz、7-Triple-Draw Lowball、Omaha Hi-Lo、Pot-Limit Omaha、7-Card Stud、7-Card Stud High-Low Split、Pot-Limit Omaha、Omaha High-Low Split、Badugi、Limit Hold'em和No-Limit Hold'em。大多數玩家很難理解這些遊戲的規則，但對於Kenney來說卻很容易，這也要歸功於他的良好記憶力。Kenney從一開始就主導了賽事#63，在第一天就獲得了籌碼領先。在那裡，Kenney繼續保持著他的領先地位，在第二天的比賽中始終保持在前十名的籌碼領先，最後獲得了第二名的籌碼。只剩下四名玩家時，Kenney在早期就獲得了大量的籌碼領先，並一直保持到他獲得第一枚冠軍手鏈。这場勝利為Kenney贏得了他的第一枚職業金手鏈和15.32萬美元的獎金。當時，他的職業生涯獎金總額為360萬美元，遠遠低於他現在令人驚嘆的6500萬美元的獎金總額。然而，在2014年剩餘的幾個月里，Kenney繼續參加現場撲克錦標賽，但他的重點逐漸轉向了高額和超高額錦標賽。"
       },
       {
         type: "paragraph",
-        content: "2019: The first time to claim the top spot."
+        content: "2019: The first time to claim the top spot.",
+        content_cn: "2019 Kenney年，首次登顶世界第一。",
+        content_tw: "2019 Kenney年，首次登頂世界第一。"
       },
       {
         type: "paragraph",
-        content: "In a 2018 interview, Bryn Kenney explicitly stated that becoming the highest-earning poker player was his long-term goal, one he wouldn't give up until achieved, predicting it within the next two years. The Triton Million event held in London in August 2019 featured the highest buy-in ever, at £1.05 million. Bryn Kenney reached the final heads-up against Chinese player Zang, and they made a deal. Zang won the title of Triton Million winner. However, due to Kenney's chip lead, he received the lion's share of the prize, £16,890,509 ($20,563,324), an unprecedented and possibly unparalleled sum.After this tournament, Bryn Kenney's career earnings reached $55,505,634, which is the first person to overtake Justin Bonomo to claim the top spot on the Hendon Mob all-time money list."
+        content: "In a 2018 interview, Bryn Kenney explicitly stated that becoming the highest-earning poker player was his long-term goal, one he wouldn't give up until achieved, predicting it within the next two years. The Triton Million event held in London in August 2019 featured the highest buy-in ever, at £1.05 million. Bryn Kenney reached the final heads-up against Chinese player Zang, and they made a deal. Zang won the title of Triton Million winner. However, due to Kenney's chip lead, he received the lion's share of the prize, £16,890,509 ($20,563,324), an unprecedented and possibly unparalleled sum.After this tournament, Bryn Kenney's career earnings reached $55,505,634, which is the first person to overtake Justin Bonomo to claim the top spot on the Hendon Mob all-time money list.",
+        content_cn: "在2018年的一次采访中，Bryn Kenney明确表示成为有史以来最赚钱的扑克玩家是他的长期目标，在达到这个目标之前绝不放弃，并且预测就在未来两年内实现。2019年8月在英国伦敦举办的Triton百万慈善邀请赛是有史以来买入最高的现场赛事，参赛费用高达105万英镑。Bryn Kenney与中国玩家臧书奴打到了最后，两人达成奖金协议，最后臧奴夺得冠军。由于Bryn Kenney的筹码是臧书奴的四倍，他分得了最大的奖金份额£16,890,509 ($20,563,324)，这是一笔前无古人，也非常可能后无来者的巨额奖金。经此一役，Bryn Kenney的职业生涯收入达到了$55,505,634，第一次超越Justin Bonomo成为历史奖金榜第一人。",
+        content_tw: "在2018年的一次採訪中，Bryn Kenney明確表示成為有史以來最賺錢的撲克玩家是他的長期目標，在達到這個目標之前絕不放棄，並且預測就在未來兩年內實現。2019年8月在英國倫敦舉辦的Triton百萬慈善邀請賽是有史以來買入最高的現場賽事，參賽費用高達105萬英鎊。Bryn Kenney與中國玩家臧書奴打到了最後，兩人達成獎金協議，最後臧奴奪得冠軍。由於Bryn Kenney的籌碼是臧書奴的四倍，他分得了最大的獎金份額£16,890,509 ($20,563,324)，這是一筆前無古人，也非常可能後無來者的巨額獎金。經此一役，Bryn Kenney的職業生涯收入達到了$55,505,634，第一次超越Justin Bonomo成為歷史獎金榜第一人。"
       },
       {
         type: "paragraph",
-        content: "2023: Kenney reached the mountaintop once again."
+        content: "2023: Kenney reached the mountaintop once again.",
+        content_cn: "2023年，Kenney再次登顶世界第一。",
+        content_tw: "2023年，Kenney再次登頂世界第一。"
       },
       {
         type: "paragraph",
-        content: "London seems to be a lucky place for Bryn Kenney. After participating in the 2023 WSOP this summer, Kenney appeared at the Triton London event as an AA POKER ambassador. In several games, he won in Event #9, a £250k buy-in Luxon Invitational. This win marked his third Triton championship. The heads-up battle began between Kenney and Talal Shakerchi, the winner of Triton Poker Vietnam, all of the chips got in the middle with Shakerchi holding ace-king and Kenney holding eight-nine. An eight-high flop gave Kenney a big lead and Shakerchi couldn't improve as he went out in second place.With this victory, Kenney had earned a prize of 6.86 million, bringing his total career earnings to $65.03 million, and once again has shot back up to the number one spot on the all-time money list, ahead of Justin Bonomo."
+        content: "London seems to be a lucky place for Bryn Kenney. After participating in the 2023 WSOP this summer, Kenney appeared at the Triton London event as an AA POKER ambassador. In several games, he won in Event #9, a £250k buy-in Luxon Invitational. This win marked his third Triton championship. The heads-up battle began between Kenney and Talal Shakerchi, the winner of Triton Poker Vietnam, all of the chips got in the middle with Shakerchi holding ace-king and Kenney holding eight-nine. An eight-high flop gave Kenney a big lead and Shakerchi couldn't improve as he went out in second place.With this victory, Kenney had earned a prize of 6.86 million, bringing his total career earnings to $65.03 million, and once again has shot back up to the number one spot on the all-time money list, ahead of Justin Bonomo.",
+        content_cn: "伦敦似乎是Bryn Kenney的福地。今年夏天参加完2023年WSOP之后，Kenney便以AA扑克大使的身份在伦敦亮相Triton伦敦站赛事。在多场比赛中，他在买入高达£250k的Event #9 Luxon邀请赛中夺得冠军。这是他的第三个Triton冠军头衔。最终他与Triton越南站冠军Talal Shakerchi进行了一场激动人心的单挑决战，Shakerchi手持AK与Kenney的89全押入池。翻牌圈发出一张8给了Kenney巨大的领先优势，Shakerchi未能翻盘，遗憾获得亚军。凭借这场胜利，Kenney获得了686万英镑的奖金，使他的职业生涯总奖金达到6503万美金，再次超越Justin Bonomo重返历史奖金榜第一的宝座。",
+        content_tw: "倫敦似乎是Bryn Kenney的福地。今年夏天參加完2023年WSOP之後，Kenney便以AA撲克大使的身份在倫敦亮相Triton倫敦站賽事。在多場比賽中，他在買入高達£250k的Event #9 Luxon邀請賽中奪得冠軍。這是他的第三個Triton冠軍頭銜。最終他與Triton越南站冠軍Talal Shakerchi進行了一場激動人心的單挑決戰，Shakerchi手持AK與Kenney的89全押入池。翻牌圈發出一張8給了Kenney巨大的領先優勢，Shakerchi未能翻盤，遺憾獲得亞軍。憑藉這場勝利，Kenney獲得了686萬英鎊的獎金，使他的職業生涯總獎金達到6503萬美金，再次超越Justin Bonomo重返歷史獎金榜第一的寶座。"
       }
     ]
   },
   "aa-poker-player-story-chris-moneymaker": {
-    heroImage: "/image/news/details-news/new37/chris-moneymaker.png",
+    heroImage: "/image/news/details-news/new37/new16-BeFig88k.png",
     sections: [
       {
         type: "heading",
-        content: "AA POKER PLAYER STORY—CHRIS MONEYMAKER"
+        content: "AA POKER PLAYER STORY—CHRIS MONEYMAKER",
+        content_cn: "AA POKER名人故事—Chris Moneymaker",
+        content_tw: "AA POKER名人故事—Chris Moneymaker"
       },
       {
         type: "paragraph",
-        content: "In the 2023 Triton London event, Chris Moneymaker, the AA POKER ambassador, faced a crucial moment in the £250,000 buy-in Luxon Invitational. Moneymaker opened from under the gun with pocket jacks and his opponent Punsri moved in from the big blind after action folded all the way round. Moneymaker saw his opponent table KQ. Unfortunately, it was a fair fight until the dealer put a king on the flop and Moneymaker could not catch a two-outer to survive. At last, he got the fifth prize and $2.03 million.This fifth-place finish held extraordinary significance for Moneymaker. Firstly, it marked the second-highest prize of his professional career, second only to the $2.5 million he earned as the 2003 WSOP Main Event title. Secondly, it represented Moneymaker's debut in a high-stakes event with such a substantial buy-in, and his impressive performance was undoubtedly aided by the support of AA POKER, congratulating him on becoming their ambassador. He is the true architect of history, having changed and led it! He has genuinely embodied AA POKER's slogan: 'Anyone could be a star!'"
+        content: "In the 2023 Triton London event, Chris Moneymaker, the AA POKER ambassador, faced a crucial moment in the £250,000 buy-in Luxon Invitational. Moneymaker opened from under the gun with pocket jacks and his opponent Punsri moved in from the big blind after action folded all the way round. Moneymaker saw his opponent table KQ. Unfortunately, it was a fair fight until the dealer put a king on the flop and Moneymaker could not catch a two-outer to survive. At last, he got the fifth prize and $2.03 million.This fifth-place finish held extraordinary significance for Moneymaker. Firstly, it marked the second-highest prize of his professional career, second only to the $2.5 million he earned as the 2003 WSOP Main Event title. Secondly, it represented Moneymaker's debut in a high-stakes event with such a substantial buy-in, and his impressive performance was undoubtedly aided by the support of AA POKER, congratulating him on becoming their ambassador. He is the true architect of history, having changed and led it! He has genuinely embodied AA POKER's slogan: 'Anyone could be a star!'",
+        content_cn: "在2023年Triton伦敦站赛事中，AA POKER代言人Chris Moneymaker在买入£250,000的Luxon邀请赛中面临关键时刻。Moneymaker在枪口位用口袋J开池加注，对手Punsri在大盲位全下，其他人弃牌后Moneymaker跟注。Moneymaker看到对手亮出KQ。不幸的是，翻牌出现一张K，Moneymaker未能击中两张外卡续命。最终，他获得第五名和203万美金奖金。这个第五名对Moneymaker具有非凡意义。首先，这是他职业生涯第二高的奖金，仅次于2003年WSOP主赛事冠军的250万美金。其次，这是Moneymaker首次参加如此高买入的豪客赛，他的出色表现无疑得益于AA POKER的支持，恭喜他成为AA POKER代言人。他是真正的历史缔造者，改变并引领了历史！他真正诠释了AA POKER的口号：「Anyone could be a star！」",
+        content_tw: "在2023年Triton倫敦站賽事中，AA POKER代言人Chris Moneymaker在買入£250,000的Luxon邀請賽中面臨關鍵時刻。Moneymaker在槍口位用口袋J開池加注，對手Punsri在大盲位全下，其他人棄牌後Moneymaker跟注。Moneymaker看到對手亮出KQ。不幸的是，翻牌出現一張K，Moneymaker未能擊中兩張外卡續命。最終，他獲得第五名和203萬美金獎金。這個第五名對Moneymaker具有非凡意義。首先，這是他職業生涯第二高的獎金，僅次於2003年WSOP主賽事冠軍的250萬美金。其次，這是Moneymaker首次參加如此高買入的豪客賽，他的出色表現無疑得益於AA POKER的支持，恭喜他成為AA POKER代言人。他是真正的歷史締造者，改變並引領了歷史！他真正詮釋了AA POKER的口號：「Anyone could be a star！」"
       },
       {
         type: "heading",
-        content: "Won the WSOP Main Event"
+        content: "Won the WSOP Main Event",
+        content_cn: "赢得WSOP主赛事冠军",
+        content_tw: "贏得WSOP主賽事冠軍"
       },
       {
         type: "paragraph",
-        content: "Born on November 21, 1975, Chris Moneymaker was 27 years old in 2003. At that time, he was an unknown accountant with an annual income of $40,000. His poker journey began with winning an $86 satellite tournament at the PokerStars online poker card room that awarded him a seat in the Main Event of the 2003 World Series of Poker. Advancing to the final four, Moneymaker contemplated intentionally losing the tournament. Because the top three could receive WSOP Main Event seats, while the fourth-place earned $8,000 in cash. At that time, he was fortunate to receive a call from a friend who encouraged him to seize the rare opportunity to play in the WSOP Main Event. His friend offered to contribute $5,000, covering half of Moneymaker's buy-in. But unfortunately, the promise wasn't fulfilled. Moneymaker felt regretful and annoyed, but at last Moneymaker's father and his other friend each contributed $2,000, covering 20% of his buy-ins and persuading him to proceed. So Moneymaker went to Las Vegas to participate in his first live tournament and won the championship. On Day 1, he ranked 11th. On Day 2, he ranked 26th (with 111 players remaining). On Day 3, he ranked 6th place (with 45 players remaining). It was on this day that he began to be captured attention in public after defeating Johnny Chan, a momentous achievement considering Chan's seven gold bracelets, two of which were WSOP Main Event titles. Moneymaker's mindset shifted as he progressed, firstly he just hoped for a modest prize, but later he realized he had a chance to earn much more. On Day4, Moneymaker dispatched the great Phil Ivey in a rollercoaster of a hand, where at one point Moneymaker looked certain to win, then lose, before yet another ace got him out of trouble, and sent Ivey packing. On Day 5, the FT between Moneymaker and Sam Farha who had already claimed a gold bracelet in $2,500 PLO lasted over 11 hours. When it was Moneymaker against Farha to decide the title, a monumentally brave bluff saw Moneymaker go all in, meaning he was essentially willing to bet his tournament life on nothing more than the high card of a king. Farha didn't just have the upper hand in every sense – a pair of nines – but knew it. The issue was that if his read of the situation was incorrect, Farha would have been eliminated and thus decided to fold. And so to that final hand. Moneymaker's five of diamonds and four of clubs were inferior compared to Farha's jack of hearts and 10 of diamonds, but another miracle took place when the flop of three community cards was revealed by the dealer. Not only did Moneymaker match his own cards with a five of spades and four of clubs to give him two pair, but Farha actually had top pair with the jack on the board, which made it appear he was in a better position. This time, Farha would go all in, which was an easy call for Moneymaker. The turn card produced an eight of diamonds, and the fifth and final river card was a five of hearts, to secure victory and give Moneymaker a full house in the process. That night, Moneymaker invited friends, poker players, and anyone willing to join him to celebrate his victory. The next day, he flew back home and hosted a party at the restaurant where he worked. In 2005, Moneymaker published his autobiography, continuing to participate in WSOP and EPT annually. He also enjoyed playing low-stakes poker games and supporting novice players."
+        content: "Born on November 21, 1975, Chris Moneymaker was 27 years old in 2003. At that time, he was an unknown accountant with an annual income of $40,000. His poker journey began with winning an $86 satellite tournament at the PokerStars online poker card room that awarded him a seat in the Main Event of the 2003 World Series of Poker. Advancing to the final four, Moneymaker contemplated intentionally losing the tournament. Because the top three could receive WSOP Main Event seats, while the fourth-place earned $8,000 in cash. At that time, he was fortunate to receive a call from a friend who encouraged him to seize the rare opportunity to play in the WSOP Main Event. His friend offered to contribute $5,000, covering half of Moneymaker's buy-in. But unfortunately, the promise wasn't fulfilled. Moneymaker felt regretful and annoyed, but at last Moneymaker's father and his other friend each contributed $2,000, covering 20% of his buy-ins and persuading him to proceed. So Moneymaker went to Las Vegas to participate in his first live tournament and won the championship. On Day 1, he ranked 11th. On Day 2, he ranked 26th (with 111 players remaining). On Day 3, he ranked 6th place (with 45 players remaining). It was on this day that he began to be captured attention in public after defeating Johnny Chan, a momentous achievement considering Chan's seven gold bracelets, two of which were WSOP Main Event titles. Moneymaker's mindset shifted as he progressed, firstly he just hoped for a modest prize, but later he realized he had a chance to earn much more. On Day4, Moneymaker dispatched the great Phil Ivey in a rollercoaster of a hand, where at one point Moneymaker looked certain to win, then lose, before yet another ace got him out of trouble, and sent Ivey packing. On Day 5, the FT between Moneymaker and Sam Farha who had already claimed a gold bracelet in $2,500 PLO lasted over 11 hours. When it was Moneymaker against Farha to decide the title, a monumentally brave bluff when Farha had him crushed has since become one of the most famous and referenced plays in the history of poker. That bluff set up the final hand beautifully, when Moneymaker, on the button with 5-4 of spades, raised to $100,000 pre-flop. Farha called with Q-9 and flopped top pair. With the Js 5s 4c on the board, Moneymaker and his two pair were a big favourite against top pair. By the turn and the 8h, Farha had no chance to win, and Moneymaker merely had to avoid the queen on the river. When the 5h landed, Moneymaker leapt out of his seat in celebration, a winner in his very first live tournament.",
+        content_cn: "Chris Moneymaker于1975年11月21日出生，2003年时27岁。当时他是一名默默无闻的会计师，年收入仅4万美金。他的扑克之旅始于在PokerStars线上扑克室赢得一场86美金的卫星赛，获得了2003年世界扑克系列赛主赛事的参赛席位。晋级到四强后，Moneymaker曾考虑故意输掉比赛。因为前三名可以获得WSOP主赛事席位，而第四名只能获得8000美金现金。那时，他幸运地接到一位朋友的电话，鼓励他抓住这个难得的机会参加WSOP主赛事。他的朋友提出出资5000美金，支付Moneymaker一半的买入费用。但不幸的是，这个承诺没有兑现。Moneymaker感到遗憾和恼火，但最后他的父亲和另一位朋友各出资2000美金，支付了他20%的买入费用，并说服他继续参赛。于是Moneymaker前往拉斯维加斯参加他的第一场现场锦标赛，并赢得了冠军。第一天，他排名第11位。第二天，他排名第26位（还剩111名选手）。第三天，他排名第6位（还剩45名选手）。正是在这一天，他击败了Johnny Chan后开始受到公众关注，这是一项了不起的成就，因为Chan拥有七条金手链，其中两条是WSOP主赛事冠军。随着比赛的进行，Moneymaker的心态发生了变化，起初他只希望获得一笔小奖金，但后来他意识到自己有机会赢得更多。第四天，Moneymaker在一手跌宕起伏的牌局中淘汰了伟大的Phil Ivey，Moneymaker一度看起来必胜无疑，然后又几乎要输，最后又一张A让他转危为安，送走了Ivey。第五天，Moneymaker与已经在2500美金PLO中获得金手链的Sam Farha的决赛桌对决持续了超过11个小时。当Moneymaker和Farha单挑决定冠军时，一次在Farha占据绝对优势时的惊天诈唬，成为了扑克历史上最著名和最常被引用的打法之一。那次诈唬为最后一手牌做了完美铺垫，当Moneymaker在按钮位用黑桃5-4翻牌前加注到10万美金时，Farha用Q-9跟注并在翻牌击中了顶对。牌面是Js 5s 4c，Moneymaker的两对对顶对占据很大优势。到了转牌8h，Farha已经没有机会获胜，Moneymaker只需要在河牌避开Q就行了。当5h落下时，Moneymaker从座位上跳起来庆祝，在他的第一场现场锦标赛中就成为了冠军。",
+        content_tw: "Chris Moneymaker於1975年11月21日出生，2003年時27歲。當時他是一名默默無聞的會計師，年收入僅4萬美金。他的撲克之旅始於在PokerStars線上撲克室贏得一場86美金的衛星賽，獲得了2003年世界撲克系列賽主賽事的參賽席位。晉級到四強後，Moneymaker曾考慮故意輸掉比賽。因為前三名可以獲得WSOP主賽事席位，而第四名只能獲得8000美金現金。那時，他幸運地接到一位朋友的電話，鼓勵他抓住這個難得的機會參加WSOP主賽事。他的朋友提出出資5000美金，支付Moneymaker一半的買入費用。但不幸的是，這個承諾沒有兌現。Moneymaker感到遺憾和惱火，但最後他的父親和另一位朋友各出資2000美金，支付了他20%的買入費用，並說服他繼續參賽。於是Moneymaker前往拉斯維加斯參加他的第一場現場錦標賽，並贏得了冠軍。第一天，他排名第11位。第二天，他排名第26位（還剩111名選手）。第三天，他排名第6位（還剩45名選手）。正是在這一天，他擊敗了Johnny Chan後開始受到公眾關注，這是一項了不起的成就，因為Chan擁有七條金手鏈，其中兩條是WSOP主賽事冠軍。隨著比賽的進行，Moneymaker的心態發生了變化，起初他只希望獲得一筆小獎金，但後來他意識到自己有機會贏得更多。第四天，Moneymaker在一手跌宕起伏的牌局中淘汰了偉大的Phil Ivey，Moneymaker一度看起來必勝無疑，然後又幾乎要輸，最後又一張A讓他轉危為安，送走了Ivey。第五天，Moneymaker與已經在2500美金PLO中獲得金手鏈的Sam Farha的決賽桌對決持續了超過11個小時。當Moneymaker和Farha單挑決定冠軍時，一次在Farha佔據絕對優勢時的驚天詐唬，成為了撲克歷史上最著名和最常被引用的打法之一。那次詐唬為最後一手牌做了完美鋪墊，當Moneymaker在按鈕位用黑桃5-4翻牌前加注到10萬美金時，Farha用Q-9跟注並在翻牌擊中了頂對。牌面是Js 5s 4c，Moneymaker的兩對對頂對佔據很大優勢。到了轉牌8h，Farha已經沒有機會獲勝，Moneymaker只需要在河牌避開Q就行了。當5h落下時，Moneymaker從座位上跳起來慶祝，在他的第一場現場錦標賽中就成為了冠軍。"
       },
       {
         type: "heading",
-        content: "First 'Poker Boom' in History"
+        content: "First 'Poker Boom' in History",
+        content_cn: "历史上第一次「扑克热潮」",
+        content_tw: "歷史上第一次「撲克熱潮」"
       },
       {
         type: "paragraph",
-        content: "Winning the WSOP Main Event dramatically altered Moneymaker's trajectory and had a profound impact on the entire poker industry. The story of an amateur defeating professionals to claim the world championship was incredibly inspiring, fostering belief among thousands of players that such success could happen to themselves. Moneymaker not only inspired American players but ignited interest across Europe, Asia, and South America. This led to the 'Poker Boom' from 2003 to 2006, a period of unprecedented growth in the poker industry. Texas Hold'em reached unprecedented levels of popularity worldwide. For example, the WSOP Main Event grew from 839 participants in 2003 to 8,773 in 2006, a tenfold increase. Moneymaker not only enjoys a stellar reputation in the online poker realm but also exerts a significant influence on poker associated industries. At the age of 47, Moneymaker remains active in the poker world. After becoming the ambassador for AA POKER, his career has reached new heights. Stay tuned for more AA POKER players stories. Download AA POKER! Anyone could be a star!"
+        content: "Winning the WSOP Main Event dramatically altered Moneymaker's trajectory and had a profound impact on the entire poker industry. The story of an amateur defeating professionals to claim the world championship was incredibly inspiring, fostering belief among thousands of players that such success could happen to themselves. Moneymaker not only inspired American players but ignited interest across Europe, Asia, and South America. This led to the 'Poker Boom' from 2003 to 2006, a period of unprecedented growth in the poker industry. Texas Hold'em reached unprecedented levels of popularity worldwide. For example, the WSOP Main Event grew from 839 participants in 2003 to 8,773 in 2006, a tenfold increase. Moneymaker not only enjoys a stellar reputation in the online poker realm but also exerts a significant influence on poker associated industries. At the age of 47, Moneymaker remains active in the poker world. After becoming the ambassador for AA POKER, his career has reached new heights. Stay tuned for more AA POKER players stories. Download AA POKER! Anyone could be a star!",
+        content_cn: "赢得WSOP主赛事冠军彻底改变了Moneymaker的人生轨迹，并对整个扑克行业产生了深远影响。一个业余玩家击败职业选手夺得世界冠军的故事极具鼓舞力，让成千上万的玩家相信这样的成功也可能发生在自己身上。Moneymaker不仅激励了美国玩家，还点燃了欧洲、亚洲和南美洲玩家的热情。这导致了2003年至2006年的「扑克热潮」，这是扑克行业空前增长的时期。德州扑克在全球范围内达到了前所未有的流行程度。例如，WSOP主赛事的参赛人数从2003年的839人增长到2006年的8773人，增长了十倍。Moneymaker不仅在网络扑克领域享有盛誉，还对扑克相关产业产生了重大影响。47岁的Moneymaker仍然活跃在扑克界。在成为AA POKER代言人后，他的职业生涯达到了新的高度。敬请关注更多AA POKER名人故事。下载AA POKER！Anyone could be a star！",
+        content_tw: "贏得WSOP主賽事冠軍徹底改變了Moneymaker的人生軌跡，並對整個撲克行業產生了深遠影響。一個業餘玩家擊敗職業選手奪得世界冠軍的故事極具鼓舞力，讓成千上萬的玩家相信這樣的成功也可能發生在自己身上。Moneymaker不僅激勵了美國玩家，還點燃了歐洲、亞洲和南美洲玩家的熱情。這導致了2003年至2006年的「撲克熱潮」，這是撲克行業空前增長的時期。德州撲克在全球範圍內達到了前所未有的流行程度。例如，WSOP主賽事的參賽人數從2003年的839人增長到2006年的8773人，增長了十倍。Moneymaker不僅在網路撲克領域享有盛譽，還對撲克相關產業產生了重大影響。47歲的Moneymaker仍然活躍在撲克界。在成為AA POKER代言人後，他的職業生涯達到了新的高度。敬請關注更多AA POKER名人故事。下載AA POKER！Anyone could be a star！"
       }
     ]
   },
@@ -3875,6 +4227,8 @@ interface ArticleSection {
   content_cn?: string;
   content_tw?: string;
   src?: string;
+  src_cn?: string;
+  src_tw?: string;
   alt?: string;
   question?: string;
   question_cn?: string;
@@ -3943,6 +4297,24 @@ export default function NewsDetailPage() {
     return news.title;
   };
 
+  // Format date based on language
+  const formatDate = (dateString: string) => {
+    if (language === "en") return dateString;
+    
+    try {
+      const date = new Date(dateString);
+      if (isNaN(date.getTime())) return dateString;
+      
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, "0");
+      const day = String(date.getDate()).padStart(2, "0");
+      
+      return `${year}年${month}月${day}日`;
+    } catch (e) {
+      return dateString;
+    }
+  };
+
   // Get translated section content based on language
   const getSectionContent = (section: ArticleSection) => {
     if (language === "cn" && section.content_cn) return section.content_cn;
@@ -3981,7 +4353,7 @@ export default function NewsDetailPage() {
             {getTitle()}
           </h1>
           <p className="text-[#4ade80]/60 text-sm italic">
-            {article.date}
+            {formatDate(article.date)}
           </p>
         </motion.div>
 
@@ -3992,11 +4364,17 @@ export default function NewsDetailPage() {
           transition={{ delay: 0.1 }}
           className="relative w-full overflow-hidden mb-10 flex justify-center"
         >
-          <img
-            src={getHeroImage()}
-            alt={article.title}
-            className="max-w-[90%] md:max-w-[80%] h-auto object-contain rounded-lg"
-          />
+          <div className="relative max-w-[90%] md:max-w-[80%] w-full" style={{ aspectRatio: '16/9' }}>
+            <Image
+              src={getHeroImage()}
+              alt={article.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 90vw, 80vw"
+              className="object-contain rounded-lg"
+              quality={90}
+            />
+          </div>
         </motion.div>
 
         {/* Article Content */}
@@ -4022,13 +4400,24 @@ export default function NewsDetailPage() {
                     </h2>
                   );
                 case "image":
+                  const getImageSrc = (sec: ArticleSection) => {
+                    if (language === "cn" && sec.src_cn) return sec.src_cn;
+                    if (language === "tw" && sec.src_tw) return sec.src_tw;
+                    return sec.src!;
+                  };
                   return (
                     <div key={index} className="relative w-full overflow-hidden my-8 flex justify-center">
-                      <img
-                        src={section.src!}
-                        alt={section.alt!}
-                        className="max-w-[85%] md:max-w-[75%] h-auto object-contain rounded-lg"
-                      />
+                      <div className="relative max-w-[85%] md:max-w-[75%] w-full" style={{ aspectRatio: '16/9' }}>
+                        <Image
+                          src={getImageSrc(section)}
+                          alt={section.alt!}
+                          fill
+                          sizes="(max-width: 768px) 85vw, 75vw"
+                          className="object-contain rounded-lg"
+                          quality={85}
+                          loading="lazy"
+                        />
+                      </div>
                     </div>
                   );
                 case "qa":

@@ -1,8 +1,83 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
+
+// Helper function to get tutorial images based on language
+const getIosTutorialSteps = (language: string) => {
+  if (language === "cn") {
+    return [
+      { step: 1, image: "/image/download/ios-install-tutorial-cn/ioszh1-0YmY9OOR.png" },
+      { step: 2, image: "/image/download/ios-install-tutorial-cn/ioszh2-RKbe8k-D.png" },
+      { step: 3, image: "/image/download/ios-install-tutorial-cn/ioszh3-CCx1P7Sx.png" },
+      { step: 4, image: "/image/download/ios-install-tutorial-cn/ioszh4-D9QtukG0.png" },
+      { step: 5, image: "/image/download/ios-install-tutorial-cn/ioszh5-mLKwmIWx.png" },
+      { step: 6, image: "/image/download/ios-install-tutorial-cn/ioszh6-6PrNv0dx.png" },
+      { step: 7, image: "/image/download/ios-install-tutorial-cn/ioszh7-ZScWVp8g.png" },
+      { step: 8, image: "/image/download/ios-install-tutorial-cn/ioszh8-DUK1R4ku.png" },
+    ];
+  }
+  if (language === "tw") {
+    return [
+      { step: 1, image: "/image/download/ios-install-tutorial-tw/iosft1-BIrsu2aL.png" },
+      { step: 2, image: "/image/download/ios-install-tutorial-tw/iosft2-DyVGQ4gO.png" },
+      { step: 3, image: "/image/download/ios-install-tutorial-tw/iosft3-CY5tyWbR.png" },
+      { step: 4, image: "/image/download/ios-install-tutorial-tw/iosft4-DmBJ-L6x.png" },
+      { step: 5, image: "/image/download/ios-install-tutorial-tw/iosft5-DYHjxGec.png" },
+      { step: 6, image: "/image/download/ios-install-tutorial-tw/iosft6-CEuIk6P7.png" },
+      { step: 7, image: "/image/download/ios-install-tutorial-tw/iosft7-BeM7Yfaj.png" },
+      { step: 8, image: "/image/download/ios-install-tutorial-tw/iosft8-CKvYjwur.png" },
+    ];
+  }
+  // English (default)
+  return [
+    { step: 1, image: "/image/download/ios-install-tutorial/iosen1-DfC2THlb.png" },
+    { step: 2, image: "/image/download/ios-install-tutorial/iosen2-C_spqGxI.png" },
+    { step: 3, image: "/image/download/ios-install-tutorial/iosen3-DygJeOYH.png" },
+    { step: 4, image: "/image/download/ios-install-tutorial/iosen4-B3OCLxKC.png" },
+    { step: 5, image: "/image/download/ios-install-tutorial/iosen5-Dsd1NYMr.png" },
+    { step: 6, image: "/image/download/ios-install-tutorial/iosen6-CjJPjFmc.png" },
+    { step: 7, image: "/image/download/ios-install-tutorial/iosen7-B-zkeflE.png" },
+    { step: 8, image: "/image/download/ios-install-tutorial/iosen8-B_qbhAQj.png" },
+  ];
+};
+
+const getAndroidTutorialSteps = (language: string) => {
+  if (language === "cn") {
+    return [
+      { step: 1, image: "/image/download/android-install-tutorial-cn/anzh1-DDapfijU.png" },
+      { step: 2, image: "/image/download/android-install-tutorial-cn/anzh2-3xJofNIu.png" },
+      { step: 3, image: "/image/download/android-install-tutorial-cn/anzh3-CjtXIjUT.png" },
+      { step: 4, image: "/image/download/android-install-tutorial-cn/anzh4-DuFiI4Qr.png" },
+      { step: 5, image: "/image/download/android-install-tutorial-cn/anzh5-DDOmNYvL.png" },
+      { step: 6, image: "/image/download/android-install-tutorial-cn/anzh6-B6WKnw6v.png" },
+    ];
+  }
+  if (language === "tw") {
+    return [
+      { step: 1, image: "/image/download/android-install-tutorial-tw/anft1-BUoi9F_C.png" },
+      { step: 2, image: "/image/download/android-install-tutorial-tw/anft2-DSVCZPM9.png" },
+      { step: 3, image: "/image/download/android-install-tutorial-tw/anft3-CArK7rnc.png" },
+      { step: 4, image: "/image/download/android-install-tutorial-tw/anft4-Xxaz-W1D.png" },
+      { step: 5, image: "/image/download/android-install-tutorial-tw/anft5-DJAGVjdu.png" },
+      { step: 6, image: "/image/download/android-install-tutorial-tw/anft6-US0Eo3NG.png" },
+      { step: 7, image: "/image/download/android-install-tutorial-tw/anft7-B0Y3z2U7.png" },
+      { step: 8, image: "/image/download/android-install-tutorial-tw/anft8-DMTsmzF4.png" },
+    ];
+  }
+  // English (default)
+  return [
+    { step: 1, image: "/image/download/android-install-tutorial/anen1-CanoUY02.png" },
+    { step: 2, image: "/image/download/android-install-tutorial/anen2-hthmxYhU.png" },
+    { step: 3, image: "/image/download/android-install-tutorial/anen3-Bfj6M6iX.png" },
+    { step: 4, image: "/image/download/android-install-tutorial/anen4-BA1VPD2M.png" },
+    { step: 5, image: "/image/download/android-install-tutorial/anen5-pSp6JhxD.png" },
+    { step: 6, image: "/image/download/android-install-tutorial/anen6-JYWuHtbi.png" },
+    { step: 7, image: "/image/download/android-install-tutorial/anen7-rfxFtbNe.png" },
+    { step: 8, image: "/image/download/android-install-tutorial/anen8-JTHCFrjw.png" },
+  ];
+};
 
 // QR Code data
 const qrCodes = [
@@ -167,8 +242,12 @@ const androidTutorialSteps = [
 ];
 
 export default function DownloadPage() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [activeTab, setActiveTab] = useState<"ios" | "android">("ios");
+  
+  // Get language-specific tutorial images
+  const iosTutorialImages = useMemo(() => getIosTutorialSteps(language), [language]);
+  const androidTutorialImages = useMemo(() => getAndroidTutorialSteps(language), [language]);
 
   return (
     <div className="min-h-screen pt-24 bg-[#0a1f14]">
@@ -283,150 +362,184 @@ export default function DownloadPage() {
           {/* Tutorial Steps */}
           {activeTab === "ios" ? (
             <>
-              {/* iOS Steps 1-3 */}
+              {/* iOS Steps - Dynamic grid based on number of images */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                {iosTutorialSteps.slice(0, 3).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
+                {iosTutorialImages.slice(0, 3).map((imgStep) => {
+                  const step = iosTutorialSteps.find(s => s.step === imgStep.step);
+                  return (
+                    <div key={imgStep.step} className="text-center">
+                      <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        {imgStep.step}
+                      </div>
+                      <div className="relative mx-auto max-w-[280px] mb-6">
+                        <img
+                          src={imgStep.image}
+                          alt={`Step ${imgStep.step}`}
+                          className="w-full h-auto rounded-2xl"
+                        />
+                      </div>
+                      {step && (
+                        <p className="text-base md:text-lg">
+                          {step.titleKey && <span className="text-aa-gold">{t(step.titleKey)}</span>}{" "}
+                          {step.descKey && <span className="text-white">{t(step.descKey)}</span>}
+                          {step.highlightKey && <span className="text-aa-emerald block">{t(step.highlightKey)}</span>}
+                        </p>
+                      )}
                     </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.titleKey && <span className="text-aa-gold">{t(step.titleKey)}</span>}{" "}
-                      {step.descKey && <span className="text-white">{t(step.descKey)}</span>}
-                    </p>
-                    {step.highlightKey && (
-                      <p className="text-aa-emerald text-base md:text-lg">{t(step.highlightKey)}</p>
-                    )}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* iOS Steps 4-6 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                {iosTutorialSteps.slice(3, 6).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
+                {iosTutorialImages.slice(3, 6).map((imgStep) => {
+                  const step = iosTutorialSteps.find(s => s.step === imgStep.step);
+                  return (
+                    <div key={imgStep.step} className="text-center">
+                      <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        {imgStep.step}
+                      </div>
+                      <div className="relative mx-auto max-w-[280px] mb-6">
+                        <img
+                          src={imgStep.image}
+                          alt={`Step ${imgStep.step}`}
+                          className="w-full h-auto rounded-2xl"
+                        />
+                      </div>
+                      {step && (
+                        <p className="text-base md:text-lg">
+                          {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
+                          {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
+                        </p>
+                      )}
                     </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
-                      {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* iOS Steps 7-8 */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                {iosTutorialSteps.slice(6, 8).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
+                {iosTutorialImages.slice(6, 8).map((imgStep) => {
+                  const step = iosTutorialSteps.find(s => s.step === imgStep.step);
+                  return (
+                    <div key={imgStep.step} className="text-center">
+                      <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        {imgStep.step}
+                      </div>
+                      <div className="relative mx-auto max-w-[280px] mb-6">
+                        <img
+                          src={imgStep.image}
+                          alt={`Step ${imgStep.step}`}
+                          className="w-full h-auto rounded-2xl"
+                        />
+                      </div>
+                      {step && (
+                        <p className="text-base md:text-lg">
+                          {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
+                          {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
+                        </p>
+                      )}
                     </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
-                      {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </>
           ) : (
             <>
-              {/* Android Steps 1-3 */}
+              {/* Android Steps - Dynamic based on language */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                {androidTutorialSteps.slice(0, 3).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
+                {androidTutorialImages.slice(0, 3).map((imgStep) => {
+                  const step = androidTutorialSteps.find(s => s.step === imgStep.step);
+                  return (
+                    <div key={imgStep.step} className="text-center">
+                      <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        {imgStep.step}
+                      </div>
+                      <div className="relative mx-auto max-w-[280px] mb-6">
+                        <img
+                          src={imgStep.image}
+                          alt={`Step ${imgStep.step}`}
+                          className="w-full h-auto rounded-2xl"
+                        />
+                      </div>
+                      {step && (
+                        <>
+                          <p className="text-base md:text-lg">
+                            {step.descKey && <span className="text-white">{t(step.descKey)}</span>}
+                          </p>
+                          {step.highlightKey && (
+                            <p className="text-base md:text-lg">
+                              {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
+                              <span className="text-aa-emerald">{t(step.highlightKey)}</span>
+                            </p>
+                          )}
+                        </>
+                      )}
                     </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.descKey && <span className="text-white">{t(step.descKey)}</span>}
-                    </p>
-                    {step.highlightKey && (
-                      <p className="text-base md:text-lg">
-                        {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
-                        <span className="text-aa-emerald">{t(step.highlightKey)}</span>
-                      </p>
-                    )}
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {/* Android Steps 4-6 */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                {androidTutorialSteps.slice(3, 6).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
+                {androidTutorialImages.slice(3, 6).map((imgStep) => {
+                  const step = androidTutorialSteps.find(s => s.step === imgStep.step);
+                  return (
+                    <div key={imgStep.step} className="text-center">
+                      <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                        {imgStep.step}
+                      </div>
+                      <div className="relative mx-auto max-w-[280px] mb-6">
+                        <img
+                          src={imgStep.image}
+                          alt={`Step ${imgStep.step}`}
+                          className="w-full h-auto rounded-2xl"
+                        />
+                      </div>
+                      {step && (
+                        <p className="text-base md:text-lg">
+                          {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
+                          {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
+                        </p>
+                      )}
                     </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
-                      {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
-                    </p>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
-              {/* Android Steps 7-8 */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
-                {androidTutorialSteps.slice(6, 8).map((step) => (
-                  <div key={step.step} className="text-center">
-                    <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
-                      {step.step}
-                    </div>
-                    <div className="relative mx-auto max-w-[280px] mb-6">
-                      <img
-                        src={step.image}
-                        alt={`Step ${step.step}`}
-                        className="w-full h-auto rounded-2xl"
-                      />
-                    </div>
-                    <p className="text-base md:text-lg">
-                      {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
-                      {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
-                    </p>
-                    {step.descKey && (
-                      <p className="text-white text-base md:text-lg">{t(step.descKey)}</p>
-                    )}
-                  </div>
-                ))}
-              </div>
+              {/* Android Steps 7-8 (only if available) */}
+              {androidTutorialImages.length > 6 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
+                  {androidTutorialImages.slice(6, 8).map((imgStep) => {
+                    const step = androidTutorialSteps.find(s => s.step === imgStep.step);
+                    return (
+                      <div key={imgStep.step} className="text-center">
+                        <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
+                          {imgStep.step}
+                        </div>
+                        <div className="relative mx-auto max-w-[280px] mb-6">
+                          <img
+                            src={imgStep.image}
+                            alt={`Step ${imgStep.step}`}
+                            className="w-full h-auto rounded-2xl"
+                          />
+                        </div>
+                        {step && (
+                          <>
+                            <p className="text-base md:text-lg">
+                              {step.titleKey && <span className="text-white">{t(step.titleKey)}</span>}{" "}
+                              {step.highlightKey && <span className="text-aa-emerald">{t(step.highlightKey)}</span>}
+                            </p>
+                            {step.descKey && (
+                              <p className="text-white text-base md:text-lg">{t(step.descKey)}</p>
+                            )}
+                          </>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </>
           )}
         </motion.div>

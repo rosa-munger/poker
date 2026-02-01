@@ -135,7 +135,7 @@ export default function ChampionDetailPage() {
               {/* Players' Highlights */}
               {champion.playersHighlights && champion.playersHighlights.length > 0 && (
                 <div className="mb-8">
-                  <h3 className="text-xl font-bold text-white mb-4">PLAYERS&apos; HIGHLIGHTS:</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">{t("champion.playersHighlights")}:</h3>
                   <div className="space-y-2">
                     {champion.playersHighlights.map((link, index) => (
                       <a
@@ -223,23 +223,30 @@ export default function ChampionDetailPage() {
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-[#2d5a3d]/50">
-                    <th className="py-4 px-4 text-left text-aa-gray text-sm font-medium">Event name</th>
-                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">Region</th>
-                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">Date</th>
-                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">Rank</th>
-                    <th className="py-4 px-4 text-right text-aa-gray text-sm font-medium">Prize</th>
+                    <th className="py-4 px-4 text-left text-aa-gray text-sm font-medium">{t("champion.eventName")}</th>
+                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">{t("champion.region")}</th>
+                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">{t("champion.date")}</th>
+                    <th className="py-4 px-4 text-center text-aa-gray text-sm font-medium">{t("champion.rank")}</th>
+                    <th className="py-4 px-4 text-right text-aa-gray text-sm font-medium">{t("champion.prize")}</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {champion.events.map((event, index) => (
-                    <tr key={index} className="border-b border-[#2d5a3d]/30">
-                      <td className="py-4 px-4 text-white text-sm">{event.name}</td>
-                      <td className="py-4 px-4 text-aa-gray text-sm text-center">{event.region}</td>
-                      <td className="py-4 px-4 text-aa-gray text-sm text-center">{event.date}</td>
-                      <td className="py-4 px-4 text-aa-gold text-sm text-center font-medium">{event.rank}</td>
-                      <td className="py-4 px-4 text-aa-gold text-sm text-right font-bold">{event.prize}</td>
-                    </tr>
-                  ))}
+                  {champion.events.map((event, index) => {
+                    const eventName = language === "cn" && event.name_cn ? event.name_cn : language === "tw" && event.name_tw ? event.name_tw : event.name;
+                    const eventRegion = language === "cn" && event.region_cn ? event.region_cn : language === "tw" && event.region_tw ? event.region_tw : event.region;
+                    const eventDate = language === "cn" && event.date_cn ? event.date_cn : language === "tw" && event.date_tw ? event.date_tw : event.date;
+                    const eventRank = language === "cn" && event.rank_cn ? event.rank_cn : language === "tw" && event.rank_tw ? event.rank_tw : event.rank;
+                    
+                    return (
+                      <tr key={index} className="border-b border-[#2d5a3d]/30">
+                        <td className="py-4 px-4 text-white text-sm">{eventName}</td>
+                        <td className="py-4 px-4 text-aa-gray text-sm text-center">{eventRegion}</td>
+                        <td className="py-4 px-4 text-aa-gray text-sm text-center">{eventDate}</td>
+                        <td className="py-4 px-4 text-aa-gold text-sm text-center font-medium">{eventRank}</td>
+                        <td className="py-4 px-4 text-aa-gold text-sm text-right font-bold">{event.prize}</td>
+                      </tr>
+                    );
+                  })}
                 </tbody>
               </table>
             </motion.div>

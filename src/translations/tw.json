@@ -99,6 +99,11 @@
   "champion.gpiRanking": "全球撲克指數排名",
   "champion.playersHighlights": "選手精彩集錦",
   "champion.backToChampions": "返回冠軍列表",
+  "champion.eventName": "賽事名稱",
+  "champion.region": "地區",
+  "champion.date": "日期",
+  "champion.rank": "排名",
+  "champion.prize": "獎金",
 
   "footer.followUs": "關注我們",
   "footer.termsOfUse": "使用條款",

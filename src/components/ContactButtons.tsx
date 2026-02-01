@@ -46,8 +46,8 @@ export default function ContactButtons() {
   
   // Get tooltip text based on language
   const getTooltipText = () => {
-    if (language === "cn") return "新手优惠领取中，欢迎咨询！";
-    if (language === "tw") return "新手優惠領取中，歡迎諮詢！";
+    if (language === "cn") return "👋新手优惠领取中\n欢迎咨询！";
+    if (language === "tw") return "👋新手優惠領取中\n歡迎諮詢！";
     return "New player bonuses are available—contact us to claim!";
   };
   const [activePopup, setActivePopup] = useState<string | null>(null);
@@ -83,6 +83,30 @@ export default function ContactButtons() {
         if ((window as any).Tawk_API) {
           (window as any).Tawk_API.onLoad = function() {
             (window as any).Tawk_API.hideWidget();
+            
+            // Set greeting message based on language
+            const getGreetingMessage = () => {
+              if (language === "cn") {
+                return "您好 亲～\n新手福利已开启 欢迎领取💖\n\n三条客服 ID：mxbc1\n三条下载地址：13t.cn\n苹果用户：App Store 搜索「三条」即可下载\n\nAA 扑克俱乐部 ID：666666";
+              }
+              if (language === "tw") {
+                return "您好 親～\n新手福利已開啟 歡迎領取💖\n\n三條客服 ID：mxbc1\n三條下載地址：13t.cn\n蘋果用戶：App Store 搜索「三條」即可下載\n\nAA 撲克俱樂部 ID：666666";
+              }
+              return "Hello!\nNew player bonuses are available—contact us to claim! 💖\n\nSantiao Customer Service ID: mxbc1\nSantiao Download: 13t.cn\nApple Users: Search 'Santiao' on App Store\n\nAA Poker Club ID: 666666";
+            };
+            
+            // Set the greeting message
+            (window as any).Tawk_API.setAttributes({
+              name: 'AA Poker Support',
+              email: 'support@aapoker.app'
+            }, function(error: any) {});
+            
+            // Add custom greeting via API
+            if ((window as any).Tawk_API.addEvent) {
+              (window as any).Tawk_API.addEvent('greeting', {
+                message: getGreetingMessage()
+              });
+            }
           };
         }
       };
@@ -119,12 +143,24 @@ export default function ContactButtons() {
     if (id === "kf") {
       // Open Tawk.to chat
       if (typeof window !== "undefined" && (window as any).Tawk_API) {
-        // Use toggle instead of maximize to avoid errors
-        if (typeof (window as any).Tawk_API.toggle === 'function') {
-          (window as any).Tawk_API.toggle();
-        } else if (typeof (window as any).Tawk_API.showWidget === 'function') {
-          (window as any).Tawk_API.showWidget();
-        }
+        (window as any).Tawk_API.maximize();
+        
+        // Set visitor name and attributes based on language
+        setTimeout(() => {
+          if ((window as any).Tawk_API) {
+            const greetingMessage = language === "cn" 
+              ? "您好 亲～\n新手福利已开启 欢迎领取💖\n\n三条客服 ID：mxbc1\n三条下载地址：13t.cn\n苹果用户：App Store 搜索「三条」即可下载\n\nAA 扑克俱乐部 ID：666666"
+              : language === "tw"
+              ? "您好 親～\n新手福利已開啟 歡迎領取💖\n\n三條客服 ID：mxbc1\n三條下載地址：13t.cn\n蘋果用戶：App Store 搜索「三條」即可下載\n\nAA 撲克俱樂部 ID：666666"
+              : "Hello!\nNew player bonuses are available—contact us to claim! 💖\n\nSantiao Customer Service ID: mxbc1\nSantiao Download: 13t.cn\nApple Users: Search 'Santiao' on App Store\n\nAA Poker Club ID: 666666";
+            
+            // Set custom data
+            (window as any).Tawk_API.setAttributes({
+              'language': language,
+              'greeting': greetingMessage
+            }, function(error: any) {});
+          }
+        }, 100);
       }
       return;
     }
@@ -228,7 +264,7 @@ export default function ContactButtons() {
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 10, scale: 0.9 }}
               transition={{ duration: 0.3, type: "spring" }}
-              className="absolute right-[70px] bottom-[72px] z-[60]"
+              className="absolute right-[80px] bottom-[40px] z-[60]"
             >
               {/* Close button */}
               <button
@@ -250,8 +286,13 @@ export default function ContactButtons() {
               </button>
 
               {/* Chat bubble */}
-              <div className="relative px-4 py-3 rounded-xl shadow-2xl font-bold text-sm pointer-events-auto" style={{ minWidth: '180px', maxWidth: '220px', backgroundColor: '#FFF3D6', color: '#2B2B2B' }}>
-                <div className="text-center leading-snug">
+              <div className="relative px-4 py-3 rounded-xl shadow-2xl font-bold text-sm pointer-events-auto" style={{ 
+                minWidth: language === 'en' ? '240px' : '180px', 
+                maxWidth: language === 'en' ? '280px' : '220px', 
+                backgroundColor: '#FFF3D6', 
+                color: '#2B2B2B' 
+              }}>
+                <div className="text-center leading-relaxed whitespace-pre-line" style={{ letterSpacing: '1px' }}>
                   {getTooltipText()}
                 </div>
                 

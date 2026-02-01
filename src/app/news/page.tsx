@@ -20,6 +20,28 @@ export default function NewsPage() {
     return news.title;
   };
 
+  // Format date based on language
+  const formatDate = (dateString: string) => {
+    const date = new Date(dateString);
+    
+    if (language === "cn") {
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      return `${year}年${month}月${day}日`;
+    }
+    
+    if (language === "tw") {
+      const year = date.getFullYear();
+      const month = date.getMonth() + 1;
+      const day = date.getDate();
+      return `${year}年${month}月${day}日`;
+    }
+    
+    // English format
+    return dateString;
+  };
+
   return (
     <div 
       className="min-h-screen pt-24"
@@ -64,7 +86,7 @@ export default function NewsPage() {
                 <h2 className="text-white font-medium text-xl md:text-2xl leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                   {getTitle(featuredNews)}
                 </h2>
-                <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">{featuredNews.date}</p>
+                <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">{formatDate(featuredNews.date)}</p>
               </div>
             </Link>
           </motion.article>
@@ -94,7 +116,7 @@ export default function NewsPage() {
                     <h3 className="text-white font-medium text-sm md:text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                       {getTitle(news)}
                     </h3>
-                    <p className="text-[#4ade80]/60 text-[11px] mt-2 italic">{news.date}</p>
+                    <p className="text-[#4ade80]/60 text-[11px] mt-2 italic">{formatDate(news.date)}</p>
                   </div>
                 </Link>
               </motion.article>
@@ -133,7 +155,7 @@ export default function NewsPage() {
                     <h3 className="text-white font-medium text-base leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2 flex-grow">
                       {getTitle(news)}
                     </h3>
-                    <p className="text-[#4ade80]/60 text-xs mt-3 italic">{news.date}</p>
+                    <p className="text-[#4ade80]/60 text-xs mt-3 italic">{formatDate(news.date)}</p>
                   </div>
                 </Link>
               </motion.article>
@@ -142,11 +164,11 @@ export default function NewsPage() {
         </motion.div>
 
         {/* Load More Button */}
-        <div className="flex justify-center mt-12">
+        {/* <div className="flex justify-center mt-12">
           <button className="px-10 py-3 border border-[#f2e29e] text-[#f2e29e] font-bold tracking-widest text-xs hover:bg-[#f2e29e] hover:text-black transition-all uppercase">
             Load More News
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   );

@@ -99,6 +99,11 @@
   "champion.gpiRanking": "全球扑克指数排名",
   "champion.playersHighlights": "选手精彩集锦",
   "champion.backToChampions": "返回冠军列表",
+  "champion.eventName": "赛事名称",
+  "champion.region": "地区",
+  "champion.date": "日期",
+  "champion.rank": "排名",
+  "champion.prize": "奖金",
 
   "footer.followUs": "关注我们",
   "footer.termsOfUse": "使用条款",

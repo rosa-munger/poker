@@ -1,9 +1,17 @@
 // Champions data with all information for detail pages
 export interface ChampionEvent {
   name: string;
+  name_cn?: string;
+  name_tw?: string;
   region: string;
+  region_cn?: string;
+  region_tw?: string;
   date: string;
+  date_cn?: string;
+  date_tw?: string;
   rank: string;
+  rank_cn?: string;
+  rank_tw?: string;
   prize: string;
 }
 
@@ -74,9 +82,17 @@ export const mainChampions: Champion[] = [
     events: [
       {
         name: "Triton Poker Series London 2023 - Event #9 $250k NLH Luxon Invitational - FINAL TABLE",
+        name_cn: "传奇扑克系列赛伦敦站2023 - 赛事#9 $250k无限注德州Luxon邀请赛 - 决赛桌",
+        name_tw: "傳奇撲克系列賽倫敦站2023 - 賽事#9 $250k無限注德州Luxon邀請賽 - 決賽桌",
         region: "London",
+        region_cn: "伦敦",
+        region_tw: "倫敦",
         date: "August 5, 2023",
+        date_cn: "2023年8月5日",
+        date_tw: "2023年8月5日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$6,860,000"
       }
     ]
@@ -121,9 +137,17 @@ export const mainChampions: Champion[] = [
     events: [
       {
         name: "Triton Poker Series London 2023 - Event #11 $125k NLH Main Event - Final Table",
+        name_cn: "传奇扑克系列赛伦敦站2023 - 赛事#11 $125k无限注德州主赛事 - 决赛桌",
+        name_tw: "傳奇撲克系列賽倫敦站2023 - 賽事#11 $125k無限注德州主賽事 - 決賽桌",
         region: "London",
+        region_cn: "伦敦",
+        region_tw: "倫敦",
         date: "August 5, 2023",
+        date_cn: "2023年8月5日",
+        date_tw: "2023年8月5日",
         rank: "Second Runner-up",
+        rank_cn: "季军",
+        rank_tw: "季軍",
         prize: "$1,940,000"
       }
     ]
@@ -194,37 +218,77 @@ export const mainChampions: Champion[] = [
     events: [
       {
         name: "TLPT $25K International",
+        name_cn: "TLPT $25K国际赛",
+        name_tw: "TLPT $25K國際賽",
         region: "Brisbane",
+        region_cn: "布里斯班",
+        region_tw: "布里斯班",
         date: "October 4, 2024",
+        date_cn: "2024年10月4日",
+        date_tw: "2024年10月4日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$332,250"
       },
       {
         name: "2024 PGT Super High Roller Serie",
+        name_cn: "2024 PGT超级豪客系列赛",
+        name_tw: "2024 PGT超級豪客系列賽",
         region: "North Cyprus",
+        region_cn: "北塞浦路斯",
+        region_tw: "北賽普勒斯",
         date: "August 14, 2024",
+        date_cn: "2024年8月14日",
+        date_tw: "2024年8月14日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: ""
       },
       {
         name: "Red Dragon High Roller",
+        name_cn: "红龙豪客赛",
+        name_tw: "紅龍豪客賽",
         region: "Jeju Island",
+        region_cn: "济州岛",
+        region_tw: "濟州島",
         date: "August 5, 2024",
+        date_cn: "2024年8月5日",
+        date_tw: "2024年8月5日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: ""
       },
       {
         name: "$25K Pot Limit Omaha Event",
+        name_cn: "$25K底池限注奥马哈赛事",
+        name_tw: "$25K底池限注奧馬哈賽事",
         region: "Jeju Island",
+        region_cn: "济州岛",
+        region_tw: "濟州島",
         date: "March 18, 2024",
+        date_cn: "2024年3月18日",
+        date_tw: "2024年3月18日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: ""
       },
       {
         name: "2024 PokerStars European Poker Tour Paris €10,200 Mystery Bounty",
+        name_cn: "2024 PokerStars欧洲扑克巡回赛巴黎站 €10,200神秘赏金赛",
+        name_tw: "2024 PokerStars歐洲撲克巡迴賽巴黎站 €10,200神秘賞金賽",
         region: "Paris",
+        region_cn: "巴黎",
+        region_tw: "巴黎",
         date: "February 28, 2024",
+        date_cn: "2024年2月28日",
+        date_tw: "2024年2月28日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: ""
       }
     ]
@@ -268,9 +332,17 @@ export const secondRowChampions: Champion[] = [
     events: [
       {
         name: "WSOP Paradise Island Event #15 High Roller",
+        name_cn: "WSOP天堂岛赛事#15 豪客赛",
+        name_tw: "WSOP天堂島賽事#15 豪客賽",
         region: "Bahamas",
+        region_cn: "巴哈马",
+        region_tw: "巴哈馬",
         date: "December 12, 2024",
+        date_cn: "2024年12月12日",
+        date_tw: "2024年12月12日",
         rank: "10th",
+        rank_cn: "第10名",
+        rank_tw: "第10名",
         prize: "$51,080"
       }
     ]
@@ -309,9 +381,17 @@ export const secondRowChampions: Champion[] = [
     events: [
       {
         name: "2023 TLPT High Roller Tournament",
+        name_cn: "2023 TLPT豪客锦标赛",
+        name_tw: "2023 TLPT豪客錦標賽",
         region: "Sydney",
+        region_cn: "悉尼",
+        region_tw: "雪梨",
         date: "October 28, 2023",
+        date_cn: "2023年10月28日",
+        date_tw: "2023年10月28日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$247,329"
       }
     ]
@@ -421,9 +501,17 @@ export const thirdRowChampions: Champion[] = [
     events: [
       {
         name: "WPT Australia $10K World Champs Heads-Up",
+        name_cn: "WPT澳大利亚 $10K世界冠军单挑赛",
+        name_tw: "WPT澳大利亞 $10K世界冠軍單挑賽",
         region: "Sydney",
+        region_cn: "悉尼",
+        region_tw: "雪梨",
         date: "September 26, 2023",
+        date_cn: "2023年9月26日",
+        date_tw: "2023年9月26日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$176,133"
       }
     ]
@@ -457,9 +545,17 @@ export const thirdRowChampions: Champion[] = [
     events: [
       {
         name: "2024 Jin Bei Cup",
+        name_cn: "2024金杯赛",
+        name_tw: "2024金杯賽",
         region: "Cambodia",
+        region_cn: "柬埔寨",
+        region_tw: "柬埔寨",
         date: "May 13, 2024",
+        date_cn: "2024年5月13日",
+        date_tw: "2024年5月13日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$131,000"
       }
     ]
@@ -497,16 +593,32 @@ export const thirdRowChampions: Champion[] = [
     events: [
       {
         name: "APT Jeju 2024",
+        name_cn: "APT济州岛 2024",
+        name_tw: "APT濟州島 2024",
         region: "Jeju Island",
+        region_cn: "济州岛",
+        region_tw: "濟州島",
         date: "April 26, 2024",
+        date_cn: "2024年4月26日",
+        date_tw: "2024年4月26日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$13,310"
       },
       {
         name: "WPT Jeju Dragon Quest Flight",
+        name_cn: "WPT济州龙争霸赛",
+        name_tw: "WPT濟州龍爭霸賽",
         region: "Jeju Island",
+        region_cn: "济州岛",
+        region_tw: "濟州島",
         date: "March 28, 2024",
+        date_cn: "2024年3月28日",
+        date_tw: "2024年3月28日",
         rank: "Champion",
+        rank_cn: "冠军",
+        rank_tw: "冠軍",
         prize: "$35,498"
       }
     ]

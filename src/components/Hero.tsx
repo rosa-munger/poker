@@ -16,7 +16,7 @@ const getHeroSlides = (language: string) => {
       id: 1,
       type: "image",
       src: `${basePath}/15en-D6ZayPco.jpg`,
-      clickAction: "detailpage1",
+      clickAction: "detailpage5",
       clickBannerSrc: `/image/home/sliders/${clickBannerFolder}/15en-detail-BNban7OD.jpg`,
       clickBannerType: "image",
     },
@@ -24,7 +24,7 @@ const getHeroSlides = (language: string) => {
       id: 2,
       type: "image",
       src: `${basePath}/16en-BmZrEnMB.jpg`,
-      clickAction: "detailpage1",
+      clickAction: "detailpage4",
       clickBannerSrc: `/image/home/sliders/${clickBannerFolder}/16en-detail-BAXvfGL_.jpg`,
       clickBannerType: "image",
     },
@@ -138,7 +138,14 @@ export default function Hero() {
       router.push("/detailpage1");
     } else if (action === "detailpage2") {
       router.push("/detailpage2");
-    } else if (action === "detailpage3") {
+    }
+    else if (action === "detailpage4") {
+      router.push("/detailpage4");
+    }
+    else if (action === "detailpage5") {
+      router.push("/detailpage5");
+    }
+    else if (action === "detailpage3") {
       setIsVideoModalOpen(true);
     }
   };
