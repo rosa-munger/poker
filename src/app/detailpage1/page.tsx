@@ -3,11 +3,9 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
-import { useTranslation } from "@/hooks/useTranslation";
 
 export default function DetailPage1() {
-  const { language } = useLanguage();
-  const { t } = useTranslation();
+  const { language, t } = useLanguage();
 
   const getImagePath = () => {
     if (language === "tw") {
