@@ -20,7 +20,7 @@ const contactList: ContactInfo[] = [
     logo: "/image/logo-cskh/sigua-logo.png",
     qrCode: "/image/logo-cskh/QR-sigua.jpg?v=2",
     username: "mxbc1",
-    copyText: "三条ID"
+    copyText: "ST-Talk ID"
   },
   {
     id: "telegram",
@@ -388,7 +388,7 @@ export default function ContactButtons() {
                   onClick={() => handleCopy(activeContact.username)}
                   className="w-full bg-gradient-to-r from-[#c9a962] to-[#d4b87a] text-white py-3 px-6 rounded-full font-medium hover:opacity-90 transition-opacity"
                 >
-                  {copied ? t("common.copied") : `${t("common.copy")} ${activeContact.copyText}`}
+                  {copied ? t("common.copied") : `${t("common.copy")} ${t(`contact.copyText.${activeContact.id}`)}`}
                 </button>
               )}
             </div>

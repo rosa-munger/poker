@@ -117,10 +117,12 @@
   "common.close": "關閉",
   "common.copy": "複製",
   "common.copied": "已複製！",
-  "common.add": "複製",
+  "common.add": "添加",
   "contact.sigua": "三條",
   "contact.telegram": "Telegram",
   "contact.whatsapp": "WhatsApp",
+  "contact.copyText.sigua": "三條ID",
+  "contact.copyText.telegram": "Telegram ID",
 
   "modal.gameplay.description": "迄今為止所有線上約局平臺中自定義配置最豐富的、體驗最好的，滿足各種人群不同需求：德州撲克、德州短牌、德州3-1、奧馬哈、魷魚遊戲模式、視頻牌桌、蘑菇模式、暴擊底池、Jackpot、保險模式。",
   "modal.gameplay.classicTexas": "經典德州撲克",

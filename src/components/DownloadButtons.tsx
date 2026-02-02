@@ -2,8 +2,19 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function DownloadButtons() {
+  const { language } = useLanguage();
+
+  const getBackupAndroidImage = () => {
+    if (language === "tw") {
+      return "/image/home/logo-android/backAndroidDownload_tw.png";
+    } else if (language === "cn") {
+      return "/image/home/logo-android/backAndroidDownload_cn.png";
+    }
+    return "/image/home/logo-android/backAndroidDownload_en-D6RLQzvZ.png";
+  };
   return (
     <section className="py-8 bg-[#0a1f14]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -49,7 +60,7 @@ export default function DownloadButtons() {
             className="flex items-center justify-center px-3 md:px-4 py-3 md:py-4 bg-[#0d1f17] rounded-xl hover:bg-[#1a3d2e] transition-all cursor-pointer"
           >
             <img
-              src="/image/home/logo-android/backAndroidDownload_en-D6RLQzvZ.png"
+              src={getBackupAndroidImage()}
               alt="Backup Android Download"
               className="h-10 md:h-12 w-auto object-contain"
             />

@@ -28,7 +28,7 @@ export default function Header() {
     { href: "/", labelKey: "nav.home" },
     { href: "/champions", labelKey: "nav.champions" },
     { href: "/news", labelKey: "nav.news" },
-    { href: "/download", labelKey: "nav.download" },
+    { href: "/download", labelKey: "nav.download", hideOnMobile: true },
   ];
 
   // Handle scroll effect for sticky header
@@ -187,7 +187,7 @@ export default function Header() {
             className="md:hidden bg-aa-dark-green/95 backdrop-blur-md border-t border-aa-card-border"
           >
             <nav className="px-4 py-4 space-y-2">
-              {navLinks.map((link) => (
+              {navLinks.filter(link => !link.hideOnMobile).map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
