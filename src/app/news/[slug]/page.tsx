@@ -3675,17 +3675,21 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "tlpt-jeju-2025-top-money-earners": {
-    heroImage: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
+    // heroImage: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
     sections: [
-      // {
-      //   type: "heading",
-      //   content: "TLPT JEJU 2025"
-      // },
-      // {
-      //   type: "image",
-      //   src: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
-      //   alt: "TLPT Jeju 2025 Event Ranking"
-      // },
+      {
+        type: "heading",
+        content: "2025 TLPT JEJU - TOP MONEY EARNERS",
+        content_cn: "2025TLPT济州 - 奖金榜",
+        content_tw: "2025TLPT濟州 - 獎金榜"
+      },
+      {
+        type: "image",
+        src: "/image/news/details-news/new43/1-DMxCeEBv.jpg",
+        src_cn: "/image/news/details-news/new43/cn/1zh-Cn24wRdw.jpg",
+        src_tw: "/image/news/details-news/new43/tw/1ft-DcmmrdoF.jpg",
+        alt: "TLPT Jeju 2025 Top Money Earners"
+      }
     ]
   },
   "red-hot-stephen-song-leads-final-11-tlpt-20k": {
@@ -4108,37 +4112,65 @@ const articleContent: { [key: string]: ArticleContent } = {
       {
         type: "qa",
         question: "What does it feel like winning 100k from nothing",
-        answer: "I feel great and very happy right now"
+        question_cn: "从零到赢得10万美元是什么感觉",
+        question_tw: "從零到贏得10萬美元是什麼感覺",
+        answer: "I feel great and very happy right now",
+        answer_cn: "我现在感觉非常棒，非常开心",
+        answer_tw: "我現在感覺非常棒，非常開心"
       },
       {
         type: "qa",
         question: "How did you hear about the event?",
-        answer: "From a good friend of mine Evan Zhang"
+        question_cn: "你是怎么知道这个赛事的？",
+        question_tw: "你是怎麼知道這個賽事的？",
+        answer: "From a good friend of mine Evan Zhang",
+        answer_cn: "从我的好朋友Evan Zhang那里听说的",
+        answer_tw: "從我的好朋友Evan Zhang那裡聽說的"
       },
       {
         type: "qa",
         question: "How did you approach the final table coming in as cl and having position on the 2nd biggest stack?",
-        answer: "I just played my style, be aggressive and used my stack properly to build more and more stack."
+        question_cn: "作为筹码领先者进入决赛桌，并且位置在第二大筹码之前，你是如何应对的？",
+        question_tw: "作為籌碼領先者進入決賽桌，並且位置在第二大籌碼之前，你是如何應對的？",
+        answer: "I just played my style, be aggressive and used my stack properly to build more and more stack.",
+        answer_cn: "我只是按照自己的风格打牌，保持进攻性，合理利用筹码来不断积累更多筹码。",
+        answer_tw: "我只是按照自己的風格打牌，保持進攻性，合理利用籌碼來不斷積累更多籌碼。"
       },
       {
         type: "qa",
         question: "How do you approach this tournament strategically? (e.g., do you play a wide range of hands, focus on post-flop play, or try to get a good chip stack early?)",
-        answer: "First of all I read all the body movement of the player in my table so i know how will i adjust my play style."
+        question_cn: "你在这个锦标赛中的策略是什么？（例如，你会打宽范围的牌，专注于翻牌后的打法，还是尝试尽早建立良好的筹码？）",
+        question_tw: "你在這個錦標賽中的策略是什麼？（例如，你會打寬範圍的牌，專注於翻牌後的打法，還是嘗試儘早建立良好的籌碼？）",
+        answer: "First of all I read all the body movement of the player in my table so i know how will i adjust my play style.",
+        answer_cn: "首先，我会观察桌上所有选手的肢体语言，这样我就知道如何调整我的打法。",
+        answer_tw: "首先，我會觀察桌上所有選手的肢體語言，這樣我就知道如何調整我的打法。"
       },
       {
         type: "qa",
         question: "How do you handle the pressure of a big field?(Explore their ability to stay calm and make rational decisions despite the large number of players)",
-        answer: "There is still some pressure on the big field, because some time ago compare the low period the grades are not very good."
+        question_cn: "你如何应对大型赛事的压力？（探讨在众多选手的情况下保持冷静并做出理性决策的能力）",
+        question_tw: "你如何應對大型賽事的壓力？（探討在眾多選手的情況下保持冷靜並做出理性決策的能力）",
+        answer: "There is still some pressure on the big field, because some time ago compare the low period the grades are not very good.",
+        answer_cn: "大型赛事还是有一些压力的，因为前段时间相比低谷期，成绩不是很好。",
+        answer_tw: "大型賽事還是有一些壓力的，因為前段時間相比低谷期，成績不是很好。"
       },
       {
         type: "qa",
         question: "What is your poker history? You took a long break from playing poker after 2020",
-        answer: "My Buglix probably started in 2017, I have also been all over the world,Including EPT the Australian Millions will participate there will be participation in domestic Asian competitions. Then give me more after winning the championship this time. It has greatly increased my confidence I hope that on the way to the next game you can also get better results."
+        question_cn: "你的扑克历史是怎样的？你在2020年后休息了很长时间",
+        question_tw: "你的撲克歷史是怎樣的？你在2020年後休息了很長時間",
+        answer: "My Buglix probably started in 2017, I have also been all over the world,Including EPT the Australian Millions will participate there will be participation in domestic Asian competitions. Then give me more after winning the championship this time. It has greatly increased my confidence I hope that on the way to the next game you can also get better results.",
+        answer_cn: "我的扑克生涯大概从2017年开始，我也去过世界各地，包括EPT、澳洲百万赛，也参加过国内和亚洲的比赛。这次赢得冠军给了我更多信心，希望在接下来的比赛中也能取得更好的成绩。",
+        answer_tw: "我的撲克生涯大概從2017年開始，我也去過世界各地，包括EPT、澳洲百萬賽，也參加過國內和亞洲的比賽。這次贏得冠軍給了我更多信心，希望在接下來的比賽中也能取得更好的成績。"
       },
       {
         type: "qa",
         question: "Any advice for young players?",
-        answer: "First of all, we should do a good job of fund management. Then through continuous learning I think everyone through hard work Naturally, there will be good grades."
+        question_cn: "对年轻选手有什么建议吗？",
+        question_tw: "對年輕選手有什麼建議嗎？",
+        answer: "First of all, we should do a good job of fund management. Then through continuous learning I think everyone through hard work Naturally, there will be good grades.",
+        answer_cn: "首先，要做好资金管理。然后通过不断学习，我认为每个人通过努力，自然会有好成绩。",
+        answer_tw: "首先，要做好資金管理。然後通過不斷學習，我認為每個人通過努力，自然會有好成績。"
       },
       {
         type: "image",
@@ -4245,7 +4277,7 @@ interface ArticleSection {
 }
 
 interface ArticleContent {
-  heroImage: string;
+  heroImage?: string;
   heroImage_tw?: string;
   heroImage_cn?: string;
   sections: ArticleSection[];
@@ -4278,7 +4310,7 @@ export default function NewsDetailPage() {
     if (!content) return article.image;
     if (language === "tw" && content.heroImage_tw) return content.heroImage_tw;
     if (language === "cn" && content.heroImage_cn) return content.heroImage_cn;
-    return content.heroImage;
+    return content.heroImage || article.image;
   };
   
   const currentSections = getSections();
@@ -4407,14 +4439,11 @@ export default function NewsDetailPage() {
                   };
                   return (
                     <div key={index} className="relative w-full overflow-hidden my-8 flex justify-center">
-                      <div className="relative max-w-[85%] md:max-w-[75%] w-full" style={{ aspectRatio: '16/9' }}>
-                        <Image
+                      <div className="relative w-full max-w-4xl">
+                        <img
                           src={getImageSrc(section)}
                           alt={section.alt!}
-                          fill
-                          sizes="(max-width: 768px) 85vw, 75vw"
-                          className="object-contain rounded-lg"
-                          quality={85}
+                          className="w-full h-auto object-contain rounded-lg"
                           loading="lazy"
                         />
                       </div>

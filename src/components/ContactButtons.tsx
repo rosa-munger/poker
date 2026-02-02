@@ -16,17 +16,17 @@ interface ContactInfo {
 const contactList: ContactInfo[] = [
   {
     id: "sigua",
-    name: "三条(原名丝瓜)",
+    name: "三条",
     logo: "/image/logo-cskh/sigua-logo.png",
-    qrCode: "/image/logo-cskh/QR-sigua.jpg",
+    qrCode: "/image/logo-cskh/QR-sigua.jpg?v=2",
     username: "mxbc1",
-    copyText: "三条(原名丝瓜)号"
+    copyText: "三条"
   },
   {
     id: "telegram",
     name: "Telegram",
     logo: "/image/logo-cskh/tglogo.png",
-    qrCode: "/image/logo-cskh/QR-telegram.jpg",
+    qrCode: "/image/logo-cskh/QR-telegram.jpg?v=2",
     username: "@aapklaochen",
     copyText: "Telegram ID"
   },
@@ -35,9 +35,9 @@ const contactList: ContactInfo[] = [
     id: "whatsapp",
     name: "WhatsApp",
     logo: "/image/logo-cskh/logo-whatsapp.png",
-    qrCode: "/image/logo-cskh/QR-WhatsApp.jpg",
+    qrCode: "/image/logo-cskh/QR-WhatsApp.jpg?v=2",
     username: "",
-    copyText: "WhatsApp"
+    copyText: ""
   }
 ];
 
@@ -196,7 +196,7 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.05 }}
                 onClick={() => handleButtonClick("sigua")}
-                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+                className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/sigua-logo.png"
@@ -212,7 +212,7 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.1 }}
                 onClick={() => handleButtonClick("telegram")}
-                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+                className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/tglogo.png"
@@ -228,7 +228,7 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.2 }}
                 onClick={() => handleButtonClick("whatsapp")}
-                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
+                className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/logo-whatsapp.png"
@@ -244,7 +244,7 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.25 }}
                 onClick={() => handleButtonClick("kf")}
-                className="w-14 h-14 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-black flex items-center justify-center p-1"
+                className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-black flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/kf.png"
@@ -382,13 +382,15 @@ export default function ContactButtons() {
                 {activeContact.username}
               </p>
 
-              {/* Copy Button */}
-              <button
-                onClick={() => handleCopy(activeContact.username)}
-                className="w-full bg-gradient-to-r from-[#c9a962] to-[#d4b87a] text-white py-3 px-6 rounded-full font-medium hover:opacity-90 transition-opacity"
-              >
-                {copied ? t("common.copied") : `${t("common.copy")} ${activeContact.copyText}`}
-              </button>
+              {/* Copy Button - Only show if not WhatsApp */}
+              {activeContact.id !== "whatsapp" && (
+                <button
+                  onClick={() => handleCopy(activeContact.username)}
+                  className="w-full bg-gradient-to-r from-[#c9a962] to-[#d4b87a] text-white py-3 px-6 rounded-full font-medium hover:opacity-90 transition-opacity"
+                >
+                  {copied ? t("common.copied") : `${t("common.copy")} ${activeContact.copyText}`}
+                </button>
+              )}
             </div>
 
             {/* Close Button */}
