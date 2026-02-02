@@ -20,7 +20,7 @@ const contactList: ContactInfo[] = [
     logo: "/image/logo-cskh/sigua-logo.png",
     qrCode: "/image/logo-cskh/QR-sigua.jpg?v=2",
     username: "mxbc1",
-    copyText: "三条"
+    copyText: "三条ID"
   },
   {
     id: "telegram",

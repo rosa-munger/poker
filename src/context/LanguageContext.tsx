@@ -49,8 +49,8 @@ export function LanguageProvider({ children }: LanguageProviderProps) {
       if (langCode.includes("zh-cn") || langCode.includes("zh-sg") || langCode.includes("zh-hans") || langCode.startsWith("zh")) {
         return "cn";
       }
-      // All other languages (including English) default to English
-      return "en";
+      // All other languages default to Simplified Chinese (cn)
+      return "cn";
     };
     
     const detectedLang = detectSystemLanguage();
