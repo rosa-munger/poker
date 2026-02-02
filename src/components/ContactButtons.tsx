@@ -363,7 +363,7 @@ export default function ContactButtons() {
             {/* Header */}
             <div className="bg-gradient-to-r from-[#c9a962] to-[#d4b87a] py-3 px-4 text-center">
               <p className="text-white font-medium text-sm">
-                添加 {activeContact.name}
+                {t("common.add")} {t(`contact.${activeContact.id}`)}
               </p>
             </div>
 

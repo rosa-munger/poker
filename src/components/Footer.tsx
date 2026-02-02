@@ -40,9 +40,14 @@ export default function Footer() {
             {/* Logo */}
             <Link href="/" className="flex items-center group">
               <img
-                src="/image/home/logo/logotext-XjxNBhSC.png"
+                src="/image/home/logo/logotext-XjxNBhSC.png?v=2"
                 alt="AA Poker"
-                className="h-6 w-auto object-contain"
+                     className="w-auto"
+                style={{ 
+                  imageRendering: 'crisp-edges', 
+                  height: '23px',
+                  width: '121px'
+                }}
               />
             </Link>
 

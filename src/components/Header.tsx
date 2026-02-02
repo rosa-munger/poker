@@ -62,10 +62,14 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
-              src="/image/home/logo/logotext-XjxNBhSC.png"
+              src="/image/home/logo/logotext-XjxNBhSC.png?v=2"
               alt="AA Poker"
               className="w-auto"
-              style={{ imageRendering: 'crisp-edges', height: 'auto', maxHeight: '40px' }}
+              style={{ 
+                imageRendering: 'crisp-edges', 
+                height: '23px',
+                width: '121px'
+              }}
             />
           </Link>
 

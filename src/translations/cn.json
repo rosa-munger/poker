@@ -5,7 +5,6 @@
   "nav.download": "下载指南",
   "nav.language": "语言",
   "nav.about": "关于我们",
-  "nav.backToHome": "返回首页",
 
   "hero.title": "人人都能成为明星！",
   "hero.subtitle": "下载应用，5秒内进入牌桌",
@@ -118,6 +117,10 @@
   "common.close": "关闭",
   "common.copy": "复制",
   "common.copied": "已复制！",
+  "common.add": "添加",
+  "contact.sigua": "三條",
+  "contact.telegram": "Telegram",
+  "contact.whatsapp": "WhatsApp",
 
   "modal.gameplay.description": "迄今为止所有线上约局平台中自定义配置最丰富的、体验最好的，满足各种人群不同需求：德州扑克、德州短牌、德州3-1、奥马哈、鱿鱼游戏模式、视频牌桌、蘑菇模式、暴击底池、Jackpot、保险模式。",
   "modal.gameplay.classicTexas": "经典德州扑克",
