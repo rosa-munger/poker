@@ -20,9 +20,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "AAPoker丨AApoker官网丨AApoker联盟｜AA扑克官网 · AA扑克俱乐部 · AApoker下载",
-  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。提供 AApoker下载、AA扑克下载，安卓 iOS 均可畅玩。",
-  keywords: ["AAPoker", "AApoker官网", "AApoker联盟", "AApoker俱乐部", "AApoker下载", "AA扑克", "AA扑克官网", "AA扑克联盟", "AA扑克俱乐部", "AA扑克下载", "德州扑克", "奥马哈", "在线扑克", "poker", "online poker", "texas holdem"],
+  title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载 · AApoker联盟俱乐部",
+  description: "AAPoker官网（aapoker.top）- AA扑克是专注公平竞技的在线扑克平台。AAPoker提供德州扑克、奥马哈等玩法，支持AApoker联盟、AApoker俱乐部模式。采用RNG随机数生成器，拒绝AI作弊。立即AApoker下载，安卓iOS畅玩！",
+  keywords: ["AAPoker", "aapoker", "AApoker官网", "AA扑克", "AA扑克官网", "AApoker下载", "AA扑克下载", "AApoker联盟", "AApoker俱乐部", "AA扑克联盟", "AA扑克俱乐部", "德州扑克", "奥马哈", "在线扑克平台", "poker app", "online poker"],
   authors: [{ name: "AA POKER" }],
   creator: "AA POKER",
   publisher: "AA POKER",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
     locale: "zh_CN",
     url: "https://aapoker.top",
     siteName: "AAPoker",
-    title: "AAPoker丨AApoker官网丨AApoker联盟｜AA扑克官网 · AA扑克俱乐部 · AApoker下载",
-    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。",
+    title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载",
+    description: "AAPoker官网 - AA扑克是专注公平竞技的在线扑克平台。提供德州扑克、奥马哈玩法，支持AApoker联盟、AApoker俱乐部模式。采用RNG，拒绝AI作弊。",
     images: [
       {
         url: "/image/home/logo/logotext-XjxNBhSC.png",
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AAPoker丨AApoker官网丨AA扑克官网 · AApoker下载",
-    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。提供德州扑克、奥马哈等多种玩法，拒绝 AI，杜绝作弊。",
+    title: "AAPoker - AApoker官网 | AA扑克官网下载",
+    description: "AAPoker官网 - AA扑克专注公平竞技的在线扑克平台。支持AApoker联盟、AApoker俱乐部，采用RNG，拒绝AI作弊。",
     images: ["/image/home/logo/logotext-XjxNBhSC.png"],
   },
   icons: {
