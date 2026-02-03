@@ -8,14 +8,14 @@ import { Metadata } from "next";
 
 // SEO Metadata for Homepage
 export const metadata: Metadata = {
-  title: "AA POKER - Premium Online Poker Platform | Texas Hold'em & Omaha",
-  description: "AA POKER - A World With No Cheating. Join the premium online poker platform with AA Green Shield Plus anti-cheat protection. Play Texas Hold'em, Omaha, and more with players worldwide.",
-  keywords: ["AA Poker", "online poker", "Texas Hold'em", "Omaha poker", "poker app", "mobile poker", "fair poker", "anti-cheat poker", "TLPT", "poker tournament"],
+  title: "AAPoker丨AApoker官网丨AApoker联盟｜AA扑克官网 · AA扑克俱乐部 · AApoker下载",
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。提供 AApoker下载、AA扑克下载，安卓 iOS 均可畅玩。",
+  keywords: ["AAPoker", "AApoker官网", "AApoker联盟", "AApoker俱乐部", "AApoker下载", "AA扑克", "AA扑克官网", "AA扑克联盟", "AA扑克俱乐部", "AA扑克下载", "德州扑克", "奥马哈"],
   openGraph: {
-    title: "AA POKER - Premium Online Poker Platform",
-    description: "AA POKER - A World With No Cheating. Premium anti-cheat system with AA Green Shield Plus protection.",
+    title: "AAPoker丨AApoker官网丨AA扑克官网 · AApoker下载",
+    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。采用随机数生成器（RNG），拒绝 AI，杜绝作弊。",
     url: "https://www.aapoker.top",
-    siteName: "AA POKER",
+    siteName: "AAPoker",
     type: "website",
   },
 };
@@ -24,18 +24,20 @@ export default function Home() {
   return (
     <>
       {/* SEO H1 - Hidden visually but crawlable by Google */}
-      <h1 className="sr-only">AA POKER - Premium Online Poker Platform with Anti-Cheat Protection</h1>
+      <h1 className="sr-only">AAPoker｜AApoker官网 · 公平安全的在线扑克平台</h1>
       
       {/* SEO Content Block - Real text for Google to crawl */}
       <section className="sr-only" aria-label="SEO Content">
-        <h2>Welcome to AA POKER - The World&apos;s Leading Online Poker Platform</h2>
-        <p>AA POKER is the premium online poker platform featuring Texas Hold&apos;em, Omaha, and innovative game modes. With AA Green Shield Plus anti-cheat protection, we ensure a fair gaming environment for all players worldwide.</p>
-        <h2>AA POKER Features</h2>
-        <p>Experience the most comprehensive gameplay with Texas Hold&apos;em, Short Deck, Omaha, Squid Game Mode, Video Table, and more. Our platform offers diverse table styles including classic, theater, space, underwater, and beach themes.</p>
-        <h2>World-Class Poker Champions</h2>
-        <p>Join our community featuring world champions like Joe Hachem, Dan Cates, Zhou Quan, Jungleman, and Chen Dong. TLPT events originated in Sydney, Australia promote international competitive poker.</p>
-        <h2>Multi-Dimensional Protection</h2>
-        <p>GLI certified fair gameplay with GPS/IP protection, 24/7 anti-cheating team monitoring, prohibiting data collection tools, simulators, and AI bots.</p>
+        <h2>AAPoker｜AApoker官网 · 公平安全的在线扑克平台</h2>
+        <p>AAPoker（AA扑克） 是一个专注于打造公平游戏环境的在线扑克平台，致力于为玩家提供安全爱好者提供稳定流畅的游戏系统和多样化的扑克玩法。</p>
+        <h2>AApoker联盟 与 AA扑克联盟</h2>
+        <p>平台所有游戏结果均由 随机数生成器（RNG） 控制，确保牌局结果的公正性与随机性，拒绝 AI，杜绝任何作弊行为的发生。无论是在 AApoker联盟 还是 AA扑克联盟 体系中，玩家都可以安心参与每一场对局，专注竞技本身。</p>
+        <h2>AApoker俱乐部 与 AA扑克俱乐部</h2>
+        <p>AApoker俱乐部 与 AA扑克俱乐部 功能，为玩家提供更具社交属性的扑克体验。你可以加入不同俱乐部，与好友同桌对战，参与俱乐部专属赛事，提升互动性与游戏乐趣。平台覆盖 德州扑克、奥马哈、锦标赛等经典玩法，适合休闲玩家与竞技玩家长期参与。</p>
+        <h2>AA扑克官网 与 AApoker下载</h2>
+        <p>作为专业的 AA扑克官网，AAPoker 持续优化系统性能与安全防护机制，为用户提供稳定可靠的服务体验。玩家可通过 AApoker下载 或 AA扑克下载，在安卓与 iOS 设备上随时随地开启牌局，畅享高质量的在线扑克竞技。</p>
+        <h2>选择 AAPoker</h2>
+        <p>选择 AAPoker，就是选择一个 公平、安全、纯粹 的扑克平台。</p>
       </section>
 
       {/* Hero Slider Section - 4 images + 1 video, auto-scroll 2s */}

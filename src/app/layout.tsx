@@ -20,9 +20,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "AA POKER - Premium Online Poker Platform | Texas Hold'em & Omaha",
-  description: "AA POKER - A World With No Cheating. Join the premium online poker platform with AA Green Shield Plus anti-cheat protection. Play Texas Hold'em, Omaha, and more with players worldwide. Download now!",
-  keywords: ["poker", "online poker", "texas holdem", "AA Poker", "green shield", "poker app", "mobile poker", "poker tournament", "TLPT", "omaha poker", "poker club", "fair poker", "anti-cheat poker"],
+  title: "AAPoker丨AApoker官网丨AApoker联盟｜AA扑克官网 · AA扑克俱乐部 · AApoker下载",
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。提供 AApoker下载、AA扑克下载，安卓 iOS 均可畅玩。",
+  keywords: ["AAPoker", "AApoker官网", "AApoker联盟", "AApoker俱乐部", "AApoker下载", "AA扑克", "AA扑克官网", "AA扑克联盟", "AA扑克俱乐部", "AA扑克下载", "德州扑克", "奥马哈", "在线扑克", "poker", "online poker", "texas holdem"],
   authors: [{ name: "AA POKER" }],
   creator: "AA POKER",
   publisher: "AA POKER",
@@ -39,11 +39,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "zh_CN",
     url: "https://aapoker.top",
-    siteName: "AA POKER",
-    title: "AA POKER",
-    description: "AA POKER - A World With No Cheating. Premium anti-cheat system with AA Green Shield Plus protection.",
+    siteName: "AAPoker",
+    title: "AAPoker丨AApoker官网丨AApoker联盟｜AA扑克官网 · AA扑克俱乐部 · AApoker下载",
+    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。",
     images: [
       {
         url: "/image/home/logo/logotext-XjxNBhSC.png",
@@ -55,8 +55,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AA POKER - Premium Online Poker Platform",
-    description: "AA POKER - A World With No Cheating. Premium anti-cheat system with AA Green Shield Plus protection.",
+    title: "AAPoker丨AApoker官网丨AA扑克官网 · AApoker下载",
+    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。提供德州扑克、奥马哈等多种玩法，拒绝 AI，杜绝作弊。",
     images: ["/image/home/logo/logotext-XjxNBhSC.png"],
   },
   icons: {
@@ -77,10 +77,15 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "AA POKER",
+  name: "AAPoker",
   url: "https://www.aapoker.top",
-  logo: "https://www.aapoker.top/image/home/logo/logotext-XjxNBhSC.png",
-  description: "AA POKER - Premium Online Poker Platform with Anti-Cheat Protection. Play Texas Hold'em, Omaha, and more.",
+  logo: {
+    "@type": "ImageObject",
+    url: "https://www.aapoker.top/image/home/logo/logotext-XjxNBhSC.png",
+    width: "121",
+    height: "23"
+  },
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。提供德州扑克、奥马哈等多种玩法，拒绝 AI，杜绝作弊。",
   sameAs: [
     "https://www.youtube.com/@aapoker",
     "https://www.facebook.com/aapoker",
@@ -96,9 +101,9 @@ const jsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "AA POKER",
+  name: "AAPoker",
   url: "https://www.aapoker.top",
-  description: "Premium Online Poker Platform with Anti-Cheat Protection",
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台，支持 AApoker联盟、AA扑克俱乐部。",
   potentialAction: {
     "@type": "SearchAction",
     target: "https://www.aapoker.top/news?search={search_term_string}",
@@ -109,10 +114,10 @@ const websiteJsonLd = {
 const softwareJsonLd = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "AA POKER",
+  name: "AAPoker",
   operatingSystem: "iOS, Android",
   applicationCategory: "GameApplication",
-  description: "Premium online poker app with Texas Hold'em, Omaha, and anti-cheat protection.",
+  description: "AAPoker（AA扑克）在线扑克应用，提供德州扑克、奥马哈等玩法，采用RNG随机数生成器，拒绝 AI，杜绝作弊。",
   offers: {
     "@type": "Offer",
     price: "0",
@@ -126,7 +131,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <head>
         {/* JSON-LD Structured Data for SEO */}
         <script
