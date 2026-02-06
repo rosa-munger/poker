@@ -20,9 +20,9 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载 · AApoker联盟俱乐部",
-  description: "AAPoker官网（aapoker.top）- AA扑克是专注公平竞技的在线扑克平台。AAPoker提供德州扑克、奥马哈等玩法，支持AApoker联盟、AApoker俱乐部模式。采用RNG随机数生成器，拒绝AI作弊。立即AApoker下载，安卓iOS畅玩！",
-  keywords: ["AAPoker", "aapoker", "AApoker官网", "AA扑克", "AA扑克官网", "AApoker下载", "AA扑克下载", "AApoker联盟", "AApoker俱乐部", "AA扑克联盟", "AA扑克俱乐部", "德州扑克", "奥马哈", "在线扑克平台", "poker app", "online poker"],
+  title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载 · Poker AA",
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。提供 AApoker下载、AA扑克下载，安卓 iOS 均可畅玩。",
+  keywords: ["AAPoker", "aapoker", "poker aa", "AApoker官网", "AA扑克", "AA扑克官网", "AApoker下载", "AA扑克下载", "AApoker联盟", "AApoker俱乐部", "AA扑克联盟", "AA扑克俱乐部", "德州扑克", "奥马哈", "在线扑克平台", "poker app", "online poker"],
   authors: [{ name: "AA POKER" }],
   creator: "AA POKER",
   publisher: "AA POKER",
@@ -40,29 +40,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "zh_CN",
-    url: "https://aapoker.top",
+    url: "https://www.aapoker.top",
     siteName: "AAPoker",
-    title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载",
-    description: "AAPoker官网 - AA扑克是专注公平竞技的在线扑克平台。提供德州扑克、奥马哈玩法，支持AApoker联盟、AApoker俱乐部模式。采用RNG，拒绝AI作弊。",
+    title: "AAPoker - AApoker官网 | AA扑克官网 · AApoker下载 · Poker AA",
+    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。",
     images: [
       {
-        url: "/image/home/logo/logotext-XjxNBhSC.png",
-        width: 800,
-        height: 600,
-        alt: "AA POKER Logo",
+        url: "https://www.aapoker.top/image/icon.png",
+        width: 512,
+        height: 512,
+        alt: "AAPoker Logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AAPoker - AApoker官网 | AA扑克官网下载",
-    description: "AAPoker官网 - AA扑克专注公平竞技的在线扑克平台。支持AApoker联盟、AApoker俱乐部，采用RNG，拒绝AI作弊。",
-    images: ["/image/home/logo/logotext-XjxNBhSC.png"],
-  },
-  icons: {
-    icon: "/image/icon-logo-tab.png",
-    apple: "/image/icon-logo-tab.png",
-    shortcut: "/image/icon-logo-tab.png",
+    title: "AAPoker - AApoker官网 | AA扑克官网下载 · Poker AA",
+    description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。提供德州扑克、奥马哈等多种玩法，拒绝 AI，杜绝作弊。",
+    images: ["https://www.aapoker.top/image/icon.png"],
   },
   alternates: {
     languages: {
@@ -81,11 +76,11 @@ const jsonLd = {
   url: "https://www.aapoker.top",
   logo: {
     "@type": "ImageObject",
-    url: "https://www.aapoker.top/image/home/logo/logotext-XjxNBhSC.png",
+    url: "https://www.aapoker.top/image/icon.png",
     width: "121",
     height: "23"
   },
-  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。提供德州扑克、奥马哈等多种玩法，拒绝 AI，杜绝作弊。",
+  description: "AAPoker（AA扑克）是专注于公平竞技的在线扑克平台。AApoker官网提供德州扑克、奥马哈等多种玩法，支持 AApoker联盟、AApoker俱乐部、AA扑克联盟、AA扑克俱乐部 等模式，采用随机数生成器（RNG），拒绝 AI，杜绝作弊。提供 AApoker下载、AA扑克下载，安卓 iOS 均可畅玩。",
   sameAs: [
     "https://www.youtube.com/@aapoker",
     "https://www.facebook.com/aapoker",
@@ -93,7 +88,7 @@ const jsonLd = {
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "info@aapoker.app",
+    email: "mixue66@outlook.com",
     contactType: "customer service"
   }
 };
