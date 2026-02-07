@@ -9,6 +9,104 @@ import { useLanguage } from "@/context/LanguageContext";
 
 // Full article content data
 const articleContent: { [key: string]: ArticleContent } = {
+  "5-pro-tips-dominate-aapoker-cash-games": {
+    heroImage: "/image/news/section-more-information/new26-CT8-D1vg.png",
+    sections: [
+      {
+        type: "paragraph",
+        content: "Cash games are the bread and butter of many professional poker players. Unlike tournaments, the chips on the table represent real money, and the strategy requires a different approach. Whether you are playing Texas Hold'em or Omaha on AAPoker, mastering these 5 tips will significantly increase your win rate and help you dominate the tables.",
+        content_cn: "现金桌是许多职业扑克玩家的主要收入来源。与锦标赛不同，桌上的筹码代表真金白银，因此策略需要不同的方法。无论您是在AAPoker上玩德州扑克还是奥马哈，掌握这5个技巧将显著提高您的胜率，帮助您统治牌桌。",
+        content_tw: "現金桌是許多職業撲克玩家的主要收入來源。與錦標賽不同，桌上的籌碼代表真金白銀，因此策略需要不同的方法。無論您是在AAPoker上玩德州撲克還是奧馬哈，掌握這5個技巧將顯著提高您的勝率，幫助您統治牌桌。"
+      },
+      {
+        type: "heading",
+        content: "1. Position is Power",
+        content_cn: "1. 位置就是力量",
+        content_tw: "1. 位置就是力量"
+      },
+      {
+        type: "image",
+        src: "/image/news/section-more-information/new21-BzbXwbXk.png",
+        alt: "Poker Position Strategy"
+      },
+      {
+        type: "paragraph",
+        content: "Position is arguably the most important concept in poker. Being 'in position' (acting last) gives you a massive information advantage. You get to see what your opponents do before you have to make a decision. On AAPoker, try to play more hands from late position (Button, Cutoff) and tighten up your range in early positions. This simple adjustment can immediately boost your profitability.",
+        content_cn: "位置可以说是扑克中最重要的概念。处于'有利位置'（最后行动）能给您带来巨大的信息优势。在您必须做出决定之前，您可以看到对手的行动。在AAPoker上，尽量多在后位（按钮位、关煞位）打牌，而在前位收紧您的起手牌范围。这个简单的调整可以立即提升您的盈利能力。",
+        content_tw: "位置可以說是撲克中最重要的概念。處於'有利位置'（最後行動）能給您帶來巨大的信息優勢。在您必須做出決定之前，您可以看到對手的行動。在AAPoker上，盡量多在後位（按鈕位、關煞位）打牌，而在前位收緊您的起手牌範圍。這個簡單的調整可以立即提升您的盈利能力。"
+      },
+      {
+        type: "heading",
+        content: "2. Aggression Pays Off",
+        content_cn: "2. 激进会有回报",
+        content_tw: "2. 激進會有回報"
+      },
+      {
+        type: "paragraph",
+        content: "Passive play (calling too much) is a recipe for disaster in cash games. Aggressive play (betting and raising) gives you two ways to win: having the best hand at showdown OR forcing your opponent to fold. Don't be afraid to semi-bluff with your draws or raise for value when you have a strong hand. AAPoker rewards calculated aggression.",
+        content_cn: "被动打法（跟注太多）在现金桌中是灾难的配方。激进打法（下注和加注）给您两种获胜方式：摊牌时拥有最好的牌，或者迫使对手弃牌。不要害怕用听牌半诈唬，或者在手持强牌时加注以此获取价值。AAPoker奖励经过计算的激进。",
+        content_tw: "被動打法（跟注太多）在現金桌中是災難的配方。激進打法（下注和加注）給您兩種獲勝方式：攤牌時擁有最好的牌，或者迫使對手棄牌。不要害怕用聽牌半詐唬，或者在手持強牌時加注以此獲取價值。AAPoker獎勵經過計算的激進。"
+      },
+      {
+        type: "heading",
+        content: "3. Master Bankroll Management",
+        content_cn: "3. 掌握资金管理",
+        content_tw: "3. 掌握資金管理"
+      },
+      {
+        type: "image",
+        src: "/image/news/section-more-information/new24-DZWWb0yZ.png",
+        alt: "Poker Bankroll Management"
+      },
+      {
+        type: "paragraph",
+        content: "Even the best players in the world go through downswings. To survive the variance, you need solid bankroll management. A general rule of thumb is to have at least 20-30 buy-ins for the stake you are playing. If you are playing $1/$2 NLH on AAPoker with a $200 buy-in, you should have at least $4,000-$6,000 dedicated to poker. This ensures you play your best game without fear of going broke.",
+        content_cn: "即使是世界上最好的玩家也会经历下风期。为了在波动中生存，您需要稳健的资金管理。一个通用的法则是为您所玩的级别准备至少20-30个买入。如果您在AAPoker上玩$200买入的$1/$2无限注德州扑克，您应该至少有$4,000-$6,000的扑克专用资金。这能确保您发挥最佳水平而不必担心破产。",
+        content_tw: "即使是世界上最好的玩家也會經歷下風期。為了在波動中生存，您需要穩健的資金管理。一個通用的法則是為您所玩的級別準備至少20-30個買入。如果您在AAPoker上玩$200買入的$1/$2無限注德州撲克，您應該至少有$4,000-$6,000的撲克專用資金。這能確保您發揮最佳水平而不必擔心破產。"
+      },
+      {
+        type: "heading",
+        content: "4. Observe Your Opponents",
+        content_cn: "4. 观察您的对手",
+        content_tw: "4. 觀察您的對手"
+      },
+      {
+        type: "paragraph",
+        content: "Pay attention even when you are not in the hand. Who plays too many hands? Who only raises with the nuts? Who bluffs too much? Categorizing your opponents on AAPoker allows you to exploit their tendencies. If a 'rock' (tight player) raises, you can easily fold your marginal hands. If a 'maniac' (loose-aggressive player) bets, you can call down lighter.",
+        content_cn: "即使您没有参与牌局也要注意观察。谁玩的手牌太多？谁只用坚果牌加注？谁诈唬太多？在AAPoker上给对手分类可以让您利用他们的倾向。如果一个'岩石'（紧手玩家）加注，您可以轻松弃掉边缘牌。如果一个'疯子'（松凶玩家）下注，您可以放宽跟注范围。",
+        content_tw: "即使您沒有參與牌局也要注意觀察。誰玩的手牌太多？誰只用堅果牌加注？誰詐唬太多？在AAPoker上給對手分類可以讓您利用他們的傾向。如果一個'岩石'（緊手玩家）加注，您可以輕鬆棄掉邊緣牌。如果一個'瘋子'（松兇玩家）下注，您可以放寬跟注範圍。"
+      },
+      {
+        type: "heading",
+        content: "5. Emotional Control (Avoid Tilt)",
+        content_cn: "5. 情绪控制（避免上头）",
+        content_tw: "5. 情緒控制（避免上頭）"
+      },
+      {
+        type: "image",
+        src: "/image/news/section-more-information/new38-DmsS5Dqe.png",
+        alt: "Poker Mindset"
+      },
+      {
+        type: "paragraph",
+        content: "Tilt is the enemy of profit. When you lose a big pot to a bad beat, it's natural to feel angry. However, letting that anger affect your decision-making will only lead to more losses. If you feel yourself tilting on AAPoker, take a break. Step away from the computer or phone, go for a walk, and come back when you are calm and ready to play your A-game again.",
+        content_cn: "情绪失控（上头）是盈利的敌人。当您因为运气不好输掉一个大底池时，感到生气是很自然的。然而，让愤怒影响您的决策只会导致更多的损失。如果您在AAPoker上感觉自己上头了，休息一下。离开电脑或手机，去散步，等冷静下来准备好再次发挥最佳水平时再回来。",
+        content_tw: "情緒失控（上頭）是盈利的敵人。當您因為運氣不好輸掉一個大底池時，感到生氣是很自然的。然而，讓憤怒影響您的決策只會導致更多的損失。如果您在AAPoker上感覺自己上頭了，休息一下。離開電腦或手機，去散步，等冷靜下來準備好再次發揮最佳水平時再回來。"
+      },
+      {
+        type: "heading",
+        content: "Ready to Win on AAPoker?",
+        content_cn: "准备好在AAPoker上赢钱了吗？",
+        content_tw: "準備好在AAPoker上贏錢了嗎？"
+      },
+      {
+        type: "paragraph",
+        content: "By applying these 5 tips—using position, being aggressive, managing your bankroll, observing opponents, and controlling your emotions—you will be well on your way to becoming a crushing player on AAPoker. Download the app today and start your journey!",
+        content_cn: "通过应用这5个技巧——利用位置、保持激进、管理资金、观察对手和控制情绪——您将走上成为AAPoker盈利玩家的道路。立即下载APP，开始您的旅程！",
+        content_tw: "通過應用這5個技巧——利用位置、保持激進、管理資金、觀察對手和控制情緒——您將走上成為AAPoker盈利玩家的道路。立即下載APP，開始您的旅程！"
+      }
+    ]
+  },
   "tlpt-jeju-2025-main-event-circuit-winner": {
     heroImage: "/image/news/details-news/new1/1-BJRjznbR.png",
     sections: [

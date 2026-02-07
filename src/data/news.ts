@@ -444,6 +444,18 @@ export const newsArticles: NewsArticle[] = [
     date: "August 5, 2023",
     image: "/image/news/section-more-information/new16-BeFig88k.png",
     excerpt: "AA POKER Player Story—Chris Moneymaker"
+  },
+  {
+    id: 44,
+    slug: "5-pro-tips-dominate-aapoker-cash-games",
+    title: "5 Pro Tips to Dominate Cash Games on AAPoker: Master the Strategy",
+    title_cn: "AAPoker现金桌制胜指南：5个专业技巧助你称霸牌局",
+    title_tw: "AAPoker現金桌致勝指南：5個專業技巧助你稱霸牌局",
+    date: "February 7, 2026",
+    image: "/image/news/section-more-information/new26-CT8-D1vg.png",
+    excerpt: "Discover essential strategies to improve your win rate on AAPoker's cash games.",
+    excerpt_cn: "探索提高AAPoker现金桌胜率的关键策略。",
+    excerpt_tw: "探索提高AAPoker現金桌勝率的關鍵策略。"
   }
 ];
 
