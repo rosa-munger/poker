@@ -456,6 +456,18 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Discover essential strategies to improve your win rate on AAPoker's cash games.",
     excerpt_cn: "探索提高AAPoker现金桌胜率的关键策略。",
     excerpt_tw: "探索提高AAPoker現金桌勝率的關鍵策略。"
+  },
+  {
+    id: 45,
+    slug: "why-poker-aa-enthusiasts-switching-to-aapoker-2026",
+    title: "Why 'Poker AA' Enthusiasts Are Switching to AAPoker in 2026",
+    title_cn: "为何'Poker AA'爱好者在2026年纷纷转向AAPoker？",
+    title_tw: "為何'Poker AA'愛好者在2026年紛紛轉向AAPoker？",
+    date: "February 8, 2026",
+    image: "/image/news/section-more-information/new23-zF0Rc3Ik.png",
+    excerpt: "Discover the reasons behind the massive migration of players to AAPoker, the ultimate destination for Poker AA fans.",
+    excerpt_cn: "探索玩家大规模迁移至AAPoker背后的原因，这是Poker AA粉丝的终极目的地。",
+    excerpt_tw: "探索玩家大規模遷移至AAPoker背後的原因，這是Poker AA粉絲的終極目的地。"
   }
 ];
 
