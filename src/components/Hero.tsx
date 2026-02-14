@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useLanguage } from "@/context/LanguageContext";
+import Image from "next/image";
 
 // Hero slides data - language-specific images
 const getHeroSlides = (language: string) => {
@@ -184,10 +185,13 @@ export default function Hero() {
             style={{ cursor: currentSlideData.clickAction ? 'pointer' : 'default' }}
           >
             {currentSlideData.type === "image" ? (
-              <img
+              <Image
                 src={currentSlideData.src}
                 alt={`Slide ${currentSlide + 1}`}
-                className="absolute inset-0 w-full h-full object-contain object-center"
+                fill
+                sizes="100vw"
+                priority={currentSlide === 0}
+                className="object-contain object-center"
               />
             ) : (
               <video

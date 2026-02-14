@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Modal content data structure - content will be populated with translations
@@ -185,11 +186,14 @@ function AnimatedImage({ src, alt, delay = 0 }: { src: string; alt: string; dela
         }}
         className="relative w-full h-full"
       >
-     <img
-  src={src}
-  alt={alt}
-  className="absolute inset-0 w-full h-full object-contain scale-140 drop-shadow-[0_0_40px_rgba(57,203,97,0.4)]"
-/>
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-contain scale-140 drop-shadow-[0_0_40px_rgba(57,203,97,0.4)]"
+          loading="lazy"
+        />
       </motion.div>
     </motion.div>
   );

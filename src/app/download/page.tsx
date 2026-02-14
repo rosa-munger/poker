@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Helper function to get tutorial images based on language
@@ -371,11 +372,14 @@ export default function DownloadPage() {
                       <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                         {imgStep.step}
                       </div>
-                      <div className="relative mx-auto max-w-[280px] mb-6">
-                        <img
+                      <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                        <Image
                           src={imgStep.image}
                           alt={`Step ${imgStep.step}`}
-                          className="w-full h-auto rounded-2xl"
+                          fill
+                          sizes="280px"
+                          className="object-contain rounded-2xl"
+                          loading="lazy"
                         />
                       </div>
                       {step && (
@@ -399,11 +403,14 @@ export default function DownloadPage() {
                       <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                         {imgStep.step}
                       </div>
-                      <div className="relative mx-auto max-w-[280px] mb-6">
-                        <img
+                      <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                        <Image
                           src={imgStep.image}
                           alt={`Step ${imgStep.step}`}
-                          className="w-full h-auto rounded-2xl"
+                          fill
+                          sizes="280px"
+                          className="object-contain rounded-2xl"
+                          loading="lazy"
                         />
                       </div>
                       {step && (
@@ -426,11 +433,14 @@ export default function DownloadPage() {
                       <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                         {imgStep.step}
                       </div>
-                      <div className="relative mx-auto max-w-[280px] mb-6">
-                        <img
+                      <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                        <Image
                           src={imgStep.image}
                           alt={`Step ${imgStep.step}`}
-                          className="w-full h-auto rounded-2xl"
+                          fill
+                          sizes="280px"
+                          className="object-contain rounded-2xl"
+                          loading="lazy"
                         />
                       </div>
                       {step && (
@@ -455,11 +465,14 @@ export default function DownloadPage() {
                       <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                         {imgStep.step}
                       </div>
-                      <div className="relative mx-auto max-w-[280px] mb-6">
-                        <img
+                      <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                        <Image
                           src={imgStep.image}
                           alt={`Step ${imgStep.step}`}
-                          className="w-full h-auto rounded-2xl"
+                          fill
+                          sizes="280px"
+                          className="object-contain rounded-2xl"
+                          loading="lazy"
                         />
                       </div>
                       {step && (
@@ -489,11 +502,14 @@ export default function DownloadPage() {
                       <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                         {imgStep.step}
                       </div>
-                      <div className="relative mx-auto max-w-[280px] mb-6">
-                        <img
+                      <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                        <Image
                           src={imgStep.image}
                           alt={`Step ${imgStep.step}`}
-                          className="w-full h-auto rounded-2xl"
+                          fill
+                          sizes="280px"
+                          className="object-contain rounded-2xl"
+                          loading="lazy"
                         />
                       </div>
                       {step && (
@@ -517,11 +533,14 @@ export default function DownloadPage() {
                         <div className="w-14 h-14 mx-auto mb-6 bg-[#1a4d2e] rounded-full flex items-center justify-center text-white font-bold text-xl">
                           {imgStep.step}
                         </div>
-                        <div className="relative mx-auto max-w-[280px] mb-6">
-                          <img
+                        <div className="relative mx-auto max-w-[280px] h-[500px] mb-6">
+                          <Image
                             src={imgStep.image}
                             alt={`Step ${imgStep.step}`}
-                            className="w-full h-auto rounded-2xl"
+                            fill
+                            sizes="280px"
+                            className="object-contain rounded-2xl"
+                            loading="lazy"
                           />
                         </div>
                         {step && (
