@@ -215,6 +215,7 @@ export default function Hero() {
             <button
               key={index}
               onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
               className={`h-1 rounded-full transition-all duration-300 cursor-pointer ${
                 index === currentSlide
                   ? "w-8 bg-aa-light-green"
@@ -249,6 +250,7 @@ export default function Hero() {
               {/* Close Button */}
               <button
                 onClick={() => setIsVideoModalOpen(false)}
+                aria-label="Close video"
                 className="absolute -top-12 right-0 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
               >
                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

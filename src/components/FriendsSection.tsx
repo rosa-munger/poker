@@ -99,6 +99,7 @@ export default function FriendsSection() {
           {/* Previous Button */}
           <button
             onClick={prevSlide}
+            aria-label="Previous slide"
             className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-10 h-10 bg-aa-card-bg border border-aa-card-border rounded-full flex items-center justify-center text-white hover:bg-aa-emerald/20 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -123,6 +124,8 @@ export default function FriendsSection() {
                     <img
                       src={friend.image}
                       alt={friend.name}
+                      width={300}
+                      height={400}
                       className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
@@ -134,6 +137,7 @@ export default function FriendsSection() {
           {/* Next Button */}
           <button
             onClick={nextSlide}
+            aria-label="Next slide"
             className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-10 h-10 bg-aa-card-bg border border-aa-card-border rounded-full flex items-center justify-center text-white hover:bg-aa-emerald/20 transition-colors"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -148,6 +152,7 @@ export default function FriendsSection() {
             <button
               key={i}
               onClick={() => setCurrentIndex(i * visibleCount)}
+              aria-label={`Go to page ${i + 1}`}
               className={`w-2 h-2 rounded-full transition-all ${
                 Math.floor(currentIndex / visibleCount) === i
                   ? "w-6 bg-aa-gold"

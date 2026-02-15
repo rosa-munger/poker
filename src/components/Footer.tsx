@@ -42,12 +42,10 @@ export default function Footer() {
               <img
                 src="/image/home/logo/logotext-XjxNBhSC.png?v=2"
                 alt="AA Poker"
-                     className="w-auto"
-                style={{ 
-                  imageRendering: 'crisp-edges', 
-                  height: '23px',
-                  width: '121px'
-                }}
+                width={121}
+                height={23}
+                className="h-[23px] w-auto"
+                style={{ imageRendering: 'crisp-edges' }}
               />
             </Link>
 

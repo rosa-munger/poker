@@ -29,6 +29,8 @@ export default function DownloadButtons() {
               <img
                 src="/image/home/logo-android/ios.png"
                 alt="iOS"
+                width={120}
+                height={48}
                 className="h-10 md:h-12 w-auto object-contain"
               />
             </motion.div>
@@ -46,6 +48,8 @@ export default function DownloadButtons() {
             <img
               src="/image/home/logo-android/download.png"
               alt="Android"
+              width={120}
+              height={48}
               className="h-10 md:h-12 w-auto object-contain"
             />
           </motion.a>
@@ -62,6 +66,8 @@ export default function DownloadButtons() {
             <img
               src={getBackupAndroidImage()}
               alt="Backup Android Download"
+              width={120}
+              height={48}
               className="h-10 md:h-12 w-auto object-contain"
             />
           </motion.a>

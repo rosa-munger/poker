@@ -196,11 +196,14 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.05 }}
                 onClick={() => handleButtonClick("sigua")}
+                aria-label="Contact via Santiao"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/sigua-logo.png"
                   alt="Sigua"
+                  width={72}
+                  height={72}
                   className="w-full h-full object-contain"
                 />
               </motion.button>
@@ -212,11 +215,14 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.1 }}
                 onClick={() => handleButtonClick("telegram")}
+                aria-label="Contact via Telegram"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/tglogo.png"
                   alt="Telegram"
+                  width={72}
+                  height={72}
                   className="w-full h-full object-contain"
                 />
               </motion.button>   
@@ -228,11 +234,14 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.2 }}
                 onClick={() => handleButtonClick("whatsapp")}
+                aria-label="Contact via WhatsApp"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/logo-whatsapp.png"
                   alt="WhatsApp"
+                  width={72}
+                  height={72}
                   className="w-full h-full object-contain"
                 />
               </motion.button>
@@ -244,11 +253,14 @@ export default function ContactButtons() {
                 exit={{ opacity: 0, x: 20 }}
                 transition={{ delay: 0.25 }}
                 onClick={() => handleButtonClick("kf")}
+                aria-label="Open customer service chat"
                 className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-black flex items-center justify-center p-1"
               >
                 <img
                   src="/image/logo-cskh/kf.png"
                   alt="Customer Service"
+                  width={64}
+                  height={64}
                   className="w-full h-full object-contain scale-140"
                 />
               </motion.button>
@@ -269,6 +281,7 @@ export default function ContactButtons() {
               {/* Close button */}
               <button
                 onClick={handleCloseTooltip}
+                aria-label="Close tooltip"
                 className="absolute -top-2 -right-2 w-6 h-6 bg-black rounded-full flex items-center justify-center shadow-lg hover:bg-gray-800 transition-colors z-10"
               >
                 <svg
@@ -308,6 +321,8 @@ export default function ContactButtons() {
         {/* Main Toggle Button */}
         <motion.button
           onClick={() => setIsContactMenuOpen(!isContactMenuOpen)}
+          aria-label={isContactMenuOpen ? "Close contact menu" : "Open contact menu"}
+          aria-expanded={isContactMenuOpen}
           className={`w-16 h-16 rounded-full shadow-xl flex items-center justify-center hover:scale-110 transition-all duration-300 ${
             isContactMenuOpen 
               ? "bg-gray-500" 
@@ -373,6 +388,8 @@ export default function ContactButtons() {
                 <img
                   src={activeContact.qrCode}
                   alt={`${activeContact.name} QR Code`}
+                  width={192}
+                  height={192}
                   className="absolute inset-0 w-full h-full object-contain"
                 />
               </div>
@@ -396,6 +413,7 @@ export default function ContactButtons() {
             {/* Close Button */}
             <button
               onClick={() => setActivePopup(null)}
+              aria-label="Close popup"
               className="absolute top-2 right-2 text-white hover:text-gray-200 transition-colors"
             >
               <svg

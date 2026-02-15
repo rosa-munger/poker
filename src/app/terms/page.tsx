@@ -34,6 +34,8 @@ export default function TermsPage() {
           <div className="inline-flex gap-0 rounded-full overflow-hidden border-2 border-[#39CB61]">
             <button
               onClick={() => setActiveTab("terms")}
+              aria-label="View Terms of Service"
+              aria-pressed={activeTab === "terms"}
               className={`px-16 sm:px-24 py-4 font-bold tracking-wider transition-all ${
                 activeTab === "terms"
                   ? "bg-[#39CB61] text-black"
@@ -45,6 +47,8 @@ export default function TermsPage() {
             </button>
             <button
               onClick={() => setActiveTab("privacy")}
+              aria-label="View Privacy Policy"
+              aria-pressed={activeTab === "privacy"}
               className={`px-16 sm:px-24 py-4 font-bold tracking-wider transition-all border-l-2 border-[#39CB61] ${
                 activeTab === "privacy"
                   ? "bg-[#39CB61] text-black"

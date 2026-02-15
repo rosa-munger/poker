@@ -57,6 +57,8 @@ export default function AATeamSection() {
                 <img
                   src={member.image}
                   alt={member.name}
+                  width={400}
+                  height={533}
                   className="absolute inset-0 w-full h-full object-contain object-center transition-transform duration-500 group-hover:scale-105"
                 />
               </div>

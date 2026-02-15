@@ -313,6 +313,8 @@ export default function DownloadPage() {
                 <img
                   src={index === 0 ? "/image/download/xioaa1-BRaHlQxH.png" : "/image/download/xioaa2-RXw0Ds4_.png"}
                   alt="FAQ Icon"
+                  width={96}
+                  height={96}
                   className="w-20 h-20 md:w-24 md:h-24"
                 />
               </div>
@@ -339,6 +341,8 @@ export default function DownloadPage() {
             <div className="inline-flex rounded-full overflow-hidden">
               <button
                 onClick={() => setActiveTab("ios")}
+                aria-label="View iOS installation tutorial"
+                aria-pressed={activeTab === "ios"}
                 className={`px-10 py-4 font-bold text-base md:text-lg tracking-wider transition-all ${
                   activeTab === "ios"
                     ? "bg-aa-emerald text-white"
@@ -349,6 +353,8 @@ export default function DownloadPage() {
               </button>
               <button
                 onClick={() => setActiveTab("android")}
+                aria-label="View Android installation tutorial"
+                aria-pressed={activeTab === "android"}
                 className={`px-10 py-4 font-bold text-base md:text-lg tracking-wider transition-all ${
                   activeTab === "android"
                     ? "bg-aa-emerald text-white"

@@ -64,12 +64,10 @@ export default function Header() {
             <img
               src="/image/home/logo/logotext-XjxNBhSC.png?v=2"
               alt="AA Poker"
-              className="w-auto"
-              style={{ 
-                imageRendering: 'crisp-edges', 
-                height: '23px',
-                width: '121px'
-              }}
+              width={121}
+              height={23}
+              className="h-[23px] w-auto"
+              style={{ imageRendering: 'crisp-edges' }}
             />
           </Link>
 
@@ -95,6 +93,9 @@ export default function Header() {
                   setIsLangOpen(!isLangOpen);
                 }}
                 className="flex items-center gap-2 text-white hover:text-aa-gold transition-colors text-lg font-bold tracking-wider uppercase"
+                aria-label="Select language"
+                aria-expanded={isLangOpen}
+                aria-haspopup="listbox"
               >
 
                 <span>{t("nav.language")}</span>
@@ -131,6 +132,7 @@ export default function Header() {
                           setLanguage(lang.code);
                           setIsLangOpen(false);
                         }}
+                        aria-label={`Switch to ${lang.name}`}
                         className={`w-full px-4 py-3 text-left flex items-center gap-3 hover:bg-aa-emerald/20 transition-colors ${
                           language === lang.code
                             ? "bg-aa-emerald/10 text-aa-gold"
@@ -150,6 +152,8 @@ export default function Header() {
           <button
             className="md:hidden text-white p-2"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             <svg
               className="w-6 h-6"
@@ -214,6 +218,7 @@ export default function Header() {
                       setLanguage(lang.code);
                       setIsMobileMenuOpen(false);
                     }}
+                    aria-label={`Switch to ${lang.name}`}
                     className={`w-full py-3 px-4 text-left flex items-center gap-3 rounded-lg ${
                       language === lang.code
                         ? "bg-aa-emerald/20 text-aa-gold"

@@ -128,6 +128,12 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        {/* Hreflang tags for multilingual SEO */}
+        <link rel="alternate" hrefLang="en" href="https://www.aapoker.top/" />
+        <link rel="alternate" hrefLang="zh-CN" href="https://www.aapoker.top/?lang=cn" />
+        <link rel="alternate" hrefLang="zh-TW" href="https://www.aapoker.top/?lang=tw" />
+        <link rel="alternate" hrefLang="x-default" href="https://www.aapoker.top/" />
+        
         {/* JSON-LD Structured Data for SEO */}
         <script
           type="application/ld+json"

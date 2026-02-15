@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+/* Font import removed - using Next.js built-in font optimization instead */
 @import "tailwindcss";
 
 /* Google Font – gần nhất với AA Poker UI */
@@ -17,10 +17,10 @@
   --color-aa-gold-medium: #f8e6ab;
   --color-aa-gold-dark: #d4af37;
 
-  /* Text Colors – chỉnh lại giống AA Poker */
-  --color-aa-text-primary: rgba(255, 255, 255, 0.88);
-  --color-aa-text-secondary: rgba(255, 255, 255, 0.65);
-  --color-aa-text-muted: rgba(255, 255, 255, 0.45);
+  /* Text Colors – chỉnh lại giống AA Poker (improved contrast for accessibility) */
+  --color-aa-text-primary: rgba(255, 255, 255, 0.95);
+  --color-aa-text-secondary: rgba(255, 255, 255, 0.80);
+  --color-aa-text-muted: rgba(255, 255, 255, 0.70);
 
   /* Background Colors */
   --color-aa-card-bg: rgba(0, 30, 20, 0.6);

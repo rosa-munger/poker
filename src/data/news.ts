@@ -612,6 +612,18 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Have you ever lost with Quad Aces? On AAPoker, that 'bad beat' could make you a millionaire. Inside the record-breaking Jackpot system.",
     excerpt_cn: "你曾经拿四条A输过吗？在AAPoker，那种'爆冷'可能会让你成为百万富翁。深入了解破纪录的奖池系统。",
     excerpt_tw: "你曾經拿四條A輸過嗎？在AAPoker，那種'爆冷'可能會讓你成為百萬富翁。深入了解破紀錄的獎池系統。"
+  },
+  {
+    id: 58,
+    slug: "aapoker-premier-choice-online-poker-2026",
+    title: "AAPoker: The Premier Choice for Online Poker Enthusiasts in 2026",
+    title_cn: "AAPoker：2026年在线扑克爱好者的首选平台",
+    title_tw: "AAPoker：2026年線上撲克愛好者的首選平台",
+    date: "February 15, 2026",
+    image: "/image/news/section-more-information/new32-CwPTWq6M.png",
+    excerpt: "Discover why AAPoker is leading the industry with fair play certification, instant withdrawals, and a massive global community. The ultimate poker experience awaits.",
+    excerpt_cn: "探索为什么AAPoker凭借公平游戏认证、即时提款和庞大的全球社区引领行业。终极扑克体验等着您。",
+    excerpt_tw: "探索為什麼AAPoker憑藉公平遊戲認證、即時提款和龐大的全球社區引領行業。終極撲克體驗等著您。"
   }
 ];
 
