@@ -624,6 +624,18 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Discover why AAPoker is leading the industry with fair play certification, instant withdrawals, and a massive global community. The ultimate poker experience awaits.",
     excerpt_cn: "探索为什么AAPoker凭借公平游戏认证、即时提款和庞大的全球社区引领行业。终极扑克体验等着您。",
     excerpt_tw: "探索為什麼AAPoker憑藉公平遊戲認證、即時提款和龐大的全球社區引領行業。終極撲克體驗等著您。"
+  },
+  {
+    id: 59,
+    slug: "aapoker-security-revolution-fair-play-2026",
+    title: "AAPoker's Security Revolution: Setting the Standard for Fair Play in 2026",
+    title_cn: "AAPoker的安全革命：树立2026年公平游戏新标准",
+    title_tw: "AAPoker的安全革命：樹立2026年公平遊戲新標準",
+    date: "February 16, 2026",
+    image: "/image/news/section-more-information/new19-Dyx8YjQZ.png",
+    excerpt: "In an era of advanced bots, AAPoker fights back with cutting-edge AI security. Discover how we protect the integrity of every 'Poker AA' hand dealt.",
+    excerpt_cn: "在高级机器人时代，AAPoker利用尖端AI安全技术进行反击。了解我们如何保护每一手'Poker AA'牌局的完整性。",
+    excerpt_tw: "在高級機器人時代，AAPoker利用尖端AI安全技術進行反擊。了解我們如何保護每一手'Poker AA'牌局的完整性。"
   }
 ];
 
