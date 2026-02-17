@@ -636,6 +636,18 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "In an era of advanced bots, AAPoker fights back with cutting-edge AI security. Discover how we protect the integrity of every 'Poker AA' hand dealt.",
     excerpt_cn: "在高级机器人时代，AAPoker利用尖端AI安全技术进行反击。了解我们如何保护每一手'Poker AA'牌局的完整性。",
     excerpt_tw: "在高級機器人時代，AAPoker利用尖端AI安全技術進行反擊。了解我們如何保護每一手'Poker AA'牌局的完整性。"
+  },
+  {
+    id: 60,
+    slug: "global-poker-boom-2026-asia-leads-charge",
+    title: "Global Poker Boom 2026: Asia Leads the Charge with Record-Breaking Numbers",
+    title_cn: "2026年全球扑克繁荣：亚洲以创纪录的数字领跑",
+    title_tw: "2026年全球撲克繁榮：亞洲以創紀錄的數字領跑",
+    date: "February 17, 2026",
+    image: "/image/news/section-more-information/new26-CT8-D1vg.png",
+    excerpt: "The poker world is witnessing a new golden age, driven by an explosion of interest in Asia. See how platforms like AAPoker are fueling this 'Poker AA' renaissance.",
+    excerpt_cn: "扑克世界正在见证一个新的黄金时代，这主要得益于亚洲兴趣的爆发。看看像AAPoker这样的平台如何推动这场'Poker AA'复兴。",
+    excerpt_tw: "撲克世界正在見證一個新的黃金時代，這主要得益於亞洲興趣的爆發。看看像AAPoker這樣的平台如何推動這場'Poker AA'復興。"
   }
 ];
 
