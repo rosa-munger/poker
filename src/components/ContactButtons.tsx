@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -18,7 +19,7 @@ const contactList: ContactInfo[] = [
     id: "sigua",
     name: "三条",
     logo: "/image/logo-cskh/sigua-logo.png",
-    qrCode: "/image/logo-cskh/QR-sigua.jpg?v=2",
+    qrCode: "/image/logo-cskh/QR-sigua.jpg",
     username: "mxbc1",
     copyText: "ST-Talk ID"
   },
@@ -26,7 +27,7 @@ const contactList: ContactInfo[] = [
     id: "telegram",
     name: "Telegram",
     logo: "/image/logo-cskh/tglogo.png",
-    qrCode: "/image/logo-cskh/QR-telegram.jpg?v=2",
+    qrCode: "/image/logo-cskh/QR-telegram.jpg",
     username: "@aapklaochen",
     copyText: "Telegram ID"
   },
@@ -35,7 +36,7 @@ const contactList: ContactInfo[] = [
     id: "whatsapp",
     name: "WhatsApp",
     logo: "/image/logo-cskh/logo-whatsapp.png",
-    qrCode: "/image/logo-cskh/QR-WhatsApp.jpg?v=2",
+    qrCode: "/image/logo-cskh/QR-WhatsApp.jpg",
     username: "",
     copyText: ""
   }
@@ -199,12 +200,13 @@ export default function ContactButtons() {
                 aria-label="Contact via Santiao"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
-                <img
+                <Image
                   src="/image/logo-cskh/sigua-logo.png"
                   alt="Sigua"
                   width={72}
                   height={72}
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </motion.button>
 
@@ -218,12 +220,13 @@ export default function ContactButtons() {
                 aria-label="Contact via Telegram"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
-                <img
+                <Image
                   src="/image/logo-cskh/tglogo.png"
                   alt="Telegram"
                   width={72}
                   height={72}
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </motion.button>   
 
@@ -237,12 +240,13 @@ export default function ContactButtons() {
                 aria-label="Contact via WhatsApp"
                 className="w-18 h-18 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 flex items-center justify-center p-1"
               >
-                <img
+                <Image
                   src="/image/logo-cskh/logo-whatsapp.png"
                   alt="WhatsApp"
                   width={72}
                   height={72}
                   className="w-full h-full object-contain"
+                  loading="lazy"
                 />
               </motion.button>
 
@@ -256,12 +260,13 @@ export default function ContactButtons() {
                 aria-label="Open customer service chat"
                 className="w-16 h-16 rounded-full shadow-lg hover:scale-110 transition-transform duration-200 bg-black flex items-center justify-center p-1"
               >
-                <img
+                <Image
                   src="/image/logo-cskh/kf.png"
                   alt="Customer Service"
                   width={64}
                   height={64}
                   className="w-full h-full object-contain scale-140"
+                  loading="lazy"
                 />
               </motion.button>
             </motion.div>
@@ -385,12 +390,13 @@ export default function ContactButtons() {
             {/* QR Code */}
             <div className="p-6 flex flex-col items-center bg-white">
               <div className="w-48 h-48 relative mb-4">
-                <img
+                <Image
                   src={activeContact.qrCode}
                   alt={`${activeContact.name} QR Code`}
                   width={192}
                   height={192}
                   className="absolute inset-0 w-full h-full object-contain"
+                  loading="lazy"
                 />
               </div>
 

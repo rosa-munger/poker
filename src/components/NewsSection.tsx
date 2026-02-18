@@ -67,7 +67,8 @@ export default function NewsSection() {
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-contain transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
+                  priority
+                  fetchPriority="high"
                 />
               </div>
               {/* Nội dung tin chính */}

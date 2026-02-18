@@ -191,6 +191,7 @@ export default function Hero() {
                 fill
                 sizes="100vw"
                 priority={currentSlide === 0}
+                fetchPriority={currentSlide === 0 ? "high" : "auto"}
                 className="object-contain object-center"
               />
             ) : (

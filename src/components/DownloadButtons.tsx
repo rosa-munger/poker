@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function DownloadButtons() {
@@ -26,12 +27,13 @@ export default function DownloadButtons() {
               whileTap={{ scale: 0.98 }}
               className="flex items-center justify-center px-3 md:px-4 py-3 md:py-4 bg-[#0d1f17] rounded-xl hover:bg-[#1a3d2e] transition-all cursor-pointer"
             >
-              <img
+              <Image
                 src="/image/home/logo-android/ios.png"
                 alt="iOS"
                 width={120}
                 height={48}
                 className="h-10 md:h-12 w-auto object-contain"
+                loading="lazy"
               />
             </motion.div>
           </Link>
@@ -45,12 +47,13 @@ export default function DownloadButtons() {
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center px-3 md:px-4 py-3 md:py-4 bg-[#0d1f17] rounded-xl hover:bg-[#1a3d2e] transition-all cursor-pointer"
           >
-            <img
+            <Image
               src="/image/home/logo-android/download.png"
               alt="Android"
               width={120}
               height={48}
               className="h-10 md:h-12 w-auto object-contain"
+              loading="lazy"
             />
           </motion.a>
 
@@ -63,12 +66,13 @@ export default function DownloadButtons() {
             whileTap={{ scale: 0.98 }}
             className="flex items-center justify-center px-3 md:px-4 py-3 md:py-4 bg-[#0d1f17] rounded-xl hover:bg-[#1a3d2e] transition-all cursor-pointer"
           >
-            <img
+            <Image
               src={getBackupAndroidImage()}
               alt="Backup Android Download"
               width={120}
               height={48}
               className="h-10 md:h-12 w-auto object-contain"
+              loading="lazy"
             />
           </motion.a>
         </div>

@@ -60,10 +60,11 @@ export const metadata: Metadata = {
     images: ["https://www.aapoker.top/image/icon.png"],
   },
   alternates: {
+    canonical: "https://www.aapoker.top",
     languages: {
-      "en": "/",
-      "zh-CN": "/?lang=cn",
-      "zh-TW": "/?lang=tw",
+      "en": "https://www.aapoker.top/",
+      "zh-CN": "https://www.aapoker.top/?lang=cn",
+      "zh-TW": "https://www.aapoker.top/?lang=tw",
     },
   },
 };
@@ -132,6 +133,11 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
+        {/* Preconnect to critical third-party origins for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://www.aapoker.top" />
+        
         {/* Hreflang tags for multilingual SEO */}
         <link rel="alternate" hrefLang="en" href="https://www.aapoker.top/" />
         <link rel="alternate" hrefLang="zh-CN" href="https://www.aapoker.top/?lang=cn" />

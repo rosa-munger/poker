@@ -123,10 +123,13 @@ function LearnMoreModal({
                 transition={{ delay: 0.2 }}
                 className="relative w-full aspect-video mb-8 rounded-xl overflow-hidden"
               >
-                <img
+                <Image
                   src={content.image}
                   alt={content.title}
-                  className="absolute inset-0 w-full h-full object-contain"
+                  fill
+                  sizes="(max-width: 1280px) 100vw, 1024px"
+                  className="object-contain"
+                  loading="lazy"
                 />
                 {/* Glow effect */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a2e1a] via-transparent to-transparent" />

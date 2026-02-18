@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -13,6 +14,17 @@ const moreNews = newsArticles.slice(6);
 
 export default function NewsPage() {
   const { t, language } = useLanguage();
+
+  // Preload all news images on component mount for smooth experience
+  useEffect(() => {
+    const preloadImages = () => {
+      newsArticles.forEach((article) => {
+        const img = new window.Image();
+        img.src = article.image;
+      });
+    };
+    preloadImages();
+  }, []);
 
   // Get translated title based on language
   const getTitle = (news: typeof featuredNews) => {
@@ -82,7 +94,8 @@ export default function NewsPage() {
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
                   className="object-contain transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
+                  priority
+                  loading="eager"
                 />
               </div>
               {/* Phần text của tin chính */}
@@ -114,7 +127,8 @@ export default function NewsPage() {
                       fill
                       sizes="160px"
                       className="object-contain transition-transform duration-500 group-hover:scale-110"
-                      loading="lazy"
+                      priority={index < 3}
+                      loading="eager"
                     />
                   </div>
                   
@@ -158,7 +172,7 @@ export default function NewsPage() {
                       fill
                       sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
+                      loading="eager"
                     />
                   </div>
                   <div className="p-4 flex-grow flex flex-col">

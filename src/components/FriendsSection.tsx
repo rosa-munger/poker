@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 // Friends/Players data with actual images
@@ -121,12 +122,13 @@ export default function FriendsSection() {
                 >
                   {/* Card - Taller aspect ratio, no name overlay since images have names */}
                   <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
-                    <img
+                    <Image
                       src={friend.image}
                       alt={friend.name}
-                      width={300}
-                      height={400}
-                      className="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
                     />
                   </div>
                 </motion.div>
