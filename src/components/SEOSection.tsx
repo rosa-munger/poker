@@ -108,7 +108,7 @@ export default function SEOSection() {
               <h3 className="text-lg font-semibold text-[#c9a962] mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-400 text-sm">{feature.desc}</p>
+              <p className="text-gray-300 text-sm">{feature.desc}</p>
             </div>
           ))}
         </div>
@@ -128,12 +128,12 @@ export default function SEOSection() {
         <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="text-gray-500 text-xs leading-relaxed space-y-2">
             <p>
-              <strong className="text-gray-400">AAPoker</strong> (also known as <strong className="text-gray-400">AA Poker</strong>, <strong className="text-gray-400">aapoker</strong>, or <strong className="text-gray-400">Poker AA</strong>) is the official online poker platform at aapoker.top. 
+              <strong className="text-gray-300">AAPoker</strong> (also known as <strong className="text-gray-300">AA Poker</strong>, <strong className="text-gray-300">aapoker</strong>, or <strong className="text-gray-300">Poker AA</strong>) is the official online poker platform at aapoker.top. 
               AAPoker provides Texas Hold&apos;em, Omaha, and tournament games for players worldwide.
             </p>
             <p>
-              Visit the <strong className="text-gray-400">aapoker官网</strong> (AAPoker official website) for <strong className="text-gray-400">aapoker下载</strong> (AAPoker download) on iOS and Android devices. 
-              Join <strong className="text-gray-400">aapoker联盟</strong> (AAPoker leagues) and <strong className="text-gray-400">AA扑克俱乐部</strong> (AA Poker clubs) for the best social poker experience.
+              Visit the <strong className="text-gray-300">aapoker官网</strong> (AAPoker official website) for <strong className="text-gray-300">aapoker下载</strong> (AAPoker download) on iOS and Android devices. 
+              Join <strong className="text-gray-300">aapoker联盟</strong> (AAPoker leagues) and <strong className="text-gray-300">AA扑克俱乐部</strong> (AA Poker clubs) for the best social poker experience.
             </p>
           </div>
         </div>

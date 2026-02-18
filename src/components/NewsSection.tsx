@@ -76,7 +76,7 @@ export default function NewsSection() {
                 <h3 className="text-white text-lg md:text-xl font-medium leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                   {getTitle(featuredNews)}
                 </h3>
-                <p className="text-[#4ade80]/60 text-sm mt-4 font-light italic">
+                <p className="text-[#86efac] text-sm mt-4 font-light italic">
                   {formatDate(featuredNews.date)}
                 </p>
               </div>
