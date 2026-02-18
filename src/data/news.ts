@@ -672,6 +672,18 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "Want to boost your bankroll? Discover the latest AAPoker promotions for 2026, including welcome bonuses, daily missions, and exclusive 'Poker AA' rewards.",
     excerpt_cn: "想要增加您的资金吗？探索AAPoker 2026年的最新促销活动，包括欢迎红利、每日任务和独家'Poker AA'奖励。",
     excerpt_tw: "想要增加您的資金嗎？探索AAPoker 2026年的最新促銷活動，包括歡迎紅利、每日任務和獨家'Poker AA'獎勵。"
+  },
+  {
+    id: 63,
+    slug: "what-is-aapoker-complete-guide-aa-poker-platform-2026",
+    title: "What is AAPoker? The Complete Guide to AA Poker Platform in 2026",
+    title_cn: "什么是AAPoker？2026年AA Poker平台完整指南",
+    title_tw: "什麼是AAPoker？2026年AA Poker平台完整指南",
+    date: "February 18, 2026",
+    image: "/image/news/section-more-information/new1-CjwHXmsk.png",
+    excerpt: "Everything you need to know about AAPoker (AA Poker). Learn why aapoker.top is the #1 choice for online poker players. Download aapoker today and join millions of Poker AA enthusiasts.",
+    excerpt_cn: "关于AAPoker（AA Poker）您需要了解的一切。了解为什么aapoker.top是在线扑克玩家的首选。立即下载aapoker，加入数百万Poker AA爱好者。",
+    excerpt_tw: "關於AAPoker（AA Poker）您需要了解的一切。了解為什麼aapoker.top是線上撲克玩家的首選。立即下載aapoker，加入數百萬Poker AA愛好者。"
   }
 ];
 
