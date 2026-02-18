@@ -648,6 +648,30 @@ export const newsArticles: NewsArticle[] = [
     excerpt: "The poker world is witnessing a new golden age, driven by an explosion of interest in Asia. See how platforms like AAPoker are fueling this 'Poker AA' renaissance.",
     excerpt_cn: "扑克世界正在见证一个新的黄金时代，这主要得益于亚洲兴趣的爆发。看看像AAPoker这样的平台如何推动这场'Poker AA'复兴。",
     excerpt_tw: "撲克世界正在見證一個新的黃金時代，這主要得益於亞洲興趣的爆發。看看像AAPoker這樣的平台如何推動這場'Poker AA'復興。"
+  },
+  {
+    id: 61,
+    slug: "best-mobile-poker-experience-aapoker-vertical-mode-2026",
+    title: "The Best Mobile Poker Experience 2026: Winning Big on AAPoker's Vertical Mode",
+    title_cn: "2026年最佳移动扑克体验：在AAPoker竖屏模式上赢得大奖",
+    title_tw: "2026年最佳移動撲克體驗：在AAPoker豎屏模式上贏得大獎",
+    date: "February 18, 2026",
+    image: "/image/news/section-more-information/new22-BaetBDUu.png",
+    excerpt: "Forget clunky landscape apps. AAPoker's revolutionary vertical mode lets you play 'Poker AA' with one hand, anytime, anywhere. See why it's the top-rated mobile poker app of 2026.",
+    excerpt_cn: "忘记笨重的横屏应用吧。AAPoker革命性的竖屏模式让您可以随时随地单手玩'Poker AA'。看看为什么它是2026年评价最高的移动扑克应用。",
+    excerpt_tw: "忘記笨重的橫屏應用吧。AAPoker革命性的豎屏模式讓您可以隨時隨地單手玩'Poker AA'。看看為什麼它是2026年評價最高的移動撲克應用。"
+  },
+  {
+    id: 62,
+    slug: "aapoker-promotions-2026-free-chips-bonus",
+    title: "AAPoker 2026 Promotions: Your Guide to Free Chips and Massive Bonuses",
+    title_cn: "AAPoker 2026 促销活动：免费筹码和巨额红利指南",
+    title_tw: "AAPoker 2026 促銷活動：免費籌碼和巨額紅利指南",
+    date: "February 18, 2026",
+    image: "/image/news/section-more-information/new37-DoHS0q7h.png",
+    excerpt: "Want to boost your bankroll? Discover the latest AAPoker promotions for 2026, including welcome bonuses, daily missions, and exclusive 'Poker AA' rewards.",
+    excerpt_cn: "想要增加您的资金吗？探索AAPoker 2026年的最新促销活动，包括欢迎红利、每日任务和独家'Poker AA'奖励。",
+    excerpt_tw: "想要增加您的資金嗎？探索AAPoker 2026年的最新促銷活動，包括歡迎紅利、每日任務和獨家'Poker AA'獎勵。"
   }
 ];
 
