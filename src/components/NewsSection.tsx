@@ -107,7 +107,7 @@ export default function NewsSection() {
                   <h4 className="text-white text-[13px] md:text-sm font-medium leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                     {getTitle(news)}
                   </h4>
-                  <p className="text-[#4ade80]/60 text-[11px] mt-1 italic">
+                  <p className="text-[#86efac] text-[11px] mt-1 italic">
                     {formatDate(news.date)}
                   </p>
                 </div>
