@@ -5578,7 +5578,7 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "aapoker-dominates-2026-online-poker-scene-aa-poker-review": {
-    heroImage: "/image/news/section-more-information/new2-BWLg7F35.png",
+    heroImage: "/image/news/section-more-information/new32-CwPTWq6M.png",
     sections: [
       {
         type: "paragraph",
