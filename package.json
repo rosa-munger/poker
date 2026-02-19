@@ -14,14 +14,6 @@
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
-  "browserslist": [
-    "chrome >= 87",
-    "firefox >= 78",
-    "safari >= 14",
-    "edge >= 88",
-    "ios >= 14",
-    "android >= 87"
-  ],
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",

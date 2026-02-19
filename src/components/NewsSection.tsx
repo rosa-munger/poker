@@ -1,19 +1,14 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { getLatestNews } from "@/data/news";
 import { useLanguage } from "@/context/LanguageContext";
-import { useState, useEffect } from "react";
 
 export default function NewsSection() {
   const { t, language } = useLanguage();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
+  
   // Get latest 6 news articles
   const allNews = getLatestNews(6);
   const featuredNews = allNews[0];
@@ -52,10 +47,10 @@ export default function NewsSection() {
         {/* Header Section */}
         <div className="text-center mb-4 sm:mb-10">
           <h2 className="text-[#f2e29e] text-3xl md:text-4xl font-bold tracking-widest uppercase mb-4">
-            {mounted ? t("news.title") : "新闻资讯"}
+            {t("news.title")}
           </h2>
           <p className="text-white text-sm tracking-[0.3em] font-medium uppercase">
-            {mounted ? t("news.subtitle") : "所有资讯，尽在AA POKER"}
+            {t("news.subtitle")}
           </p>
         </div>
 
@@ -71,14 +66,14 @@ export default function NewsSection() {
                   alt="Featured News"
                   fill
                   sizes="(max-width: 1024px) 100vw, 58vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                  quality={95}
+                  className="object-contain transition-transform duration-700 group-hover:scale-105"
+                  priority
+                  fetchPriority="high"
                 />
               </div>
               {/* Nội dung tin chính */}
               <div className="p-6 flex-1 flex flex-col justify-center border-t border-[#14532d]">
-                <h3 suppressHydrationWarning className="text-white text-lg md:text-xl font-medium leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
+                <h3 className="text-white text-lg md:text-xl font-medium leading-snug group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                   {getTitle(featuredNews)}
                 </h3>
                 <p className="text-[#86efac] text-sm mt-4 font-light italic">
@@ -109,7 +104,7 @@ export default function NewsSection() {
                 </div>
                 {/* Nội dung tin phụ */}
                 <div className="flex flex-col justify-center p-3 flex-1 min-w-0">
-                  <h4 suppressHydrationWarning className="text-white text-[13px] md:text-sm font-medium leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
+                  <h4 className="text-white text-[13px] md:text-sm font-medium leading-tight group-hover:text-[#f2e29e] transition-colors line-clamp-2">
                     {getTitle(news)}
                   </h4>
                   <p className="text-[#86efac] text-[11px] mt-1 italic">

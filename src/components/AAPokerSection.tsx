@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
@@ -204,13 +204,8 @@ function AnimatedImage({ src, alt, delay = 0 }: { src: string; alt: string; dela
 
 export default function AAPokerSection() {
   const { t } = useLanguage();
-  const [mounted, setMounted] = useState(false);
   const [activeModal, setActiveModal] = useState<'gameplay' | 'visualImpact' | 'experience' | 'protection' | null>(null);
   const modalContent = getModalContent(t);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const openModal = (key: 'gameplay' | 'visualImpact' | 'experience' | 'protection') => {
     setActiveModal(key);
@@ -241,10 +236,10 @@ export default function AAPokerSection() {
               className="text-center mb-16"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-                {mounted ? t("aaPoker.title") : "AA POKER"}
+                {t("aaPoker.title")}
               </h2>
               <p className="text-aa-gray text-sm tracking-wider">
-                {mounted ? t("aaPoker.subtitle") : "朋友约局，就来AA POKER"}
+                {t("aaPoker.subtitle")}
               </p>
             </motion.div>
 
@@ -257,7 +252,7 @@ export default function AAPokerSection() {
                 transition={{ duration: 0.6 }}
                 className="order-2 lg:order-1"
               >
-                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green mb-6 leading-tight" suppressHydrationWarning>
+                <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green mb-6 leading-tight">
                   {t("aaPoker.gameplay.title")}
                 </h3>
                 <p className="text-white text-base md:text-lg mb-8 leading-relaxed">
@@ -296,7 +291,7 @@ export default function AAPokerSection() {
               viewport={{ once: true }}
               className="mb-4"
             >
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight" suppressHydrationWarning>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
                 {t("aaPoker.visualImpact.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />
@@ -347,7 +342,7 @@ export default function AAPokerSection() {
               viewport={{ once: true }}
               className="mb-4"
             >
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight" suppressHydrationWarning>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
                 {t("aaPoker.experience.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />
@@ -399,7 +394,7 @@ export default function AAPokerSection() {
               viewport={{ once: true }}
               className="mb-4"
             >
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight" suppressHydrationWarning>
+              <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-aa-light-green leading-tight">
                 {t("aaPoker.protection.title")}
               </h3>
               <div className="w-full h-[2px] bg-gradient-to-r from-aa-light-green to-transparent mt-4 mb-8" />

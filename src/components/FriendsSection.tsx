@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
@@ -60,13 +60,8 @@ const friends = [
 
 export default function FriendsSection() {
   const { t } = useLanguage();
-  const [mounted, setMounted] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleCount = 4;
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
@@ -93,10 +88,10 @@ export default function FriendsSection() {
           className="text-center mb-4 sm:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-            {mounted ? t("friends.title") : "AA朋友圈"}
+            {t("friends.title")}
           </h2>
           <p className="text-aa-gray text-sm tracking-wider">
-            {mounted ? t("friends.subtitle") : "你可以逐梦成星"}
+            {t("friends.subtitle")}
           </p>
         </motion.div>
 

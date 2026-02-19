@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
-import { useState, useEffect } from "react";
 
 // AA Team data with actual images
 const aaTeam = [
@@ -23,11 +22,6 @@ const aaTeam = [
 
 export default function AATeamSection() {
   const { t } = useLanguage();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   return (
     <section className="py-6 sm:py-20 pb-10 sm:pb-32 relative z-10 bg-[#0a1f14]">
@@ -40,10 +34,10 @@ export default function AATeamSection() {
           className="text-center mb-4 sm:mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gold-gradient mb-4">
-            {mounted ? t("aaTeam.title") : "AA POKER形象大使"}
+            {t("aaTeam.title")}
           </h2>
           <p className="text-aa-gray text-sm tracking-wider">
-            {mounted ? t("aaTeam.subtitle") : "欢迎加入AA战队"}
+            {t("aaTeam.subtitle")}
           </p>
         </motion.div>
 

@@ -2,15 +2,9 @@
 
 import { useLanguage } from "@/context/LanguageContext";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function SEOSection() {
   const { language } = useLanguage();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   const content = {
     en: {
@@ -90,23 +84,7 @@ export default function SEOSection() {
     }
   };
 
-  const t = content[language] || content.cn;
-
-  if (!mounted) {
-    return (
-      <section className="bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a] py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-              {content.cn.title}
-            </h2>
-            <p className="text-xl text-[#c9a962] mb-4">{content.cn.subtitle}</p>
-            <p className="text-gray-300 max-w-3xl mx-auto">{content.cn.description}</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+  const t = content[language] || content.en;
 
   return (
     <section className="bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a] py-16 px-4">

@@ -1,24 +1,11 @@
-import dynamic from "next/dynamic";
 import Hero from "@/components/Hero";
 import DownloadButtons from "@/components/DownloadButtons";
+import NewsSection from "@/components/NewsSection";
+import AATeamSection from "@/components/AATeamSection";
+import FriendsSection from "@/components/FriendsSection";
+import AAPokerSection from "@/components/AAPokerSection";
+import SEOSection from "@/components/SEOSection";
 import { Metadata } from "next";
-
-// Dynamic imports for below-fold components to reduce initial JS bundle
-const NewsSection = dynamic(() => import("@/components/NewsSection"), {
-  loading: () => <div className="h-96 bg-[#0a1f14]" />,
-});
-const AATeamSection = dynamic(() => import("@/components/AATeamSection"), {
-  loading: () => <div className="h-96 bg-[#0a1f14]" />,
-});
-const FriendsSection = dynamic(() => import("@/components/FriendsSection"), {
-  loading: () => <div className="h-96 bg-[#0a1f14]" />,
-});
-const AAPokerSection = dynamic(() => import("@/components/AAPokerSection"), {
-  loading: () => <div className="h-96 bg-[#0a1f14]" />,
-});
-const SEOSection = dynamic(() => import("@/components/SEOSection"), {
-  loading: () => <div className="h-48 bg-[#0a1f14]" />,
-});
 
 // SEO Metadata for Homepage
 export const metadata: Metadata = {

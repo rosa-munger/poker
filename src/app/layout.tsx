@@ -10,17 +10,13 @@ import { LanguageProvider } from "@/context/LanguageContext";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-  preload: true,
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  display: "swap",
-  preload: true,
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -137,15 +133,9 @@ export default function RootLayout({
   return (
     <html lang="zh-CN">
       <head>
-        {/* Preload critical hero image for LCP optimization */}
-        <link
-          rel="preload"
-          as="image"
-          href="/image/home/sliders/15en-D6ZayPco.jpg"
-          fetchPriority="high"
-        />
-        
-        {/* DNS prefetch for faster resource loading */}
+        {/* Preconnect to critical third-party origins for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.aapoker.top" />
         
         {/* Hreflang tags for multilingual SEO */}
