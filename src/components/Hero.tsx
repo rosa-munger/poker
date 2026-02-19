@@ -64,22 +64,19 @@ const getHeroSlides = (language: string) => {
   ];
 };
 
-// Slide animation variants - smooth left to right transition
+// Simplified slide animation variants for better mobile performance
 const slideVariants = {
-  enter: (direction: number) => ({
-    x: direction > 0 ? "100%" : "-100%",
+  enter: {
     opacity: 0,
-  }),
+  },
   center: {
-    x: 0,
     opacity: 1,
     zIndex: 1,
   },
-  exit: (direction: number) => ({
-    x: direction > 0 ? "-100%" : "100%",
+  exit: {
     opacity: 0,
     zIndex: 0,
-  }),
+  },
 };
 
 export default function Hero() {
@@ -177,8 +174,7 @@ export default function Hero() {
             animate="center"
             exit="exit"
             transition={{
-              x: { type: "tween", duration: 0.8, ease: "easeInOut" },
-              opacity: { duration: 0.5 },
+              opacity: { duration: 0.3 },
             }}
             className="absolute inset-0"
             onClick={handleSlideClick}
@@ -241,10 +237,10 @@ export default function Hero() {
             onClick={() => setIsVideoModalOpen(false)}
           >
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              transition={{ type: "spring", duration: 0.5 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.2 }}
               className="relative w-full max-w-3xl"
               onClick={(e) => e.stopPropagation()}
             >

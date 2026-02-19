@@ -12,10 +12,12 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
   },
-  // Compiler optimizations
+  // Compiler optimizations  
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
+  // Optimize output for production
+  output: 'standalone',
   async headers() {
     return [
       {

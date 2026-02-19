@@ -14,6 +14,18 @@ export interface NewsArticle {
 
 export const newsArticles: NewsArticle[] = [
   {
+    id: 64,
+    slug: "aapoker-dominates-2026-online-poker-scene-aa-poker-review",
+    title: "AAPoker (AA Poker) Dominates 2026 Online Poker Scene: Why Players Choose aapoker.top",
+    title_cn: "AAPoker (AA Poker) 主导2026在线扑克界：为何玩家选择aapoker.top",
+    title_tw: "AAPoker (AA Poker) 主導2026線上撲克界：為何玩家選擇aapoker.top",
+    date: "February 19, 2026",
+    image: "/image/news/section-more-information/new1-CjwHXmsk.png",
+    excerpt: "AAPoker (AA Poker) has emerged as the leading platform in 2026. Discover why aapoker is the top choice for 'Poker AA' fans and how to download the aapoker app today.",
+    excerpt_cn: "AAPoker (AA Poker) 已成为2026年的领先平台。探索为何aapoker是'Poker AA'粉丝的首选，以及如何立即下载aapoker应用。",
+    excerpt_tw: "AAPoker (AA Poker) 已成為2026年的領先平台。探索為何aapoker是'Poker AA'粉絲的首選，以及如何立即下載aapoker應用。"
+  },
+  {
     id: 1,
     slug: "wsop-cyprus-king-championship-super-mystery-bounty",
     title: "WSOP Cyprus 「King」 fully wins the championship of the Super Mystery Bounty Tournament and ranks fifth in the Super Fast Bounty Tournament",
