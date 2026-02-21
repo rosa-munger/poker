@@ -14,6 +14,18 @@ export interface NewsArticle {
 
 export const newsArticles: NewsArticle[] = [
   {
+    id: 65,
+    slug: "mastering-aa-poker-strategies-success-aapoker",
+    title: "Mastering AA Poker: Essential Strategies for Winning Big on AAPoker",
+    title_cn: "掌握AA Poker：在AAPoker上赢得大奖的必备策略",
+    title_tw: "掌握AA Poker：在AAPoker上贏得大獎的必備策略",
+    date: "February 21, 2026",
+    image: "/image/news/section-more-information/new26-CT8-D1vg.png",
+    excerpt: "Want to crush the tables on AAPoker? Learn the top 'AA Poker' strategies used by pros to dominate the competition on aapoker.top.",
+    excerpt_cn: "想在AAPoker的牌桌上大杀四方吗？学习职业选手使用的顶级'AA Poker'策略，在aapoker.top上主宰比赛。",
+    excerpt_tw: "想在AAPoker的牌桌上大殺四方嗎？學習職業選手使用的頂級'AA Poker'策略，在aapoker.top上主宰比賽。"
+  },
+  {
     id: 64,
     slug: "aapoker-dominates-2026-online-poker-scene-aa-poker-review",
     title: "AAPoker (AA Poker) Dominates 2026 Online Poker Scene: Why Players Choose aapoker.top",
