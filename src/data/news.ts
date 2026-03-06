@@ -104,7 +104,7 @@ export const newsArticles: NewsArticle[] = [
     title_cn: "AAPoker银行指南：存款和取款方式解释",
     title_tw: "AAPoker銀行指南：存款和取款方式解釋",
     date: "February 25, 2026",
-    image: "/image/news/section-more-information/new40-B6XodAXe.png",
+    image: "/image/news/section-more-information/new32-CwPTWq6M.png",
     excerpt: "Fast, secure, and fee-free. Learn everything you need to know about funding your AAPoker account and cashing out your winnings.",
     excerpt_cn: "快速、安全且免费。了解有关为您的AAPoker帐户注资和兑现奖金所需了解的一切。",
     excerpt_tw: "快速、安全且免費。了解有關為您的AAPoker帳戶注資和兌現獎金所需了解的一切。"
@@ -176,7 +176,7 @@ export const newsArticles: NewsArticle[] = [
     title_cn: "AAPoker合法吗？2026年平台的诚实评论",
     title_tw: "AAPoker合法嗎？2026年平台的誠實評論",
     date: "February 25, 2026",
-    image: "/image/news/section-more-information/new40-B6XodAXe.png",
+    image: "/image/news/section-more-information/new24-DZWWb0yZ.png",
     excerpt: "Wondering if AAPoker is safe? We analyze the security, fairness, and reputation of 'AA Poker' to answer the question once and for all.",
     excerpt_cn: "想知道AAPoker是否安全？我们分析'AA Poker'的安全性、公平性和声誉，以一劳永逸地回答这个问题。",
     excerpt_tw: "想知道AAPoker是否安全？我們分析'AA Poker'的安全性、公平性和聲譽，以一勞永逸地回答這個問題。"
@@ -429,9 +429,9 @@ export const newsArticles: NewsArticle[] = [
     title_tw: "資金管理101：如何在AAPoker (AA Poker) 上維持您的職業生涯",
     date: "February 23, 2026",
     image: "/image/news/section-more-information/new26-CT8-D1vg.png",
-    excerpt: "Protect your capital and grow your winnings. Essential bankroll management tips for every aspiring AAPoker (AA Poker) pro.",
-    excerpt_cn: "保护您的资本并增加您的奖金。每一位有抱负的AAPoker (AA Poker) 职业选手的必备资金管理技巧。",
-    excerpt_tw: "保護您的資本並增加您的獎金。每一位有抱負的AAPoker (AA Poker) 職業選手的必備資金管理技巧。"
+    excerpt: "Your bankroll is your lifeline. Learn the essential rules for moving up stakes, surviving downswings, and building a long-term poker career on AAPoker (AA Poker).",
+    excerpt_cn: "你的资金是你的生命线。学习升注、熬过下风期以及在AAPoker (AA Poker) 上建立长期扑克生涯的基本规则。",
+    excerpt_tw: "你的資金是你的生命線。學習升注、熬過下風期以及在AAPoker (AA Poker) 上建立長期撲克生涯的基本規則。"
   },
   {
     id: 80,
@@ -440,7 +440,7 @@ export const newsArticles: NewsArticle[] = [
     title_cn: "诈唬的艺术：AAPoker (AA Poker) 玩家的高级技巧",
     title_tw: "詐唬的藝術：AAPoker (AA Poker) 玩家的高級技巧",
     date: "February 23, 2026",
-    image: "/image/news/section-more-information/new1-b3g8E56X.png",
+    image: "/image/news/section-more-information/new1-CjwHXmsk.png",
     excerpt: "Learn when to hold 'em and when to fold 'em. Master the art of bluffing on AAPoker (AA Poker) and keep your opponents guessing.",
     excerpt_cn: "学习何时持有和何时弃牌。在AAPoker (AA Poker) 上掌握诈唬的艺术，让你的对手捉摸不透。",
     excerpt_tw: "學習何時持有和何時棄牌。在AAPoker (AA Poker) 上掌握詐唬的藝術，讓你的對手捉摸不透。"

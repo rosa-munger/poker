@@ -5948,7 +5948,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new24-DZWWb0yZ.png",
         alt: "WSOP 2026 Preview"
       },
       {
@@ -6347,7 +6347,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new1-b3g8E56X.png",
+        src: "/image/news/section-more-information/new1-CjwHXmsk.png",
         alt: "Short Deck Strategy"
       },
       {
@@ -6502,7 +6502,7 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "art-of-the-bluff-advanced-techniques-aapoker-aa-poker": {
-    heroImage: "/image/news/section-more-information/new1-b3g8E56X.png",
+    heroImage: "/image/news/section-more-information/new1-CjwHXmsk.png",
     sections: [
       {
         type: "paragraph",
@@ -6860,7 +6860,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new22-BaetBDUu.png",
         alt: "Global Poker"
       },
       {
@@ -7373,7 +7373,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new35-BWw_V8k7.png",
         alt: "Las Vegas Poker"
       },
       {
@@ -7573,7 +7573,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new32-CwPTWq6M.png",
         alt: "Poker Tools"
       },
       {
@@ -7715,7 +7715,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new22-BaetBDUu.png",
         alt: "Why AAPoker"
       },
       {
@@ -7768,7 +7768,7 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "is-aapoker-legit-honest-review-2026": {
-    heroImage: "/image/news/section-more-information/new40-B6XodAXe.png",
+    heroImage: "/image/news/section-more-information/new24-DZWWb0yZ.png",
     sections: [
       {
         type: "paragraph",
@@ -8129,7 +8129,7 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "image",
-        src: "/image/news/section-more-information/new40-B6XodAXe.png",
+        src: "/image/news/section-more-information/new32-CwPTWq6M.png",
         alt: "Rakeback System"
       },
       {
@@ -8182,7 +8182,7 @@ const articleContent: { [key: string]: ArticleContent } = {
     ]
   },
   "aapoker-deposit-withdrawal-methods-banking-guide": {
-    heroImage: "/image/news/section-more-information/new40-B6XodAXe.png",
+    heroImage: "/image/news/section-more-information/new32-CwPTWq6M.png",
     sections: [
       {
         type: "paragraph",
@@ -8594,9 +8594,9 @@ const articleContent: { [key: string]: ArticleContent } = {
       },
       {
         type: "paragraph",
-        content: "For more complex inquiries or account verification, send an email to support@aapoker.top. Be sure to include your username and screenshots of the issue to speed up the process. Email support aims to resolve all tickets within 24 hours.",
-        content_cn: "对于更复杂的查询或帐户验证，请发送电子邮件至support@aapoker.top。请务必包含您的用户名和问题截图以加快流程。电子邮件支持旨在在24小时内解决所有工单。",
-        content_tw: "對於更複雜的查詢或帳戶驗證，請發送電子郵件至support@aapoker.top。請務必包含您的用戶名和問題截圖以加快流程。電子郵件支持旨在在24小時內解決所有工單。"
+        content: "For more complex inquiries or account verification, send an email to mixue66@outlook.com. Be sure to include your username and screenshots of the issue to speed up the process. Email support aims to resolve all tickets within 24 hours.",
+        content_cn: "对于更复杂的查询或帐户验证，请发送电子邮件至mixue66@outlook.com。请务必包含您的用户名和问题截图以加快流程。电子邮件支持旨在在24小时内解决所有工单。",
+        content_tw: "對於更複雜的查詢或帳戶驗證，請發送電子郵件至mixue66@outlook.com。請務必包含您的用戶名和問題截圖以加快流程。電子郵件支持旨在在24小時內解決所有工單。"
       },
       {
         type: "heading",

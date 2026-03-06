@@ -86,25 +86,25 @@ const qrCodes = [
     id: "app-store",
     labelKey: "download.appStore",
     icon: "apple",
-    image: "/image/download/Qr-download.jpg",
+    image: "/image/download/Qr-download-v2.jpg",
   },
   {
     id: "ios-backup",
     labelKey: "download.iosBackup",
     icon: "apple",
-    image: "/image/download/Qr-download.jpg",
+    image: "/image/download/Qr-download-v2.jpg",
   },
   {
     id: "android",
     labelKey: "download.android",
     icon: "android",
-    image: "/image/download/Qr-download.jpg",
+    image: "/image/download/Qr-download-v2.jpg",
   },
   {
     id: "android-backup",
     labelKey: "download.androidBackup",
     icon: "android",
-    image: "/image/download/Qr-download.jpg",
+    image: "/image/download/Qr-download-v2.jpg",
   },
 ];
 

@@ -99,7 +99,7 @@ export default function ContactButtons() {
             // Set the greeting message
             (window as any).Tawk_API.setAttributes({
               name: 'AA Poker Support',
-              email: 'support@aapoker.app'
+              email: 'mixue66@outlook.com'
             }, function(error: any) {});
             
             // Add custom greeting via API

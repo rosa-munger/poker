@@ -40,7 +40,7 @@ export default function DownloadButtons() {
 
           {/* Android Button - Links to external APK download */}
           <motion.a
-            href="https://alb-aliyuncs.scjzsjw.com/lazrjk"
+            href="https://aapk001.com/lazrjk"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}
@@ -59,7 +59,7 @@ export default function DownloadButtons() {
 
           {/* Backup Android Button - Links to external APK download */}
           <motion.a
-            href="https://alb-aliyuncs.scjzsjw.com/lazrjk"
+            href="https://aapk001.com/lazrjk"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.03 }}

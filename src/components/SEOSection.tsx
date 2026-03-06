@@ -87,15 +87,15 @@ export default function SEOSection() {
   const t = content[language] || content.en;
 
   return (
-    <section className="bg-gradient-to-b from-[#1a1a2e] to-[#0d0d1a] py-16 px-4">
+    <section className="bg-gradient-to-b from-[#081b12] via-[#0a2216] to-[#04110b] py-16 px-4 border-t border-[#39cb61]/10">
       <div className="max-w-6xl mx-auto">
         {/* Main Title */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             {t.title}
           </h2>
-          <p className="text-xl text-[#c9a962] mb-4">{t.subtitle}</p>
-          <p className="text-gray-300 max-w-3xl mx-auto">{t.description}</p>
+          <p className="text-xl text-[#86efac] mb-4">{t.subtitle}</p>
+          <p className="text-white/80 max-w-3xl mx-auto">{t.description}</p>
         </div>
 
         {/* Features Grid */}
@@ -103,12 +103,12 @@ export default function SEOSection() {
           {t.features.map((feature, index) => (
             <div
               key={index}
-              className="bg-[#1f1f3a]/50 border border-[#c9a962]/20 rounded-xl p-6 hover:border-[#c9a962]/50 transition-colors"
+              className="bg-[rgba(0,30,20,0.6)] border border-[#39cb61]/20 rounded-xl p-6 hover:border-[#39cb61]/50 hover:bg-[rgba(0,40,26,0.72)] transition-colors"
             >
-              <h3 className="text-lg font-semibold text-[#c9a962] mb-2">
+              <h3 className="text-lg font-semibold text-white mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-300 text-sm">{feature.desc}</p>
+              <p className="text-white/75 text-sm">{feature.desc}</p>
             </div>
           ))}
         </div>
@@ -117,23 +117,23 @@ export default function SEOSection() {
         <div className="text-center">
           <Link
             href="/download"
-            className="inline-block bg-gradient-to-r from-[#c9a962] to-[#d4b876] text-black font-bold px-8 py-4 rounded-full hover:opacity-90 transition-opacity text-lg"
+            className="inline-block bg-gradient-to-r from-[#39cb61] to-[#86efac] text-[#04110b] font-bold px-8 py-4 rounded-full hover:opacity-90 transition-opacity text-lg shadow-[0_0_24px_rgba(57,203,97,0.22)]"
           >
             {t.cta}
           </Link>
-          <p className="text-gray-500 mt-4 text-sm">{t.ctaDesc}</p>
+          <p className="text-white/55 mt-4 text-sm">{t.ctaDesc}</p>
         </div>
 
         {/* SEO Text Block - Visible but styled subtly */}
-        <div className="mt-16 pt-8 border-t border-gray-800">
-          <div className="text-gray-500 text-xs leading-relaxed space-y-2">
+        <div className="mt-16 pt-8 border-t border-[#39cb61]/10">
+          <div className="text-white/45 text-xs leading-relaxed space-y-2">
             <p>
-              <strong className="text-gray-300">AAPoker</strong> (also known as <strong className="text-gray-300">AA Poker</strong>, <strong className="text-gray-300">aapoker</strong>, or <strong className="text-gray-300">Poker AA</strong>) is the official online poker platform at aapoker.top. 
+              <strong className="text-white">AAPoker</strong> (also known as <strong className="text-white">AA Poker</strong>, <strong className="text-white">aapoker</strong>, or <strong className="text-white">Poker AA</strong>) is the official online poker platform at aapoker.top. 
               AAPoker provides Texas Hold&apos;em, Omaha, and tournament games for players worldwide.
             </p>
             <p>
-              Visit the <strong className="text-gray-300">aapoker官网</strong> (AAPoker official website) for <strong className="text-gray-300">aapoker下载</strong> (AAPoker download) on iOS and Android devices. 
-              Join <strong className="text-gray-300">aapoker联盟</strong> (AAPoker leagues) and <strong className="text-gray-300">AA扑克俱乐部</strong> (AA Poker clubs) for the best social poker experience.
+              Visit the <strong className="text-white">aapoker官网</strong> (AAPoker official website) for <strong className="text-white">aapoker下载</strong> (AAPoker download) on iOS and Android devices. 
+              Join <strong className="text-white">aapoker联盟</strong> (AAPoker leagues) and <strong className="text-white">AA扑克俱乐部</strong> (AA Poker clubs) for the best social poker experience.
             </p>
           </div>
         </div>
